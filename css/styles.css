@@ -495,7 +495,7 @@ iframe {
   background: url("../img/phone2.png") no-repeat center center; }
 
 .section {
-  padding-top: 160px;
+  padding-top: 140px;
   margin-bottom: 50px; }
 
 .section--narrow {
@@ -508,7 +508,8 @@ iframe {
   font-weight: 700;
   line-height: 87px;
   margin: 0;
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+  padding-top: 20px; }
 
 .section__item {
   margin-bottom: 65px; }

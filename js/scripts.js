@@ -4,17 +4,19 @@ $(document).ready(function() {
   // -------------------------------------
 
   var stickyTop = $('.js-sticky').offset().top;
-  console.log(stickyTop);
 
   $(window).scroll(function() {
     var windowTop = $(window).scrollTop();
-    console.log(windowTop);
     if (stickyTop < windowTop) {
       $('.js-sticky').addClass('fixed');
     } else {
       $('.js-sticky').removeClass('fixed');
     }
   });
+
+  // -------------------------------------
+  // ScrollTo
+  // -------------------------------------
 
   $('.js-scrollto').click(function() {
     var thisHref = $(this).attr('href');
