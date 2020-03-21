@@ -40,17 +40,21 @@
 }
 
 .hero__actions{
-  margin-top: 77px;
-}
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+  flex-direction: row;
 
-.hero__button{
-  margin-right: 40px;
+  li{
+    margin-right: 40px;
 
-  &:last-child{
-    margin-right:  0;
+    &:last-child{
+      margin-right:  0;
+    }
   }
 }
-
 
 .hero__phone{
   width: 539px;

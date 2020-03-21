@@ -1,0 +1,37 @@
+.aside{
+  width: 280px;
+  position: absolute;
+  top: 440px;
+  right: 0;
+  background: #E3F9FF;
+  text-align: center;
+  padding: 40px;
+  border-radius: $radius;
+}
+
+.aside__title{
+  font-family: $font_merriweather;
+  font-size: 24px;
+}
+
+.aside__actions{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  align-items: center;
+
+  li{
+    margin-bottom: 25px;
+
+    &:last-child{
+      margin-bottom:  0;
+    }
+  }
+}
+
+.aside__button{
+  width: 100%;
+  padding: 0;
+  line-height: 40px;
+}
