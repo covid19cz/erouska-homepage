@@ -14,9 +14,9 @@ deploy:
     - git --version
     - git ftp --version
     # pouze pro vstupni deploy
-    - git ftp init --user $FTP_USERNAME --passwd $FTP_PASSWORD $FTP_URL
+    #- git ftp init --user $FTP_USERNAME --passwd $FTP_PASSWORD $FTP_URL
     # deploy posledniho commitu
-    #- git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD $FTP_URL
+    - git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD $FTP_URL
   # nastaveni spusteni - pouze na master vetvi
   only:
     - master
