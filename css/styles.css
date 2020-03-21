@@ -569,7 +569,8 @@ iframe {
 .aside__button {
   width: 100%;
   padding: 0;
-  line-height: 40px; }
+  line-height: 40px;
+  font-size: 15px; }
 
 .footer {
   padding-top: 220px;
