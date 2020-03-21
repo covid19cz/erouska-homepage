@@ -1,22 +1,20 @@
-// -------------------------------------
-// Sticky menu
-// -------------------------------------
+$(document).ready(function() {
+  // -------------------------------------
+  // Sticky menu
+  // -------------------------------------
 
-var $sticky = document.querySelector('.sticky');
-var stickyTop = $sticky.offsetTop;
+  var stickyTop = $('.js-sticky').offset().top;
+  console.log(stickyTop);
 
-console.log(stickyTop);
-console.log('aaaa');
-
-/*
-    $(window).scroll(function() {
-      var windowTop = $(window).scrollTop();
-      if (stickyTop < windowTop) {
-        $('.sticky').css('position', 'fixed');
-      } else {
-        $('.sticky').css('position', 'relative');
-      }
-    });
-    */
+  $(window).scroll(function() {
+    var windowTop = $(window).scrollTop();
+    console.log(windowTop);
+    if (stickyTop < windowTop) {
+      $('.js-sticky').addClass('fixed');
+    } else {
+      $('.js-sticky').removeClass('fixed');
+    }
+  });
+});
 
 //# sourceMappingURL=scripts.js.map

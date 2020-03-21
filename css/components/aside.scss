@@ -1,12 +1,20 @@
 .aside{
   width: 280px;
+
   position: absolute;
   top: 440px;
-  right: 0;
+  left: 50%;
+  margin-left: 320px;
   background: #E3F9FF;
   text-align: center;
   padding: 40px;
   border-radius: $radius;
+
+  &.fixed{
+    position: fixed;
+    top: 30px;
+  }
+
 }
 
 .aside__title{
