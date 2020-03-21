@@ -1,10 +1,10 @@
 .hero-wrapper{
-  background: orange;
+  position: relative;
+  //outline: 1px solid red;
 }
 
 .hero{
   max-width: 700px;
-  outline: 1px solid red;
   margin-bottom: 50px;
   padding-top: 120px;
 }
@@ -41,4 +41,40 @@
 
 .hero__actions{
   margin-top: 77px;
+}
+
+.hero__button{
+  margin-right: 40px;
+
+  &:last-child{
+    margin-right:  0;
+  }
+}
+
+
+.hero__phone{
+  width: 539px;
+  height: 727px;
+  position: absolute;
+  top: 64px;
+  right: -95px;
+}
+
+.hero__phone__screen{
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  width: 300px;
+  height: 560px;
+  background: pink;
+}
+
+
+.hero__phone__mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/phone2.png") no-repeat center center;
 }

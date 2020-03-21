@@ -1,6 +1,7 @@
 .section{
+  padding-top: 160px;
   margin-bottom: 50px;
-  outline: 1px solid red;
+  //outline: 1px solid red;
 }
 
 .section--narrow{
@@ -14,12 +15,11 @@
   font-weight: 700;
   line-height: 87px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 65px;
 }
 
 .section__item{
-  margin-bottom: 20px;
-  outline: 1px solid silver;
+  margin-bottom: 65px;
 
   h3{
     font-size: 20px;
@@ -30,8 +30,13 @@
   }
 
   p{
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 33px;
+
+    strong{
+      font-style: italic;
+    }
   }
 }
 

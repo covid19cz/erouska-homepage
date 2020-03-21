@@ -1,13 +1,22 @@
 .header{
   display: flex;
   flex-direction: row;
-  background: red;
+  //background: red;
   align-items: center;
   height: 150px;
 }
 
 .header__logo-wrapper{
   //flex: 1;
+}
+
+.header__logo{
+  display: flex;
+  flex-direction: row;
+
+  img{
+    margin-right: 25px;
+  }
 }
 
 .header__logo__title{
@@ -40,14 +49,22 @@
     color: $color_black;
 
     &:after{
+      opacity: 0;
       display: block;
       content: "";
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 1px;
+      height: 2px;
       background: $color_blue;
+      transition: opacity linear .5s;
+    }
+
+    &:hover{
+      &:after{
+        opacity: 1;
+      }
     }
   }
 }

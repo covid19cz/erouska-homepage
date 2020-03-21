@@ -2,8 +2,6 @@
 .button {
   display: inline-block;
 
-  padding: 12px 15px 10px 15px;
-
   color: $color_white;
   font: inherit; // pro sladění vzhledu buttonu a odkazu
   font-size: 16px;
@@ -21,4 +19,9 @@
   &:focus {
     background-color: $color_red;
   }
+}
+
+.button--primary{
+  line-height: 64px;
+  padding: 0 50px;
 }
