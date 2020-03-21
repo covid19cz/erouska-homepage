@@ -15,6 +15,19 @@ $(document).ready(function() {
       $('.js-sticky').removeClass('fixed');
     }
   });
+
+  $('.js-scrollto').click(function() {
+    var thisHref = $(this).attr('href');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(thisHref).offset().top
+      },
+      800
+    );
+
+    return false;
+  });
 });
 
 //# sourceMappingURL=scripts.js.map
