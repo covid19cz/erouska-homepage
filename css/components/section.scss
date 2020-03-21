@@ -1,4 +1,49 @@
-// základní blok obsahu
-.section {
-  padding: 10px 0;
+.section{
+  margin-bottom: 50px;
+  border: 1px solid red;
 }
+
+.section--narrow{
+  max-width: 700px;
+}
+
+.section__title{
+  font-family: $font_merriweather;
+  color: $color_blue;
+  font-size: 67px;
+  font-weight: 700;
+  line-height: 87px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section__item{
+  margin-bottom: 20px;
+  background: silver;
+
+  h3{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+}
+
+.section__item--blue{
+  h3{
+    color: $color_blue;
+  }
+}
+
+.section__item--red{
+  h3{
+    color: $color_red;
+  }
+}
+

@@ -1,8 +1,49 @@
-// hlavička
-.header {
-  padding: 10px 0;
+.header{
+  display: flex;
+  flex-direction: row;
+}
 
-  color: $color_white;
+.header__logo-wrapper{
+  //flex: 1;
+}
 
-  background-color: $color_main;
+.header__logo__title{
+  font-family: $font_merriweather;
+  font-weight: 26px;
+}
+
+.header__nav-wrapper{
+  flex: 1;
+}
+
+.header__nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+
+  li{
+    margin-left: 95px;
+  }
+
+  a{
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+    color: $color_black;
+
+    &:after{
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: $color_blue;
+    }
+  }
 }

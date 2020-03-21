@@ -17,15 +17,16 @@
   <meta property="og:image" itemprop="image" name="twitter:image" content="...">
   <meta property="og:description" itemprop="description" name="twitter:description" content="...">
 
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css" type="text/css">
   <script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
 
 </head>
 
 <body>
-  <header class="header" role="banner">
-    <div class="container">
-
+<div class="container-global">
+  <div class="container">
+    <header class="header" role="banner">
       <div class="header__logo-wrapper">
         <div class="header__logo">
           <img src="" />
@@ -41,20 +42,16 @@
           <li><a href="#kontakty">Kontakty</a></li>
         </ul>
       </nav>
-
-    </div>
-  </header> <!-- /header -->
-
-  <main class="main" role="main">
+    </header> <!-- /header -->
 
     <section class="hero" id="uvod">
       <div class="hero__content">
         <h2 class="hero__title"><span>Chraň sebe +</span> <br />chraň ostatní!</h2>
         <div class="hero__intro">
-          <p>Nechte aplikaci sbírat anonymní údaje o telefonech v blízkosti, aby pracovníci hygieny mohli snadněji dohledat potenciálně nakažené.</p>
+          <p>Nechte aplikaci sbírat <em>anonymní údaje</em> o telefonech v blízkosti, aby pracovníci hygieny mohli snadněji dohledat potenciálně nakažené.</p>
         </div>
         <div class="hero__urgent">
-          <p>Čím víc nás bude, tím lépe to bude fungovat.</p>
+          <p><em>Čím víc nás bude, tím lépe to bude fungovat.</em></p>
         </div>
         <div class="hero__actions">
           <a href="#" target="_blank" class="hero__button button button--primary">Stáhnout pro Android</a>
@@ -63,84 +60,75 @@
       </div>
     </section>  <!-- /hero -->
 
-    <section class="section properties" id="jak-to-funguje" >
-      <h2 class="section__title">Jak to funguje</h2>
-      <div class="section__content">
+    <main class="main" role="main">
 
-        <div class="section__item section__item--blue">
-          <h3><strong>Příklad:</strong> Zjistíte, že jste nakažení a je třeba dohledat Vaše kontakty</h3>
-          <p>Představte si, že jste nakažení koronavirem a nevíte o tom. Když se u vás nemoc projeví, pracovníci hygienické stanice po vás budou chtít seznam všech lidí, se kterými jste v posledním týdnu přišli do užšího styku. Takže, jak se jmenoval číšník v restauraci, kde jste minulý čtvrtek obědvali?</p>
+      <section class="section section--narrow properties" id="jak-to-funguje" >
+        <h2 class="section__title">Jak to funguje</h2>
+        <div class="section__content">
+
+          <div class="section__item section__item--blue">
+            <h3><strong>Příklad:</strong> Zjistíte, že jste nakažení a je třeba dohledat Vaše kontakty</h3>
+            <p>Představte si, že jste nakažení koronavirem a nevíte o tom. Když se u vás nemoc projeví, pracovníci hygienické stanice po vás budou chtít seznam všech lidí, se kterými jste v posledním týdnu přišli do užšího styku. Takže, jak se jmenoval číšník v restauraci, kde jste minulý čtvrtek obědvali?</p>
+          </div>
+
+          <div class="section__item section__item--blue">
+            <h3><strong>Příklad:</strong> Někdo nakažený se vyskytl ve Vaší blízkosti</h3>
+            <p>V nedávné minulosti jste potkal někoho, kdo vypadal zdravě, ale koronovirem vás možná nakazil. V tom případě byste uvítal, kdybyste se o své potenciální nemoci dozvěděli co nejdříve. Ale těžko můžete čekat, že vám zavolá spolucestující z vlaku, když vás osobně nezná.</p>
+          </div>
+
+          <div class="section__item section__item--red">
+            <h3><strong>Řešení:</strong> Aplikace Mobilní rouška</h3>
+            <p>Jde to i jednodušeji a hygienická stanice může potenciální nakažené dohledat daleko rychleji. Aplikaci Mobilní rouška si jednoduše nainstalujete, necháte běžet na pozadí se zapnutým Bluetooth a ona sbírá anonymizované informace o mobilech ve vašem okolí, které tuto aplikaci také mají.</p>
+            <p>Pouze v případě, kdy jeden z uživatelů aplikace onemocní koronavirem, hygienická stanice kontaktuje vybrané majitele telefonů, aby se nechali otestovat. Aplikace uchovává data po dobu jednoho měsíce.</p>
+          </div>
+
         </div>
+      </section>  <!-- /properties -->
 
-        <div class="section__item section__item--blue">
-          <h3><strong>Příklad:</strong> Někdo nakažený se vyskytl ve Vaší blízkosti</h3>
-          <p>V nedávné minulosti jste potkal někoho, kdo vypadal zdravě, ale koronovirem vás možná nakazil. V tom případě byste uvítal, kdybyste se o své potenciální nemoci dozvěděli co nejdříve. Ale těžko můžete čekat, že vám zavolá spolucestující z vlaku, když vás osobně nezná.</p>
+      <section class="section section--narrow faqs" id="caste-dotazy">
+        <h2 class="section__title">Časté dotazy</h2>
+        <div class="section__content">
+
+          <div class="section__item section__item--blue">
+            <h3>Jak aplikace přesně funguje?</h3>
+            <p>Aplikace pomocí Bluetooth sbírá pseudoanonymní identifkátory aplikace jiných zařízení. V aplikaci je uložena informace typu: 21.3. od 12.15 - 16.31 byla ve vaší přítomnosti aplikace ID 29091. I když by váš telefon nikdo ukradl, získá jen přehled ID a časových intervalů, nedokáže je spárovat s konkrétními uživateli. ID jsou uložena lokálně u uživatele, telefonní čísla jsou uložená v databázi provozovatele.</p>
+          </div>
+
+          <div class="section__item section__item--red">
+            <h3>Odesílá aplikace data sama od sebe?</h3>
+            <p><strong>Ne</strong>, aplikace jen sbírá data, která zůstávají lokálně, v telefonu.</p>
+          </div>
+
+          <div class="section__item section__item--red">
+            <h3>Kdo má k datům přístup?</h3>
+            <p><strong>Jen vy</strong>. V případě, že jste nemocný a rozhodnete se svá data sdílet, aby mohli pracovníci hygienické stanice kontaktovat ty, které jste potenciálně nakazil, je můžete z aplikace sám odeslat.</p>
+          </div>
+
+          <div class="section__item section__item--blue">
+            <h3>Jak probíhá proces využívání dat?</h3>
+            <p>Potvrzený nemocný koronavirem je kontaktován hygienickou stanicí. Pracovník jej vyzve, aby prostřednictvím aplikace nasdílel svá data. Tato data pak pracovník hygieny spáruje s telefonními čísly a kontaktuje je s informací, že byli v přítomnosti nakaženého. Další postup je v rukou hygienické stanice.</p>
+          </div>
+
+          <div class="section__item section__item--blue">
+            <h3>Jak se data odesílají hygienické stanici?</h3>
+            <p>Hygienická stanice a její prověření pracovníci mají přístup k rozhraní, ve kterém mohou spárovat ID aplikace s telefonními čísly, které uživatelé zadali při registraci. Hygienici mají jen telefonní číslo, žádné další informace. Toto rozhraní je chráněno přístupovými kódy.</p>
+          </div>
+
+          <div class="section__item section__item--blue">
+            <h3>Kdo aplikaci provozuje?</h3>
+            <p>Aplikaci naprogramovali zaměstnanci několika českých firem sdružených pod platformou covid19cz a pod záštitou Ministersta zdravotnictví České republiky.</p>
+          </div>
+
+          <div class="section__item section__item--blue">
+            <h3>Má aplikace atesty a splňuje GDPR?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ullam, architecto. Voluptate dolorem modi, corporis omnis. Quaerat, magni ut fuga, quo sapiente iure deserunt! Beatae quod laborum magnam, ullam quia.</p>
+          </div>
+
         </div>
-
-        <div class="section__item section__item--red">
-          <h3><strong>Řešení:</strong> Aplikace Mobilní rouška</h3>
-          <p>Jde to i jednodušeji a hygienická stanice může potenciální nakažené dohledat daleko rychleji. Aplikaci Mobilní rouška si jednoduše nainstalujete, necháte běžet na pozadí se zapnutým Bluetooth a ona sbírá anonymizované informace o mobilech ve vašem okolí, které tuto aplikaci také mají.</p>
-          <p>Pouze v případě, kdy jeden z uživatelů aplikace onemocní koronavirem, hygienická stanice kontaktuje vybrané majitele telefonů, aby se nechali otestovat. Aplikace uchovává data po dobu jednoho měsíce.</p>
-        </div>
-
-      </div>
-    </section>  <!-- /properties -->
-
-    <section class="section faqs" id="caste-dotazy">
-      <h2 class="section__title">Časté dotazy</h2>
-      <div class="section__content">
-
-        <div class="section__item section__item--blue">
-          <h3>Jak aplikace přesně funguje?</h3>
-          <p>Aplikace pomocí Bluetooth sbírá pseudoanonymní identifkátory aplikace jiných zařízení. V aplikaci je uložena informace typu: 21.3. od 12.15 - 16.31 byla ve vaší přítomnosti aplikace ID 29091. I když by váš telefon nikdo ukradl, získá jen přehled ID a časových intervalů, nedokáže je spárovat s konkrétními uživateli. ID jsou uložena lokálně u uživatele, telefonní čísla jsou uložená v databázi provozovatele.</p>
-        </div>
-
-        <div class="section__item section__item--red">
-          <h3>Odesílá aplikace data sama od sebe?</h3>
-          <p><strong>Ne</strong>, aplikace jen sbírá data, která zůstávají lokálně, v telefonu.</p>
-        </div>
-
-        <div class="section__item section__item--red">
-          <h3>Kdo má k datům přístup?</h3>
-          <p><strong>Jen vy</strong>. V případě, že jste nemocný a rozhodnete se svá data sdílet, aby mohli pracovníci hygienické stanice kontaktovat ty, které jste potenciálně nakazil, je můžete z aplikace sám odeslat.</p>
-        </div>
-
-        <div class="section__item section__item--blue">
-          <h3>Jak probíhá proces využívání dat?</h3>
-          <p>Potvrzený nemocný koronavirem je kontaktován hygienickou stanicí. Pracovník jej vyzve, aby prostřednictvím aplikace nasdílel svá data. Tato data pak pracovník hygieny spáruje s telefonními čísly a kontaktuje je s informací, že byli v přítomnosti nakaženého. Další postup je v rukou hygienické stanice.</p>
-        </div>
-
-        <div class="section__item section__item--blue">
-          <h3>Jak se data odesílají hygienické stanici?</h3>
-          <p>Hygienická stanice a její prověření pracovníci mají přístup k rozhraní, ve kterém mohou spárovat ID aplikace s telefonními čísly, které uživatelé zadali při registraci. Hygienici mají jen telefonní číslo, žádné další informace. Toto rozhraní je chráněno přístupovými kódy.</p>
-        </div>
-
-        <div class="section__item section__item--blue">
-          <h3>Kdo aplikaci provozuje?</h3>
-          <p>Aplikaci naprogramovali zaměstnanci několika českých firem sdružených pod platformou covid19cz a pod záštitou Ministersta zdravotnictví České republiky.</p>
-        </div>
-
-        <div class="section__item section__item--blue">
-          <h3>Má aplikace atesty a splňuje GDPR?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ullam, architecto. Voluptate dolorem modi, corporis omnis. Quaerat, magni ut fuga, quo sapiente iure deserunt! Beatae quod laborum magnam, ullam quia.</p>
-        </div>
-
-      </div>
-    </section>  <!-- /faqs -->
-
-  </main>
-
-<script>
-  WebFontConfig = {
-    google: { families: [ 'Roboto:400,700:latin,latin-ext' ] }
-  };
-</script>
-<script src="/js/libs/webfont.js"></script>
-
-<script src="/js/libs/svg4everybody.min.js"></script>
-<script>svg4everybody();</script>
-
-<script src="/js/scripts.js"></script>
+      </section>  <!-- /faqs -->
+    </main>
+  </div>
+</div>
 
 </body>
 </html>

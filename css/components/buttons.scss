@@ -1,0 +1,24 @@
+// tlačítko
+.button {
+  display: inline-block;
+
+  padding: 12px 15px 10px 15px;
+
+  color: $color_white;
+  font: inherit; // pro sladění vzhledu buttonu a odkazu
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px; // pro sladění výšky tlačítka
+  text-decoration: none;
+
+  border: none;
+  border-radius: $radius_button;
+  background-color: $color_blue;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color_red;
+  }
+}

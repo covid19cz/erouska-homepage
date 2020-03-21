@@ -14,7 +14,7 @@ var settings = {
     components: ['css/base/**/*.scss', '!css/base/print.scss', '!css/base/variables.scss', 'css/components/**/*.scss']
   },
   js: {
-    source: ['js/libs/simple-lightbox.min.js', 'js/components/**/*.js', 'js/main.js'],
+    source: ['js/main.js'],
     target: 'js/',
     filename: 'scripts.js',
     watch: ['js/**/*.js', '!js/scripts.js'],
@@ -23,14 +23,6 @@ var settings = {
   img: {
     source: 'img/**/*.{gif,jpg,jpeg,png}',
     target: 'img'
-  },
-  icons: {
-    source: 'img/icons/**/*.svg',
-    target: 'img/',
-    filename: 'icons.svg',
-    style: '../css/icons/icons.scss',
-    preview: '../css/icons/icons.html',
-    prettycode: true
   }
 };
 
@@ -199,101 +191,8 @@ gulp.task('images', function() {
     .pipe(gulp.dest(settings.img.target))
 });
 
-// generování SVG sprite ikon
-gulp.task('svg-icons', function() {
-  return gulp.src(settings.icons.source)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(svgstore())
-    .pipe(through2.obj(function (file, encoding, cb) {
-
-      var $ = cheerio.load(file.contents.toString(), { xmlMode: true });
-
-      // odstraní fill atributy u souborů, které nemají v názvu color
-      $('symbol').not('[id*="color"]').find('*').removeAttr('fill');
-      // odstraní style tagy
-      $('[style]').removeAttr('style');
-
-      // vytáhneme si název, výšku a šířku
-      var data = $('svg > symbol').map(function() {
-        var $this = $(this);
-        var name = $this.attr('id');
-        var viewBox = $this.attr('viewBox').split(' ');
-
-        return {
-          name: name,
-          width: viewBox[2],
-          height: viewBox[3],
-        };
-      }).get();
-
-      // převedeme na SASS formát
-      var dataToStyles = "";
-      for (var i = 0; i < data.length; i++) {
-        dataToStyles = dataToStyles + '\n.icon--' + data[i].name + ' {' + '\n';
-          dataToStyles = dataToStyles + '  width: ' + data[i].width + 'px;\n\n';
-          dataToStyles = dataToStyles + '  &:before {' + '\n';
-          dataToStyles = dataToStyles + '    padding-top: (' + data[i].height + ' / ' + data[i].width + ') * 100%;' + '\n';
-          dataToStyles = dataToStyles + '  }' + '\n';
-        dataToStyles = dataToStyles + '}' + '\n';
-      }
-
-      // uložíme do soubou
-      var fileSASS = new Vinyl({
-        path: settings.icons.style,
-        contents: new Buffer.from(dataToStyles)
-      });
-
-      // vygenerujeme náhledový HTML soubor
-      var dataToPreview = "";
-      dataToPreview = dataToPreview + '<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><title>SVG preview</title><link rel="stylesheet" href="/css/styles.css"></head><body>' + '\n'
-      for (var i = 0; i < data.length; i++) {
-        dataToPreview = dataToPreview + '<div style="padding:5px;margin:5px;display:inline-block;border:1px dotted gray;">' + '\n'
-        dataToPreview = dataToPreview + '<span class="icon icon--' + data[i].name + '">' + '\n'
-        dataToPreview = dataToPreview + '  <svg class="icon__svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + '\n'
-        dataToPreview = dataToPreview + '    <use xlink:href="/img/icons.svg#' + data[i].name + '" x="0" y="0" width="100%" height="100%"></use>' + '\n'
-        dataToPreview = dataToPreview + '  </svg>' + '\n'
-        dataToPreview = dataToPreview + '</span>' + '\n'
-        dataToPreview = dataToPreview + '</div>' + '\n'
-      }
-      dataToPreview = dataToPreview + '</body>' + '\n'
-
-      // uložíme do soubou
-      var fileHTML = new Vinyl({
-        path: settings.icons.preview,
-        contents: new Buffer.from(dataToPreview)
-      });
-
-      file.contents = new Buffer.from($.xml());
-      this.push(fileSASS);
-      this.push(fileHTML);
-      this.push(file);
-      cb();
-
-    }))
-    .pipe(gulp.dest(settings.icons.target));
-})
-
-// optimalizace SVG sprite
-gulp.task('svg-optimize', ['svg-icons'], function() {
-  return gulp.src(settings.icons.target + settings.icons.filename, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(svgmin({
-        plugins: [
-          { removeUselessDefs: false },
-          { removeXMLProcInst: false },
-          { removeDoctype: false },
-          { removeTitle: false },
-          { cleanupIDs: false },
-          { removeViewBox: false }
-        ],
-        js2svg: { pretty: settings.icons.prettycode }
-    }))
-    .pipe(gulp.dest('./'));
-});
-
 // sledování změn souborů
 gulp.task('watch', ['browser-sync'], function () {
-  gulp.watch(settings.icons.source, ['svg-optimize']);
   gulp.watch(settings.css.watch, ['sass']);
   gulp.watch(settings.js.watch, ['concatjs', 'browsersync-reload']);
   gulp.watch(settings.browsersync.watch, ['browsersync-reload']);
@@ -302,7 +201,5 @@ gulp.task('watch', ['browser-sync'], function () {
 // aliasy tasků
   // úpravy před nahráním do produkce
   gulp.task('deploy', ['stylelint', 'jslint', 'images']);
-  // generování ikon + optimalizace
-  gulp.task('icons', ['svg-optimize']);
   // defaultni task
   gulp.task('default', ['watch']);

@@ -1,0 +1,20 @@
+.properties{
+
+  .section__item--blue{
+    h3{
+      color: $color_black;
+      strong{
+        color: $color_blue;
+      }
+    }
+  }
+
+  .section__item--red{
+    h3{
+      color: $color_black;
+      strong{
+        color: $color_red;
+      }
+    }
+  }
+}
