@@ -1,6 +1,6 @@
 .section{
   margin-bottom: 50px;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 .section--narrow{
@@ -19,7 +19,7 @@
 
 .section__item{
   margin-bottom: 20px;
-  background: silver;
+  outline: 1px solid silver;
 
   h3{
     font-size: 20px;

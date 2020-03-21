@@ -1,6 +1,12 @@
+.hero-wrapper{
+  background: orange;
+}
+
 .hero{
-  border: 1px solid red;
+  max-width: 700px;
+  outline: 1px solid red;
   margin-bottom: 50px;
+  padding-top: 120px;
 }
 
 .hero__title{
@@ -9,6 +15,8 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 87px;
+  margin: 0;
+  margin-bottom: 35px;
 
   span{
     color: $color_red;
@@ -25,8 +33,12 @@
 .hero__urgent{
   p{
     font-family: $font_merriweather;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 60px;
   }
+}
+
+.hero__actions{
+  margin-top: 77px;
 }
