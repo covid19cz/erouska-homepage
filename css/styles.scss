@@ -13,13 +13,14 @@
 @import "base/layout";
 // tlačítka
 @import "components/buttons";
-// hlavička
+
 @import "components/header";
-// obsahová část stránky
 @import "components/main";
 @import "components/hero";
 @import "components/section";
 @import "components/properties";
 @import "components/faqs";
+@import "components/footer";
+
 // pomocné třídy
 @import "base/helpers";

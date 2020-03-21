@@ -1,0 +1,27 @@
+.footer{
+  padding-top: 220px;
+  padding-bottom: 100px;
+}
+
+.footer__title{
+  font-family: $font_merriweather;
+  font-size: 67px;
+  font-weight: 700;
+  line-height: 80px;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer__actions{
+  margin-top: 80px;
+}
+
+.footer__button{
+  margin-right: 40px;
+
+  &:last-child{
+    margin-right:  0;
+  }
+}
+

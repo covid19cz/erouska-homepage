@@ -324,7 +324,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background: #fff url("../img/deco-top.svg") no-repeat center 0; }
+  background: url("../img/deco-top.svg") no-repeat center 0, url("../img/deco-bottom.svg") no-repeat center bottom; }
 
 @-ms-viewport {
   width: device-width; }
@@ -424,6 +424,9 @@ iframe {
       transition: opacity linear .5s; }
     .header__nav a:hover:after {
       opacity: 1; }
+
+.main {
+  padding-bottom: 100px; }
 
 .hero-wrapper {
   position: relative; }
@@ -532,6 +535,27 @@ iframe {
     color: #222222; }
     .properties .section__item--red h3 strong {
       color: #ff0d58; }
+
+.footer {
+  padding-top: 220px;
+  padding-bottom: 100px; }
+
+.footer__title {
+  font-family: "Merriweather", serif;
+  font-size: 67px;
+  font-weight: 700;
+  line-height: 80px;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.footer__actions {
+  margin-top: 80px; }
+
+.footer__button {
+  margin-right: 40px; }
+  .footer__button:last-child {
+    margin-right: 0; }
 
 .center {
   text-align: center; }
