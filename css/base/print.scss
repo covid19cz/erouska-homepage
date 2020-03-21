@@ -1,0 +1,56 @@
+// tiskový styl
+// resetujeme základní bloky a objekty, upravujeme podle potřeby
+
+@media print {
+
+  * {
+    font-family: sans-serif !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: auto !important;
+    height: auto !important;
+    padding: inherit !important;
+    margin: inherit !important;
+    max-width: none !important;
+    position: relative !important;
+    min-height: 1px !important;
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+  }
+  body {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height: 1.4 !important;
+    word-spacing: 1.1pt !important;
+    letter-spacing: 0.2pt !important;
+    font-family: sans-serif !important;
+    color: #000000 !important;
+    background: none !important;
+    font-size: 12pt !important;
+  }
+  h1, h2, h3, h4 { clear: both !important; margin: 10px 0 !important; }
+  h1 { font-size: 19pt !important; }
+  h2 { font-size: 17pt !important; }
+  h3 { font-size: 15pt !important; }
+  h4 { font-size: 12pt !important; }
+  img { margin: 1em 1.5em 1.5em 0em !important; }
+  ul, ol { padding-left: 20px !important; list-style-type: inherit !important; }
+  li { padding: inherit !important; padding-left: 10px !important; }
+  a img { border: none !important; }
+  a, a:link, a:visited, a:hover, a:active, a:focus { text-decoration: none !important; color:#000000 !important; }
+  table { margin: 1px !important; text-align:left !important; }
+  th { border-bottom: 1px solid #000000 !important;  font-weight: bold !important; }
+  td { border-bottom: 1px solid #000000 !important; }
+  th, td { padding: 4px 10px 4px 0px !important; }
+  tr { page-break-inside: avoid !important; }
+
+  // skrytí nepotřebných částí
+  .no, object, .noprint, nav, .nav, iframe, form, .form, button, .button { display: none !important; }
+
+}

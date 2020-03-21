@@ -1,0 +1,29 @@
+// chybové hlášky
+.alert {
+  margin: 10px 0;
+  padding: 12px 15px 1px 15px;
+
+  color: $color_white;
+
+  border-radius: $radius;
+  background-color: $color_main;
+
+  @media (min-width: $mqsm) {
+    padding: 17px 20px 1px 20px;
+  }
+}
+
+// potvrzující hláška
+.alert--success {
+  background-color: $color_success;
+}
+
+// informační hláška
+.alert--info {
+  background-color: $color_info;
+}
+
+// výstražná hláška
+.alert--danger {
+  background-color: $color_danger;
+}

@@ -1,0 +1,17 @@
+RewriteEngine on
+
+#RewriteCond %{HTTP_HOST} ^xxx\.xx
+#RewriteRule (.*) http://www.xxx.xx/$1 [R=301,L]
+
+<IfModule mod_deflate.c>
+<FilesMatch "\.(js|css|html|htm|eot|svg|ttf|xml|php)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+<FilesMatch "\.(jpg|jpeg|png|gif|svg|js|css|eot|ttf|woff)$">
+ExpiresDefault "access plus 1 month"
+</FilesMatch>
+</IfModule>

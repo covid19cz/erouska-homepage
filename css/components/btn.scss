@@ -1,0 +1,58 @@
+// tlačítko
+.btn,
+a.btn {
+  display: inline-block;
+
+  padding: 12px 15px 10px 15px;
+
+  color: $color_white;
+  font: inherit; // pro sladění vzhledu buttonu a odkazu
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px; // pro sladění výšky tlačítka
+  text-decoration: none;
+
+  border: none;
+  border-radius: $radius_button;
+  background-color: $color_main;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color_main_dark;
+  }
+}
+
+// info tlačítko
+.btn--info,
+a.btn--info {
+  background-color: $color_info;
+
+  &:hover,
+  &:focus {
+    background-color: darken( $color_info, 10% );
+  }
+}
+
+// potvrzující tlačítko
+.btn--success,
+a.btn--success {
+  background-color: $color_success;
+
+  &:hover,
+  &:focus {
+    background-color: darken( $color_success, 10% );
+  }
+}
+
+// chybové tlačítko
+.btn--danger,
+a.btn--danger {
+  background-color: $color_danger;
+
+  &:hover,
+  &:focus {
+    background-color: darken( $color_danger, 10% );
+  }
+}

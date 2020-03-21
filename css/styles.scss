@@ -1,0 +1,48 @@
+// nastavení a proměnné
+@import "base/variables";
+
+// externí knihovny
+  // normalize ( https://necolas.github.io/normalize.css/ )
+  @import "libs/normalize";
+  // lightbox ( https://github.com/andreknieriem/simplelightbox )
+  @import "libs/simplelightbox";
+
+// základní nastavení a vlastnosti
+  // základní nastavení dokumentu
+  @import "base/base";
+  // layout, mřížka
+  @import "base/layout";
+  // webové fonty
+  @import "base/fonts";
+  // základní definice typografie
+  @import "base/typography";
+  // základní definice formulářů
+  @import "base/form";
+  // SVG ikony
+  @import "icons/icon.scss";
+
+// hlavní komponenty
+  // hlavička
+  @import "components/header";
+  // navigace
+  @import "components/nav";
+  // obsahová část stránky
+  @import "components/section";
+  // patička
+  @import "components/footer";
+
+// dílčí komponenty
+  // chybové hlášky
+  @import "components/alert";
+  // tlačítka
+  @import "components/btn";
+  // odrážky
+  @import "components/list";
+  // tabulka
+  @import "components/table";
+
+// pomocné třídy
+@import "base/helpers";
+
+// tisková verze
+@import "base/print";

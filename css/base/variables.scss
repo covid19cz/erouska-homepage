@@ -1,0 +1,56 @@
+// barvy
+
+  // základní barvy
+  $color_white: #fff;
+  $color_black: #000;
+
+  // šedá barva
+  $color_gray: #707070;
+  $color_gray_dark: #333;
+  $color_gray_light: #f0f0f0;
+
+  // hlavní barvy projektu
+  $color_main: #84a4b1;
+  $color_main_dark: darken( $color_main, 10% );
+  $color_main_light: lighten( $color_main, 10% );
+
+  // sekundární barvy projektu
+  $color_secondary: #d9534f;
+  $color_secondary_dark: darken( $color_secondary, 10% );
+  $color_secondary_light: lighten( $color_secondary, 10% );
+
+  // barvy pro chybové hlášky
+  $color_success: #5cb85c;
+  $color_info: $color_main;
+  $color_danger: #d9534f;
+
+  // lightbox
+  $sl-overlay-background: $color_main;
+  $sl-overlay-opacity: 0.9;
+  $sl-navigation-color: $color_white;
+
+// zakulacené rohy
+$radius: 4px;
+$radius_button: 6px;
+
+// layout
+$layout_gap: 10px;
+
+// breakpointy
+
+  // základní převzaty z Bootstrap Gridu
+  $mqxs: 576px;     // small
+  $mqsm: 768px;     // medium
+  $mqmd: 992px;     // large
+  $mqlg: 1200px;    // extra large
+  // rozšířené
+  $mqxxs: 419px;    // extra small
+  $mqxlg: 1380px;   // max large
+  $mq_menu: 860px;  // respo menu
+  $mq_modal: 700px; // modal okno
+
+// z-index
+$index_base: 1;
+$index_page: 10;
+$index_menu: 100;
+$index_modal: 1000;

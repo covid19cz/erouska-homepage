@@ -1,0 +1,104 @@
+
+.icon--arrow-down {
+  width: 50px;
+
+  &:before {
+    padding-top: (25 / 50) * 100%;
+  }
+}
+
+.icon--arrow-left {
+  width: 25px;
+
+  &:before {
+    padding-top: (50 / 25) * 100%;
+  }
+}
+
+.icon--arrow-right {
+  width: 25px;
+
+  &:before {
+    padding-top: (50 / 25) * 100%;
+  }
+}
+
+.icon--arrow-up {
+  width: 50px;
+
+  &:before {
+    padding-top: (25 / 50) * 100%;
+  }
+}
+
+.icon--close {
+  width: 50px;
+
+  &:before {
+    padding-top: (50 / 50) * 100%;
+  }
+}
+
+.icon--color-graph {
+  width: 50px;
+
+  &:before {
+    padding-top: (50 / 50) * 100%;
+  }
+}
+
+.icon--color-pacman {
+  width: 50px;
+
+  &:before {
+    padding-top: (50 / 50) * 100%;
+  }
+}
+
+.icon--color-vlajka {
+  width: 50px;
+
+  &:before {
+    padding-top: (30 / 50) * 100%;
+  }
+}
+
+.icon--email {
+  width: 50px;
+
+  &:before {
+    padding-top: (38 / 50) * 100%;
+  }
+}
+
+.icon--error {
+  width: 50px;
+
+  &:before {
+    padding-top: (50 / 50) * 100%;
+  }
+}
+
+.icon--phone {
+  width: 35px;
+
+  &:before {
+    padding-top: (50 / 35) * 100%;
+  }
+}
+
+.icon--success {
+  width: 50px;
+
+  &:before {
+    padding-top: (50 / 50) * 100%;
+  }
+}
+
+.icon--warn {
+  width: 50px;
+
+  &:before {
+    padding-top: (50 / 50) * 100%;
+  }
+}

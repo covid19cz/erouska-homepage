@@ -1,0 +1,19 @@
+// webové fonty, nastaví se až po načtení
+// font "Roboto" from https://fonts.google.com/
+// regular font-weight: 400;
+// bold font-weight: 700;
+.wf-active body,
+.wf-active input,
+.wf-active textarea,
+.wf-active select {
+  font-family: Roboto, sans-serif;
+
+  // tisková verze
+  @media print {
+    font-family: sans-serif;
+  }
+}
+
+.wf-active strong {
+  font-weight: 700;
+}

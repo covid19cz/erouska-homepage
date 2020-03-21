@@ -1,0 +1,54 @@
+
+// základní vzhled input polí
+input,
+textarea,
+select {
+  padding: 7px 10px;
+
+  color: $color_black;
+  font-size: 16px;
+  line-height: 16px; // pro sladění výšky
+
+  border: 1px solid $color_main;
+  border-radius: $radius;
+  background-color: $color_white;
+
+  &:focus {
+    border-color: $color_main_dark;
+    outline: 0;
+  }
+
+  &.is-success {
+    border-color: $color_success;
+  }
+
+  &.is-danger {
+    border-color: $color_danger;
+  }
+}
+
+// úpravy pro textarea
+textarea {
+  line-height: 1.4; // čitelnější rozestupy mezi řádky
+}
+
+// popisek pole
+label {
+  display: inline-block;
+
+  font-weight: 700;
+}
+
+// ošetření submit inputu, pokud je použit
+button,
+input[type='submit'] {
+  width: auto;
+
+  cursor: pointer;
+}
+
+// ošetření chekboxu a radio buttonu
+input[type='checkbox'],
+input[type='radio'] {
+  width: auto;
+}

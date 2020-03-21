@@ -1,0 +1,29 @@
+// odrážky
+.list {
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  li {
+    position: relative;
+
+    padding: 3px 3px 3px 18px;
+
+    &:before {
+      content: '';
+
+      position: absolute;
+      top: 11px;
+      left: 4px;
+
+      display: block;
+
+      width: 6px;
+      height: 6px;
+
+      border-radius: 3px;
+      background-color: $color_main;
+    }
+  }
+}

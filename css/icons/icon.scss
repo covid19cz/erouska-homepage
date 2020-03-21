@@ -1,0 +1,27 @@
+// SVG ikony
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: $color_main;
+
+  &:before {
+    content: '';
+    display: block;
+  }
+}
+
+// vnitřní box s ikonou
+.icon__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+// propojení jednotlivých ikon
+@import "icons/icons.scss";
