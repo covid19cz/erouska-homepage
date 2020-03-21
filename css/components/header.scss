@@ -11,17 +11,12 @@
 }
 
 .header__logo{
-  display: flex;
-  flex-direction: row;
-
-  img{
-    margin-right: 25px;
-  }
 }
 
 .header__logo__title{
   font-family: $font_merriweather;
   font-size: 26px;
+  font-weight: 500;
 }
 
 .header__nav-wrapper{
