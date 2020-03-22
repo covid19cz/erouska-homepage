@@ -4,9 +4,16 @@
 }
 
 .hero{
-  max-width: 700px;
-  margin-bottom: 50px;
-  padding-top: 120px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+
+  @include respond-to('large'){
+    max-width: 700px;
+    padding-top: 120px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
 }
 
 .hero__title{
@@ -46,6 +53,11 @@
   margin: 0;
   margin-top: 80px;
   flex-direction: row;
+  justify-content: center;
+
+  @include respond-to('large'){
+    justify-content: flex-start;
+  }
 
   li{
     margin-right: 40px;
@@ -57,11 +69,16 @@
 }
 
 .hero__example{
-  width: 540px;
+  width: 100%;
   height: 720px;
-  position: absolute;
-  top: 64px;
-  right: -95px;
+  position: relative;
+
+  @include respond-to('large'){
+    width: 540px;
+    position: absolute;
+    top: 64px;
+    right: -95px;
+  }
 }
 
 .hero__example__phone{
@@ -100,8 +117,9 @@
   width: 540px;
   height: 306px;
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
+  transform: translateX(-50%);
   background: url("../img/deco-mask.png") no-repeat center center;
 }
 

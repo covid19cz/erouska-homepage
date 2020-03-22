@@ -11,6 +11,11 @@
   font-style: italic;
   margin: 0;
   margin-bottom: 20px;
+  text-align: center;
+
+  @include respond-to('large'){
+    text-align: left;
+  }
 }
 
 .footer__actions{
@@ -20,6 +25,11 @@
   margin: 0;
   margin-top: 80px;
   flex-direction: row;
+  justify-content: center;
+
+  @include respond-to('large'){
+    justify-content: flex-start;
+  }
 
   li{
     margin-right: 40px;

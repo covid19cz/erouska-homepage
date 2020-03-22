@@ -5,7 +5,11 @@
 }
 
 .container{
-  max-width: 1200px;
-  margin: 0 auto;
-  //outline: 1px solid silver;
+  padding: 0 40px;
+
+  @include respond-to('large'){
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

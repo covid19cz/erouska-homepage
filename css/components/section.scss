@@ -1,7 +1,11 @@
 .section{
-  padding-top: 140px;
-  margin-bottom: 50px;
-  //outline: 1px solid red;
+  padding-top: 35px;
+  margin-bottom: 25px;
+
+  @include respond-to('large'){
+    padding-top: 140px;
+    margin-bottom: 50px;
+  }
 }
 
 .section--narrow{
@@ -20,6 +24,11 @@
   margin: 0;
   margin-bottom: 65px;
   padding-top: 20px;
+  text-align: center;
+
+  @include respond-to('large'){
+    text-align: left;
+  }
 }
 
 .section__item{

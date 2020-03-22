@@ -1,5 +1,8 @@
 .properties{
-  padding-top: 285px;
+
+  @include respond-to('large'){
+    padding-top: 285px;
+  }
 
   .section__item--blue{
     h3{
