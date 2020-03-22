@@ -3,8 +3,13 @@
   //background: red;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
 
   height: 150px;
+
+  @include respond-to('medium') {
+    justify-content: flex-end;
+  }
 }
 
 .header__logo-wrapper {
