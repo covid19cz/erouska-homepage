@@ -13,24 +13,3 @@ $font_opensans: 'Open Sans', sans-serif;
 // zakulacené rohy
 $radius: 6px;
 $radius_button: 6px;
-
-// layout
-$layout_gap: 10px;
-
-// breakpointy
-  // základní převzaty z Bootstrap Gridu
-  $mqxs: 576px;     // small
-  $mqsm: 768px;     // medium
-  $mqmd: 992px;     // large
-  $mqlg: 1200px;    // extra large
-  // rozšířené
-  $mqxxs: 419px;    // extra small
-  $mqxlg: 1380px;   // max large
-  $mq_menu: 860px;  // respo menu
-  $mq_modal: 700px; // modal okno
-
-// z-index
-$index_base: 1;
-$index_page: 10;
-$index_menu: 100;
-$index_modal: 1000;

@@ -4,6 +4,10 @@
 // normalize ( https://necolas.github.io/normalize.css/ )
 @import "libs/normalize";
 
+// responsive
+@import "base/display";
+@import "base/responsive";
+
 // základní nastavení dokumentu
 @import "base/base";
 // webové fonty
