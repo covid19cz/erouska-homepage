@@ -31,17 +31,25 @@
   margin: 0;
 
   li{
-    margin-left: 95px;
+    margin-left: 25px;
+
+    @include respond-to('xlarge'){
+      margin-left: 95px;
+    }
   }
 
   a{
     display: block;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 40px;
     text-decoration: none;
     color: $color_black;
+
+    @include respond-to('large'){
+      font-size: 16px;
+    }
 
     &:after{
       opacity: 0;

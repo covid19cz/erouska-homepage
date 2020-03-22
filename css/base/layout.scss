@@ -7,7 +7,7 @@
 .container{
   padding: 0 40px;
 
-  @include respond-to('large'){
+  @include respond-to('xlarge'){
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;

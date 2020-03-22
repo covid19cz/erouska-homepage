@@ -5,16 +5,17 @@
 
 .footer__title{
   font-family: $font_merriweather;
-  font-size: 67px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 1.4em;
   font-style: italic;
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
 
-  @include respond-to('large'){
+  @include respond-to('xlarge'){
     text-align: left;
+    font-size: 67px;
   }
 }
 
@@ -23,12 +24,13 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 40px;
   flex-direction: row;
   justify-content: center;
 
-  @include respond-to('large'){
+  @include respond-to('xlarge'){
     justify-content: flex-start;
+    margin-top: 80px;
   }
 
   li{

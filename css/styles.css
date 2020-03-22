@@ -487,7 +487,7 @@ iframe {
 
 .container {
   padding: 0 40px; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -533,15 +533,21 @@ iframe {
   list-style: none;
   margin: 0; }
   .header__nav li {
-    margin-left: 95px; }
+    margin-left: 25px; }
+    @media (min-width: 1200px) {
+      .header__nav li {
+        margin-left: 95px; } }
   .header__nav a {
     display: block;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 40px;
     text-decoration: none;
     color: #222222; }
+    @media (min-width: 992px) {
+      .header__nav a {
+        font-size: 16px; } }
     .header__nav a:after {
       opacity: 0;
       display: block;
@@ -568,7 +574,7 @@ iframe {
   padding-top: 50px;
   margin-bottom: 100px;
   text-align: center; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .hero {
       max-width: 700px;
       padding-top: 120px;
@@ -586,27 +592,39 @@ iframe {
   .hero__title span {
     color: #ff0d58; }
 
-.hero__intro p {
-  font-size: 24px;
-  line-height: 40px; }
+.hero__intro {
+  max-width: 80%;
+  margin: 0 auto; }
+  @media (min-width: 992px) {
+    .hero__intro {
+      margin: 0;
+      max-width: 100%; } }
+  .hero__intro p {
+    font-size: 18px;
+    line-height: 1.8em; }
+    @media (min-width: 1200px) {
+      .hero__intro p {
+        font-size: 24px; } }
 
-.hero__urgent p {
-  font-family: "Merriweather", serif;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 60px; }
+.hero__urgent {
+  margin-top: 40px; }
+  .hero__urgent p {
+    font-family: "Merriweather", serif;
+    font-size: 22px;
+    font-weight: 700; }
 
 .hero__actions {
   list-style-type: none;
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 60px;
   flex-direction: row;
   justify-content: center; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .hero__actions {
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-top: 80px; } }
   .hero__actions li {
     margin-right: 40px; }
     .hero__actions li:last-child {
@@ -616,7 +634,7 @@ iframe {
   width: 100%;
   height: 720px;
   position: relative; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .hero__example {
       width: 540px;
       position: absolute;
@@ -680,14 +698,14 @@ iframe {
 }
 */
 .section {
-  padding-top: 35px;
+  padding-top: 25px;
   margin-bottom: 25px; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .section {
       padding-top: 140px;
       margin-bottom: 50px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .section--narrow {
     max-width: 700px; } }
 
@@ -699,11 +717,12 @@ iframe {
   line-height: 87px;
   margin: 0;
   margin-bottom: 65px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: center; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .section__title {
-      text-align: left; } }
+      text-align: left;
+      padding-top: 20px; } }
 
 .section__item {
   margin-bottom: 65px; }
@@ -726,7 +745,7 @@ iframe {
 .section__item--red h3 {
   color: #ff0d58; }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .properties {
     padding-top: 285px; } }
 
@@ -781,28 +800,30 @@ iframe {
 
 .footer__title {
   font-family: "Merriweather", serif;
-  font-size: 67px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 1.4em;
   font-style: italic;
   margin: 0;
   margin-bottom: 20px;
   text-align: center; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .footer__title {
-      text-align: left; } }
+      text-align: left;
+      font-size: 67px; } }
 
 .footer__actions {
   list-style-type: none;
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 40px;
   flex-direction: row;
   justify-content: center; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .footer__actions {
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-top: 80px; } }
   .footer__actions li {
     margin-right: 40px; }
     .footer__actions li:last-child {
