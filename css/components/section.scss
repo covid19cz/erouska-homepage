@@ -1,67 +1,85 @@
-.section{
-  padding-top: 25px;
+.section {
   margin-bottom: 25px;
+  padding-top: 25px;
 
-  @include respond-to('xlarge'){
-    padding-top: 140px;
+  @include respond-to('xlarge') {
     margin-bottom: 50px;
+    padding-top: 140px;
   }
 }
 
-.section--narrow{
-  @include respond-to('xlarge'){
+.section--narrow {
+  @include respond-to('xlarge') {
     max-width: 700px;
   }
-
 }
 
-.section__title{
-  font-family: $font_merriweather;
-  color: $color_blue;
-  font-size: 67px;
-  font-weight: 700;
-  line-height: 87px;
+.section__title {
   margin: 0;
-  margin-bottom: 65px;
+  margin-bottom: 40px;
   padding-top: 40px;
-  text-align: center;
 
-  @include respond-to('xlarge'){
-    text-align: left;
+  color: $color_blue;
+  font-family: $font_merriweather;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+
+  @include respond-to('medium') {
+    margin-bottom: 65px;
+
+    font-size: 67px;
+  }
+  @include respond-to('xlarge') {
     padding-top: 20px;
+
+    text-align: left;
   }
 }
 
-.section__item{
-  margin-bottom: 65px;
+.section__item {
+  margin-bottom: 30px;
 
-  h3{
-    font-size: 20px;
-    line-height: 34px;
-    font-weight: 700;
+  @include respond-to('medium') {
+    margin-bottom: 65px;
+  }
+
+  h3 {
     margin: 0;
     margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7em;
+
+    @include respond-to('medium') {
+      font-size: 20px;
+    }
   }
 
-  p{
-    font-size: 20px;
+  p {
+    font-size: 16px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 1.7em;
 
-    strong{
+    @include respond-to('medium') {
+      font-size: 20px;
+    }
+
+    strong {
       font-style: italic;
     }
   }
 }
 
-.section__item--blue{
-  h3{
+.section__item--blue {
+  h3 {
     color: $color_blue;
   }
 }
 
-.section__item--red{
-  h3{
+.section__item--red {
+  h3 {
     color: $color_red;
   }
 }

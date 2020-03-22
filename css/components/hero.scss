@@ -1,140 +1,176 @@
-.hero-wrapper{
+.hero-wrapper {
   position: relative;
   //outline: 1px solid red;
 }
 
-.hero{
-  padding-top: 50px;
-  margin-bottom: 100px;
+.hero {
+  margin-bottom: 50px;
+
   text-align: center;
 
-  @include respond-to('xlarge'){
+  @include respond-to('medium') {
+    margin-bottom: 100px;
+    padding-top: 50px;
+  }
+  @include respond-to('xlarge') {
     max-width: 700px;
-    padding-top: 120px;
     margin-bottom: 50px;
+    padding-top: 120px;
+
     text-align: left;
   }
 }
 
-.hero__title{
-  font-family: $font_merriweather;
-  color: $color_blue;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 87px;
+.hero__title {
   margin: 0;
   margin-bottom: 35px;
 
-  span{
+  color: $color_blue;
+  font-family: $font_merriweather;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3em;
+
+  @include respond-to('medium') {
+    font-size: 70px;
+  }
+
+  span {
     color: $color_red;
   }
 }
 
-.hero__intro{
-  max-width: 80%;
+.hero__intro {
+  max-width: 90%;
   margin: 0 auto;
 
-  @include respond-to('large'){
-    margin: 0;
+  @include respond-to('large') {
     max-width: 100%;
+    margin: 0;
   }
 
-  p{
-    font-size: 18px;
+  p {
+    font-size: 16px;
     line-height: 1.8em;
 
-    @include respond-to('xlarge'){
+    @include respond-to('medium') {
+      font-size: 18px;
+    }
+    @include respond-to('xlarge') {
       font-size: 24px;
     }
   }
 }
 
-.hero__urgent{
+.hero__urgent {
   margin-top: 40px;
 
-  p{
+  p {
     font-family: $font_merriweather;
     font-size: 22px;
     font-weight: 700;
+    line-height: 1.5em;
   }
 }
 
-.hero__actions{
-  list-style-type: none;
+.hero__actions {
   display: flex;
-  padding: 0;
-  margin: 0;
-  margin-top: 60px;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 
-  @include respond-to('xlarge'){
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+
+  list-style-type: none;
+
+  @include respond-to('medium') {
+    flex-direction: row;
+  }
+  @include respond-to('xlarge') {
     justify-content: flex-start;
+
     margin-top: 80px;
   }
 
-  li{
-    margin-right: 40px;
+  li {
+    margin-bottom: 20px;
 
-    &:last-child{
-      margin-right:  0;
+    @include respond-to('medium') {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
     }
   }
 }
 
-.hero__example{
-  width: 100%;
-  height: 720px;
+.hero__example {
   position: relative;
 
-  @include respond-to('xlarge'){
-    width: 540px;
+  width: 100%;
+  height: 720px;
+
+  @include respond-to('xlarge') {
     position: absolute;
     top: 64px;
     right: -95px;
+
+    width: 540px;
   }
 }
 
-.hero__example__phone{
+.hero__example__phone {
+  position: relative;
+
   width: 363px;
   height: 720px;
   margin: 0 auto;
-  position: relative;
 }
 
-.hero__example__phone__screen{
+.hero__example__phone__screen {
+  position: absolute;
+  top: 28px;
+  left: 29px;
+
   width: 300px;
   width: 82.6446280992%;
   height: 660px;
   height: 91.6666666667%;
-  position: absolute;
-  left: 29px;
-  top: 28px;
-  background: pink;
+
   border-radius: 10px;
+  background: pink;
   //z-index: 55;
 }
 
-.hero__example__phone__frame{
+.hero__example__phone__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+
   background: pink;
-  background: url("../img/phone-frame.png") no-repeat center center;
+  background: url('../img/phone-frame.png') no-repeat center center;
   background-size: cover;
 }
 
-.hero__example__mask{
+.hero__example__mask {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   //display: none;
+
   width: 540px;
   height: 306px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
+
+  background: url('../img/deco-mask.png') no-repeat center center;
+
   transform: translateX(-50%);
-  background: url("../img/deco-mask.png") no-repeat center center;
 }
 
 /*

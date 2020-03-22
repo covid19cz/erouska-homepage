@@ -1,12 +1,13 @@
 // tlačítko
 .button {
-  display: inline-block;
+  display: block;
 
   color: $color_white;
   font: inherit; // pro sladění vzhledu buttonu a odkazu
   font-size: 16px;
   font-weight: 700;
   line-height: 16px; // pro sladění výšky tlačítka
+  text-align: center;
   text-decoration: none;
 
   border: none;
@@ -15,13 +16,18 @@
 
   cursor: pointer;
 
+  @include respond-to('medium') {
+    display: inline-block;
+  }
+
   &:hover,
   &:focus {
     background-color: $color_blue_dark;
   }
 }
 
-.button--primary{
-  line-height: 64px;
+.button--primary {
   padding: 0 50px;
+
+  line-height: 64px;
 }

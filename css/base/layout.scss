@@ -1,13 +1,16 @@
-.container-global{
+.container-global {
   max-width: 1920px;
   margin: 0 auto;
   //outline: 1px solid silver;
 }
 
-.container{
-  padding: 0 40px;
+.container {
+  padding: 0 20px;
 
-  @include respond-to('xlarge'){
+  @include respond-to('medium') {
+    padding: 0 40px;
+  }
+  @include respond-to('xlarge') {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;

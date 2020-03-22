@@ -1,7 +1,9 @@
-.main{
-  //background: yellow;
-  //outline: 1px solid red;
-  padding-bottom: 100px;
+.main {
   position: relative;
-  overflow: auto
+
+  overflow: auto;
+
+  @include respond-to('xlarge') {
+    padding-bottom: 100px;
+  }
 }

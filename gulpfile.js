@@ -112,7 +112,7 @@ gulp.task('makecss', ['csscomb'], function() {
   return gulp.src(settings.css.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
-    .pipe(sass({ style: 'expanded' }))
+    .pipe(sass({ style: 'compressed' }))
     .pipe(postcss(postcssPlugins))
     .pipe(rename(settings.css.filename))
     .pipe(sourcemaps.write('.'))
@@ -193,13 +193,13 @@ gulp.task('images', function() {
 
 // sledování změn souborů
 gulp.task('watch', ['browser-sync'], function () {
-  gulp.watch(settings.css.watch, ['sass']);
+  gulp.watch(settings.css.watch, ['makecss']);
   gulp.watch(settings.js.watch, ['concatjs', 'browsersync-reload']);
   gulp.watch(settings.browsersync.watch, ['browsersync-reload']);
 });
 
 // aliasy tasků
   // úpravy před nahráním do produkce
-  gulp.task('deploy', ['stylelint', 'jslint', 'images']);
+  gulp.task('deploy', ['makecss', 'stylelint', 'jslint', 'images']);
   // defaultni task
   gulp.task('default', ['watch']);

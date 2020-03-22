@@ -1,46 +1,50 @@
-.aside{
-  width: 280px;
-
+.aside {
   position: absolute;
   top: 440px;
   left: 50%;
-  margin-left: 320px;
-  background: #E3F9FF;
-  text-align: center;
-  padding: 40px;
-  border-radius: $radius;
 
-  &.fixed{
+  width: 280px;
+  margin-left: 320px;
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: $radius;
+  background: #e3f9ff;
+
+  &.fixed {
     position: fixed;
     top: 30px;
   }
-
 }
 
-.aside__title{
+.aside__title {
   font-family: $font_merriweather;
   font-size: 24px;
 }
 
-.aside__actions{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 40px;
+.aside__actions {
   align-items: center;
 
-  li{
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
+  list-style-type: none;
+
+  li {
     margin-bottom: 25px;
 
-    &:last-child{
-      margin-bottom:  0;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
 
-.aside__button{
+.aside__button {
   width: 100%;
   padding: 0;
-  line-height: 40px;
+
   font-size: 15px;
+  line-height: 40px;
 }

@@ -1,22 +1,24 @@
-.properties{
-
-  @include respond-to('xlarge'){
+.properties {
+  @include respond-to('medium') {
+    padding-top: 100px;
+  }
+  @include respond-to('xlarge') {
     padding-top: 285px;
   }
 
-  .section__item--blue{
-    h3{
+  .section__item--blue {
+    h3 {
       color: $color_black;
-      strong{
+      strong {
         color: $color_blue;
       }
     }
   }
 
-  .section__item--red{
-    h3{
+  .section__item--red {
+    h3 {
       color: $color_black;
-      strong{
+      strong {
         color: $color_red;
       }
     }
