@@ -451,7 +451,10 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background: url("../img/deco-top.svg") no-repeat center 0, url("../img/deco-bottom.svg") no-repeat center bottom; }
+  background: url("../img/deco-top.svg") no-repeat center 0; }
+  @media (min-width: 1200px) {
+    body {
+      background: url("../img/deco-top.svg") no-repeat center 0, url("../img/deco-bottom.svg") no-repeat center bottom; } }
 
 @-ms-viewport {
   width: device-width; }
@@ -795,8 +798,13 @@ iframe {
   font-size: 15px; }
 
 .footer {
-  padding-top: 220px;
-  padding-bottom: 100px; }
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #EDFCFF; }
+  @media (min-width: 1200px) {
+    .footer {
+      padding-top: 220px;
+      background: transparent; } }
 
 .footer__title {
   font-family: "Merriweather", serif;
