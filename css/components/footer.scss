@@ -1,0 +1,142 @@
+.footer{
+  background-color: #e5f6fc;
+  padding: 50px 0;
+
+  @include respond-to('xlarge'){
+    padding: 105px 0;
+  }
+}
+
+.footer__content{
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to('xlarge'){
+    flex-direction: row;
+  }
+}
+
+.footer__col--1{
+  flex: 1;
+  margin-bottom: 50px;
+
+  @include respond-to('medium'){
+    margin-bottom: 80px;
+  }
+
+  @include respond-to('xlarge'){
+    margin-bottom: 0;
+  }
+}
+
+.footer__col--2{
+  @include respond-to('xlarge'){
+    width: 300px;
+    margin-left: 50px;
+  }
+}
+
+.footer__logo{
+  text-align: center;
+  margin-bottom: 50px;
+
+  @include respond-to('medium'){
+    text-align: left;
+    margin-bottom: 80px;
+  }
+}
+
+.footer__menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  @include respond-to('medium'){
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.footer__menu__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  a{
+    color: $color_blue;
+    text-decoration: none;
+
+    &:hover{
+      color: $color_blue_dark;
+    }
+  }
+}
+
+.footer__menu__list--1{
+  a{
+    color: $color_red;
+
+    &:hover{
+      color: $color_red_dark;
+    }
+  }
+}
+
+.footer__partners{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to('medium'){
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @include respond-to('xlarge'){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li{
+    margin-bottom: 40px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    strong{
+      display: block;
+      margin-top: 10px;
+    }
+
+    @include respond-to('medium'){
+      margin: 0;
+      margin-right: 40px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    @include respond-to('xlarge'){
+      margin: 0;
+      margin-bottom: 60px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

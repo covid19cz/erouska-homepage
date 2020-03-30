@@ -30,11 +30,6 @@ body {
   line-height: 1;
 
   background: url('../img/deco-top.svg') no-repeat center 0;
-
-  @include respond-to('xlarge') {
-    background: url('../img/deco-top.svg') no-repeat center 0,
-    url('../img/deco-bottom.svg') no-repeat center bottom;
-  }
 }
 
 // základní nastavení respo
