@@ -55,6 +55,11 @@
   @include respond-to('medium'){
     flex-direction: row;
     text-align: left;
+
+  }
+
+  @include respond-to('xlarge'){
+    max-width: 85%;
   }
 }
 

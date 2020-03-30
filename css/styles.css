@@ -869,7 +869,8 @@ iframe {
   padding: 40px;
   text-align: center;
   border-radius: 6px;
-  background: #e3f9ff; }
+  background: #e4f9fe;
+  background: linear-gradient(180deg, #e4f9fe 0%, #f5fefd 100%); }
   .aside.fixed {
     position: fixed;
     top: 30px; }
@@ -994,6 +995,9 @@ iframe {
     .footer__menu {
       flex-direction: row;
       text-align: left; } }
+  @media (min-width: 1200px) {
+    .footer__menu {
+      max-width: 85%; } }
 
 .footer__menu__list {
   margin: 0;
