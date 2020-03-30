@@ -33,28 +33,18 @@
         </h1>
       </div>
 
-      <nav class="header__nav-wrapper d-none d-md-block" role="navigation">
-        <ul class="header__nav">
-          <li><a class="js-scrollto" href="#jak-to-funguje">Jak to funguje</a></li>
-          <li><a class="js-scrollto" href="#caste-dotazy">Časté dotazy</a></li>
-          <li><a class="js-scrollto" href="#partneri">Partneři</a></li>
-          <li><a class="js-scrollto" href="#kontakty">Kontakty</a></li>
-        </ul>
-      </nav>
     </header> <!-- /header -->
 
     <section class="hero-wrapper" id="uvod">
       <div class="hero">
-        <h2 class="hero__title"><span>Chraň sebe +</span> <br />chraň ostatní!</h2>
+        <h2 class="hero__title"><span>Chráním sebe,</span> <br />chráním tebe!</h2>
         <div class="hero__intro">
-          <p>Nechte aplikaci sbírat <em>anonymní údaje</em> o telefonech v blízkosti, aby pracovníci hygieny mohli snadněji dohledat potenciálně nakažené.</p>
-        </div>
-        <div class="hero__urgent">
-          <p><em>Čím víc nás bude, tím lépe to bude fungovat.</em></p>
+          <p>Aplikace <em>eRouška</em> si díky Bluetooth pamatuje ostatní <em>eRoušky</em>, které jste potkali. Usnadní tak hygieně dohledávání rizikových kontaktů.</p>
+          <p>Přispějte i vy k tomu, aby nakažených koronavirem přibývalo méně.</p>
         </div>
         <ul class="hero__actions">
-          <li><a href="#" target="_blank" class="button button--primary">Stáhnout pro Android</a></li>
-          <li><a href="#" target="_blank" class="button button--primary">Stáhnout pro iOS</a></li>
+          <li><a href="#" target="_blank" class="button button--blue">Stáhnout pro Android</a></li>
+          <li><a href="#" target="_blank" class="button button--blue">Stáhnout pro iOS</a></li>
         </ul>
       </div>
 
@@ -71,66 +61,68 @@
     <main class="main" role="main">
 
       <section class="section section--narrow properties">
-        <h2 class="section__title" id="jak-to-funguje">Jak to funguje</h2>
+        <h2 class="section__title section__title--blue" id="jak-erouska-chrani">Jak eRouška chrání?</h2>
+        <h3 class="section__subtitle">eRouška je součást systému Chytrá karanténa Ministerstva zdravotnictví ČR</h3>
         <div class="section__content">
 
           <div class="section__item section__item--blue">
-            <h3><strong>Příklad:</strong> Zjistíte, že jste nakažení a je třeba dohledat Vaše kontakty</h3>
-            <p>Představte si, že jste nakažení koronavirem a nevíte o tom. Když se u vás nemoc projeví, pracovníci hygienické stanice po vás budou chtít seznam všech lidí, se kterými jste v posledním týdnu přišli do užšího styku. Takže, jak se jmenoval číšník v restauraci, kde jste minulý čtvrtek obědvali?</p>
+            <h3>Když jste nakaženého potkali</h3>
+            <p>Když potkáte někoho, u koho se později prokáže koronavirus, hygienická stanice vás bude moci telefonicky kontaktovat. I když jste spolu třeba jen stáli ve frontě v obchodě.</p>
           </div>
 
           <div class="section__item section__item--blue">
-            <h3><strong>Příklad:</strong> Někdo nakažený se vyskytl ve Vaší blízkosti</h3>
-            <p>V nedávné minulosti jste potkal někoho, kdo vypadal zdravě, ale koronovirem vás možná nakazil. V tom případě byste uvítal, kdybyste se o své potenciální nemoci dozvěděli co nejdříve. Ale těžko můžete čekat, že vám zavolá spolucestující z vlaku, když vás osobně nezná.</p>
-          </div>
-
-          <div class="section__item section__item--red">
-            <h3><strong>Řešení:</strong> Aplikace Mobilní rouška</h3>
-            <p>Jde to i jednodušeji a hygienická stanice může potenciální nakažené dohledat daleko rychleji. Aplikaci Mobilní rouška si jednoduše nainstalujete, necháte běžet na pozadí se zapnutým Bluetooth a ona sbírá anonymizované informace o mobilech ve vašem okolí, které tuto aplikaci také mají.</p>
-            <p>Pouze v případě, kdy jeden z uživatelů aplikace onemocní koronavirem, hygienická stanice kontaktuje vybrané majitele telefonů, aby se nechali otestovat. Aplikace uchovává data po dobu jednoho měsíce.</p>
+            <h3>Když se nakazíte vy</h3>
+            <p>Pokud se u vás koronavirus prokáže, pracovník hygieny vás požádá o přehled lidí, které jste v posledních dnech potkali. Vy mu jednoduše na jeden klik odešlete anonymní seznam uživatelů eRoušky, se kterými jste byli v rizikovém kontaktu. Včetně těch, které osobně neznáte, jen jste s nimi třeba jeli autobusem.</p>
+            <p><em>Nikdo se nedozví, že jste je mohl nakazit zrovna vy.</em></p>
           </div>
 
         </div>
       </section>  <!-- /properties -->
 
+      <section class="section section--narrow video">
+        <h2 class="section__title section__title--blue" id="video">Video nadpis</h2>
+        <div class="section__content">
+          <img src="/img/video-placeholder.png" />
+        </div>
+      </section>  <!-- /video -->
+
       <section class="section section--narrow faqs">
-        <h2 class="section__title" id="caste-dotazy">Časté dotazy</h2>
+        <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">eRouška chrání <br />vaše soukromí</h2>
         <div class="section__content">
 
-          <div class="section__item section__item--blue">
-            <h3>Jak aplikace přesně funguje?</h3>
-            <p>Aplikace pomocí Bluetooth sbírá pseudoanonymní identifkátory aplikace jiných zařízení. V aplikaci je uložena informace typu: 21.3. od 12.15 - 16.31 byla ve vaší přítomnosti aplikace ID 29091. I když by váš telefon nikdo ukradl, získá jen přehled ID a časových intervalů, nedokáže je spárovat s konkrétními uživateli. ID jsou uložena lokálně u uživatele, telefonní čísla jsou uložená v databázi provozovatele.</p>
+          <div class="section__item">
+            <h3>Jak se eRouška liší od jiných podobných aplikací?</h3>
+            <p>Na rozdíl od jiných aplikací eRouška <em>nevyužívá</em> GPS. To znamená, že nesleduje a nesbírá informace o vaší poloze, ale pouze anonymně zjišťuje, se kterými dalšími uživateli aplikace jste přišli do bližšího kontaktu. Aplikace ke správnému fungování nepotřebuje připojení k internetu, takže funguje například i v metru.</p>
           </div>
 
-          <div class="section__item section__item--red">
-            <h3>Odesílá aplikace data sama od sebe?</h3>
-            <p><strong>Ne</strong>, aplikace jen sbírá data, která zůstávají lokálně, v telefonu.</p>
+          <div class="section__item">
+            <h3>Proč je k registraci vyžadováno telefonní číslo?</h3>
+            <p>Telefonní číslo využije hygienická stanice, aby vás mohla co nejdříve kontaktovat, pokud bude mít na základě informací z eRoušky nakaženého člověka podezření, že jste s ním byli v rizikovém kontaktu. Proto telefonní číslo registrujete hned při prvním spuštění eRoušky.</p>
           </div>
 
-          <div class="section__item section__item--red">
-            <h3>Kdo má k datům přístup?</h3>
-            <p><strong>Jen vy</strong>. V případě, že jste nemocný a rozhodnete se svá data sdílet, aby mohli pracovníci hygienické stanice kontaktovat ty, které jste potenciálně nakazil, je můžete z aplikace sám odeslat.</p>
+          <div class="section__item">
+            <h3>Dozví se ostatní moji identitu, pokud onemocním?</h3>
+            <p>Pokud onemocníte, vaše totožnost je známá jen a pouze pracovníkům hygienické stanice. Tak jako doposud. Kritické kontakty se nedozví, kdo je mohl nakazit, ani kde a kdy. Vaše identita je ochráněna. </p>
           </div>
 
-          <div class="section__item section__item--blue">
-            <h3>Jak probíhá proces využívání dat?</h3>
-            <p>Potvrzený nemocný koronavirem je kontaktován hygienickou stanicí. Pracovník jej vyzve, aby prostřednictvím aplikace nasdílel svá data. Tato data pak pracovník hygieny spáruje s telefonními čísly a kontaktuje je s informací, že byli v přítomnosti nakaženého. Další postup je v rukou hygienické stanice.</p>
+          <div class="section__item">
+            <h3>Jakou roli hraje moje jedna instalace? Změní se něco?</h3>
+            <p>eRouška funguje jako běžné roušky - čím více z nás bude eRoušku používat, tím lépe bude fungovat. Ve spolupráci s vládou ČR a dalšími organizacemi podnikáme kroky, aby se o eRoušce dozvědělo co nejvíce lidí a začali ji používat. Pomozte nám i vy. Instalací aplikace se můžete aktivně zapojit do boje proti koronaviru.</p>
           </div>
 
-          <div class="section__item section__item--blue">
-            <h3>Jak se data odesílají hygienické stanici?</h3>
-            <p>Hygienická stanice a její prověření pracovníci mají přístup k rozhraní, ve kterém mohou spárovat ID aplikace s telefonními čísly, které uživatelé zadali při registraci. Hygienici mají jen telefonní číslo, žádné další informace. Toto rozhraní je chráněno přístupovými kódy.</p>
+          <div class="section__item">
+            <h3>Kdo eRoušku provozuje? Jsou u vás má data v bezpečí?</h3>
+            <p>Aplikaci vytvořili dobrovolníci spolupracující na platformě <a href="https://covid19cz.cz/" target="_blank">Covid19CZ</a> a pod záštitou <a href="https://www.mzcr.cz/" target="_blank">Ministerstva zdravotnictví České republiky</a>. Bezpečnost dat zaštiťuje řada nezávislých odborníků, včetně zástupců akademické sféry.</p>
           </div>
 
-          <div class="section__item section__item--blue">
-            <h3>Kdo aplikaci provozuje?</h3>
-            <p>Aplikaci naprogramovali zaměstnanci několika českých firem sdružených pod platformou covid19cz a pod záštitou Ministersta zdravotnictví České republiky.</p>
+          <div class="section__item">
+            <h3>Máte další otázky?</h3>
+            <p>Zajímá vás, na jakých telefonech eRouška funguje? Nebo třeba jaká data eRoušce sdílíte a jaká data sbírá? </p>
           </div>
 
-          <div class="section__item section__item--blue">
-            <h3>Má aplikace atesty a splňuje GDPR?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ullam, architecto. Voluptate dolorem modi, corporis omnis. Quaerat, magni ut fuga, quo sapiente iure deserunt! Beatae quod laborum magnam, ullam quia.</p>
-          </div>
+          <ul class="section__actions">
+            <li><a href="/caste-dotazy.html" class="button button--red">Další časté dotazy</a></li>
+          </ul>
 
         </div>
       </section>  <!-- /faqs -->
@@ -139,8 +131,8 @@
         <img src="/img/icon.svg" />
         <h3 class="aside__title">eRouška</h3>
         <ul class="aside__actions">
-          <li><a href="#" target="_blank" class="aside__button button button--primary">Stáhnout pro Android</a></li>
-          <li><a href="#" target="_blank" class="aside__button button button--primary">Stáhnout pro iOS</a></li>
+          <li><a href="#" target="_blank" class="aside__button button button--blue">Stáhnout pro Android</a></li>
+          <li><a href="#" target="_blank" class="aside__button button button--blue">Stáhnout pro iOS</a></li>
         </ul>
       </div>
 
@@ -148,15 +140,15 @@
 
   </div>
 
-    <footer class="footer">
-      <div class="container">
-        <h2 class="footer__title">Čím víc nás bude, <br />tím lépe to bude fungovat.</h2>
-        <ul class="footer__actions">
-          <li><a href="#" target="_blank" class="button button--primary">Stáhnout pro Android</a></li>
-          <li><a href="#" target="_blank" class="button button--primary">Stáhnout pro iOS</a></li>
-        </ul>
-      </div>
-    </footer>
+  <div class="claim">
+    <div class="container">
+      <h2 class="claim__title">Než vyjdete ven, <br />nasaďte si také eRoušku. </h2>
+      <ul class="claim__actions">
+        <li><a href="#" target="_blank" class="button button--blue">Stáhnout pro Android</a></li>
+        <li><a href="#" target="_blank" class="button button--blue">Stáhnout pro iOS</a></li>
+      </ul>
+    </div>
+  </div>
 
 
 </div>

@@ -1,0 +1,70 @@
+.claim {
+  padding: 50px 0;
+
+  background: #edfcff;
+
+  @include respond-to('medium') {
+    padding: 100px 0;
+  }
+  @include respond-to('xlarge') {
+    padding: 220px 0 100px 0;
+
+    background: transparent;
+  }
+}
+
+.claim__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: $font_merriweather;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.4em;
+  text-align: center;
+
+  @include respond-to('medium') {
+    font-size: 45px;
+  }
+  @include respond-to('xlarge') {
+    font-size: 67px;
+    text-align: left;
+  }
+}
+
+.claim__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
+  list-style-type: none;
+
+  @include respond-to('medium') {
+    flex-direction: row;
+  }
+  @include respond-to('xlarge') {
+    justify-content: flex-start;
+
+    margin-top: 80px;
+  }
+
+  li {
+    margin-bottom: 20px;
+
+    @include respond-to('medium') {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+

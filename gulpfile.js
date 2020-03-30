@@ -193,7 +193,7 @@ gulp.task('images', function() {
 
 // sledování změn souborů
 gulp.task('watch', ['browser-sync'], function () {
-  gulp.watch(settings.css.watch, ['makecss']);
+  gulp.watch(settings.css.watch, ['sass']);
   gulp.watch(settings.js.watch, ['concatjs', 'browsersync-reload']);
   gulp.watch(settings.browsersync.watch, ['browsersync-reload']);
 });

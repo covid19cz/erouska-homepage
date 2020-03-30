@@ -9,6 +9,8 @@
   line-height: 16px; // pro sladění výšky tlačítka
   text-align: center;
   text-decoration: none;
+  padding: 0 50px;
+  line-height: 64px;
 
   border: none;
   border-radius: $radius_button;
@@ -26,8 +28,20 @@
   }
 }
 
-.button--primary {
-  padding: 0 50px;
+.button--blue {
+  background-color: $color_blue;
 
-  line-height: 64px;
+  &:hover,
+  &:focus {
+    background-color: $color_blue_dark;
+  }
+}
+
+.button--red {
+  background-color: $color_red;
+
+  &:hover,
+  &:focus {
+    background-color: $color_red_dark;
+  }
 }
