@@ -849,7 +849,6 @@ iframe {
     .section__item p a, .section__item li a {
       color: #228ed5; }
       .section__item p a:hover, .section__item li a:hover {
-        color: #ff0d58;
         text-decoration: none; }
     .section__item p strong, .section__item li strong {
       font-style: italic; }
@@ -899,6 +898,8 @@ iframe {
 
 .faq__q {
   cursor: pointer; }
+  .faq__q:hover {
+    color: #228ed5; }
 
 .faq__a {
   display: none; }
@@ -1049,10 +1050,17 @@ iframe {
     .footer__col--1 {
       margin-bottom: 0; } }
 
-@media (min-width: 1200px) {
-  .footer__col--2 {
-    width: 300px;
-    margin-left: 50px; } }
+.footer__col--2 {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .footer__col--2 {
+      justify-content: flex-start; } }
+  @media (min-width: 1200px) {
+    .footer__col--2 {
+      width: 300px;
+      margin-left: 50px;
+      justify-content: flex-end; } }
 
 .footer__logo {
   text-align: center;
@@ -1111,7 +1119,8 @@ iframe {
     .footer__partners {
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end; } }
+      align-items: center;
+      width: 175px; } }
   .footer__partners li {
     margin-bottom: 40px; }
     .footer__partners li:last-child {

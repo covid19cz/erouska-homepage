@@ -13,6 +13,10 @@
 
 .faq__q{
   cursor: pointer;
+
+  &:hover{
+    color: $color_blue;
+  }
 }
 
 .faq__a{
