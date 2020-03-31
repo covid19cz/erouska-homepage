@@ -1,2 +1,16 @@
-.faqs {
+.faq {
+}
+
+.faq__item{
+  border-bottom: 3px solid #eef6fc;
+  padding-bottom: 30px;
+
+  @include respond-to('medium'){
+    padding-bottom: 60px;
+  }
+}
+
+
+.faq__a{
+  background: yellow;
 }

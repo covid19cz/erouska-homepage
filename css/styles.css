@@ -802,30 +802,34 @@ iframe {
   margin-bottom: 30px; }
   @media (min-width: 768px) {
     .section__item {
-      margin-bottom: 65px; } }
+      margin-bottom: 60px; } }
   .section__item h3 {
     margin: 0;
-    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.7em; }
     @media (min-width: 768px) {
       .section__item h3 {
         font-size: 20px; } }
-  .section__item p {
+  .section__item p, .section__item li {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.7em; }
+    line-height: 1.7em;
+    margin-top: 20px; }
+    .section__item p:last-child, .section__item li:last-child {
+      margin-bottom: 0; }
     @media (min-width: 768px) {
-      .section__item p {
+      .section__item p, .section__item li {
         font-size: 20px; } }
-    .section__item p a {
+    .section__item p a, .section__item li a {
       color: #228ed5; }
-      .section__item p a:hover {
+      .section__item p a:hover, .section__item li a:hover {
         color: #ff0d58;
         text-decoration: none; }
-    .section__item p strong {
+    .section__item p strong, .section__item li strong {
       font-style: italic; }
+  .section__item li {
+    margin-top: 5px; }
 
 .section__item--blue h3 {
   color: #228ed5; }
@@ -857,6 +861,16 @@ iframe {
     .section__actions li:last-child {
       margin-right: 0;
       margin-bottom: 0; }
+
+.faq__item {
+  border-bottom: 3px solid #eef6fc;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .faq__item {
+      padding-bottom: 60px; } }
+
+.faq__a {
+  background: yellow; }
 
 .aside {
   position: absolute;
@@ -914,7 +928,6 @@ iframe {
   font-family: "Merriweather", serif;
   font-size: 32px;
   font-weight: 700;
-  font-style: italic;
   line-height: 1.4em;
   text-align: center; }
   @media (min-width: 768px) {
