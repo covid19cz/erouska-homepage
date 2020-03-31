@@ -903,6 +903,9 @@ iframe {
 .faq__a {
   display: none; }
 
+.faq__item--open .faq__a {
+  display: block; }
+
 .team {
   margin-bottom: 100px; }
 
@@ -1098,7 +1101,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end; }
+  align-items: center; }
   @media (min-width: 768px) {
     .footer__partners {
       flex-direction: row;
