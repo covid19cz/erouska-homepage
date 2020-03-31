@@ -451,10 +451,10 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background: url("../img/deco-top.svg") no-repeat center 0; }
+  background: url("../img/deco-top.png") no-repeat center 0; }
   body.page-single {
     background: url("../img/deco-top-b.png") no-repeat center -140px; }
-  body.page-caste-dotazy {
+  body.page-tym {
     background-position: center 0; }
 
 @-ms-viewport {
@@ -615,7 +615,8 @@ iframe {
   line-height: 1.3em; }
   @media (min-width: 768px) {
     .hero__title {
-      font-size: 70px; } }
+      font-size: 70px;
+      margin-bottom: 45px; } }
   .hero__title span {
     color: #ff0d58; }
 
@@ -634,7 +635,8 @@ iframe {
         font-size: 18px; } }
     @media (min-width: 1200px) {
       .hero__intro p {
-        font-size: 24px; } }
+        font-size: 24px;
+        line-height: 37px; } }
 
 .hero__urgent {
   margin-top: 40px; }
@@ -658,7 +660,7 @@ iframe {
   @media (min-width: 1200px) {
     .hero__actions {
       justify-content: flex-start;
-      margin-top: 80px; } }
+      margin-top: 70px; } }
   .hero__actions li {
     margin-bottom: 20px; }
     @media (min-width: 768px) {
@@ -676,7 +678,7 @@ iframe {
   @media (min-width: 1200px) {
     .hero__example {
       position: absolute;
-      top: 64px;
+      top: 12px;
       right: -95px;
       width: 540px; } }
 

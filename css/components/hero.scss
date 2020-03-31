@@ -32,6 +32,7 @@
 
   @include respond-to('medium') {
     font-size: 70px;
+    margin-bottom: 45px;
   }
 
   span {
@@ -57,6 +58,7 @@
     }
     @include respond-to('xlarge') {
       font-size: 24px;
+      line-height: 37px;
     }
   }
 }
@@ -89,7 +91,7 @@
   @include respond-to('xlarge') {
     justify-content: flex-start;
 
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   li {
@@ -115,7 +117,7 @@
 
   @include respond-to('xlarge') {
     position: absolute;
-    top: 64px;
+    top: 12px;
     right: -95px;
 
     width: 540px;

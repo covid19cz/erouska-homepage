@@ -29,13 +29,13 @@ body {
   font-size: 16px;
   line-height: 1;
 
-  background: url('../img/deco-top.svg') no-repeat center 0;
+  background: url('../img/deco-top.png') no-repeat center 0;
 
   &.page-single{
     background: url('../img/deco-top-b.png') no-repeat center -140px;
   }
 
-  &.page-caste-dotazy{
+  &.page-tym{
     background-position: center 0;
   }
 }
