@@ -36,5 +36,8 @@
     "ie >= 10",
     "ios >= 7",
     "android >= 4.4"
-  ]
+  ],
+  "dependencies": {
+    "run-sequence": "^2.2.1"
+  }
 }

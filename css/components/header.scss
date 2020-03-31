@@ -57,12 +57,12 @@
     line-height: 40px;
     text-decoration: none;
 
-    svg{
-      margin-right: 10px;
-    }
-
     @include respond-to('large') {
       font-size: 16px;
+    }
+
+    svg {
+      margin-right: 10px;
     }
 
     &:after {
