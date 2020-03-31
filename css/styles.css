@@ -867,10 +867,14 @@ iframe {
   padding-bottom: 30px; }
   @media (min-width: 768px) {
     .faq__item {
-      padding-bottom: 60px; } }
+      padding-bottom: 40px;
+      margin-bottom: 40px; } }
+
+.faq__q {
+  cursor: pointer; }
 
 .faq__a {
-  background: yellow; }
+  display: none; }
 
 .aside {
   position: absolute;

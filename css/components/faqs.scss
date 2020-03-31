@@ -6,11 +6,15 @@
   padding-bottom: 30px;
 
   @include respond-to('medium'){
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
+.faq__q{
+  cursor: pointer;
+}
 
 .faq__a{
-  background: yellow;
+  display: none;
 }

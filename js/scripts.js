@@ -40,6 +40,17 @@ $(document).ready(function() {
 
     return false;
   });
+
+  // -------------------------------------
+  // Rozbalovani FAQ
+  // -------------------------------------
+
+  $('.faq__q').click(function() {
+    var $thisParent = $(this).closest('.faq__item');
+    var $thisAnswer = $thisParent.find('.faq__a');
+    $thisAnswer.toggle();
+    console.log('click');
+  });
 });
 
 //# sourceMappingURL=scripts.js.map
