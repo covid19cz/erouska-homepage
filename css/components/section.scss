@@ -9,6 +9,12 @@
   }
 }
 
+.section--full{
+  @include respond-to('xlarge') {
+    max-width: 100%;
+  }
+}
+
 .section--single{
   padding: 0;
   margin: 0;

@@ -454,6 +454,8 @@ body {
   background: url("../img/deco-top.svg") no-repeat center 0; }
   body.page-single {
     background: url("../img/deco-top-b.png") no-repeat center -140px; }
+  body.page-caste-dotazy {
+    background-position: center 0; }
 
 @-ms-viewport {
   width: device-width; }
@@ -748,6 +750,14 @@ iframe {
   line-height: 87px;
   margin: 0; }
 
+.heading__perex {
+  margin-top: 50px;
+  max-width: 700px; }
+  .heading__perex p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px; }
+
 .section {
   margin-bottom: 25px;
   padding-top: 25px; }
@@ -756,6 +766,10 @@ iframe {
       max-width: 700px;
       margin-bottom: 50px;
       padding-top: 140px; } }
+
+@media (min-width: 1200px) {
+  .section--full {
+    max-width: 100%; } }
 
 .section--single {
   padding: 0;
@@ -886,6 +900,34 @@ iframe {
 
 .faq__a {
   display: none; }
+
+.team {
+  margin-bottom: 100px; }
+
+.team__title {
+  color: #ff0d58;
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 0;
+  border-bottom: 3px solid #ff0d58; }
+
+.team__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .team__list li {
+    width: 25%; }
+  .team__list a {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 87px; }
 
 .aside {
   position: absolute;
