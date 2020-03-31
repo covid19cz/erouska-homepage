@@ -452,6 +452,8 @@ body {
   font-size: 16px;
   line-height: 1;
   background: url("../img/deco-top.svg") no-repeat center 0; }
+  body.page-single {
+    background: url("../img/deco-top-b.png") no-repeat center -140px; }
 
 @-ms-viewport {
   width: device-width; }
@@ -732,12 +734,19 @@ iframe {
   background: url("../img/phone2.png") no-repeat center center;
 }
 */
+.heading {
+  padding: 35px 0; }
+  @media (min-width: 768px) {
+    .heading {
+      padding: 70px 0; } }
+
 .heading__title {
   color: #228ed5;
   font-family: "Merriweather", serif;
   font-size: 70px;
   font-weight: 700;
-  line-height: 87px; }
+  line-height: 87px;
+  margin: 0; }
 
 .section {
   margin-bottom: 25px;
@@ -815,7 +824,7 @@ iframe {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7em;
-    margin-top: 20px; }
+    margin-top: 55px; }
     .section__item p:last-child, .section__item li:last-child {
       margin-bottom: 0; }
     @media (min-width: 768px) {
@@ -828,6 +837,8 @@ iframe {
         text-decoration: none; }
     .section__item p strong, .section__item li strong {
       font-style: italic; }
+  .section__item p:first-of-type {
+    margin-top: 5px; }
   .section__item li {
     margin-top: 5px; }
 
@@ -922,7 +933,7 @@ iframe {
       padding: 100px 0; } }
   @media (min-width: 1200px) {
     .claim {
-      padding: 220px 0 100px 0;
+      padding: 220px 0 170px 0;
       background: transparent url("../img/deco-bottom.svg") no-repeat center top;
       margin-top: 100px; } }
 
@@ -1015,7 +1026,7 @@ iframe {
       text-align: left; } }
   @media (min-width: 1200px) {
     .footer__menu {
-      max-width: 85%; } }
+      max-width: 86%; } }
 
 .footer__menu__list {
   margin: 0;
@@ -1024,7 +1035,7 @@ iframe {
   .footer__menu__list li {
     font-size: 18px;
     font-weight: 700;
-    line-height: 36px; }
+    line-height: 40px; }
   .footer__menu__list a {
     color: #228ed5;
     text-decoration: none; }
@@ -1043,17 +1054,17 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-end; }
   @media (min-width: 768px) {
     .footer__partners {
       flex-direction: row;
       justify-content: flex-start;
-      align-items: center; } }
+      align-items: flex-end; } }
   @media (min-width: 1200px) {
     .footer__partners {
       flex-direction: column;
       justify-content: center;
-      align-items: center; } }
+      align-items: flex-end; } }
   .footer__partners li {
     margin-bottom: 40px; }
     .footer__partners li:last-child {
