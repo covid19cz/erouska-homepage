@@ -584,9 +584,6 @@ iframe {
 .main {
   position: relative;
   overflow: auto; }
-  @media (min-width: 1200px) {
-    .main {
-      padding-bottom: 100px; } }
 
 .hero-wrapper {
   position: relative; }
@@ -742,6 +739,9 @@ iframe {
     .section {
       margin-bottom: 50px;
       padding-top: 140px; } }
+
+.section--last {
+  margin-bottom: 0; }
 
 @media (min-width: 1200px) {
   .section--narrow {
@@ -905,7 +905,8 @@ iframe {
   @media (min-width: 1200px) {
     .claim {
       padding: 220px 0 100px 0;
-      background: transparent url("../img/deco-bottom.svg") no-repeat center top; } }
+      background: transparent url("../img/deco-bottom.svg") no-repeat center top;
+      margin-top: 100px; } }
 
 .claim__title {
   margin: 0;

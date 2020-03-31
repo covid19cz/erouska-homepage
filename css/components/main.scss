@@ -2,8 +2,4 @@
   position: relative;
 
   overflow: auto;
-
-  @include respond-to('xlarge') {
-    padding-bottom: 100px;
-  }
 }

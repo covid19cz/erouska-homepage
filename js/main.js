@@ -3,14 +3,24 @@ $(document).ready(function() {
   // Sticky menu
   // -------------------------------------
 
-  var stickyTop = $('.js-sticky').offset().top;
+  var stickyStart = parseInt($('.js-sticky').offset().top);
+  var stickyHeight = parseInt($('.js-sticky').css('height'));
+
+  var stickyStop =
+    parseInt($('.js-sticky-stop').offset().top) -
+    parseInt($('.js-sticky-stop').css('marginTop')) -
+    stickyHeight;
 
   $(window).scroll(function() {
     var windowTop = $(window).scrollTop();
-    if (stickyTop < windowTop) {
+
+    if (windowTop > stickyStart) {
       $('.js-sticky').addClass('fixed');
     } else {
       $('.js-sticky').removeClass('fixed');
+    }
+
+    if (windowTop >= stickyStop) {
     }
   });
 

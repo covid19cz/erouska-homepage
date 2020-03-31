@@ -8,6 +8,10 @@
   }
 }
 
+.section--last{
+  margin-bottom: 0;
+}
+
 .section--narrow {
   @include respond-to('xlarge') {
     max-width: 700px;
