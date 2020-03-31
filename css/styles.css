@@ -732,6 +732,13 @@ iframe {
   background: url("../img/phone2.png") no-repeat center center;
 }
 */
+.heading__title {
+  color: #228ed5;
+  font-family: "Merriweather", serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 87px; }
+
 .section {
   margin-bottom: 25px;
   padding-top: 25px; }
@@ -740,6 +747,10 @@ iframe {
       max-width: 700px;
       margin-bottom: 50px;
       padding-top: 140px; } }
+
+.section--single {
+  padding: 0;
+  margin: 0; }
 
 @media (min-width: 768px) {
   .section--first {
@@ -849,7 +860,7 @@ iframe {
 
 .aside {
   position: absolute;
-  top: 440px;
+  top: 140px;
   left: 50%;
   width: 280px;
   margin-left: 320px;
@@ -858,6 +869,8 @@ iframe {
   border-radius: 6px;
   background: #e4f9fe;
   background: linear-gradient(180deg, #e4f9fe 0%, #f5fefd 100%); }
+  .page-homepage .aside {
+    top: 440px; }
   .aside.fixed {
     position: fixed;
     top: 30px; }

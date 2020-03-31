@@ -9,6 +9,11 @@
   }
 }
 
+.section--single{
+  padding: 0;
+  margin: 0;
+}
+
 .section--first{
   @include respond-to('medium') {
     padding-top: 100px;
