@@ -9,6 +9,12 @@
   }
 }
 
+.section--full{
+  @include respond-to('xlarge') {
+    max-width: 100%;
+  }
+}
+
 .section--single{
   padding: 0;
   margin: 0;
@@ -97,7 +103,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7em;
-    margin-top: 20px;
+    margin-top: 55px;
 
     &:last-child{
       margin-bottom: 0;
@@ -118,6 +124,12 @@
 
     strong {
       font-style: italic;
+    }
+  }
+
+  p{
+    &:first-of-type{
+      margin-top: 5px;
     }
   }
 

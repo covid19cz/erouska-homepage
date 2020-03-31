@@ -59,7 +59,7 @@
   }
 
   @include respond-to('xlarge'){
-    max-width: 85%;
+    max-width: 86%;
   }
 }
 
@@ -71,7 +71,7 @@
   li{
     font-size: 18px;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 40px;
   }
 
   a{
@@ -101,18 +101,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 
   @include respond-to('medium'){
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
   }
 
   @include respond-to('xlarge'){
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
 
   li{

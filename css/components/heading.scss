@@ -1,7 +1,28 @@
+
+.heading{
+  padding: 35px 0;
+
+  @include respond-to('medium'){
+    padding: 70px 0;
+  }
+
+}
+
 .heading__title{
   color: $color_blue;
   font-family: $font_merriweather;
   font-size: 70px;
   font-weight: 700;
   line-height: 87px;
+  margin: 0;
+}
+
+.heading__perex{
+  margin-top: 50px;
+  max-width: 700px;
+  p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+  }
 }
