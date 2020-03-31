@@ -13,8 +13,18 @@
 
 .faq__q{
   cursor: pointer;
+
+  &:hover{
+    color: $color_blue;
+  }
 }
 
 .faq__a{
   display: none;
+}
+
+.faq__item--open{
+  .faq__a{
+    display: block;
+  }
 }

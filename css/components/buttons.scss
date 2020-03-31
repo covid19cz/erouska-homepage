@@ -17,6 +17,7 @@
   background-color: $color_blue;
 
   cursor: pointer;
+  transition: background-color linear 0.2s;
 
   @include respond-to('medium') {
     display: inline-block;

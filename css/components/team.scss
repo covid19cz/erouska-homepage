@@ -1,5 +1,9 @@
 .team{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+
+  @include respond-to('medium'){
+    margin-bottom: 100px;
+  }
 }
 
 .team__title{
@@ -17,18 +21,37 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 50px;
 
+  @include respond-to('medium'){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   li{
-    width: 25%;
+    @include respond-to('medium'){
+      width: 50%;
+    }
+
+    @include respond-to('xlarge'){
+      width: 25%;
+    }
   }
 
   a{
     color: $color_black;
     font-size: 20px;
     font-weight: 700;
-    line-height: 87px;
+    line-height: 2em;
+
+    @include respond-to('medium'){
+      line-height: 87px;
+    }
+
+    &:hover{
+      text-decoration: none;
+    }
   }
 }

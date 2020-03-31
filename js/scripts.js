@@ -48,8 +48,7 @@ $(document).ready(function() {
   $('.faq__q').click(function() {
     var $thisParent = $(this).closest('.faq__item');
     var $thisAnswer = $thisParent.find('.faq__a');
-    $thisAnswer.toggle();
-    console.log('click');
+    $thisAnswer.slideToggle();
   });
 });
 

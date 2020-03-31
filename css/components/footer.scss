@@ -30,9 +30,17 @@
 }
 
 .footer__col--2{
+  display: flex;
+  justify-content: center;
+
+  @include respond-to('medium'){
+    justify-content: flex-start;
+  }
+
   @include respond-to('xlarge'){
     width: 300px;
     margin-left: 50px;
+    justify-content: flex-end;
   }
 }
 
@@ -101,7 +109,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   @include respond-to('medium'){
     flex-direction: row;
@@ -112,7 +120,8 @@
   @include respond-to('xlarge'){
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    width: 175px;
   }
 
   li{
