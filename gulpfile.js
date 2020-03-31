@@ -62,8 +62,6 @@ var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 // Prettier - uhlazení JS souborů
 var prettier = require('gulp-prettier');
-// Imagemin - optimalizace obrázků
-var imagemin = require('gulp-imagemin');
 // generování SVG spritů a ikon
 var svgstore = require('gulp-svgstore');
 // minimalizace SVG
@@ -179,18 +177,6 @@ gulp.task('prettier', function() {
     .pipe(gulp.dest('./'));
 });
 
-// optimalizace obrázků
-gulp.task('images', function() {
-  return gulp.src(settings.img.source)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(imagemin({
-      interlaced: true,
-      pngquant: true,
-      progressive: true
-    }))
-    .pipe(gulp.dest(settings.img.target))
-});
-
 // sledování změn souborů
 gulp.task('watch', ['browser-sync'], function () {
   gulp.watch(settings.css.watch, ['sass']);
@@ -200,6 +186,6 @@ gulp.task('watch', ['browser-sync'], function () {
 
 // aliasy tasků
   // úpravy před nahráním do produkce
-  gulp.task('deploy', ['makecss', 'stylelint', 'jslint', 'images']);
+  gulp.task('deploy', ['makecss', 'stylelint', 'jslint']);
   // defaultni task
   gulp.task('default', ['watch']);
