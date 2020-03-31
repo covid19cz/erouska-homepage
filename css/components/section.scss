@@ -3,19 +3,23 @@
   padding-top: 25px;
 
   @include respond-to('xlarge') {
+    max-width: 700px;
     margin-bottom: 50px;
     padding-top: 140px;
   }
 }
 
-.section--last{
-  margin-bottom: 0;
+.section--first{
+  @include respond-to('medium') {
+    padding-top: 100px;
+  }
+  @include respond-to('xlarge') {
+    padding-top: 285px;
+  }
 }
 
-.section--narrow {
-  @include respond-to('xlarge') {
-    max-width: 700px;
-  }
+.section--last{
+  margin-bottom: 0;
 }
 
 .section__title {

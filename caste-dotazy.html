@@ -28,66 +28,27 @@
   <div class="container">
     <header class="header" role="banner">
       <div class="header__logo-wrapper">
-        <h1 class="header__logo">
-          <img src="/img/logo.svg" alt="eRouška" />
-        </h1>
+        <h2 class="header__logo">
+          <a href="/" title="eRouška - Hlavní stránka">
+            <img src="/img/logo.svg" alt="eRouška" />
+          </a>
+        </h2>
       </div>
 
+      <nav class="header__nav-wrapper d-none d-md-block" role="navigation">
+        <ul class="header__nav">
+          <li><a class="js-scrollto" href="/">Zpět na Hlavní stránku</a></li>
+        </ul>
+      </nav>
     </header> <!-- /header -->
 
-    <section class="hero-wrapper" id="uvod">
-      <div class="hero">
-        <h2 class="hero__title"><span>Chráním sebe,</span> <br />chráním tebe!</h2>
-        <div class="hero__intro">
-          <p>Aplikace <em>eRouška</em> si díky Bluetooth pamatuje ostatní <em>eRoušky</em>, které jste potkali. Usnadní tak hygieně dohledávání rizikových kontaktů.</p>
-          <p>Přispějte i vy k tomu, aby nakažených koronavirem přibývalo méně.</p>
-        </div>
-        <ul class="hero__actions">
-          <li><a href="#" target="_blank" class="button button--blue">Stáhnout pro Android</a></li>
-          <li><a href="#" target="_blank" class="button button--blue">Stáhnout pro iOS</a></li>
-        </ul>
-      </div>
-
-      <div class="hero__example d-none d-md-block">
-        <div class="hero__example__phone">
-          <div class="hero__example__phone__screen"></div>
-          <div class="hero__example__phone__frame"></div>
-        </div>
-        <div class="hero__example__mask"></div>
-      </div>
-
-    </section>  <!-- /hero -->
+    <section class="heading" id="uvod">
+      <h1 class="heading__title">Časté dotazy</h1>
+    </section>  <!-- /heading -->
 
     <main class="main" role="main">
 
-      <section class="section section--narrow properties">
-        <h2 class="section__title section__title--blue" id="jak-erouska-chrani">Jak eRouška chrání?</h2>
-        <h3 class="section__subtitle">eRouška je součást systému Chytrá karanténa Ministerstva zdravotnictví ČR</h3>
-        <div class="section__content">
-
-          <div class="section__item section__item--blue">
-            <h3>Když jste nakaženého potkali</h3>
-            <p>Když potkáte někoho, u koho se později prokáže koronavirus, hygienická stanice vás bude moci telefonicky kontaktovat. I když jste spolu třeba jen stáli ve frontě v obchodě.</p>
-          </div>
-
-          <div class="section__item section__item--blue">
-            <h3>Když se nakazíte vy</h3>
-            <p>Pokud se u vás koronavirus prokáže, pracovník hygieny vás požádá o přehled lidí, které jste v posledních dnech potkali. Vy mu jednoduše na jeden klik odešlete anonymní seznam uživatelů eRoušky, se kterými jste byli v rizikovém kontaktu. Včetně těch, které osobně neznáte, jen jste s nimi třeba jeli autobusem.</p>
-            <p><em>Nikdo se nedozví, že jste je mohl nakazit zrovna vy.</em></p>
-          </div>
-
-        </div>
-      </section>  <!-- /properties -->
-
-      <section class="section section--narrow video">
-        <h2 class="section__title section__title--blue" id="video">Video nadpis</h2>
-        <div class="section__content">
-          <img src="/img/video-placeholder.png" />
-        </div>
-      </section>  <!-- /video -->
-
-      <section class="section section--last section--narrow faqs">
-        <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">eRouška chrání <br />vaše soukromí</h2>
+      <section class="section">
         <div class="section__content">
 
           <div class="section__item">
@@ -119,10 +80,6 @@
             <h3>Máte další otázky?</h3>
             <p>Zajímá vás, na jakých telefonech eRouška funguje? Nebo třeba jaká data eRoušce sdílíte a jaká data sbírá? </p>
           </div>
-
-          <ul class="section__actions">
-            <li><a href="/caste-dotazy.html" class="button button--red">Další časté dotazy</a></li>
-          </ul>
 
         </div>
       </section>  <!-- /faqs -->
