@@ -1,17 +1,18 @@
 .claim {
-  padding: 50px 0;
-  background: #edfcff;
   margin-top: 50px;
+  padding: 50px 0;
+
+  background: #edfcff;
 
   @include respond-to('medium') {
-    padding: 100px 0;
     margin-top: 80px;
+    padding: 100px 0;
   }
   @include respond-to('xlarge') {
+    margin-top: 160px;
     padding: 220px 0 170px 0;
 
     background: transparent url('../img/deco-bottom.svg') no-repeat center top;
-    margin-top: 160px;
   }
 }
 

@@ -31,8 +31,9 @@
   line-height: 1.3em;
 
   @include respond-to('medium') {
-    font-size: 70px;
     margin-bottom: 45px;
+
+    font-size: 70px;
   }
 
   span {

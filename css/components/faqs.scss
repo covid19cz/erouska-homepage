@@ -1,30 +1,31 @@
 .faq {
 }
 
-.faq__item{
-  border-bottom: 3px solid #eef6fc;
+.faq__item {
   padding-bottom: 30px;
 
-  @include respond-to('medium'){
-    padding-bottom: 40px;
+  border-bottom: 3px solid #eef6fc;
+
+  @include respond-to('medium') {
     margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
-.faq__q{
+.faq__q {
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: $color_blue;
   }
 }
 
-.faq__a{
+.faq__a {
   display: none;
 }
 
-.faq__item--open{
-  .faq__a{
+.faq__item--open {
+  .faq__a {
     display: block;
   }
 }

@@ -66,6 +66,7 @@ var prettier = require('gulp-prettier');
 var svgstore = require('gulp-svgstore');
 // minimalizace SVG
 var svgmin = require('gulp-svgmin');
+var runSequence = require('run-sequence');
 
 // postCSS pluginy a nastavení
 var postcssPlugins = [
@@ -105,6 +106,14 @@ gulp.task('sass', function() {
     .pipe(browsersync.reload({ stream: true }));
 });
 
+// CSScomb - úpravy SASS souborů (řazení vlastností, odsazení...)
+gulp.task('csscomb', function() {
+  return gulp.src(settings.css.components, { base: './' })
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(csscomb())
+    .pipe(gulp.dest('./'));
+});
+
 // CSS kompilace (produkce)
 gulp.task('makecss', ['csscomb'], function() {
   return gulp.src(settings.css.source)
@@ -115,28 +124,6 @@ gulp.task('makecss', ['csscomb'], function() {
     .pipe(rename(settings.css.filename))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(settings.css.target));
-});
-
-// CSScomb - úpravy SASS souborů (řazení vlastností, odsazení...)
-gulp.task('csscomb', function() {
-  return gulp.src(settings.css.components, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(csscomb())
-    .pipe(gulp.dest('./'));
-});
-
-// CSS - lintování (Stylelint)
-gulp.task('stylelint', ['makecss'], function() {
-  return gulp.src(settings.css.components, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(stylelint({
-      reporters: [
-        {
-          formatter: 'string',
-          console: true
-        }
-      ]
-    }));
 });
 
 // JavaScript - spojení souborů
@@ -160,21 +147,19 @@ gulp.task('makejs', ['concatjs'], function() {
     .pipe(gulp.dest('./'));
 });
 
-// JavaScript - lintování
-gulp.task('jslint', ['makejs'], function() {
-  return gulp.src(settings.js.components)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-    .pipe(jshint.reporter('fail'));
-});
-
 // Prettier - uhlazení JS souborů
 gulp.task('prettier', function() {
   return gulp.src(settings.js.components, { base: './' })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(prettier({ singleQuote: true }))
     .pipe(gulp.dest('./'));
+});
+
+// kopírování souborů
+gulp.task('transfer', function() {
+  return gulp.src(['index.html', 'caste-dotazy.html', 'tym.html', 'robots.txt', 'peoples.json', 'css/styles.css', 'js/scripts.js', 'img/**/*', 'navody/**/*'], { base:"." })
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(gulp.dest('dist/'));
 });
 
 // sledování změn souborů
@@ -186,6 +171,13 @@ gulp.task('watch', ['browser-sync'], function () {
 
 // aliasy tasků
   // úpravy před nahráním do produkce
-  gulp.task('deploy', ['makecss', 'stylelint', 'jslint']);
+  //gulp.task('dist', ['makecss', 'stylelint', 'jslint', 'transfer']);
+
+gulp.task('dist', function(done) {
+    runSequence('makecss', 'makejs', 'transfer', function() {
+        done();
+    });
+});
+
   // defaultni task
   gulp.task('default', ['watch']);
