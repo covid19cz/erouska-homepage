@@ -1,0 +1,52 @@
+// box sizing
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  box-sizing: content-box;
+}
+
+// nastavení velikosti písma
+:root {
+  font-size: 100%;
+}
+
+// základní definice
+body {
+  position: relative;
+
+  margin: 0;
+
+  color: $color_black;
+  font-family: $font_opensans;
+  font-size: 16px;
+  line-height: 1;
+
+  background: url('../img/deco-top.svg') no-repeat center 0;
+}
+
+// základní nastavení respo
+@-ms-viewport {
+  width: device-width;
+}
+
+img,
+svg {
+  display: inline-block;
+
+  max-width: 100%;
+  height: auto;
+
+  border: none;
+}
+
+iframe {
+  max-width: 100%;
+}

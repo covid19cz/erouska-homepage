@@ -1,0 +1,32 @@
+// nastavení a proměnné
+@import "base/variables";
+
+// normalize ( https://necolas.github.io/normalize.css/ )
+@import "libs/normalize";
+
+// responsive
+@import "base/display";
+@import "base/responsive";
+
+// základní nastavení dokumentu
+@import "base/base";
+// webové fonty
+@import "base/fonts";
+
+// layout
+@import "base/layout";
+// tlačítka
+@import "components/buttons";
+
+@import "components/header";
+@import "components/main";
+@import "components/hero";
+@import "components/heading";
+@import "components/section";
+@import "components/faqs";
+@import "components/aside";
+@import "components/claim";
+@import "components/footer";
+
+// pomocné třídy
+@import "base/helpers";

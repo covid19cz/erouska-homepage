@@ -1,0 +1,57 @@
+.aside {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+
+  width: 280px;
+  margin-left: 320px;
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: $radius;
+  background: rgb(228,249,254);
+  background: linear-gradient(180deg, rgba(228,249,254,1) 0%, rgba(245,254,253,1) 100%);
+
+  .page-homepage &{
+    top: 440px;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 30px;
+  }
+
+}
+
+
+.aside__title {
+  font-family: $font_merriweather;
+  font-size: 24px;
+}
+
+.aside__actions {
+  align-items: center;
+
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
+  list-style-type: none;
+
+  li {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.aside__button {
+  width: 100%;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 40px;
+}

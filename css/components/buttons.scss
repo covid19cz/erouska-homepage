@@ -1,0 +1,47 @@
+// tlačítko
+.button {
+  display: block;
+
+  color: $color_white;
+  font: inherit; // pro sladění vzhledu buttonu a odkazu
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px; // pro sladění výšky tlačítka
+  text-align: center;
+  text-decoration: none;
+  padding: 0 50px;
+  line-height: 64px;
+
+  border: none;
+  border-radius: $radius_button;
+  background-color: $color_blue;
+
+  cursor: pointer;
+
+  @include respond-to('medium') {
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color_blue_dark;
+  }
+}
+
+.button--blue {
+  background-color: $color_blue;
+
+  &:hover,
+  &:focus {
+    background-color: $color_blue_dark;
+  }
+}
+
+.button--red {
+  background-color: $color_red;
+
+  &:hover,
+  &:focus {
+    background-color: $color_red_dark;
+  }
+}

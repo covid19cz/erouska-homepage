@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Řízení projektu",
+    "people": [
+      {
+        "name": "Vojtěch",
+        "surname": "Komenda",
+        "linkedin": "https://www.linkedin.com/in/vojtech-komenda-71365b15/",
+        "photoUrl": "https://erouska.cz/static/team/vojtech-komenda.jpg"
+      },
+      {
+        "name": "Roman",
+        "surname": "Pichlík",
+        "linkedin": "https://www.linkedin.com/in/romanpichlik/"
+      }
+    ]
+  },
+  {
+    "name": "Vývoj aplikace",
+    "people": [
+      {
+        "name": "Štěpán",
+        "surname": "Šonský",
+        "linkedin": "https://www.linkedin.com/in/stepansonsky/"
+      },
+      {
+        "name": "David",
+        "surname": "Vávra",
+        "linkedin": "https://www.linkedin.com/in/dvavra/"
+      },
+      {
+        "name": "Tomáš",
+        "surname": "Chlápek",
+        "linkedin": "https://www.linkedin.com/in/tom%C3%A1%C5%A1-chl%C3%A1pek-63852266/"
+      }
+    ]
+  }
+]

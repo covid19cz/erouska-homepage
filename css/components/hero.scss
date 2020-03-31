@@ -1,0 +1,194 @@
+.hero-wrapper {
+  position: relative;
+  //outline: 1px solid red;
+}
+
+.hero {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  @include respond-to('medium') {
+    margin-bottom: 100px;
+    padding-top: 50px;
+  }
+  @include respond-to('xlarge') {
+    max-width: 550px;
+    margin-bottom: 50px;
+
+    text-align: left;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  color: $color_blue;
+  font-family: $font_merriweather;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3em;
+
+  @include respond-to('medium') {
+    font-size: 70px;
+  }
+
+  span {
+    color: $color_red;
+  }
+}
+
+.hero__intro {
+  max-width: 90%;
+  margin: 0 auto;
+
+  @include respond-to('large') {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8em;
+
+    @include respond-to('medium') {
+      font-size: 18px;
+    }
+    @include respond-to('xlarge') {
+      font-size: 24px;
+    }
+  }
+}
+
+.hero__urgent {
+  margin-top: 40px;
+
+  p {
+    font-family: $font_merriweather;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5em;
+  }
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+
+  list-style-type: none;
+
+  @include respond-to('medium') {
+    flex-direction: row;
+  }
+  @include respond-to('xlarge') {
+    justify-content: flex-start;
+
+    margin-top: 80px;
+  }
+
+  li {
+    margin-bottom: 20px;
+
+    @include respond-to('medium') {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hero__example {
+  position: relative;
+
+  width: 100%;
+  height: 720px;
+
+  @include respond-to('xlarge') {
+    position: absolute;
+    top: 64px;
+    right: -95px;
+
+    width: 540px;
+  }
+}
+
+.hero__example__phone {
+  position: relative;
+
+  width: 363px;
+  height: 720px;
+  margin: 0 auto;
+}
+
+.hero__example__phone__screen {
+  position: absolute;
+  top: 28px;
+  left: 29px;
+
+  width: 300px;
+  width: 82.6446280992%;
+  height: 660px;
+  height: 91.6666666667%;
+
+  border-radius: 10px;
+  background: pink;
+  //z-index: 55;
+}
+
+.hero__example__phone__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: pink;
+  background: url('../img/phone-frame.png') no-repeat center center;
+  background-size: cover;
+}
+
+.hero__example__mask {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  //display: none;
+
+  width: 540px;
+  height: 306px;
+
+  background: url('../img/deco-mask.png') no-repeat center center;
+
+  transform: translateX(-50%);
+}
+
+/*
+.hero__phone__screen{
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  width: 300px;
+  height: 560px;
+  background: pink;
+}
+
+
+.hero__phone__mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/phone2.png") no-repeat center center;
+}
+*/

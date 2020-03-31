@@ -1,0 +1,10 @@
+.git*
+!.gitignore
+!.gitlab-ci.yml
+!.git-ftp-ignore
+/log
+node_modules/*
+node_modules
+*.sublime-workspace
+*.log
+.htdeployment
