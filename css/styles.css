@@ -514,7 +514,8 @@ iframe {
   border: none;
   border-radius: 6px;
   background-color: #228ed5;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color linear 0.2s; }
   @media (min-width: 768px) {
     .button {
       display: inline-block; } }
@@ -568,6 +569,8 @@ iframe {
     font-weight: 700;
     line-height: 40px;
     text-decoration: none; }
+    .header__nav a svg {
+      margin-right: 10px; }
     @media (min-width: 992px) {
       .header__nav a {
         font-size: 16px; } }
@@ -739,26 +742,36 @@ iframe {
 }
 */
 .heading {
-  padding: 35px 0; }
+  padding: 35px 0;
+  text-align: center; }
   @media (min-width: 768px) {
     .heading {
-      padding: 70px 0; } }
+      padding: 70px 0;
+      text-align: left; } }
 
 .heading__title {
   color: #228ed5;
   font-family: "Merriweather", serif;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 87px;
+  line-height: 1.5em;
   margin: 0; }
+  @media (min-width: 768px) {
+    .heading__title {
+      font-size: 70px;
+      line-height: 87px; } }
 
 .heading__perex {
   margin-top: 50px;
   max-width: 700px; }
   .heading__perex p {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 35px; }
+    line-height: 1.5em; }
+    @media (min-width: 768px) {
+      .heading__perex p {
+        font-size: 24px;
+        line-height: 35px; } }
 
 .section {
   margin-bottom: 25px;
@@ -908,7 +921,10 @@ iframe {
   display: block; }
 
 .team {
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .team {
+      margin-bottom: 100px; } }
 
 .team__title {
   color: #ff0d58;
@@ -924,16 +940,29 @@ iframe {
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 50px; }
-  .team__list li {
-    width: 25%; }
+  @media (min-width: 768px) {
+    .team__list {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  @media (min-width: 768px) {
+    .team__list li {
+      width: 50%; } }
+  @media (min-width: 1200px) {
+    .team__list li {
+      width: 25%; } }
   .team__list a {
     color: #222222;
     font-size: 20px;
     font-weight: 700;
-    line-height: 87px; }
+    line-height: 2em; }
+    @media (min-width: 768px) {
+      .team__list a {
+        line-height: 87px; } }
+    .team__list a:hover {
+      text-decoration: none; }
 
 .aside {
   position: absolute;
