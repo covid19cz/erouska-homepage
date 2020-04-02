@@ -31,7 +31,7 @@ var gulp = require('gulp');
   // spojení souborů
   var concat = require('gulp-concat');
   // Cheerio - manipulace v HTML/XML souborech
-  var cheerio = require('cheerio')
+  var cheerio = require('cheerio');
   // plumber - odchycení chybových hlášek
   var plumber = require('gulp-plumber');
   // přejmenování souborů
@@ -157,7 +157,7 @@ gulp.task('prettier', function() {
 
 // kopírování souborů
 gulp.task('transfer', function() {
-  return gulp.src(['./*.html', 'robots.txt', 'peoples.json', 'css/styles.css', 'js/scripts.js', 'img/**/*', 'navody/**/*'], { base:"." })
+  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'peoples.json', 'css/styles.css', 'js/scripts.js', 'img/**/*', 'navody/**/*'], { base:"." })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(gulp.dest('dist/'));
 });
