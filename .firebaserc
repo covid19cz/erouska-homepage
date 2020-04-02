@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "covid19cz",
+    "prod": "daring-leaf-272223"
+  }
+}

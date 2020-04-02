@@ -1,4 +1,4 @@
-.git*
+.git/*
 !.gitignore
 !.gitlab-ci.yml
 !.git-ftp-ignore
@@ -8,6 +8,7 @@ node_modules
 *.sublime-workspace
 *.log
 .htdeployment
-public
+dist/*
 .firebase/
-.firebaserc
+js/scripts.js*
+css/styles.css*

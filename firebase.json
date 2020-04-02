@@ -1,10 +1,15 @@
 {
   "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "public": "dist",
+    "predeploy": [
+       "npm install && gulp dist"
+    ],
+    "appAssociation": "AUTO",
+    "rewrites": [
+      {
+        "source": "/app/**",
+        "dynamicLinks": true
+      }
     ]
   }
 }

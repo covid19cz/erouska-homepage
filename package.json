@@ -1,8 +1,7 @@
 {
-  "name": "wt-devstack",
+  "name": "erouska",
   "version": "1.0.7",
-  "description": "Oficiální devstack Webterans.",
-  "author": "Daniel Strelec",
+  "description": "eRouška homepage.",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
@@ -39,5 +38,11 @@
   ],
   "dependencies": {
     "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   }
 }
