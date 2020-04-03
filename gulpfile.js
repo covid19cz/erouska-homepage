@@ -157,7 +157,7 @@ gulp.task('prettier', function() {
 
 // kopírování souborů
 gulp.task('transfer', function() {
-  return gulp.src(['index.html', 'caste-dotazy.html', 'tym.html', 'robots.txt', 'peoples.json', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*'], { base:"." })
+  return gulp.src(['index.html', 'caste-dotazy.html', 'tym.html', 'ochrana-osobnich-udaju.html', 'audit-kod.html', 'robots.txt', 'peoples.json', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*'], { base:"." })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(gulp.dest('dist/'));
 });
