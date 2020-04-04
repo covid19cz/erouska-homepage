@@ -22,6 +22,7 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
+    "handlebars": "^4.7.6",
     "jshint": "^2.11.0",
     "postcss-flexbugs-fixes": "^4.2.0",
     "postcss-pxtorem": "^5.1.1",

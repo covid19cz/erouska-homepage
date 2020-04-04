@@ -1,5 +1,10 @@
 'use strict';
 
+const fs = require("fs");
+const Handlebars = require("handlebars");
+
+const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
+
 // nastavení
 var settings = {
   browsersync: {
@@ -157,7 +162,7 @@ gulp.task('prettier', function() {
 
 // kopírování souborů
 gulp.task('transfer', function() {
-  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'peoples.json', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*', 'downloads/**/*'], { base:"." })
+  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*', 'downloads/**/*'], { base:"." })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(gulp.dest('dist/'));
 });
@@ -173,8 +178,35 @@ gulp.task('watch', ['browser-sync'], function () {
   // úpravy před nahráním do produkce
   //gulp.task('dist', ['makecss', 'stylelint', 'jslint', 'transfer']);
 
+gulp.task('build-team', function () {
+    const content = fs.readFileSync("people.json").toString();
+    const data = JSON.parse(content);
+    data.sort((a, b) => a.id - b.id);
+
+    for (const section of data) {
+      for (const person of section["people"] || []) {
+        const url = person["photoUrl"];
+        if (url === undefined) {
+          person["photoUrl"] = `${WEBSITE_URL}img/photo-avatar.png`;
+        } else {
+          person["photoUrl"] = `${WEBSITE_URL}img/photos/${url}`;
+        }
+      }
+    }
+    fs.writeFileSync("dist/peoples.json", JSON.stringify(data));
+
+    const ctx = {
+      sections: data
+    };
+
+    const template = fs.readFileSync("tym.hbs").toString();
+    const page = Handlebars.compile(template);
+    const result = page(ctx);
+    fs.writeFileSync(`dist/tym.html`, result);
+});
+
 gulp.task('dist', function(done) {
-    runSequence('makecss', 'makejs', 'transfer', function() {
+    runSequence('makecss', 'makejs', 'transfer', 'build-team', function() {
         done();
     });
 });
