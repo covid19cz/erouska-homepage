@@ -14,7 +14,7 @@ jobs:
       - name: Install global dependencies
         run: sudo npm install -g firebase-tools
       - name: Deploy to Firebase development
-        if: github.ref == 'refs/heads/deploy'
+        if: github.ref == 'refs/heads/develop'
         run: firebase deploy -P dev --token=${{ secrets.FIREBASE_DEV_TOKEN }} --non-interactive
         env:
           WEBSITE_URL: https://covid19cz.web.app/
