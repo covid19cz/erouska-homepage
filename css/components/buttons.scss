@@ -47,3 +47,22 @@
     background-color: $color_red_dark;
   }
 }
+
+.button--silver{
+  background-color: $color_silver;
+
+  &:hover,
+  &:focus {
+    background-color: $color_silver;
+  }
+}
+
+.button--disable{
+  cursor: not-allowed;
+  background-color: $color_silver;
+
+  &:hover,
+  &:focus {
+    background-color: $color_silver;
+  }
+}
