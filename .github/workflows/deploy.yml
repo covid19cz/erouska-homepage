@@ -18,8 +18,14 @@ jobs:
         run: firebase deploy -P dev --token=${{ secrets.FIREBASE_DEV_TOKEN }} --non-interactive
         env:
           WEBSITE_URL: https://covid19cz.web.app/
+          FIREBASE_PROJECT: covid19cz
+          SERVICE_EMAIL: firebase-adminsdk-296p6@covid19cz.iam.gserviceaccount.com
+          SERVICE_KEY: ${{ secrets.FIREBASE_DEV_SERVICE_KEY }}
       - name: Deploy to Firebase production
         if: github.ref == 'refs/heads/master'
         run: firebase deploy -P prod --token=${{ secrets.FIREBASE_PROD_TOKEN }} --non-interactive
         env:
           WEBSITE_URL: https://erouska.cz/
+          FIREBASE_PROJECT: daring-leaf-272223
+          SERVICE_EMAIL: TODO
+          SERVICE_KEY: TODO

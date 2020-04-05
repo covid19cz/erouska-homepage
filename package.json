@@ -7,6 +7,7 @@
     "browser-sync": "^2.26.7",
     "cheerio": "^1.0.0-rc.3",
     "cssnano": "^4.1.10",
+    "google-auth-library": "^6.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.1.0",
@@ -24,6 +25,7 @@
     "gulp-uglify": "^3.0.2",
     "handlebars": "^4.7.6",
     "jshint": "^2.11.0",
+    "node-fetch": "^2.6.0",
     "postcss-flexbugs-fixes": "^4.2.0",
     "postcss-pxtorem": "^5.1.1",
     "stylelint": "^13.2.0",
@@ -38,7 +40,8 @@
     "android >= 4.4"
   ],
   "dependencies": {
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "turndown": "^6.0.0"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions"

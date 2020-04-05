@@ -2,8 +2,14 @@
 
 const fs = require("fs");
 const Handlebars = require("handlebars");
+const TurndownService = require("turndown");
+const fetch = require("node-fetch");
+const {JWT} = require("google-auth-library");
 
 const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
+const FIREBASE_PROJECT = process.env.FIREBASE_PROJECT;
+const SERVICE_EMAIL = process.env.SERVICE_EMAIL;
+const SERVICE_KEY = process.env.SERVICE_KEY;
 
 // nastavení
 var settings = {
@@ -174,9 +180,87 @@ gulp.task('watch', ['browser-sync'], function () {
   gulp.watch(settings.browsersync.watch, ['browsersync-reload']);
 });
 
-// aliasy tasků
-  // úpravy před nahráním do produkce
-  //gulp.task('dist', ['makecss', 'stylelint', 'jslint', 'transfer']);
+function renderHandlebars(templateFile, context, output) {
+    const template = fs.readFileSync(templateFile).toString();
+    const page = Handlebars.compile(template);
+    const result = page(context);
+    fs.writeFileSync(output, result);
+}
+
+function getAccessToken(email, key) {
+  return new Promise((resolve, reject) => {
+    const jwtClient = new JWT(email, null, key, "https://www.googleapis.com/auth/firebase.remoteconfig", null);
+    jwtClient.authorize(function(err, tokens) {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve(tokens.access_token);
+    });
+  });
+}
+
+async function updateRemoteConfig(content) {
+    const turndownService = new TurndownService();
+    const markdown = turndownService.turndown(content).replace(/\n/g, "\\n");
+    const token = await getAccessToken(SERVICE_EMAIL, SERVICE_KEY);
+
+    try {
+      const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
+        method: "GET",
+        headers: {
+          "Authorization": `Bearer ${token}`,
+          "Accept-Encoding": "gzip",
+        }
+      });
+      if (config.status !== 200) {
+        console.log("FAQ remote config update failed");
+        return;
+      }
+      const body = await config.json();
+      const parameters = body["parameters"] || {};
+      const conditions = body["conditions"] || [];
+
+      const previousFaq = parameters["helpMarkdown"]["defaultValue"]["value"];
+      if (previousFaq === markdown) {
+        console.log("Markdown not changed, skipping");
+        return;
+      }
+
+      parameters["helpMarkdown"] = {
+        defaultValue: {
+          value: markdown
+        }
+      };
+
+      const data = {
+        parameters,
+        conditions
+      };
+      const dataJson = JSON.stringify(data);
+
+      const result = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
+        method: "PUT",
+        headers: {
+          "Content-Length": dataJson.length,
+          "Content-Type": "application/json; UTF8",
+          "Authorization": `Bearer ${token}`,
+          "Accept-Encoding": "gzip",
+          "If-Match": "*"
+        },
+        body: dataJson
+      });
+      const status = result.status;
+      if (status === 200) {
+        console.log("FAQ remote config uploaded");
+      } else {
+        console.error(`FAQ remote config upload failed: ${status}: ${result.statusText}`);
+      }
+    }
+    catch (e) {
+      console.error(e);
+    }
+}
 
 gulp.task('build-team', function () {
     const content = fs.readFileSync("people.json").toString();
@@ -199,17 +283,25 @@ gulp.task('build-team', function () {
       sections: data
     };
 
-    const template = fs.readFileSync("tym.hbs").toString();
-    const page = Handlebars.compile(template);
-    const result = page(ctx);
-    fs.writeFileSync(`dist/tym.html`, result);
+    renderHandlebars("tym.hbs", ctx, "dist/tym.html");
+});
+gulp.task('build-faq', async function () {
+    const content = fs.readFileSync("faq.html.template").toString();
+    renderHandlebars("caste-dotazy.hbs", {faq: content}, "dist/caste-dotazy.html");
+
+    if (FIREBASE_PROJECT === undefined) {
+      console.log("FIREBASE_PROJECT not set, skipping upload to remote config");
+      return;
+    }
+
+    await updateRemoteConfig(content);
 });
 
 gulp.task('dist', function(done) {
-    runSequence('makecss', 'makejs', 'transfer', 'build-team', function() {
+    runSequence('makecss', 'makejs', 'transfer', 'build-team', 'build-faq', function() {
         done();
     });
 });
 
-  // defaultni task
-  gulp.task('default', ['watch']);
+// defaultni task
+gulp.task('default', ['watch']);
