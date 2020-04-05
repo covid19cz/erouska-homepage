@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require("fs");
+const path = require("path");
 const Handlebars = require("handlebars");
 const TurndownService = require("turndown");
 const fetch = require("node-fetch");
@@ -168,7 +169,7 @@ gulp.task('prettier', function() {
 
 // kopírování souborů
 gulp.task('transfer', function() {
-  return gulp.src(['./*.html', './*.json', 'favicon.ico', 'robots.txt', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*', 'downloads/**/*'], { base:"." })
+  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'downloads/**/*'], { base:"." })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(gulp.dest('dist/'));
 });
@@ -200,9 +201,27 @@ function getAccessToken(email, key) {
   });
 }
 
-async function updateRemoteConfig(content) {
-    const turndownService = new TurndownService();
-    const markdown = turndownService.turndown(content).replace(/\n/g, "\\n");
+function normalizeMarkdown(content) {
+  return content.replace(/\n/g, "\\n");
+}
+
+function markdownifyFile(path) {
+  const content = fs.readFileSync(path).toString();
+  const turndownService = new TurndownService();
+  return turndownService.turndown(content);
+}
+
+function isDirty(data, values) {
+  for (const key of Object.keys(values)) {
+    if (data[key] === undefined || data[key]["defaultValue"]["value"] !== values[key]) {
+      console.log(`Key ${key} is dirty`);
+      return true;
+    }
+  }
+  return false;
+}
+
+async function updateRemoteConfig(values) {
     const token = await getAccessToken(SERVICE_EMAIL, SERVICE_KEY);
 
     try {
@@ -214,24 +233,33 @@ async function updateRemoteConfig(content) {
         }
       });
       if (config.status !== 200) {
-        console.log("FAQ remote config update failed");
+        console.log("FAQ remote config fetch failed");
         return;
       }
+
+      const etag = config.headers.raw().etag[0];
       const body = await config.json();
       const parameters = body["parameters"] || {};
       const conditions = body["conditions"] || [];
 
-      const previousFaq = parameters["helpMarkdown"]["defaultValue"]["value"];
-      if (previousFaq === markdown) {
-        console.log("Markdown not changed, skipping");
+      if (!isDirty(body["parameters"], values)) {
+        console.log("Values not changed, skipping");
         return;
       }
 
-      parameters["helpMarkdown"] = {
-        defaultValue: {
-          value: markdown
+      for (const key of Object.keys(values)) {
+        const value = values[key];
+        let object = {
+          defaultValue: {
+            value
+          }
+        };
+        if (parameters[key] !== undefined) {
+            object = parameters[key];
         }
-      };
+        object.defaultValue.value = value;
+        parameters[key] = object;
+      }
 
       const data = {
         parameters,
@@ -246,7 +274,7 @@ async function updateRemoteConfig(content) {
           "Content-Type": "application/json; UTF8",
           "Authorization": `Bearer ${token}`,
           "Accept-Encoding": "gzip",
-          "If-Match": "*"
+          "If-Match": etag
         },
         body: dataJson
       });
@@ -260,6 +288,10 @@ async function updateRemoteConfig(content) {
     catch (e) {
       console.error(e);
     }
+}
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 gulp.task('build-team', function () {
@@ -285,20 +317,30 @@ gulp.task('build-team', function () {
 
     renderHandlebars("tym.hbs", ctx, "dist/tym.html");
 });
-gulp.task('build-faq', async function () {
+gulp.task('build-faq', function () {
     const content = fs.readFileSync("faq.html.template").toString();
     renderHandlebars("caste-dotazy.hbs", {faq: content}, "dist/caste-dotazy.html");
-
+});
+gulp.task('update-remote-config', async function() {
     if (FIREBASE_PROJECT === undefined) {
-      console.log("FIREBASE_PROJECT not set, skipping upload to remote config");
+      console.log("FIREBASE_PROJECT not set, skipping remote config upload");
       return;
     }
+    const faq = normalizeMarkdown(markdownifyFile("faq.html.template"));
+    const values = {
+      helpMarkdown: faq
+    };
+    for (const file of fs.readdirSync("navody")) {
+      const filePath = `navody/${file}`;
+      const name = `batteryOptimization${capitalize(path.basename(filePath, ".md"))}Markdown`;
+      values[name] = normalizeMarkdown(fs.readFileSync(filePath).toString());
+    }
 
-    await updateRemoteConfig(content);
+    await updateRemoteConfig(values);
 });
 
 gulp.task('dist', function(done) {
-    runSequence('makecss', 'makejs', 'transfer', 'build-team', 'build-faq', function() {
+    runSequence('makecss', 'makejs', 'transfer', 'build-team', 'build-faq', 'update-remote-config', function() {
         done();
     });
 });
