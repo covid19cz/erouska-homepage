@@ -1,6 +1,6 @@
 # Lenovo
 
-#### Návod platí pro Lenovo P2, u ostatních Lenovo telefonů mohou být drobné rozdíly.
+_Návod platí pro Lenovo P2, u ostatních Lenovo telefonů mohou být drobné rozdíly._
 
 Aby aplikace běžela dlouhodobě, je třeba:
 
