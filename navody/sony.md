@@ -1,4 +1,4 @@
-# Sony
+### Sony
 
 Telefony Sony mají **režim Stamina** pro šetření baterie. Pokud je tento režim zapnutý, neumožňuje aplikacím pracovat na pozadí a blokuje všechna upozornění.
 
@@ -19,4 +19,4 @@ Pro vyjmutí pouze konkrétní aplikace z režimu Stamina postupujte takto:
 4. Přejděte do **Optimalizace baterie** (Battery optimization)
 5. Přejděte na položku **Aplikace** (Apps), a najděte aplikaci eRouška.
 
-Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com)
+Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)
