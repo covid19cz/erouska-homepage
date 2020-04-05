@@ -1,5 +1,5 @@
-# Huawei
-## 1. PowerGenie
+### Huawei
+#### 1. PowerGenie
 
 Na některých telefonech s EMUI 9+ (Android P+) je předinstalována aplikace PowerGenie, která neumožňuje aplikacím práci na pozadí a nelze ji nijak nastavit.
 Na některých telefonech je možné do příštího restartu deaktivovat PowerGenie pomocí následujících kroků:
@@ -11,7 +11,7 @@ Na některých telefonech je možné do příštího restartu deaktivovat PowerG
 
 Toto nastavení je potřeba zopakovat po každém restartu telefonu.
 
-## 2. Jiné mechanismy
+#### 2. Jiné mechanismy
 Je možné, že vaše aplikace mohou být ukončovány i jiným mechanismem - vyzkoušejte i následující kroky (mohou platit pouze pro některé verze telefonů):
 
 *   Nastavení telefonu > Pokročilá nastavení > Správa baterie > Správa napájení
@@ -28,4 +28,4 @@ Je možné, že vaše aplikace mohou být ukončovány i jiným mechanismem - vy
 *   Nastavení telefonu > Baterie > Spouštění aplikací
     *   Pro eRoušku zvolte **Nastavit ručně** a ujistěte se, že všechny položky zde jsou zapnuty.
 
-Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com)
+Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)
