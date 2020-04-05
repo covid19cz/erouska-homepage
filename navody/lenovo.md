@@ -1,6 +1,6 @@
-# Lenovo
+### Lenovo
 
-_Návod platí pro Lenovo P2, u ostatních Lenovo telefonů mohou být drobné rozdíly._
+Návod platí pro Lenovo P2, u ostatních Lenovo telefonů mohou být drobné rozdíly.
 
 Aby aplikace běžela dlouhodobě, je třeba:
 
@@ -9,8 +9,8 @@ Aby aplikace běžela dlouhodobě, je třeba:
 
 Jen pak systém aplikace po krátkém čase neukončí.
 
-POZOR: Pokud aplikaci zavřete swipnutím (smýknutím prstu přes displej), bude i přesto ukončena.
+POZOR: Pokud aplikaci zavřete swipnutím (přejetím prstu přes displej), bude i přesto ukončena.
 
-POZNÁMKA: Nezáleží přitom na tom, jestli je v **Nastavení -> Aplikace -> eRouška -> Baterie** povolena optimalizace baterie či nikoliv.
+POZNÁMKA: Nezáleží na tom, jestli je v **Nastavení -> Aplikace -> eRouška -> Baterie** povolena optimalizace baterie či nikoliv.
 
-Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com)
+Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)
