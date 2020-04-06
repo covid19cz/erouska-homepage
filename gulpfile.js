@@ -169,7 +169,7 @@ gulp.task('prettier', function() {
 
 // kopírování souborů
 gulp.task('transfer', function() {
-  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*', 'downloads/**/*'], { base:"." })
+  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'downloads/**/*'], { base:"." })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(gulp.dest('dist/'));
 });
