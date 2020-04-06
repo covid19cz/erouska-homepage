@@ -32,14 +32,14 @@
       <div class="section__item faq__item">
         <h3 class="faq__q">Proč chce aplikace znát mé telefonní číslo?</h3>
         <div class="faq__a">
-<p>Telefonní číslo využije hygienická stanice, aby vás mohla v případě potřeby co nejdříve kontaktovat. To nastane jen tehdy, pokud bude mít na základě informací z eRoušky nakaženého člověka podezření, že jste s ním byli v rizikovém kontaktu. Proto telefonní číslo registrujete hned při první spuštění eRoušky.</p>
+<p>Telefonní číslo využije hygienická stanice, aby vás mohla v případě potřeby co nejdříve kontaktovat. To nastane jen tehdy, pokud bude mít na základě informací z eRoušky nakaženého člověka podezření, že jste s ním byli v rizikovém kontaktu. Proto telefonní číslo registrujete hned při prvním spuštění eRoušky.</p>
         </div>
       </div>
 
       <div class="section__item faq__item">
         <h3 class="faq__q">Jak mám postupovat, když mi test potvrdí nákazu?</h3>
         <div class="faq__a">
-<p>V první řadě kontaktujte hygienickou stanici, pod kterou místně spadáte, pokud vás již nekontaktovala sama. Pověřený pracovnák vám poskytne informace o tom, jak dále postupovat, a případně vás požádá o souhlas s odesláním dat z aplikace. Dále byste měli zavolat svému praktickému lékaři, který vám indikuje léčbu.</p>
+<p>V první řadě kontaktujte hygienickou stanici, pod kterou místně spadáte, pokud vás již nekontaktovala sama. Pověřený pracovník vám poskytne informace o tom, jak dále postupovat, a případně vás požádá o souhlas s odesláním dat z aplikace. Dále byste měli zavolat svému praktickému lékaři, který vám indikuje léčbu.</p>
 <p><strong>V případě závažných zdravotních komplikací volejte linky 112 a 155.</strong></p>
 <p>Aktuální informace se dozvíte vždy na celostátní informační telefonní lince <strong>1212</strong> nebo <a href="https://koronavirus.mzcr.cz/" target="_blank">na webu Ministerstva zdravotnictví ČR</a>.</p>
         </div>
@@ -97,7 +97,7 @@
 <p>Zde naleznete bližší informace:</p>
 <ul>
   <li><a href="/gdpr.html" target="_blank">Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz</a></li>
-  <li><a href="/audit.html" target="_blank">Audit zdrojového kódu aplikace</a></li>
+  <li><a href="/audit-kod.html" target="_blank">Audit zdrojového kódu aplikace</a></li>
   <li><a href="https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery" target="_blank">Závazek datové důvěry iniciativy COVID19CZ</a></li>
 </ul>
         </div>
@@ -123,7 +123,7 @@
             <li>OS Android verze 5.0 a vyšší s Google services (nemá jen malé procento telefonů Huawei a některé telefony s vlastní ROM)</li>
             <li>Bluetooth LE (Low Energy) <sup>*</sup></li>
           </ul>
-          <p><sup>*</sup> Některé starší modely telefonů (např. Google Nexus 5) mohou fungovat jen částečně - vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.</p>
+          <p><sup>*</sup> Některé starší modely telefonů (např. Google Nexus 5, Honor 7 lite, atp.) mohou fungovat jen částečně - vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.</p>
         </div>
       </div>
 
@@ -190,9 +190,7 @@
 <p>Zdrojové kódy aplikace eRouška byly <a href="/audit-kod.html" target="_blank">prověřeny nezávislými autoritami</a>, jejichž kontrola potvrdila, že aplikace:</p>
 <ul>
   <li>nesleduje polohu,</li>
-  <li>sama automaticky data nikam neodesílá,</li>
-  <li>funguje offline,</li>
-  <li>detekuje jen další eRoušky v okolí, a ne každé Bluetooth zařízení, atp.</li>
+  <li>sama automaticky data nikam neodesílá, atp.</li>
 </ul>
         </div>
       </div>
