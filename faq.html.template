@@ -187,7 +187,7 @@
         <h3 class="faq__q">Lze ověřit, že aplikace nezaznamenává moji polohu?</h3>
         <div class="faq__a">
 <p>Ano. Nasbíraná data lze kdykoli zobrazit v záložce Moje data. Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>), takže znalý člověk může snadno ověřit, že údaje o poloze aplikace opravdu nesbírá.</p>
-<p>Zdrojové kódy aplikace eRouška byly <a href="/audit-kod" target="_blank">prověřeny nezávislými autoritami</a>, jejichž kontrola potvrdila, že aplikace:</p>
+<p>Zdrojové kódy aplikace eRouška byly <a href="https://erouska.cz/audit-kod" target="_blank">prověřeny nezávislými autoritami</a>, jejichž kontrola potvrdila, že aplikace:</p>
 <ul>
   <li>nesleduje polohu</li>
   <li>sama automaticky data nikam neodesílá</li>
