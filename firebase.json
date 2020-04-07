@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist",
+    "cleanUrls": true,
     "predeploy": [
        "npm install && gulp dist"
     ],
