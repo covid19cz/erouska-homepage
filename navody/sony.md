@@ -1,22 +1,20 @@
 ### Sony
 
-Telefony Sony mají **režim Stamina** pro šetření baterie. Pokud je tento režim zapnutý, neumožňuje aplikacím pracovat na pozadí a blokuje všechna upozornění.
+eRouška běží na pozadí vašeho telefonu, i když je aplikace zavřená nebo je váš telefon zamčený. Některé telefony Sony ale omezují provoz aplikací takto běžících na pozadí, kvůli úspoře baterie.
 
-Nepoužívejte režim Stamina, pokud chcete, aby váš telefon dělal něco užitečného i tehdy, když jej právě aktivně nepoužíváte. Režim Stamina se může zapínat i automaticky.
+Provedením kroků níže umožníte eRoušce běžet na pozadí vašeho telefonu déle, a tak zvýšíte její účinnost.
 
-Abyste zabránili režimu Stamina, aby se zapínal automaticky, postupujte takto:
+Pokud se vám postup provést nepodaří, nelamte si s tím hlavu. Stačí, pokud eRoušku jednou za pár hodin otevřete.
 
-1. Otevřete **Nastavení telefonu** (Phone settings)
-2. Přejděte do **Baterie** (Battery)
-3. Přejděte do sekce **Stamina mód**
-4. Označte **Nikdy nezapínat**
+#### Zajištění běhu eRoušky na pozadí
 
-Pro vyjmutí pouze konkrétní aplikace z režimu Stamina postupujte takto:
+1. Stiskněte ikonu **Nastavení telefonu** (Phone settings).
+2. Vyberte položku **Baterie** (Battery).
+3. Stiskněte tři tečky v pravém horním rohu obrazovky.
+4. Vyberte položku **Optimalizace baterie** (Battery optimization).
+5. Vyberte položku **Aplikace** (Apps).
+6. Najděte aplikaci **eRouška** a vyjměte ji z režimu Stamina.
+7. Postup jste úspěšně dokončili!
 
-1. Otevřete **Nastavení telefonu** (Phone settings)
-2. Přejděte do **Baterie** (Battery)
-3. Stiskněte **Tři tečky v pravém horním rohu**
-4. Přejděte do **Optimalizace baterie** (Battery optimization)
-5. Přejděte na položku **Aplikace** (Apps), a najděte aplikaci eRouška.
 
 Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)

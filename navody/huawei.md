@@ -18,6 +18,7 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 9. 	V seznamu aplikací seřazených podle abecedy vyberte položku **eRouška**.
 10.  Zkontrolujte, zda je vybrána možnost **Zakázat**. Pokud ne, vyberte ji a stiskněte **OK**.
 11.  Tento postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů, např. **Ruční zajištění běhu eRoušky na pozadí**.
+
 12.  Stiskněte ikonu **Nastavení** ve spodní části obrazovky. Pokud ikonu nevidíte, pokračujte bodem 20. níže.
 13.  Vyberte položku **Speciální přístup**.
 14.  Vyberte položku **Ignorovat optimalizaci baterie**.
@@ -26,6 +27,7 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 17.  V seznamu aplikací seřazených podle abecedy vyberte položku **eRouška**.
 18.  Zkontrolujte, zda je vybrána možnost **Povolit**. Pokud ne, vyberte ji.
 19.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů např. **Ruční zajištění běhu eRoušky na pozadí**.
+
 20.  Stiskněte ikonu **Pokročilé** ve spodní části obrazovky.
 21.  Vyberte položku **Ignorovat optimalizace**.
 22.  Stiskněte text “Povoleno” v levém horním rohu obrazovky.
@@ -44,6 +46,7 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 6. 	Zkontrolujte, že všechny tři položky (**Automatické spuštění**, **Sekundární spuštění** a **Spustit na pozadí** jsou zapnuty.
 7. 	Stiskněte **OK**.
 8.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů, např. **Zajištění spuštění eRoušky po vypnutí obrazovky**.
+
 9.   Vyberte položku **Zavřít aplikace po uzamčení obrazovky**.
 10.  V seznamu aplikací seřazených podle abecedy najděte položku **eRouška**.
 11.  Zkontrolujte, že přepínač v pravé části obrazovky je u této aplikace vypnutý.
