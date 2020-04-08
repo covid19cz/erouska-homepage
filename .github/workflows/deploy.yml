@@ -26,6 +26,6 @@ jobs:
         run: firebase deploy -P prod --token=${{ secrets.FIREBASE_PROD_TOKEN }} --non-interactive
         env:
           WEBSITE_URL: https://erouska.cz/
-#          FIREBASE_PROJECT: daring-leaf-272223
-#          SERVICE_EMAIL: TODO
-#          SERVICE_KEY: TODO
+          FIREBASE_PROJECT: daring-leaf-272223
+          SERVICE_EMAIL: github-firebase@daring-leaf-272223.iam.gserviceaccount.com
+          SERVICE_KEY: ${{ secrets.FIREBASE_PROD_SERVICE_KEY }}
