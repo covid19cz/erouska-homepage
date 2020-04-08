@@ -1,16 +1,18 @@
 ### Lenovo
 
-Návod platí pro Lenovo P2, u ostatních Lenovo telefonů mohou být drobné rozdíly.
+eRouška běží na pozadí vašeho telefonu, i když je aplikace zavřená nebo je váš telefon zamčený. Některé telefony Samsung ale omezují provoz aplikací takto běžících na pozadí, kvůli úspoře baterie.
 
-Aby aplikace běžela dlouhodobě, je třeba:
+Provedením kroků níže umožníte eRoušce běžet na pozadí vašeho telefonu déle, a tak zvýšíte její účinnost.
 
-1. otevřít přehled běžících aplikací (přepínač aplikací)
-2. na aplikaci eRouška povolit **ikonu zámku v pravém horním rohu**
+Pokud se vám postup provést nepodaří, nelamte si s tím hlavu. Stačí, pokud eRoušku jednou za pár hodin otevřete.
 
-Jen pak systém aplikace po krátkém čase neukončí.
 
-POZOR: Pokud aplikaci zavřete swipnutím (přejetím prstu přes displej), bude i přesto ukončena.
+#### Uzamčení běhu eRoušky
 
-POZNÁMKA: Nezáleží na tom, jestli je v **Nastavení -> Aplikace -> eRouška -> Baterie** povolena optimalizace baterie či nikoliv.
+1.	Stiskněte ikonu “Nastavení” na hlavní obrazovce vašeho telefonu.
+2.	Vyberte položku “Aplikace“.
+3.	Vyberte záložku “Běžící“ v horní části obrazovky
+4.	Zapněte ikonu zámku v pravém horním rohu aplikace eRouška.
+
 
 Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)
