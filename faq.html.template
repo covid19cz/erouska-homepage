@@ -62,7 +62,7 @@
       <div class="section__item faq__item">
         <h3 class="faq__q">Co je to inteligentní/chytrá karanténa? Jakou v ní hraje roli eRouška?</h3>
         <div class="faq__a">
-<p>Jde o soubor chytrých opatření, která chrání lidi před nákazou a ekonomiku před kolapsem. Místo toho, aby do karantény uvrhla celý národ, do striktní karantény izoluje pouze nemocné a z nemoci důvodně podezřelé lidi. Pomocí dostupných technologií pak následně můžeme aktivně upozornit rizikové jedince, kteří se setkali s nakaženým, a i je dát do preventivní karantény, čímž zamezíme skokovému šíření nákazy. Důsledné testování pak rozdělí zdravé od těch, kteří jsou nakažení a potřebují další zdravotnickou péči. Díky těmto krokům věříme, že se podaří zmírnit šíření nákazy a ušetřit zdravotnictví fatálního přetížení.</p>
+<p>Jde o soubor chytrých opatření, která chrání lidi před nákazou a ekonomiku před kolapsem. Místo toho, aby do karantény uvrhla celý národ, do striktní karantény izoluje pouze nemocné a z nemoci důvodně podezřelé lidi. Pomocí dostupných technologií pak následně můžeme aktivně upozornit rizikové jedince, kteří se setkali s nakaženým, a i je dát do preventivní karantény, čímž zamezíme skokovému šíření nákazy. Důsledné testování pak oddělí zdravé od těch, kteří jsou nakažení a potřebují další zdravotnickou péči. Díky těmto krokům věříme, že se podaří zmírnit šíření nákazy a ušetřit zdravotnictví fatálního přetížení.</p>
 <p>Aplikace eRouška je jeden z projektů, který vznikl na podporu <a href="https://www.covid19cz.cz/covid19-cz/manifest/chytra-karantena" target="_blank">chytré karantény</a>.</p>
         </div>
       </div>
@@ -79,7 +79,7 @@
         <div class="faq__a">
 <p>V aplikaci eRouška se uchovávají data zaznamenaná za posledních 30 dní, starší záznamy se automaticky odmazávají. Pokud na výzvu pracovníka hygieny udělíte souhlas se zpracováním a odešlete data z telefonu na server, zůstanou zde maximálně 12 hodin a poté dojde k jejich smazání. </p>
 <p>Telefonní číslo uchováváme po dobu 6 měsíců od registrace, nebo do rozhodnutí ministerstva zdravotnictví o tom, že tento údaj není nutné dále zpracovávat, nebo do vaší žádosti o zrušení registrace, podle toho, co nastane dříve. Data můžete smazat kdykoliv sami přímo v aplikaci v sekci Moje data, registraci tel. čísla zrušíte v aplikaci kliknutím na “Zrušit registraci” pod třemi tečkami vpravo nahoře.</p>
-<p>Informace o správcích a zpracovatelích dat naleznete v <a href="/gdpr.html" target="_blank">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a></p>.
+<p>Informace o správcích a zpracovatelích dat naleznete v <a href="https://erouska.cz/gdpr" target="_blank">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a>.</p>
         </div>
       </div>
 
@@ -96,8 +96,8 @@
 <p>Celý systém aplikace eRouška, včetně webových stránek, je navržen plně v souladu se Zákonem o ochraně osobních údajů a GDPR. </p>
 <p>Zde naleznete bližší informace:</p>
 <ul>
-  <li><a href="/gdpr.html" target="_blank">Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz</a></li>
-  <li><a href="/audit-kod.html" target="_blank">Audit zdrojového kódu aplikace</a></li>
+  <li><a href="https://erouska.cz/gdpr" target="_blank">Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz</a></li>
+  <li><a href="https://erouska.cz/audit-kod" target="_blank">Audit zdrojového kódu aplikace</a></li>
   <li><a href="https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery" target="_blank">Závazek datové důvěry iniciativy COVID19CZ</a></li>
 </ul>
         </div>
@@ -132,7 +132,7 @@
         <div class="faq__a">
 <p>Chytrý telefon s aplikací eRouška zaznamená přes Bluetooth anonymní identifikátor (ID) z jiných zařízení s touto aplikací. Informaci o “setkání” a jeho délce ukládá do své vnitřní paměti. </p>
 <p><em>Zapsaná informace vypadá např. takto: 31.3.2020 od 12:15 do 13:15 byla ve vaší blízkosti aplikace s identifikátorem ID 29091. </em></p>
-<p>Seznam těchto “setkání” můžete z aplikace odeslat do centrální databáze v případě, že budete osloveni pracovníkem hygienické stanice z důvodu pozitivního testu nebo kvůli podezření na rizikový kontakt s nakaženým. Do centrální databáze mají přístup jen její pověření pracovníci hygieny. Ti mohou spojit identifikátor aplikace s registrovaným telefonním číslem a upozornit ty uživatele eRoušky, kteří s vámi přišli do rizikového kontaktu. </p>
+<p>Seznam těchto “setkání” můžete z aplikace odeslat do centrální databáze v případě, že budete osloveni pracovníkem hygienické stanice z důvodu pozitivního testu, nebo kvůli podezření na rizikový kontakt s nakaženým. Do centrální databáze mají přístup jen pověření pracovníci hygienické stanice. Ti mohou spojit identifikátor aplikace s registrovaným telefonním číslem a upozornit ty uživatele eRoušky, kteří s vámi přišli do rizikového kontaktu. </p>
 <p><em>Pracovníci hygieny tedy vidí, že např. ID 29091 je propojeno s telefonním číslem 123 456 789.</em></p>
         </div>
       </div>
@@ -155,7 +155,7 @@
       <div class="section__item faq__item">
         <h3 class="faq__q">Proč aplikace používá zrovna Bluetooth? Neexistují lepší řešení jako GPS nebo triangulace od operátorů?</h3>
         <div class="faq__a">
-<p>Soukromí uživatelů je pro nás na prvním místě, a právě technologie Bluetooth nabízí nejvyváženější poměr přesnosti záznamu a minimálního zásahu do soukromí. Technologie GPS, ani triangulace vysílačů od operátorů nemohou poskytnout potřebné údaje s požadovanou přesností. Mimo jiné i proto, že jejich funkčnost je v budovách, garážích či metru velmi omezená. Aplikace eRouška potřebuje pro svoji funkci informace o tom, že došlo k setkání, na jakou vzdálenost a po jakou dobu. Není důležité, kde k setkání došlo.</p>
+<p>Soukromí uživatelů je pro nás na prvním místě, a právě technologie Bluetooth nabízí nejvyváženější poměr přesnosti záznamu a minimálního zásahu do soukromí. Technologie GPS ani triangulace vysílačů od operátorů nemohou poskytnout potřebné údaje s požadovanou přesností. Mimo jiné i proto, že jejich funkčnost je v budovách, garážích či metru velmi omezená. Aplikace eRouška potřebuje pro svoji funkci informace o tom, že došlo k setkání, na jakou vzdálenost a po jakou dobu. Není důležité, kde k setkání došlo.</p>
         </div>
       </div>
 
@@ -187,10 +187,10 @@
         <h3 class="faq__q">Lze ověřit, že aplikace nezaznamenává moji polohu?</h3>
         <div class="faq__a">
 <p>Ano. Nasbíraná data lze kdykoli zobrazit v záložce Moje data. Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>), takže znalý člověk může snadno ověřit, že údaje o poloze aplikace opravdu nesbírá.</p>
-<p>Zdrojové kódy aplikace eRouška byly <a href="/audit-kod.html" target="_blank">prověřeny nezávislými autoritami</a>, jejichž kontrola potvrdila, že aplikace:</p>
+<p>Zdrojové kódy aplikace eRouška byly <a href="https://erouska.cz/audit-kod" target="_blank">prověřeny nezávislými autoritami</a>, jejichž kontrola potvrdila, že aplikace:</p>
 <ul>
-  <li>nesleduje polohu,</li>
-  <li>sama automaticky data nikam neodesílá, atp.</li>
+  <li>nesleduje polohu</li>
+  <li>sama automaticky data nikam neodesílá</li>
 </ul>
         </div>
       </div>
@@ -226,8 +226,8 @@
       <div class="section__item faq__item">
         <h3 class="faq__q">Dohlíží na zabezpečení dat z aplikace nějaká nezávislá organizace?</h3>
         <div class="faq__a">
-<p>Ano. Celý systém aplikace eRouška, včetně podpůrných webových stránek, je navržený plně v souladu se Zákonem o ochraně osobních údajů a GDPR. Kód aplikace je jako open-source volně k dispozici (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>) a prošel <a href="/audit-kod.html" target="_blank">auditem nezávislých vzdělávacích institucí</a>.</p>
-<p>Další informace naleznete v <a href="/gdpr.html" target="_blank">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a> a v <a href="https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery" target="_blank">Závazku datové důvěry iniciativy COVID19CZ</a>.
+<p>Ano. Celý systém aplikace eRouška, včetně podpůrných webových stránek, je navržený plně v souladu se Zákonem o ochraně osobních údajů a GDPR. Kód aplikace je jako open-source volně k dispozici (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>) a prošel <a href="https://erouska.cz/audit-kod" target="_blank">auditem nezávislých vzdělávacích institucí</a>.</p>
+<p>Další informace naleznete v <a href="https://erouska.cz/gdpr" target="_blank">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a> a v <a href="https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery" target="_blank">Závazku datové důvěry iniciativy COVID19CZ</a>.
         </div>
       </div>
 

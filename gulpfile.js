@@ -222,9 +222,8 @@ function isDirty(data, values) {
 }
 
 async function updateRemoteConfig(values) {
-    const token = await getAccessToken(SERVICE_EMAIL, SERVICE_KEY);
-
     try {
+      const token = await getAccessToken(SERVICE_EMAIL, SERVICE_KEY);
       const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
         method: "GET",
         headers: {
