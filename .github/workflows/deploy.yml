@@ -15,17 +15,19 @@ jobs:
         run: sudo npm install -g firebase-tools
       - name: Deploy to Firebase development
         if: github.ref == 'refs/heads/develop'
-        run: firebase deploy -P dev --token=${{ secrets.FIREBASE_DEV_TOKEN }} --non-interactive
+        run: |
+          printenv GOOGLE_JSON > creds.json
+          firebase deploy -P dev --non-interactive
         env:
           WEBSITE_URL: https://covid19cz.web.app/
-          FIREBASE_PROJECT: covid19cz
-          SERVICE_EMAIL: firebase-adminsdk-296p6@covid19cz.iam.gserviceaccount.com
-          SERVICE_KEY: ${{ secrets.FIREBASE_DEV_SERVICE_KEY }}
+          GOOGLE_JSON: ${{ secrets.FIREBASE_DEV_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: creds.json
       - name: Deploy to Firebase production
         if: github.ref == 'refs/heads/master'
-        run: firebase deploy -P prod --token=${{ secrets.FIREBASE_PROD_TOKEN }} --non-interactive
+        run: |
+          printenv GOOGLE_JSON > creds.json
+          firebase deploy -P prod --non-interactive
         env:
           WEBSITE_URL: https://erouska.cz/
-          FIREBASE_PROJECT: daring-leaf-272223
-          SERVICE_EMAIL: github-homepage@daring-leaf-272223.iam.gserviceaccount.com
-          SERVICE_KEY: ${{ secrets.FIREBASE_PROD_SERVICE_KEY }}
+          GOOGLE_JSON: ${{ secrets.FIREBASE_PROD_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: creds.json
