@@ -10,9 +10,7 @@ const admin = require("firebase-admin");
 const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 
-const serviceAccount = require(path.resolve(CREDENTIALS_FILE));
-
-const FIREBASE_PROJECT = serviceAccount.project_id;
+const getServiceAccount = () => require(path.resolve(CREDENTIALS_FILE));
 
 // nastavení
 var settings = {
@@ -212,9 +210,11 @@ function isDirty(data, values) {
 
 async function updateRemoteConfig(values) {
     try {
-      const credential = admin.credential.cert(serviceAccount);
+      const account = getServiceAccount();
+      const firebaseProject = account.project_id;
+      const credential = admin.credential.cert(account);
       const token = (await credential.getAccessToken()).access_token;
-      const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
+      const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${firebaseProject}/remoteConfig`, {
         method: "GET",
         headers: {
           "Authorization": `Bearer ${token}`,
@@ -256,7 +256,7 @@ async function updateRemoteConfig(values) {
       };
       const dataJson = JSON.stringify(data);
 
-      const result = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
+      const result = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${firebaseProject}/remoteConfig`, {
         method: "PUT",
         headers: {
           "Content-Length": dataJson.length,
@@ -311,8 +311,8 @@ gulp.task('build-faq', function () {
     renderHandlebars("caste-dotazy.hbs", {faq: content}, "dist/caste-dotazy.html");
 });
 gulp.task('update-remote-config', async function() {
-    if (FIREBASE_PROJECT === undefined) {
-      console.log("FIREBASE_PROJECT not set, skipping remote config upload");
+    if (CREDENTIALS_FILE === undefined) {
+      console.log("CREDENTIALS_FILE not set, skipping remote config upload");
       return;
     }
     const faq = normalizeMarkdown(markdownifyFile("faq.html.template"));
