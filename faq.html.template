@@ -297,7 +297,7 @@
           <h4>Telefony značky Samsung:</h4>
           <ul>
             <li><a href="/navody/Samsung/1_nastaveni_baterie_pro_beh_eRousky.pdf" target="_blank">Nastavení baterie pro běh eRoušky (.pdf)</a></li>
-            <li><a href="/navody/Samsung/2_omezeni_optimalizace_vyuziti_baterie_pro_eRousku.pdf.pdf" target="_blank">Omezení optimalizace využití baterie pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Samsung/2_omezeni_optimalizace_vyuziti_baterie_pro_eRousku.pdf" target="_blank">Omezení optimalizace využití baterie pro eRoušku (.pdf)</a></li>
             <li><a href="/navody/Samsung/3_pridani_eRousky_do_seznamu_App_power_monitor.pdf" target="_blank">Přidání eRoušky do seznamu App power monitor (.pdf)</a></li>
           </ul>
 
@@ -305,6 +305,19 @@
           <ul>
             <li><a href="/navody/Sony/1_zajisteni_behu_eRousky_na_pozadi.pdf" target="_blank">Zajištění běhu eRoušky na pozadi (.pdf)</a></li>
           </ul>
+
+         <h4>Telefony značky Xiaomi:</h4>
+          <ul>
+            <li><a href="/navody/Xiaomi/1_komplexni_navod_pro_Redmi_Note_5_a_vyssi.pdf" target="_blank">Komplexní návod pro Redmi Note 5 a vyšší (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/2_vypnuti_sporice_baterie.pdf" target="_blank">Vypnutí spořiče baterie (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/3_nastaveni_behu_na_pozadi_pro_eRousku.pdf" target="_blank">Nastavení běhu na pozadí pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/4_omezeni_adaptivni_baterie.pdf" target="_blank">Omezení adaptivní baterie (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/5_vyjimka_z_optimaizace_baterie_pro_eRousku.pdf" target="_blank">Vyjímka z optimalizace baterie pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/6_vyjimka_z_omezeni_na_pozadi_pro_eRousku.pdf" target="_blank">Vyjímka z omezeni na pozadí pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/7_chraneny_status_pro_eRousku.pdf" target="_blank">Chraněný status pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Xiaomi/8_overeni_zpusobu_napajeni.pdf" target="_blank">Ověření způsobu napajení (.pdf)</a></li>
+          </ul>
+
 
         </div>
       </div>
