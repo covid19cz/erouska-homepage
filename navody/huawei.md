@@ -16,10 +16,10 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 7. 	Stiskněte text **Není povoleno** v levém horním rohu obrazovky.
 8. 	Vyberte položku **Všechny aplikace**.
 9. 	V seznamu aplikací seřazených podle abecedy vyberte položku **eRouška**.
-10.  Zkontrolujte, zda je vybrána možnost **Zakázat**. Pokud ne, vyberte ji a stiskněte **OK**.
-11.  Tento postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů, např. **Ruční zajištění běhu eRoušky na pozadí**.
+10.  Zkontrolujte, zda je vybrána možnost **Zakázat**. Pokud ne, vyberte ji.
+11.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
-12.  Stiskněte ikonu **Nastavení** ve spodní části obrazovky. Pokud ikonu nevidíte, pokračujte bodem 20. níže.
+12.  Stiskněte ikonu **Nastavení** ve spodní části obrazovky. Pokud ikonu nevidíte, tento postup na vašem telefonu nemůže být proveden. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších.
 13.  Vyberte položku **Speciální přístup**.
 14.  Vyberte položku **Ignorovat optimalizaci baterie**.
 15.  Stiskněte text **Povoleno** v levém horním rohu obrazovky.
@@ -28,13 +28,7 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 18.  Zkontrolujte, zda je vybrána možnost **Povolit**. Pokud ne, vyberte ji.
 19.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů např. **Ruční zajištění běhu eRoušky na pozadí**.
 
-20.  Stiskněte ikonu **Pokročilé** ve spodní části obrazovky.
-21.  Vyberte položku **Ignorovat optimalizace**.
-22.  Stiskněte text “Povoleno” v levém horním rohu obrazovky.
-23.  Vyberte položku **Všechny aplikace**.
-24.  V seznamu aplikací seřazených podle abecedy vyberte položku **eRouška**.
-25.  Zkontrolujte, zda je vybrána možnost **Povolit**. Pokud ne, vyberte ji.
-26.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
+ Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Huawei/1_vyjimka%20_z_optimalizace_baterie_pro_eRousku.pdf) je nutné mít telefon připojen k internetu. 
 
 #### Ruční zajištění běhu eRoušky na pozadí
 
@@ -45,22 +39,25 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 5. 	Klikněte na přepínač v pravé části obrazovky u této položky
 6. 	Zkontrolujte, že všechny tři položky (**Automatické spuštění**, **Sekundární spuštění** a **Spustit na pozadí** jsou zapnuty.
 7. 	Stiskněte **OK**.
-8.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů, např. **Zajištění spuštění eRoušky po vypnutí obrazovky**.
+8.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
 9.   Vyberte položku **Zavřít aplikace po uzamčení obrazovky**.
 10.  V seznamu aplikací seřazených podle abecedy najděte položku **eRouška**.
 11.  Zkontrolujte, že přepínač v pravé části obrazovky je u této aplikace vypnutý.
 12.  Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
+ Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Huawei/2_rucni_zajistei_behu_eRousky_na_pozadi.pdf) je nutné mít telefon připojen k internetu. 
+
 #### Zajištění spuštění eRoušky po vypnutí obrazovky
 
 1. 	Stiskněte ikonu **Nastavení** na hlavní obrazovce vašeho telefonu.
 2. 	Vyberte položku **Aplikace**.
-3. 	Vyberte opět položku **Aplikace** v seznamu v horní části obrazovky. Pokud seznam nevidíte, pokračujte bodem 4. níže.
-4. 	V seznamu aplikací seřazených podle abecedy vyberte položku **eRouška**.
-5. 	Vyberte položku **Baterie**.
-6. 	Zkontrolujte, že přepínač v pravé části obrazovku je u položky **Po uzamčení polohy zavřít** vypnutý.
-7. 	Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
+3. 	V seznamu aplikací seřazených podle abecedy vyberte položku **eRouška**.
+4. 	Vyberte položku **Baterie**.
+5. 	Zkontrolujte, že přepínač v pravé části obrazovku je u položky **Po uzamčení polohy zavřít** vypnutý.
+6. 	Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
+
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Huawei/3_zajisteni_spusteni_eRousky_po_vypnuti_obrazovky.pdf) je nutné mít telefon připojen k internetu.
 
 #### Chráněný status pro eRoušku
 
@@ -72,6 +69,8 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 6. 	Nastavte pro aplikaci eRouška hodnotu **Chráněno**.
 7. 	Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
+ Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Huawei/4_chraneny_status_pro_eRousku.pdf) je nutné mít telefon připojen k internetu.   
+
 #### Ověření způsobu napájení
 
 1. 	Stiskněte ikonu **Nastavení** na hlavní obrazovce vašeho telefonu.
@@ -80,6 +79,8 @@ Ne všechny kroky je možné provést na každém telefonu Huawei. Pokud někter
 4. 	Vyberte položku **Správa napájení**.
 5. 	Nastavte hodnotu **Normální** nebo hodnotu **Výkon**.
 6. 	Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
+
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Huawei/5_overeni_zpusobu_napajeni.pdf) je nutné mít telefon připojen k internetu. 
 
 #### Deaktivace aplikace PowerGenie
 
@@ -92,5 +93,7 @@ Na některých telefonech je nainstalována aplikace PowerGenie, která neumož�
 5. 	Vyberte položku **Deaktivovat**.
 6. 	Vyberte položku **Vynutit ukončení**.
 7. 	Postup jste úspěšně dokončili.
+
+ Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Huawei/6_deaktivace_aplikace_powerGenie.pdf) je nutné mít telefon připojen k internetu. 
 
 Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)
