@@ -320,9 +320,11 @@ gulp.task('update-remote-config', async function() {
       helpMarkdown: faq
     };
     for (const file of fs.readdirSync("navody")) {
-      const filePath = `navody/${file}`;
-      const name = `batteryOptimization${capitalize(path.basename(filePath, ".md"))}Markdown`;
-      values[name] = normalizeMarkdown(fs.readFileSync(filePath).toString());
+      if (file.endsWith(".md")) {
+        const filePath = `navody/${file}`;
+        const name = `batteryOptimization${capitalize(path.basename(filePath, ".md"))}Markdown`;
+        values[name] = normalizeMarkdown(fs.readFileSync(filePath).toString());
+      }
     }
 
     await updateRemoteConfig(values);
