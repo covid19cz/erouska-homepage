@@ -1,6 +1,7 @@
 ### Samsung
 
 eRouška běží na pozadí vašeho telefonu, i když je aplikace zavřená nebo je váš telefon zamčený. Je ale možné, že některé telefony Samsung mohou omezit provoz aplikací takto běžících na pozadí, kvůli úspoře baterie.
+Na telefonech Samsung je to spíše výjimečné. Proto doporučujeme při prvním spuštění nastavení telefonu neměnit a až v případě potíží se k tomuto návodu vrátit. Najdete ho v sekci Moje data dole nebo v nápovědě.
 
 Provedením kroků níže umožníte eRoušce běžet na pozadí vašeho telefonu i v těchto případech.
 
