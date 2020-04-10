@@ -6,6 +6,7 @@ Provedením některého z kroků níže umožníte eRoušce běžet na pozadí v
 
 Ne všechny kroky je možné provést na každém telefonu Xiaomi. Pokud některý z kroků na vašem telefonu provést možné není, nelamte si s tím hlavu. Stačí, pokud eRoušku jednou za pár hodin otevřete.
 
+
 #### Návod pro modely Redmi Note 5 a vyšší
 
 Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto postupu je pro zajištění běhu eRoušky dostačující. Pokud máte jiný telefon, prosím, využijte další postupy popsané níže.
@@ -23,6 +24,8 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 11. Vyberte možnost **Žádná omezení**.
 12. Postup jste úspěšně dokončili!
 
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/1_komplexni_navod_pro_Redmi_Note_5_a_vyssi.pdf) je nutné mít telefon připojen k internetu.
+
 #### Vypnutí spořiče baterie
 
 1. Otevřete **Nastavení** vašeho telefonu.
@@ -33,6 +36,8 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 6. Pokud ne, vypněte Spořič baterie přepnutím přepínače u položky **Spořič baterie** do polohy Vypnuto.
 7. Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/2_vypnuti_sporice_baterie.pdf) je nutné mít telefon připojen k internetu.
+
 #### Nastavení běhu na pozadí pro eRoušku
 1. Otevřete **Nastavení** vašeho telefonu.
 2. Vyberte položku **Baterie a výkon**.
@@ -41,12 +46,16 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 5. Vyberte možnost **Žádné omezení**. Pokud místo možnosti **Žádné omezení vidíte položku **Auto. spuštění**, přepněte přepínač u této položky do polohy **Zapnuto**.
 6. Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/3_nastaveni_behu_na_pozadi_pro_eRousku.pdf) je nutné mít telefon připojen k internetu.
+
 #### Omezení adaptivní baterie
 1. Otevřete **Nastavení** vašeho telefonu.
 2. Vyberte položku **Baterie**.
 3. Vyberte položku **Adaptivní baterie**.
 4. Pomocí přepínače na pravé straně obrazovky vypněte možnost **Použít adaptivní baterii.**
 5. Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
+
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/4_omezeni_adaptivni_baterie.pdf) je nutné mít telefon připojen k internetu.
 
 #### Výjimka z optimalizace baterie pro eRoušku
 1. Otevřete **Nastavení** vašeho telefonu.
@@ -60,6 +69,8 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 9. Vyberte položku **eRouška**.
 10. Vyberte možnost **Neoptimalizovat** a potvrďte ji.
 11. Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
+
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/5_vyjimka_z_optimaizace_baterie_pro_eRousku.pdf) je nutné mít telefon připojen k internetu.
 
 #### Výjimka z omezení na pozadí pro eRoušku
 1. Otevřete **Nastavení** vašeho telefonu.
@@ -75,6 +86,8 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 11. Stiskněte text **Odebrat**.
 12. Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
+ Pokud chcete [verzi návodu i s obrázk](https://www.erouska.cz/navody/Xiaomi/6_vyjimka_z_omezeni_na_pozadi_pro_eRousku.pdf) je nutné mít telefon připojen k internetu.
+
 #### Chráněný status pro eRoušku
 1. Otevřete **Nastavení** vašeho telefonu.
 2. Vyberte položku **Pokročilá nastavení** / **Rozšířené nastavení**.
@@ -84,6 +97,8 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 6. Nastavte pro aplikaci eRouška hodnotu **Chráněno**.
 7. Postup jste úspěšně dokončili. Vyzkoušejte, jestli můžete fungování eRoušky napomoci provedením některého z dalších popsaných postupů.
 
+ Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/7_chraneny_status_pro_eRousku.pdf) je nutné mít telefon připojen k internetu.
+
 #### Ověření způsobu napájení
 1. Otevřete **Nastavení** vašeho telefonu.
 2. Vyberte položku **Pokročilá nastavení** / **Rozšířené nastavení**.
@@ -91,5 +106,7 @@ Pokud je váš telefon model Xiaomi Redmi Note 5 a vyšší, provedení tohoto p
 4. Vyberte položku **Režim**.
 5. Nastavte hodnotu **Normální** nebo hodnotu **Výkon**.
 6. Postup jste úspěšně dokončili.
+
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Xiaomi/8_overeni_zpusobu_napajeni.pdf) je nutné mít telefon připojen k internetu.
 
 Zdroj: [dontkillmyapp.com](https://dontkillmyapp.com/?utm_source=erouska&utm_medium=odkaz&utm_campaign=koronavirus)
