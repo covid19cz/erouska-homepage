@@ -247,6 +247,68 @@
         </div>
       </div>
 
+      <div class="section__item faq__item">
+        <h3 class="faq__q">Kde najdu zdrojový kód aplikace?</h3>
+        <div class="faq__a">
+          <p>Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>).</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section__title section__title--blue">Mobilní aplikace</h2>
+  <div class="section__content">
+    <div class="faq">
+
+      <div class="section__item faq__item">
+        <h3 class="faq__q">Co mám dělat, když mi telefon vypíná aplikaci (aplikace mě upozorňuje, že ji systém chce vypnout)?</h3>
+        <div class="faq__a">
+          <p>Na odkazech níže najdete stručné návody pro nejpoužívanější telefony, v jejichž nastavení je potřeba zakázat automatické vypínání aplikace eRouška:</p>
+
+          <h4>Telefony značky Asus:</h4>
+          <ul>
+            <li><a href="/navody/Asus/1_zajisteni_behu_eRousky_na_pozadi.pdf" target="_blank">Zajištění běhu eRoušky na pozadí (.pdf)</a></li>
+          </ul>
+
+          <h4>Telefony značky Honor:</h4>
+          <ul>
+            <li><a href="/navody/Honor/1_vyjimka_z_optimalizace_baterie_pro_eRousku.pdf" target="_blank">Vyjímka z optimalizace baterie pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Honor/2_rucni_zapnuti_behu_eRousky_na_pozadi.pdf" target="_blank">Ruční zapnutí běhu eRoušky na pozadí (.pdf)</a></li>
+          </ul>
+
+          <h4>Telefony značky Huawei:</h4>
+          <ul>
+            <li><a href="/navody/Huawei/1_vyjimka _z_optimalizace_baterie_pro_eRousku.pdf" target="_blank">Vyjímka z optimalizace baterie pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Huawei/2_rucni_zajistei_behu_eRousky_na_pozadi.pdf" target="_blank">Ruční zajištění běhu eRoušky na pozadí (.pdf)</a></li>
+            <li><a href="/navody/Huawei/3_zajisteni_spusteni_eRousky_po_vypnuti_obrazovky.pdf" target="_blank">Zajištění spuštění eRoušky po vypnutí obrazovky (.pdf)</a></li>
+            <li><a href="/navody/Huawei/4_chraneny_status_pro_eRousku.pdf" target="_blank">Chráněný status pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Huawei/5_overeni_zpusobu_napajeni.pdf" target="_blank">Oveření způsobu napájení (.pdf)</a></li>
+            <li><a href="/navody/Huawei/6_deaktivace_aplikace_powerGenie.pdf" target="_blank">Deaktivace aplikace powerGenie (.pdf)</a></li>
+          </ul>
+
+          <h4>Telefony značky Lenovo:</h4>
+          <ul>
+            <li><a href="/navody/Lenovo/1_uzamceni_behu_eRousky.pdf" target="_blank">Uzamčení běhu eRoušky</a></li>
+          </ul>
+
+          <h4>Telefony značky Samsung:</h4>
+          <ul>
+            <li><a href="/navody/Samsung/1_nastaveni_baterie_pro_beh_eRousky.pdf" target="_blank">Nastavení baterie pro běh eRoušky (.pdf)</a></li>
+            <li><a href="/navody/Samsung/2_omezeni_optimalizace_vyuziti_baterie_pro_eRousku.pdf.pdf" target="_blank">Omezení optimalizace využití baterie pro eRoušku (.pdf)</a></li>
+            <li><a href="/navody/Samsung/3_pridani_eRousky_do_seznamu_App_power_monitor.pdf" target="_blank">Přidání eRoušky do seznamu App power monitor (.pdf)</a></li>
+          </ul>
+
+         <h4>Telefony značky Sony:</h4>
+          <ul>
+            <li><a href="/navody/Sony/1_zajisteni_behu_eRousky_na_pozadi.pdf" target="_blank">Zajištění běhu eRoušky na pozadi (.pdf)</a></li>
+          </ul>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
