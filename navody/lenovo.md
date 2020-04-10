@@ -6,6 +6,8 @@ Provedením kroků níže umožníte eRoušce běžet na pozadí vašeho telefon
 
 Pokud se vám postup provést nepodaří, nelamte si s tím hlavu. Stačí, pokud eRoušku jednou za pár hodin otevřete.
 
+Pokud chcete [verzi návodu i s obrázky](https://www.erouska.cz/navody/Lenovo/1_uzamceni_behu_eRousky.pdf) je nutné mít telefon připojen k internetu. 
+
 #### Uzamčení běhu eRoušky
 
 1.	Stiskněte ikonu “Nastavení” na hlavní obrazovce vašeho telefonu.
