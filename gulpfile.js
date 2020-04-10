@@ -5,12 +5,12 @@ const path = require("path");
 const Handlebars = require("handlebars");
 const TurndownService = require("turndown");
 const fetch = require("node-fetch");
-const {JWT} = require("google-auth-library");
+const admin = require("firebase-admin");
 
 const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
-const FIREBASE_PROJECT = process.env.FIREBASE_PROJECT;
-const SERVICE_EMAIL = process.env.SERVICE_EMAIL;
-const SERVICE_KEY = process.env.SERVICE_KEY;
+const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+
+const getServiceAccount = () => require(path.resolve(CREDENTIALS_FILE));
 
 // nastavení
 var settings = {
@@ -188,19 +188,6 @@ function renderHandlebars(templateFile, context, output) {
     fs.writeFileSync(output, result);
 }
 
-function getAccessToken(email, key) {
-  return new Promise((resolve, reject) => {
-    const jwtClient = new JWT(email, null, key, "https://www.googleapis.com/auth/firebase.remoteconfig", null);
-    jwtClient.authorize(function(err, tokens) {
-      if (err) {
-        reject(err);
-        return;
-      }
-      resolve(tokens.access_token);
-    });
-  });
-}
-
 function normalizeMarkdown(content) {
   return content.replace(/\n/g, "\\n");
 }
@@ -223,8 +210,11 @@ function isDirty(data, values) {
 
 async function updateRemoteConfig(values) {
     try {
-      const token = await getAccessToken(SERVICE_EMAIL, SERVICE_KEY);
-      const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
+      const account = getServiceAccount();
+      const firebaseProject = account.project_id;
+      const credential = admin.credential.cert(account);
+      const token = (await credential.getAccessToken()).access_token;
+      const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${firebaseProject}/remoteConfig`, {
         method: "GET",
         headers: {
           "Authorization": `Bearer ${token}`,
@@ -232,7 +222,7 @@ async function updateRemoteConfig(values) {
         }
       });
       if (config.status !== 200) {
-        console.log("FAQ remote config fetch failed");
+        console.log(`FAQ remote config fetch failed: ${config.status}: ${config.statusText}`);
         return;
       }
 
@@ -266,7 +256,7 @@ async function updateRemoteConfig(values) {
       };
       const dataJson = JSON.stringify(data);
 
-      const result = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${FIREBASE_PROJECT}/remoteConfig`, {
+      const result = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${firebaseProject}/remoteConfig`, {
         method: "PUT",
         headers: {
           "Content-Length": dataJson.length,
@@ -321,8 +311,8 @@ gulp.task('build-faq', function () {
     renderHandlebars("caste-dotazy.hbs", {faq: content}, "dist/caste-dotazy.html");
 });
 gulp.task('update-remote-config', async function() {
-    if (FIREBASE_PROJECT === undefined) {
-      console.log("FIREBASE_PROJECT not set, skipping remote config upload");
+    if (CREDENTIALS_FILE === undefined) {
+      console.log("CREDENTIALS_FILE not set, skipping remote config upload");
       return;
     }
     const faq = normalizeMarkdown(markdownifyFile("faq.html.template"));

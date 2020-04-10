@@ -48,7 +48,7 @@
   }
 }
 
-.button--silver{
+.button--silver {
   background-color: $color_silver;
 
   &:hover,
@@ -57,9 +57,10 @@
   }
 }
 
-.button--disable{
-  cursor: not-allowed;
+.button--disable {
   background-color: $color_silver;
+
+  cursor: not-allowed;
 
   &:hover,
   &:focus {
