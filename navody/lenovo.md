@@ -1,6 +1,6 @@
 ### Lenovo
 
-eRouška běží na pozadí vašeho telefonu, i když je aplikace zavřená nebo je váš telefon zamčený. Některé telefony Samsung ale omezují provoz aplikací takto běžících na pozadí, kvůli úspoře baterie.
+eRouška běží na pozadí vašeho telefonu, i když je aplikace zavřená nebo je váš telefon zamčený. Některé telefony Lenovo ale omezují provoz aplikací takto běžících na pozadí, kvůli úspoře baterie.
 
 Provedením kroků níže umožníte eRoušce běžet na pozadí vašeho telefonu déle, a tak zvýšíte její účinnost.
 
