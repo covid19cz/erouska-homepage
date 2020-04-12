@@ -11,6 +11,28 @@
         </div>
       </div>
 
+    <div class="section__item faq__item">
+        <h3 class="faq__q">To budu muset pokaždé do automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?</h3>
+        <div class="faq__a">
+<p>Pokud hygiena na základě sesbíraných dat z aplikace nakaženého vyhodnotí, že jste s ním mohl/a být dostatečně dlouho v rizikovém kontaktu, pokusí se vás nejprve telefonicky kontaktovat. S pracovníkem hygieny společně po telefonu vyhodnotíte, jestli vám skutečně hrozila nákaza, a podle toho se domluvíte na dobrovolné karanténě, přednostním testování nebo jiném postupu.</p>
+<p>Aplikace tedy pomáhá hygieně rychleji se spojit s potenciálně rizikovými kontakty a na základě osobního pohovoru vyhodnotit, jestli šlo jen o “planý poplach”, nebo je potřeba vás a ostatní nějak dál chránit. Nemusíte mít proto obavu, že by šlo o automatizovaný proces, který nemůžete ovlivnit.</p>
+        </div>
+      </div>
+
+      <div class="section__item faq__item">
+        <h3 class="faq__q">Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?</h3>
+        <div class="faq__a">
+<p>V sekci Moje data vidíte ID jako část anonymního čísla dalšího uživatele aplikace eRouška, kterého jste potkal/a. RSSI pak ukazuje sílu Bluetooth signálu při vašem setkání. Čím je číslo nižší, tím blíže jste k sobě byli. Barva RSSI údajů navíc znázorňuje, jak dlouho jste byli v blízkosti druhého uživatele (červená = rizikově dlouho, oranžová = středně dlouho, zelená = nevýznamné setkání).</p>
+        </div>
+      </div>
+
+       <div class="section__item faq__item">
+        <h3 class="faq__q">V mé blízkosti je jen jeden, nebo dva telefony s aplikací eRouška, přitom ale vidím v záložce Moje Data řadu dalších ID? To chytám i signál lidí z okolních bytů nebo domů? </h3>
+        <div class="faq__a">
+<p>ID každého uživatele se opakovaně mění, abychom zvýšili anonymitu a bezpečí uživatelů. Proto jich můžete v telefonu vidět řádově více, ale přitom může jít stále o jedno stejné zařízení.</p>
+        </div>
+      </div>
+
       <div class="section__item faq__item">
         <h3 class="faq__q">Má smysl si eRoušku instalovat, když ji nebude používat dost lidí?</h3>
         <div class="faq__a">
@@ -113,7 +135,7 @@
   <div class="section__content">
     <div class="faq">
 
-      <div class="section__item faq__item">
+      <div class="section__item faq__item faq__item--open">
         <h3 class="faq__q">Na jakých telefonech aplikace eRouška funguje?</h3>
         <div class="faq__a">
           <p>Pokud váš telefon není s eRouškou kompatibilní, Google Play ani App Store vám neumožní aplikaci nainstalovat.</p>
@@ -124,6 +146,14 @@
             <li>Bluetooth LE (Low Energy) <sup>*</sup></li>
           </ul>
           <p><sup>*</sup> Některé starší modely telefonů (např. Google Nexus 5, Honor 7 lite, atp.) mohou fungovat jen částečně - vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.</p>
+        </div>
+      </div>
+
+       <div class="section__item faq__item">
+        <h3 class="faq__q">Proč je potřeba aplikaci povolit přístup k GPS/polohovým/lokačním údajům?</h3>
+        <div class="faq__a">
+<p>Aplikace eRouška nesbírá a neukládá data z GPS, avšak operační systém Android zahrnuje pod určování polohy také některé služby Bluetooth LE (LE = low energy), které eRouška pro své fungování potřebuje. Proto je nutný souhlas uživatele s přístupem aplikace k polohovým údajům. V iOS tento souhlas nutný není.</p>
+<p>Více informací je k dispozici <a href="https://developer.android.com/guide/topics/connectivity/bluetooth#Permissions" target="_blank">na webu OS Android pro vývojáře</a>.</p>
         </div>
       </div>
 
@@ -164,14 +194,6 @@
         <div class="faq__a">
 <p>Aplikace eRouška funguje na principu měření síly signálu mezi dvěma zařízeními. Technicky nelze vyloučit, že dojde k mylné detekci - například blízký kontakt skrz tenkou zeď se podobá vzdálenějšímu kontaktu bez překážky. Těmto omylům, byť jsou výjimečné, se nedá úplně zabránit. Pracovníci hygienických stanic a jejich call centra jsou s tímto jevem seznámeni a pracují s ním při telefonickém rozhovoru s rizikovými kontakty nakaženého.</p>
 <p>Pro vyhodnocení kontaktu jako rizikového je ovšem relevantní též délka kontaktu - prosté zastavení na semaforech je tedy nezajímavé.</p>
-        </div>
-      </div>
-
-      <div class="section__item faq__item">
-        <h3 class="faq__q">Proč je potřeba aplikaci povolit přístup k GPS/polohovým/lokačním údajům?</h3>
-        <div class="faq__a">
-<p>Aplikace eRouška nesbírá a neukládá data z GPS, avšak operační systém Android zahrnuje pod určování polohy také některé služby Bluetooth LE (LE = low energy), které eRouška pro své fungování potřebuje. Proto je nutný souhlas uživatele s přístupem aplikace k polohovým údajům. V iOS tento souhlas nutný není.</p>
-<p>Více informací je k dispozici <a href="https://developer.android.com/guide/topics/connectivity/bluetooth#Permissions" target="_blank">na webu OS Android pro vývojáře</a>.</p>
         </div>
       </div>
 
