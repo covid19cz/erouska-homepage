@@ -19,13 +19,6 @@
         </div>
       </div>
 
-      <div class="section__item faq__item">
-        <h3 class="faq__q">Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?</h3>
-        <div class="faq__a">
-<p>V sekci Moje data vidíte ID jako část anonymního čísla dalšího uživatele aplikace eRouška, kterého jste potkal/a. RSSI pak ukazuje sílu Bluetooth signálu při vašem setkání. Čím je číslo nižší, tím blíže jste k sobě byli. Barva RSSI údajů navíc znázorňuje, jak dlouho jste byli v blízkosti druhého uživatele (červená = rizikově dlouho, oranžová = středně dlouho, zelená = nevýznamné setkání).</p>
-        </div>
-      </div>
-
        <div class="section__item faq__item">
         <h3 class="faq__q">V mé blízkosti je jen jeden, nebo dva telefony s aplikací eRouška, přitom ale vidím v záložce Moje Data řadu dalších ID? To chytám i signál lidí z okolních bytů nebo domů? </h3>
         <div class="faq__a">
@@ -194,6 +187,13 @@
         <div class="faq__a">
 <p>Aplikace eRouška funguje na principu měření síly signálu mezi dvěma zařízeními. Technicky nelze vyloučit, že dojde k mylné detekci - například blízký kontakt skrz tenkou zeď se podobá vzdálenějšímu kontaktu bez překážky. Těmto omylům, byť jsou výjimečné, se nedá úplně zabránit. Pracovníci hygienických stanic a jejich call centra jsou s tímto jevem seznámeni a pracují s ním při telefonickém rozhovoru s rizikovými kontakty nakaženého.</p>
 <p>Pro vyhodnocení kontaktu jako rizikového je ovšem relevantní též délka kontaktu - prosté zastavení na semaforech je tedy nezajímavé.</p>
+        </div>
+      </div>
+      
+            <div class="section__item faq__item">
+        <h3 class="faq__q">Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?</h3>
+        <div class="faq__a">
+<p>V sekci Moje data vidíte ID jako část anonymního čísla dalšího uživatele aplikace eRouška, kterého jste potkal/a. RSSI pak ukazuje sílu Bluetooth signálu při vašem setkání. Čím je číslo nižší, tím blíže jste k sobě byli. Barva RSSI údajů navíc znázorňuje, v jak těsné blízkosti druhého uživatele jste byli (červená = velmi blízko, oranžová = středně blízko, zelená = nevýznamné setkání).</p>
         </div>
       </div>
 
