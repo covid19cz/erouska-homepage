@@ -6,11 +6,20 @@ const Handlebars = require("handlebars");
 const TurndownService = require("turndown");
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
+const onesky = require('@brainly/onesky-utils');
 
 const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-
 const getServiceAccount = () => require(path.resolve(CREDENTIALS_FILE));
+
+const SKYAPP_PROJECT_ID = "359388";
+const SKYAPP_PUBLIC_KEY = "e0DfHgNmzrc67zt3RabZRWcYpkSISL1W";
+const SKYAPP_SECRET_KEY = process.env.SKYAPP_SECRET_KEY;
+
+const LANGUAGES = ["en"];
+const LANGUAGE_TO_SKYAPP = {
+  "en": "en_GB"
+};
 
 // nastavení
 var settings = {
@@ -199,13 +208,14 @@ function markdownifyFile(path) {
 }
 
 function isDirty(data, values) {
+  let isDirty = false;
   for (const key of Object.keys(values)) {
     if (data[key] === undefined || data[key]["defaultValue"]["value"] !== values[key]) {
       console.log(`Key ${key} is dirty`);
-      return true;
+      isDirty = true;
     }
   }
-  return false;
+  return isDirty;
 }
 
 async function updateRemoteConfig(values) {
@@ -238,6 +248,10 @@ async function updateRemoteConfig(values) {
 
       for (const key of Object.keys(values)) {
         const value = values[key];
+        if (value === '') {
+          console.warn(`Skipping remote config key ${key} because it's empty`);
+          continue;
+        }
         let object = {
           defaultValue: {
             value
@@ -310,6 +324,26 @@ gulp.task('build-faq', function () {
     const content = fs.readFileSync("faq.html.template").toString();
     renderHandlebars("caste-dotazy.hbs", {faq: content}, "dist/caste-dotazy.html");
 });
+
+async function translateFile(file, language) {
+    const options = {
+      secret: SKYAPP_SECRET_KEY,
+      apiKey: SKYAPP_PUBLIC_KEY,
+      projectId: SKYAPP_PROJECT_ID,
+      fileName: file,
+      format: "HTML",
+      language: LANGUAGE_TO_SKYAPP[language]
+    };
+
+    try {
+      return await onesky.getFile(options);
+    }
+    catch (e) {
+      console.error(`Failed to translate ${file} into ${language}: ${e}`);
+      return "";
+    }
+}
+
 gulp.task('update-remote-config', async function() {
     if (CREDENTIALS_FILE === undefined) {
       console.log("CREDENTIALS_FILE not set, skipping remote config upload");
@@ -319,11 +353,18 @@ gulp.task('update-remote-config', async function() {
     const values = {
       helpMarkdown: faq
     };
+    for (const language of LANGUAGES) {
+      values[`helpMarkdown_${language}`] = normalizeMarkdown(await translateFile("faq.html", language));
+    }
+
     for (const file of fs.readdirSync("navody")) {
-      if (file.endsWith(".md")) {
+      if (file.endsWith(".html")) {
         const filePath = `navody/${file}`;
-        const name = `batteryOptimization${capitalize(path.basename(filePath, ".md"))}Markdown`;
+        const name = `batteryOptimization${capitalize(path.basename(filePath, ".html"))}Markdown`;
         values[name] = normalizeMarkdown(fs.readFileSync(filePath).toString());
+        for (const language of LANGUAGES) {
+          values[`${name}_${language}`] = normalizeMarkdown(await translateFile(file, language));
+        }
       }
     }
 
