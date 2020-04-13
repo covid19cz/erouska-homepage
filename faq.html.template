@@ -189,7 +189,7 @@
 <p>Pro vyhodnocení kontaktu jako rizikového je ovšem relevantní též délka kontaktu - prosté zastavení na semaforech je tedy nezajímavé.</p>
         </div>
       </div>
-      
+
             <div class="section__item faq__item">
         <h3 class="faq__q">Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?</h3>
         <div class="faq__a">
@@ -335,7 +335,7 @@
             <li><a href="https://www.erouska.cz/navody/Xiaomi/3_nastaveni_behu_na_pozadi_pro_eRousku.pdf" target="_blank">Nastavení běhu na pozadí pro eRoušku (.pdf)</a></li>
             <li><a href="https://www.erouska.cz/navody/Xiaomi/4_omezeni_adaptivni_baterie.pdf" target="_blank">Omezení adaptivní baterie (.pdf)</a></li>
             <li><a href="https://www.erouska.cz/navody/Xiaomi/5_vyjimka_z_optimaizace_baterie_pro_eRousku.pdf" target="_blank">Výjimka z optimalizace baterie pro eRoušku (.pdf)</a></li>
-            <li><a href="https://www.erouska.cz/navody/Xiaomi/6_vyjimka_z_omezeni_na_pozadi_pro_eRousku.pdf" target="_blank">Výjimka z omezeni na pozadí pro eRoušku (.pdf)</a></li>
+            <li><a href="https://www.erouska.cz/navody/Xiaomi/6_vyjimka_z_omezeni_na_pozadi_pro_eRousku.pdf" target="_blank">Výjimka z omezení na pozadí pro eRoušku (.pdf)</a></li>
             <li><a href="https://www.erouska.cz/navody/Xiaomi/7_chraneny_status_pro_eRousku.pdf" target="_blank">Chraněný status pro eRoušku (.pdf)</a></li>
             <li><a href="https://www.erouska.cz/navody/Xiaomi/8_overeni_zpusobu_napajeni.pdf" target="_blank">Ověření způsobu napajení (.pdf)</a></li>
           </ul>
