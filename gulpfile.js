@@ -16,7 +16,16 @@ const SKYAPP_PROJECT_ID = "359388";
 const SKYAPP_PUBLIC_KEY = "e0DfHgNmzrc67zt3RabZRWcYpkSISL1W";
 const SKYAPP_SECRET_KEY = process.env.SKYAPP_SECRET_KEY;
 
-const LANGUAGES = ["en"];
+const PHONE_GUIDE_FILES = [
+  "asus.html",
+  "huawei.html",
+  "lenovo.html",
+  "samsung.html",
+  "sony.html",
+  "xiaomi.html"
+];
+const DEFAULT_LANGUAGE = "cs";
+const TRANSLATED_LANGUAGES = ["en"];
 const LANGUAGE_TO_SKYAPP = {
   "en": "en_GB"
 };
@@ -201,12 +210,6 @@ function normalizeMarkdown(content) {
   return content.replace(/\n/g, "\\n");
 }
 
-function markdownifyFile(path) {
-  const content = fs.readFileSync(path).toString();
-  const turndownService = new TurndownService();
-  return turndownService.turndown(content);
-}
-
 function isDirty(data, values) {
   let isDirty = false;
   for (const key of Object.keys(values)) {
@@ -269,7 +272,6 @@ async function updateRemoteConfig(values) {
         conditions
       };
       const dataJson = JSON.stringify(data);
-
       const result = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${firebaseProject}/remoteConfig`, {
         method: "PUT",
         headers: {
@@ -332,7 +334,7 @@ async function translateFile(file, language) {
       projectId: SKYAPP_PROJECT_ID,
       fileName: file,
       format: "HTML",
-      language: LANGUAGE_TO_SKYAPP[language]
+      language: LANGUAGE_TO_SKYAPP[language] || language
     };
 
     try {
@@ -346,25 +348,25 @@ async function translateFile(file, language) {
 
 gulp.task('update-remote-config', async function() {
     if (CREDENTIALS_FILE === undefined) {
-      console.log("CREDENTIALS_FILE not set, skipping remote config upload");
+      console.log("GOOGLE_APPLICATION_CREDENTIALS not set, skipping remote config upload");
       return;
     }
-    const faq = normalizeMarkdown(markdownifyFile("faq.html.template"));
+
+    const FAQ_FILE = "faq.html";
+    const faq = normalizeMarkdown(await translateFile(FAQ_FILE, DEFAULT_LANGUAGE));
     const values = {
       helpMarkdown: faq
     };
-    for (const language of LANGUAGES) {
-      values[`helpMarkdown_${language}`] = normalizeMarkdown(await translateFile("faq.html", language));
+    for (const language of TRANSLATED_LANGUAGES) {
+      values[`helpMarkdown_${language}`] = normalizeMarkdown(await translateFile(FAQ_FILE, language));
     }
 
-    for (const file of fs.readdirSync("navody")) {
-      if (file.endsWith(".html")) {
-        const filePath = `navody/${file}`;
-        const name = `batteryOptimization${capitalize(path.basename(filePath, ".html"))}Markdown`;
-        values[name] = normalizeMarkdown(fs.readFileSync(filePath).toString());
-        for (const language of LANGUAGES) {
-          values[`${name}_${language}`] = normalizeMarkdown(await translateFile(file, language));
-        }
+    for (const file of PHONE_GUIDE_FILES) {
+      const id = path.basename(file, ".html");
+      const name = `batteryOptimization${capitalize(id)}Markdown`;
+      values[name] = normalizeMarkdown(await translateFile(file, DEFAULT_LANGUAGE));
+      for (const language of TRANSLATED_LANGUAGES) {
+        values[`${name}_${language}`] = normalizeMarkdown(await translateFile(file, language));
       }
     }
 
