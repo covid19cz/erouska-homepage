@@ -22,6 +22,7 @@ jobs:
           WEBSITE_URL: https://covid19cz.web.app/
           GOOGLE_JSON: ${{ secrets.FIREBASE_DEV_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: creds.json
+          SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}
       - name: Deploy to Firebase production
         if: github.ref == 'refs/heads/master'
         run: |
@@ -31,3 +32,4 @@ jobs:
           WEBSITE_URL: https://erouska.cz/
           GOOGLE_JSON: ${{ secrets.FIREBASE_PROD_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: creds.json
+          SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}

@@ -39,6 +39,7 @@
     "android >= 4.4"
   ],
   "dependencies": {
+    "@brainly/onesky-utils": "^1.4.0",
     "firebase-admin": "^8.10.0",
     "run-sequence": "^2.2.1",
     "turndown": "^6.0.0"
