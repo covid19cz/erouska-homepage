@@ -12,7 +12,7 @@
       </div>
 
     <div class="section__item faq__item">
-        <h3 class="faq__q">To budu muset pokaždé do automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?</h3>
+        <h3 class="faq__q">Jak postupuje hygiena? To budu muset pokaždé do automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?</h3>
         <div class="faq__a">
 <p>Pokud hygiena na základě sesbíraných dat z aplikace nakaženého vyhodnotí, že jste s ním mohl/a být dostatečně dlouho v rizikovém kontaktu, pokusí se vás nejprve telefonicky kontaktovat. S pracovníkem hygieny společně po telefonu vyhodnotíte, jestli vám skutečně hrozila nákaza, a podle toho se domluvíte na dobrovolné karanténě, přednostním testování nebo jiném postupu.</p>
 <p>Aplikace tedy pomáhá hygieně rychleji se spojit s potenciálně rizikovými kontakty a na základě osobního pohovoru vyhodnotit, jestli šlo jen o “planý poplach”, nebo je potřeba vás a ostatní nějak dál chránit. Nemusíte mít proto obavu, že by šlo o automatizovaný proces, který nemůžete ovlivnit.</p>
@@ -23,6 +23,21 @@
         <h3 class="faq__q">V mé blízkosti je jen jeden, nebo dva telefony s aplikací eRouška, přitom ale vidím v záložce Moje Data řadu dalších ID? To chytám i signál lidí z okolních bytů nebo domů? </h3>
         <div class="faq__a">
 <p>ID každého uživatele se opakovaně mění, abychom zvýšili anonymitu a bezpečí uživatelů. Proto jich můžete v telefonu vidět řádově více, ale přitom může jít stále o jedno stejné zařízení.</p>
+        </div>
+      </div>
+      
+      <div class="section__item faq__item">
+        <h3 class="faq__q">Je možné označit člena mé domácnosti jako známého, aby ho aplikace zbytečně neskenovala?</h3>
+        <div class="faq__a">
+<p>Každá eRouška mění z důvodu bezpečnosti a ochrany soukromí pravidelně své vysílané ID, proto jeden telefon můžete vidět i několikrát pod různými ID. Z toho důvodu není možné označit danou osobu, respektive konkrétní ID jako člena vaší rodiny, aby ji aplikace vynechala ze skenování.</p>
+        </div>
+      </div>
+      
+       <div class="section__item faq__item">
+        <h3 class="faq__q">Potřebuje aplikace připojení k internetu?</h3>
+        <div class="faq__a">
+<p>Připojení k internetu je nutné pouze pro stažení (instalaci) a aktivaci aplikace. Pouze za předpokladu, že by se u vás potvrdila nákaza koronavirem, by vás o zaslání sesbíraných dat požádala hygienická stanice a tehdy by bylo potřeba eRoušku opět připojit k internetu.</p>
+<p>Ve všech ostatních případech není připojení k internetu potřeba, protože aplikace neodesílá žádná data. Vaše data jsou uložena pouze ve Vašem telefonu, odkud se sama odmazávají po 30 dnech. Nemusíte se tedy bát, že by vám aplikace "žrala data".</p>
         </div>
       </div>
 
@@ -157,6 +172,13 @@
 <p><em>Zapsaná informace vypadá např. takto: 31.3.2020 od 12:15 do 13:15 byla ve vaší blízkosti aplikace s identifikátorem ID 29091. </em></p>
 <p>Seznam těchto “setkání” můžete z aplikace odeslat do centrální databáze v případě, že budete osloveni pracovníkem hygienické stanice z důvodu pozitivního testu, nebo kvůli podezření na rizikový kontakt s nakaženým. Do centrální databáze mají přístup jen pověření pracovníci hygienické stanice. Ti mohou spojit identifikátor aplikace s registrovaným telefonním číslem a upozornit ty uživatele eRoušky, kteří s vámi přišli do rizikového kontaktu. </p>
 <p><em>Pracovníci hygieny tedy vidí, že např. ID 29091 je propojeno s telefonním číslem 123 456 789.</em></p>
+        </div>
+      </div>
+      
+      <div class="section__item faq__item">
+        <h3 class="faq__q">V záložce Moje Data vidím spoustu ID, přitom v mém okolí je jen pár lidí/telefonů s aplikací eRouška. Funguje to?</h3>
+        <div class="faq__a">
+<p>Každá eRouška z důvodu bezpečnosti a ochrany soukromí uživatelů mění pravidelně své vysílané ID, proto jeden telefon můžete vidět i několikrát pod různými ID. Z důvodu transparentnosti vám ukazujeme všechna data, která aplikace zaznamená. Přítomnost jiné eRoušky ve vašem okolí, zapisujeme každé 2 minuty.</p>
         </div>
       </div>
 
