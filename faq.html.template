@@ -320,7 +320,7 @@
         <h4>Video návod:</h4>
           <section class="section video" style="padding-top: 0;">
             <div class="section__content">
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/JTXA2pfRTBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/JTXA2pfRTBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><a href="https://www.youtube.com/embed/JTXA2pfRTBk">Klikněte pro zobrazení video návodu</a></iframe>
            </div>
           </section> 
            
