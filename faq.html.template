@@ -306,8 +306,28 @@
   <h2 class="section__title section__title--blue">Mobilní aplikace</h2>
   <div class="section__content">
     <div class="faq">
+    
+        <div class="section__item faq__item--open">
+        <h3 class="faq__q">Jak si můžu stáhnout eRoušku?</h3>
+        <div class="faq__a">
+            <p>Pro stažení eRoušky pro Android postupujte podle následujícího návodu (pdf, video):</p>
 
-      <div class="section__item faq__item faq__item--open">
+        <h4>Obrázkový pdf návod:</h4>
+            <ul>
+            <li><a href="https://www.erouska.cz/navody/instalace_aplikace_eRouska.pdf" target="_blank">Návod na instalaci aplikace eRouška (.pdf)</a></li>
+           </ul>
+           
+        <h4>Video návod:</h4>
+          <section class="section video">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=JTXA2pfRTBk&feature=youtu.be" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+          </section> 
+           
+          </div>
+        </div>
+     
+      <div class="section__item faq__item faq__item">
         <h3 class="faq__q">Co mám dělat, když mi telefon vypíná aplikaci?</h3>
         <div class="faq__a">
           <p>Na odkazech níže najdete stručné návody pro nejpoužívanější telefony, v jejichž nastavení je potřeba zakázat automatické vypínání aplikace eRouška:</p>
