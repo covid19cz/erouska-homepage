@@ -12,7 +12,7 @@
       </div>
 
     <div class="section__item faq__item">
-        <h3 class="faq__q">Jak postupuje hygiena? To budu muset pokaždé do automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?</h3>
+        <h3 class="faq__q">Jak postupuje hygiena? To budu muset pokaždé automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?</h3>
         <div class="faq__a">
 <p>Pokud hygiena na základě sesbíraných dat z aplikace nakaženého vyhodnotí, že jste s ním mohl/a být dostatečně dlouho v rizikovém kontaktu, pokusí se vás nejprve telefonicky kontaktovat. S pracovníkem hygieny společně po telefonu vyhodnotíte, jestli vám skutečně hrozila nákaza, a podle toho se domluvíte na dobrovolné karanténě, přednostním testování nebo jiném postupu.</p>
 <p>Aplikace tedy pomáhá hygieně rychleji se spojit s potenciálně rizikovými kontakty a na základě osobního pohovoru vyhodnotit, jestli šlo jen o “planý poplach”, nebo je potřeba vás a ostatní nějak dál chránit. Nemusíte mít proto obavu, že by šlo o automatizovaný proces, který nemůžete ovlivnit.</p>
