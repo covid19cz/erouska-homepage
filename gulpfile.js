@@ -197,5 +197,6 @@ exports.buildI18n = buildI18n;
 exports.updateRemoteConfig = updateRemoteConfig;
 
 exports.dist = series(buildI18n);
+exports.deploy = series(updateRemoteConfig);
 
 exports.default = exports.dist;
