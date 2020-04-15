@@ -5,7 +5,6 @@ $(document).ready(function() {
 
   if ($('.js-sticky').length) {
     var stickyStart = parseInt($('.js-sticky').offset().top);
-    var stickyHeight = parseInt($('.js-sticky').css('height'));
 
     $(window).scroll(function() {
       var windowTop = $(window).scrollTop();
@@ -17,23 +16,6 @@ $(document).ready(function() {
       }
     });
   }
-
-  // -------------------------------------
-  // ScrollTo
-  // -------------------------------------
-
-  $('.js-scrollto').click(function() {
-    var thisHref = $(this).attr('href');
-
-    $('html, body').animate(
-      {
-        scrollTop: $(thisHref).offset().top
-      },
-      800
-    );
-
-    return false;
-  });
 
   // -------------------------------------
   // Rozbalovani FAQ
