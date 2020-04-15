@@ -75,18 +75,20 @@ export default {
     isNotHome() {
       const path = this.$nuxt.$route.path;
       const lang = this.$route.params.lang || false;
-      return path != "/" && (!lang || (path != "/" + lang && path != "/" + lang + "/"));
+      return path != "/" && (!lang || (path != "/" + lang && path != "/" + lang + "/") || !process.env.locales.includes(lang));
     },
     localeUrl() {
-      if(this.$route.params.lang) {
-        return "/" + this.$route.params.lang + "/";
+      const lang = this.$route.params.lang || false;
+      if(lang) {
+        return "/" + lang + "/";
       } else {
         return "/";
       }
     },
     homeUrl() {
-      if(this.$route.params.lang) {
-        return "/" + this.$route.params.lang;
+      const lang = this.$route.params.lang || false;
+      if(lang && process.env.locales.includes(lang)) {
+        return "/" + lang;
       } else {
         return "/";
       }
