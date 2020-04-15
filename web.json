@@ -1,0 +1,11 @@
+{
+  "web.audit.page_title": "eRouška - Audit a kód aplikace",
+  "web.audit.title": "Audit a kód",
+  "web.audit.section1.perex": "Kód aplikace eRouška prochází audity nezávislých institucí, které prověřují jeho nezávadnost a soulad s",
+  "web.audit.section1.perex_gdpr": "Podmínkami zpracování osobních údajů",
+  "web.audit.section1.review_cvut_1": "ČVUT - Posudek mobilní aplikace eRouška ze dne 2. 4. 2020",
+  "web.audit.section1.review_cvut_2": "ČVUT - Doplňující audit aplikace eRouška pro Android, verze 1.0.381",
+  "web.audit.section1.review_vesely": "Vyjádření důvěry aplikaci - Ondřej Veselý, externí etický expert v oblasti R&D pro Evropskou Komisi",
+  "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru Github",
+  "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ - zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>."
+}
