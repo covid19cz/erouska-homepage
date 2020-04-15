@@ -18,6 +18,7 @@
             </ul>
             <p>{{ $t('t.web.audit.section1.code_text') }} (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>).</p>
             <p v-html="$t('t.web.audit.section1.covid19')"></p>
+            <!-- <p v-html="tr"></p> -->
 
           </div>
         </div>
@@ -30,9 +31,12 @@
 
 <script>
 export default {
-  head: {
-    bodyAttrs: {
-      class: 'page-single'
+  head () {
+    return {
+      title: this.$t('t.web.audit.page_title'),
+      bodyAttrs: {
+        class: 'page-single'
+      }
     }
   }
 }
