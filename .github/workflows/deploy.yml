@@ -19,7 +19,6 @@ jobs:
           printenv GOOGLE_JSON > creds.json
           firebase deploy -P dev --non-interactive
         env:
-          WEBSITE_URL: https://covid19cz.web.app/
           GOOGLE_JSON: ${{ secrets.FIREBASE_DEV_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: creds.json
           SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}
@@ -29,7 +28,6 @@ jobs:
           printenv GOOGLE_JSON > creds.json
           firebase deploy -P prod --non-interactive
         env:
-          WEBSITE_URL: https://erouska.cz/
           GOOGLE_JSON: ${{ secrets.FIREBASE_PROD_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: creds.json
           SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}

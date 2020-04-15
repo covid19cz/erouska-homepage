@@ -16,7 +16,7 @@
               <ul class="team__list">
                   <li v-for="person in section.people">
                     <a title="Přejít na odkaz" :href="person.linkedin" target="_blank">
-                      <img :src="'/img/photos/' + person.photoUrl" class="team__list__photo"  :alt="person.name + ' ' + person.surname" />{{person.name}} {{person.surname}}
+                      <img :src="person.photoUrl" class="team__list__photo"  :alt="person.name + ' ' + person.surname" />{{person.name}} {{person.surname}}
                     </a>
                   </li>
               </ul>
