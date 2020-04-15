@@ -20,9 +20,12 @@ export default {
   components: {
     Box
   },
-  head: {
-    bodyAttrs: {
-      class: 'page-single page-caste-dotazy'
+  head () {
+    return {
+      // title: this.$t('t.web.audit.page_title'),
+      bodyAttrs: {
+        class: 'page-single page-caste-dotazy'
+      }
     }
   }
 }

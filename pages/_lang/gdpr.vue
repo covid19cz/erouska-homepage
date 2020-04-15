@@ -54,9 +54,12 @@
 
 <script>
 export default {
-  head: {
-    bodyAttrs: {
-      class: 'page-single page-tym'
+  head () {
+    return {
+      // title: this.$t('t.web.audit.page_title'),
+      bodyAttrs: {
+        class: 'page-single page-tym'
+      }
     }
   }
 }
