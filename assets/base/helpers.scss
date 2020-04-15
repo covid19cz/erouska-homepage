@@ -1,59 +1,59 @@
 // zarovnání textu
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .left {
-  text-align: left;
+    text-align: left;
 }
 
 .right {
-  text-align: right;
+    text-align: right;
 }
 
 // nezalamování
 .nowrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 // floatování
 .fleft {
-  float: left;
+    float: left;
 }
 
 .fright {
-  float: right;
+    float: right;
 }
 
 .cls {
-  clear: both;
+    clear: both;
 }
 
 // stavy
 .is-visible {
-  display: block;
+    display: block;
 }
 
 .is-open {
-  display: block;
+    display: block;
 }
 
 .is-hidden {
-  display: none;
+    display: none;
 }
 
 // micro clearfix ( http://nicolasgallagher.com/micro-clearfix-hack/ )
 .cf:before,
 .cf:after {
-  content: ' ';
+    content: ' ';
 
-  display: table;
+    display: table;
 }
 
 .cf:after {
-  clear: both;
+    clear: both;
 }
 
 .cf {
-  *zoom: 1;
+    *zoom: 1;
 }
