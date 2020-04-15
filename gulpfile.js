@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 const admin = require("firebase-admin");
 const onesky = require("@brainly/onesky-utils");
 const dot = require('dot-object');
-const { series } = require('gulp');
+const {series} = require('gulp');
 
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 const getServiceAccount = () => require(path.resolve(CREDENTIALS_FILE));
@@ -16,12 +16,12 @@ const SKYAPP_PUBLIC_KEY = "e0DfHgNmzrc67zt3RabZRWcYpkSISL1W";
 const SKYAPP_SECRET_KEY = process.env.SKYAPP_SECRET_KEY;
 
 const PHONE_GUIDE_FILES = [
-  "asus.html",
-  "huawei.html",
-  "lenovo.html",
-  "samsung.html",
-  "sony.html",
-  "xiaomi.html"
+    "asus.html",
+    "huawei.html",
+    "lenovo.html",
+    "samsung.html",
+    "sony.html",
+    "xiaomi.html"
 ];
 const DEFAULT_LANGUAGE = "cs";
 const TRANSLATED_LANGUAGES = ["en"];
@@ -159,7 +159,7 @@ async function buildI18n() {
     }
 
     const directory = "locales";
-    if (!fs.existsSync(directory)){
+    if (!fs.existsSync(directory)) {
         fs.mkdirSync(directory);
     }
 

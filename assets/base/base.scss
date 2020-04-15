@@ -1,60 +1,60 @@
 // box sizing
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 img {
-  box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 // nastavení velikosti písma
 :root {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 // základní definice
 body {
-  position: relative;
+    position: relative;
 
-  margin: 0;
+    margin: 0;
 
-  color: $color_black;
-  font-family: $font_opensans;
-  font-size: 16px;
-  line-height: 1;
+    color: $color_black;
+    font-family: $font_opensans;
+    font-size: 16px;
+    line-height: 1;
 
-  background: url('/img/deco-top.png') no-repeat center 0;
+    background: url('/img/deco-top.png') no-repeat center 0;
 
-  &.page-single {
-    background: url('/img/deco-top-2.png') no-repeat center -140px;
-  }
+    &.page-single {
+        background: url('/img/deco-top-2.png') no-repeat center -140px;
+    }
 
-  &.page-tym {
-    background-position: center 0;
-  }
+    &.page-tym {
+        background-position: center 0;
+    }
 }
 
 // základní nastavení respo
 @-ms-viewport {
-  width: device-width;
+    width: device-width;
 }
 
 img,
 svg {
-  display: inline-block;
+    display: inline-block;
 
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 
-  border: none;
+    border: none;
 }
 
 iframe {
-  max-width: 100%;
+    max-width: 100%;
 }
