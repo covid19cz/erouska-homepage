@@ -9,7 +9,7 @@
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "gulp dist && nuxt generate",
-        "deploy": "gulp dist && nuxt generate && gulp deploy"
+        "deploy": "gulp dist && nuxt generate --fail-on-error && gulp deploy"
     },
     "dependencies": {
         "@brainly/onesky-utils": "^1.4.0",
