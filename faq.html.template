@@ -246,7 +246,7 @@
         <h3 class="faq__q">Může mě někdo pomocí aplikace eRouška sledovat?</h3>
         <div class="faq__a">
 <p>Ne. Aplikace nesbírá údaje o vaší poloze a k uloženým datům máte přístup pouze vy. Samotné údaje, které aplikace po vašem souhlasu odesílá, nemohou být použity k vašemu sledování.</p>
-<p><em>Aplikace automaticky ukládá pouze informace typu: 31.3.2020 od 12:15 do 13:15 byla ve vaší blízkosti aplikace s identifikátorem ID 29091.</em></p>
+<p><em>Aplikace automaticky ukládá pouze informace typu: 31.3.2020 od 12:15 do 13:15 byla ve vaší blízkosti (určené sílou Bluetooth signálu v dB) aplikace s identifikátorem ID 29091.</em></p>
         </div>
       </div>
 
@@ -265,7 +265,7 @@
       <div class="section__item faq__item">
         <h3 class="faq__q">Lze identifikátor aplikace (ID) uživatele spárovat s konkrétní osobou?</h3>
         <div class="faq__a">
-<p>ID eRoušky lze spojit pouze s telefonním číslem uživatele. A to pouze u těch ID, které na základě odeslaných dat od nakažených uživatelů pracovníci hygienické stanice vyhodnotí jako ohrožené nákazou koronavirem. Tuto pravomoc mají jenom určení pracovníci hygienických stanic v zabezpečeném a auditovaném systému.</p>
+<p>ID eRoušky lze spojit pouze s telefonním číslem uživatele. A to pouze u těch ID, které na základě odeslaných dat od nakažených uživatelů pracovníci hygienické stanice vyhodnotí jako ohrožené nákazou koronavirem. Tuto pravomoc mají jenom určení pracovníci hygienických stanic v zabezpečeném systému.</p>
         </div>
       </div>
 
@@ -286,14 +286,14 @@
       <div class="section__item faq__item">
         <h3 class="faq__q">Jak uživatele chráníte před zneužitím dat?</h3>
         <div class="faq__a">
-<p>Uživatele chráníme především minimálním rozsahem zaznamenávaných dat a jejich ukládáním přímo do zařízení. Data uživatelů se bez jejich vědomí, aktivního odeslání a souhlasu nikam neposílají ani nezpracovávají. Do telefonu se zaznamenávají anonymní identifikátory (ID) zařízení s nainstalovanou aplikací eRouška a informace o čase a délce jejich výskytu v blízkosti uživatele. Zpracovat je mohou po výslovném souhlasu uživatele jen určení pracovníci hygieny. </p>
+<p>Uživatele chráníme především minimálním rozsahem zaznamenávaných dat a jejich ukládáním přímo do zařízení. Data uživatelů se bez jejich vědomí a souhlasu nikam neposílají ani nezpracovávají. Do telefonů se zaznamenávají anonymní identifikátory (ID) zařízení s nainstalovanou aplikací eRouška a informace o čase, délce a blízkosti jejich výskytu v okolí uživatele. Zpracovat je mohou po výslovném souhlasu uživatele jen určení pracovníci hygieny.</p>
         </div>
       </div>
 
       <div class="section__item faq__item">
         <h3 class="faq__q">Dohlíží na zabezpečení dat z aplikace nějaká nezávislá organizace?</h3>
         <div class="faq__a">
-<p>Ano. Celý systém aplikace eRouška, včetně podpůrných webových stránek, je navržený plně v souladu se Zákonem o ochraně osobních údajů a GDPR. Kód aplikace je jako open-source volně k dispozici (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>) a prošel <a href="https://erouska.cz/audit-kod" target="_blank">auditem nezávislých vzdělávacích institucí</a>.</p>
+<p>Ano. Celý systém aplikace eRouška, včetně podpůrných webových stránek, je navržený plně v souladu s GDPR. Kód aplikace je jako open-source volně k dispozici (<a href="https://github.com/covid19cz/erouska-android" target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>) a prošel <a href="https://erouska.cz/audit-kod" target="_blank">auditem nezávislých vzdělávacích institucí</a>.</p>
 <p>Další informace naleznete v <a href="https://erouska.cz/gdpr" target="_blank">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a> a v <a href="https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery" target="_blank">Závazku datové důvěry iniciativy COVID19CZ</a>.
         </div>
       </div>
