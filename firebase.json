@@ -3,7 +3,7 @@
     "public": "dist",
     "cleanUrls": true,
     "predeploy": [
-       "npm install && gulp && npm run generate"
+       "npm install && gulp dist && npm run generate && gulp updateRemoteConfig"
     ],
     "appAssociation": "AUTO",
     "rewrites": [
