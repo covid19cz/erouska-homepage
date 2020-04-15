@@ -11,18 +11,16 @@
 
       <section class="section section--full">
         <div class="section__content">
-          <!-- {{#each sections}}
-            <div class="team">
-              <h2 class="team__title">{{ this.name }}</h2>
+            <div class="team" v-for="section in people">
+              <h2 class="team__title">{{ section.name }}</h2>
               <ul class="team__list">
-                {{#each this.people}}
-                  <li><a title="Přejít na odkaz" href="{{ this.linkedin }}" target="_blank">
-                    <img src="{{this.photoUrl}}" class="team__list__photo"  alt="{{this.name}} {{this.surname}}"/>{{this.name}} {{this.surname}}</a>
+                  <li v-for="person in section.people">
+                    <a title="Přejít na odkaz" :href="person.linkedin" target="_blank">
+                      <img :src="'/img/photos/' + person.photoUrl" class="team__list__photo"  :alt="person.name + ' ' + person.surname" />{{person.name}} {{person.surname}}
+                    </a>
                   </li>
-                {{/each}}
               </ul>
             </div>
-          {{/each}} -->
         </div>
       </section>
 
@@ -61,7 +59,14 @@
 </template>
 
 <script>
+import peopleJson from '~/assets/people.json'
+
 export default {
+  data () {
+    return {
+      people: peopleJson
+    }
+  },
   head () {
     return {
       // title: this.$t('t.web.audit.page_title'),
