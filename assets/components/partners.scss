@@ -1,32 +1,32 @@
 .partners {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  list-style: none;
+    list-style: none;
 
-  li {
-    width: 100%;
-    margin-bottom: 30px;
+    li {
+        width: 100%;
+        margin-bottom: 30px;
 
-    text-align: center;
+        text-align: center;
 
-    @include respond-to('medium') {
-      width: 50%;
+        @include respond-to('medium') {
+            width: 50%;
+        }
+        @include respond-to('xlarge') {
+            width: 33%;
+            margin-bottom: 30px;
+
+            text-align: left;
+        }
     }
-    @include respond-to('xlarge') {
-      width: 33%;
-      margin-bottom: 30px;
 
-      text-align: left;
+    img {
+        height: 130px;
     }
-  }
-
-  img {
-    height: 130px;
-  }
 }

@@ -1,4 +1,5 @@
 <script>
-import Tym from '~/pages/_lang/tym'
-export default Tym
+    import Tym from '~/pages/_lang/tym'
+
+    export default Tym
 </script>
