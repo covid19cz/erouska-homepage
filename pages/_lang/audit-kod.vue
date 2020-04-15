@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="heading" id="uvod">
-      <h1 class="heading__title">Audit a kód</h1>
+      <h1 class="heading__title">{{ $t('t.web.audit.title') }}</h1>
     </section>  <!-- /heading -->
 
     <main class="main" role="main">
