@@ -7,7 +7,6 @@ const admin = require("firebase-admin");
 const onesky = require("@brainly/onesky-utils");
 const dot = require('dot-object');
 
-const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 const getServiceAccount = () => require(path.resolve(CREDENTIALS_FILE));
 
