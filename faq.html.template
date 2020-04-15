@@ -25,6 +25,21 @@
 <p>ID každého uživatele se opakovaně mění, abychom zvýšili anonymitu a bezpečí uživatelů. Proto jich můžete v telefonu vidět řádově více, ale přitom může jít stále o jedno stejné zařízení.</p>
         </div>
       </div>
+      
+      <div class="section__item faq__item">
+        <h3 class="faq__q">Máme eRoušku nainstalovanou v domácnosti na dvou telefonech. V záložce Moje data jeden druhý vidí, ale druhý nevidí ten první. Čím to je?</h3>
+        <div class="faq__a">
+<p>Některé starší modely telefonů (např. Google Nexus 5, Honor 7 lite, atp.) mohou fungovat jen částečně - vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.</p>
+        </div>
+      </div>
+      
+       <div class="section__item faq__item">
+        <h3 class="faq__q">Nainstaloval jsem eRoušku, ale v záložce Moje data nevidím žádné záznamy. Funguje to?</h3>
+        <div class="faq__a">
+<p>Aplikace vidí ve svém okolí pouze telefony, které mají taky nainstalovanou eRoušku. Je možné, že jste zatím nikoho takového nepotkali. Zkuste prosím eRoušku doporučit někomu blízkému a ověřit, zda se uvidíte.</p>
+<p>Některé starší modely telefonů mohou fungovat jen částečně - vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.</p>
+        </div>
+      </div>
 
       <div class="section__item faq__item">
         <h3 class="faq__q">Je možné označit člena mé domácnosti jako známého, aby ho aplikace zbytečně neskenovala?</h3>
@@ -38,6 +53,13 @@
         <div class="faq__a">
 <p>Připojení k internetu je nutné pouze pro stažení (instalaci) a aktivaci aplikace. Pouze za předpokladu, že by se u vás potvrdila nákaza koronavirem, by vás o zaslání sesbíraných dat požádala hygienická stanice a tehdy by bylo potřeba eRoušku opět připojit k internetu.</p>
 <p>Ve všech ostatních případech není připojení k internetu potřeba, protože aplikace neodesílá žádná data. Vaše data jsou uložena pouze ve Vašem telefonu, odkud se sama odmazávají po 30 dnech. Nemusíte se tedy bát, že by vám aplikace "žrala data".</p>
+        </div>
+      </div>
+      
+        <div class="section__item faq__item">
+        <h3 class="faq__q">Je možné, že se mi po zapnutí eRoušky se mi zpomalilo Wi-Fi / připojení k internetu?</h3>
+        <div class="faq__a">
+<p>Sama od sebe eRouška žádná data nikam neodesílá, ponechává je uložená v telefonu, takže nemá vliv na vaše připojení k internetu. U některých modelů mobilů s OS Android je bohužel známé, že vysílání Bluetooth může částečně negativně ovlivňovat signál Wi-Fi a naopak.</p>
         </div>
       </div>
 
@@ -194,6 +216,7 @@
         <div class="faq__a">
 <p>Jestliže již nyní používáte telefon se stále zapnutým Bluetooth, spotřeba energie se nezvýší.</p>
 <p>Pokud Bluetooth nyní běžně nepoužíváte, podle výsledků našeho testování s neustále zapnutým Bluetooth a ukládáním dat do aplikace byla denní spotřeba energie v řádu jednotek procent. Ve většině případů to je méně než 20 % kapacity baterie za den. Záleží přitom na konkrétním chytrém telefonu, stylu jeho používání a stavu baterie.</p>
+<p>Pokud vám připadá spotřeba příliš vysoká, zkuste prosím zkontrolovat nastavení -> baterie/spotřeba, jestli udělená povolení nezačala využívat jiná aplikace na pozadí. Na optimalizaci spotřeby eRoušky jinak stále pracujeme. Častější nabíjení je bohužel částečná daň za to, že vás a vaše okolí pomůže telefon s eRouškou lépe chránit.</p>
         </div>
       </div>
 
