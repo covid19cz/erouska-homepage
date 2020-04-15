@@ -10,7 +10,7 @@
           </h2>
         </div>
 
-        <nav v-if="isNotHome" class="header__nav-wrapper d-none d-md-block" role="navigation">
+        <nav v-if="!isHome" class="header__nav-wrapper d-none d-md-block" role="navigation">
           <ul class="header__nav">
             <li><nuxt-link :to="homeUrl">
               <svg xmlns="http://www.w3.org/2000/svg" width="6.703" height="11.252" viewBox="0 0 6.703 11.252">
@@ -48,12 +48,12 @@
                 <li><a href="mailto:pr@erouska.cz">pr@erouska.cz</a></li>
               </ul>
               <ul class="footer__menu__list footer__menu__list--2">
-                <li><nuxt-link :to="localeUrl + 'caste-dotazy'">Časté dotazy</nuxt-link></li>
-                <li><nuxt-link :to="localeUrl + 'tym'">Tým</nuxt-link></li>
+                <li><nuxt-link :to="homeUrl + 'caste-dotazy'">Časté dotazy</nuxt-link></li>
+                <li><nuxt-link :to="homeUrl + 'tym'">Tým</nuxt-link></li>
               </ul>
               <ul class="footer__menu__list footer__menu__list--3">
-                <li><nuxt-link :to="localeUrl + 'gdpr'">Ochrana osobních údajů</nuxt-link></li>
-                <li><nuxt-link :to="localeUrl + 'audit-kod'">Audit a kód</nuxt-link></li>
+                <li><nuxt-link :to="homeUrl + 'gdpr'">Ochrana osobních údajů</nuxt-link></li>
+                <li><nuxt-link :to="homeUrl + 'audit-kod'">Audit a kód</nuxt-link></li>
               </ul>
             </div>
           </div>
@@ -70,28 +70,27 @@
 </template>
 
 <script>
+function getHomeUrl(lang) {
+  if(lang && process.env.locales.includes(lang)) {
+    return "/" + lang;
+  } else {
+    return "/";
+  }
+}
+
 export default {
   computed: {
-    isNotHome() {
-      const path = this.$nuxt.$route.path;
-      const lang = this.$route.params.lang || false;
-      return path != "/" && (!lang || (path != "/" + lang && path != "/" + lang + "/") || !process.env.locales.includes(lang));
-    },
-    localeUrl() {
-      const lang = this.$route.params.lang || false;
-      if(lang) {
-        return "/" + lang + "/";
-      } else {
-        return "/";
-      }
+    isHome() {
+        const homeUrl = getHomeUrl(this.$route.params.lang || false);
+        const path = this.$route.path;
+        return path === homeUrl || path === `${homeUrl}/`;
     },
     homeUrl() {
-      const lang = this.$route.params.lang || false;
-      if(lang && process.env.locales.includes(lang)) {
-        return "/" + lang;
-      } else {
-        return "/";
+      const home = getHomeUrl(this.$route.params.lang || false);
+      if (home.length > 0 && home[home.length - 1] !== "/") {
+          return `${home}/`;
       }
+      return home;
     }
   }
 }
