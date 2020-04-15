@@ -1,85 +1,85 @@
 .team {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 
-  @include respond-to('medium') {
-    margin-bottom: 100px;
-  }
+    @include respond-to('medium') {
+        margin-bottom: 100px;
+    }
 }
 
 .team__title {
-  margin: 0;
+    margin: 0;
 
-  color: $color_red;
-  font-family: $font_merriweather;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 70px;
-  text-align: center;
+    color: $color_red;
+    font-family: $font_merriweather;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
 
-  border-bottom: 3px solid $color_red;
+    border-bottom: 3px solid $color_red;
 
-  @include respond-to('xlarge') {
-    text-align: left;
-  }
+    @include respond-to('xlarge') {
+        text-align: left;
+    }
 }
 
 .team__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  margin: 0;
-  margin-top: 50px;
-  padding: 0;
-
-  list-style-type: none;
-
-  @include respond-to('medium') {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  li {
-    margin-bottom: 60px;
-
-    @include respond-to('medium') {
-      width: 33%;
-      margin-bottom: 60px;
-    }
-    @include respond-to('xlarge') {
-      width: 25%;
-    }
-  }
-
-  a {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 
-    color: $color_black;
-    font-size: 20px;
-    font-weight: 700;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+
+    list-style-type: none;
 
     @include respond-to('medium') {
-      //line-height: 87px;
-    }
-    @include respond-to('xlarge') {
-      align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    &:hover {
-      color: $color_blue;
-      text-decoration: none;
+    li {
+        margin-bottom: 60px;
+
+        @include respond-to('medium') {
+            width: 33%;
+            margin-bottom: 60px;
+        }
+        @include respond-to('xlarge') {
+            width: 25%;
+        }
     }
-  }
 
-  img {
-    display: block;
+    a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+        color: $color_black;
+        font-size: 20px;
+        font-weight: 700;
 
-    border-radius: 100px;
-  }
+        @include respond-to('medium') {
+            //line-height: 87px;
+        }
+        @include respond-to('xlarge') {
+            align-items: flex-start;
+        }
+
+        &:hover {
+            color: $color_blue;
+            text-decoration: none;
+        }
+    }
+
+    img {
+        display: block;
+
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+
+        border-radius: 100px;
+    }
 }

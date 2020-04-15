@@ -6,14 +6,14 @@
 .wf-active input,
 .wf-active textarea,
 .wf-active select {
-  font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 
-  // tisková verze
-  @media print {
-    font-family: sans-serif;
-  }
+    // tisková verze
+    @media print {
+        font-family: sans-serif;
+    }
 }
 
 .wf-active strong {
-  font-weight: 700;
+    font-weight: 700;
 }

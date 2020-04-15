@@ -2,30 +2,30 @@
 }
 
 .faq__item {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 
-  border-bottom: 3px solid #eef6fc;
+    border-bottom: 3px solid #eef6fc;
 
-  @include respond-to('medium') {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-  }
+    @include respond-to('medium') {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .faq__q {
-  cursor: pointer;
+    cursor: pointer;
 
-  &:hover {
-    color: $color_blue;
-  }
+    &:hover {
+        color: $color_blue;
+    }
 }
 
 .faq__a {
-  display: none;
+    display: none;
 }
 
 .faq__item--open {
-  .faq__a {
-    display: block;
-  }
+    .faq__a {
+        display: block;
+    }
 }

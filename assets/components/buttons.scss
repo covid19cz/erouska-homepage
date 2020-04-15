@@ -1,69 +1,69 @@
 // tlačítko
 .button {
-  display: block;
+    display: block;
 
-  padding: 0 40px;
+    padding: 0 40px;
 
-  color: $color_white;
-  font: inherit; // pro sladění vzhledu buttonu a odkazu
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 16px; // pro sladění výšky tlačítka
-  line-height: 64px;
-  text-align: center;
-  text-decoration: none;
+    color: $color_white;
+    font: inherit; // pro sladění vzhledu buttonu a odkazu
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px; // pro sladění výšky tlačítka
+    line-height: 64px;
+    text-align: center;
+    text-decoration: none;
 
-  border: none;
-  border-radius: $radius_button;
-  background-color: $color_blue;
+    border: none;
+    border-radius: $radius_button;
+    background-color: $color_blue;
 
-  cursor: pointer;
-  transition: background-color linear 0.2s;
+    cursor: pointer;
+    transition: background-color linear 0.2s;
 
-  @include respond-to('medium') {
-    display: inline-block;
-  }
+    @include respond-to('medium') {
+        display: inline-block;
+    }
 
-  &:hover,
-  &:focus {
-    background-color: $color_blue_dark;
-  }
+    &:hover,
+    &:focus {
+        background-color: $color_blue_dark;
+    }
 }
 
 .button--blue {
-  background-color: $color_blue;
+    background-color: $color_blue;
 
-  &:hover,
-  &:focus {
-    background-color: $color_blue_dark;
-  }
+    &:hover,
+    &:focus {
+        background-color: $color_blue_dark;
+    }
 }
 
 .button--red {
-  background-color: $color_red;
+    background-color: $color_red;
 
-  &:hover,
-  &:focus {
-    background-color: $color_red_dark;
-  }
+    &:hover,
+    &:focus {
+        background-color: $color_red_dark;
+    }
 }
 
 .button--silver {
-  background-color: $color_silver;
-
-  &:hover,
-  &:focus {
     background-color: $color_silver;
-  }
+
+    &:hover,
+    &:focus {
+        background-color: $color_silver;
+    }
 }
 
 .button--disable {
-  background-color: $color_silver;
-
-  cursor: not-allowed;
-
-  &:hover,
-  &:focus {
     background-color: $color_silver;
-  }
+
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus {
+        background-color: $color_silver;
+    }
 }
