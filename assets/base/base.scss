@@ -29,10 +29,10 @@ body {
   font-size: 16px;
   line-height: 1;
 
-  background: url('../img/deco-top.png') no-repeat center 0;
+  background: url('/img/deco-top.png') no-repeat center 0;
 
   &.page-single {
-    background: url('../img/deco-top-2.png') no-repeat center -140px;
+    background: url('/img/deco-top-2.png') no-repeat center -140px;
   }
 
   &.page-tym {
