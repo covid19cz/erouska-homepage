@@ -4,7 +4,14 @@ export default {
   env: {
     description: 'Mobilní aplikace eRouška usnadní vyhledávání lidí s rizikem nákazy koronavirem v Česku v rámci systému Chytré karantény',
     defaultLanguage: 'cs',
-    locales: ['cs', 'en']
+    locales: ['cs', 'en'],
+  },
+  generate: {
+    routes: [
+      '/cs', '/cs/audit-kod', '/cs/caste-dotazy', '/cs/gdpr', '/cs/tym',
+      '/en', '/en/audit-kod', '/en/caste-dotazy', '/en/gdpr', '/en/tym'
+    ],
+    fallback: true
   },
   /*
   ** Headers of the page
