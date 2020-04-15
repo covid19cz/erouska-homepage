@@ -102,9 +102,12 @@ export default {
   components: {
     Box
   },
-  head: {
-    bodyAttrs: {
-      class: 'page-homepage'
+  head () {
+    return {
+      // title: this.$t('t.web.audit.page_title'),
+      bodyAttrs: {
+        class: 'page-homepage'
+      }
     }
   }
 }
