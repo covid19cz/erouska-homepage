@@ -2,11 +2,10 @@
 
 const fs = require("fs");
 const path = require("path");
-const Handlebars = require("handlebars");
-const TurndownService = require("turndown");
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
-const onesky = require('@brainly/onesky-utils');
+const onesky = require("@brainly/onesky-utils");
+const dot = require('dot-object');
 
 const WEBSITE_URL = process.env.WEBSITE_URL || "https://covid19.web.app/";
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
@@ -16,195 +15,17 @@ const SKYAPP_PROJECT_ID = "359388";
 const SKYAPP_PUBLIC_KEY = "e0DfHgNmzrc67zt3RabZRWcYpkSISL1W";
 const SKYAPP_SECRET_KEY = process.env.SKYAPP_SECRET_KEY;
 
-const PHONE_GUIDE_FILES = [
-  "asus.html",
-  "huawei.html",
-  "lenovo.html",
-  "samsung.html",
-  "sony.html",
-  "xiaomi.html"
-];
 const DEFAULT_LANGUAGE = "cs";
 const TRANSLATED_LANGUAGES = ["en"];
 const LANGUAGE_TO_SKYAPP = {
   "en": "en_GB"
 };
-
-// nastavení
-var settings = {
-  browsersync: {
-    url: 'http://erouska.test/',
-    watch: ['*.html', '*.htm', '*.php']
-  },
-  css: {
-    source: 'css/styles.scss',
-    target: 'css/',
-    filename: 'styles.css',
-    watch: ['css/**/*.scss', 'css/**/*.css', '!css/styles.css'],
-    components: ['css/base/**/*.scss', '!css/base/print.scss', '!css/base/variables.scss', 'css/components/**/*.scss']
-  },
-  js: {
-    source: ['js/main.js'],
-    target: 'js/',
-    filename: 'scripts.js',
-    watch: ['js/**/*.js', '!js/scripts.js'],
-    components: ['js/components/**/*.js', 'js/main.js']
-  },
-  img: {
-    source: 'img/**/*.{gif,jpg,jpeg,png}',
-    target: 'img'
-  }
+const SKYAPP_TO_VUE = {
+  "en-GB": "en"
 };
 
 // gulp
 var gulp = require('gulp');
-  // spojení souborů
-  var concat = require('gulp-concat');
-  // Cheerio - manipulace v HTML/XML souborech
-  var cheerio = require('cheerio');
-  // plumber - odchycení chybových hlášek
-  var plumber = require('gulp-plumber');
-  // přejmenování souborů
-  var rename = require("gulp-rename");
-  // sourcemaps - generování map zdrojů
-  var sourcemaps = require('gulp-sourcemaps');
-  // through2 - Node wrapper
-  var through2 = require('through2');
-  // Vinyl - konvertor streamu
-  var Vinyl = require('vinyl');
-// BrowserSync - live realod, server, ovládání prohlížeče
-var browsersync = require('browser-sync');
-// SASS - generování CSS z preprocesoru
-var sass = require('gulp-sass');
-// postCSS - postprocessing CSS (minifikace, autoprefixer...)
-var postcss = require('gulp-postcss');
-  var autoprefixer = require('autoprefixer');
-  var cssnano = require('cssnano');
-  var flexbugs = require('postcss-flexbugs-fixes');
-  var pxtorem = require('postcss-pxtorem');
-// CSScomb - uhlazení SASS souborů (řazení vlastností, odsazení...)
-var csscomb = require('gulp-csscomb');
-// lintování CSS
-var stylelint = require('gulp-stylelint');
-// minifikace JavaScriptu
-var uglify = require('gulp-uglify');
-// lintování JavaScriptu
-var jshint = require('gulp-jshint');
-// Prettier - uhlazení JS souborů
-var prettier = require('gulp-prettier');
-// generování SVG spritů a ikon
-var svgstore = require('gulp-svgstore');
-// minimalizace SVG
-var svgmin = require('gulp-svgmin');
-var runSequence = require('run-sequence');
-
-// postCSS pluginy a nastavení
-var postcssPlugins = [
-  flexbugs(),
-  pxtorem(),
-  autoprefixer(),
-  cssnano()
-];
-
-// výpis chybových hlášek
-var onError = function (err) {
-  console.log(err);
-  this.emit('end');
-};
-
-// nastavení BrowserSync
-gulp.task('browser-sync', function() {
-  browsersync({
-    proxy: settings.browsersync.url
-  });
-});
-
-// BrowserSync live-reload
-gulp.task('browsersync-reload', function () {
-    browsersync.reload();
-});
-
-// SASS kompilace
-gulp.task('sass', function() {
-  return gulp.src(settings.css.source)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(rename(settings.css.filename))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(settings.css.target))
-    .pipe(browsersync.reload({ stream: true }));
-});
-
-// CSScomb - úpravy SASS souborů (řazení vlastností, odsazení...)
-gulp.task('csscomb', function() {
-  return gulp.src(settings.css.components, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(csscomb())
-    .pipe(gulp.dest('./'));
-});
-
-// CSS kompilace (produkce)
-gulp.task('makecss', ['csscomb'], function() {
-  return gulp.src(settings.css.source)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(sourcemaps.init())
-    .pipe(sass({ style: 'compressed' }))
-    .pipe(postcss(postcssPlugins))
-    .pipe(rename(settings.css.filename))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(settings.css.target));
-});
-
-// JavaScript - spojení souborů
-gulp.task('concatjs', ['prettier'], function() {
-  return gulp.src(settings.js.source, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(sourcemaps.init())
-    .pipe(concat(settings.js.target + settings.js.filename))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./'))
-    .pipe(browsersync.reload({ stream: true }));
-});
-
-// JavaScript - spojení a minifikace (produkce)
-gulp.task('makejs', ['concatjs'], function() {
-  return gulp.src(settings.js.target + settings.js.filename, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./'));
-});
-
-// Prettier - uhlazení JS souborů
-gulp.task('prettier', function() {
-  return gulp.src(settings.js.components, { base: './' })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(prettier({ singleQuote: true }))
-    .pipe(gulp.dest('./'));
-});
-
-// kopírování souborů
-gulp.task('transfer', function() {
-  return gulp.src(['./*.html', 'favicon.ico', 'robots.txt', 'css/styles.css', 'css/styles.css.map', 'js/scripts.js', 'js/scripts.js.map', 'img/**/*', 'navody/**/*', 'downloads/**/*'], { base:"." })
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(gulp.dest('dist/'));
-});
-
-// sledování změn souborů
-gulp.task('watch', ['browser-sync'], function () {
-  gulp.watch(settings.css.watch, ['sass']);
-  gulp.watch(settings.js.watch, ['concatjs', 'browsersync-reload']);
-  gulp.watch(settings.browsersync.watch, ['browsersync-reload']);
-});
-
-function renderHandlebars(templateFile, context, output) {
-    const template = fs.readFileSync(templateFile).toString();
-    const page = Handlebars.compile(template);
-    const result = page(context);
-    fs.writeFileSync(output, result);
-}
 
 function normalizeMarkdown(content) {
   return content.replace(/\n/g, "\\n");
@@ -299,46 +120,39 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-gulp.task('build-team', function () {
-    const content = fs.readFileSync("people.json").toString();
-    const data = JSON.parse(content);
-    data.sort((a, b) => a.id - b.id);
-
-    for (const section of data) {
-      for (const person of section["people"] || []) {
-        const url = person["photoUrl"];
-        if (url === undefined) {
-          person["photoUrl"] = `${WEBSITE_URL}img/photo-avatar.png`;
-        } else {
-          person["photoUrl"] = `${WEBSITE_URL}img/photos/${url}`;
-        }
+gulp.task('build-i18n', async function () {
+    let content = await translateFile("web.json", "", "");
+    for (const lang in SKYAPP_TO_VUE) {
+      if (SKYAPP_TO_VUE.hasOwnProperty(lang)) {
+        let pre = '    "';
+        let post = '": {';
+        content = content.replace(pre + lang + post, pre + SKYAPP_TO_VUE[lang] + post);
       }
     }
-    fs.writeFileSync("dist/peoples.json", JSON.stringify(data));
-
-    const ctx = {
-      sections: data
-    };
-
-    renderHandlebars("tym.hbs", ctx, "dist/tym.html");
-});
-gulp.task('build-faq', function () {
-    const content = fs.readFileSync("faq.html.template").toString();
-    renderHandlebars("caste-dotazy.hbs", {faq: content}, "dist/caste-dotazy.html");
+    content = content.replace(/\s\s\s"translation":\s\{/g, '   "t": {');
+    content = dot.dot(JSON.parse(content));
+    content = dot.object(content);
+    fs.writeFile('./locales/web.json', JSON.stringify(content, undefined, 4), function(err, result) {
+      if(err) console.error(err);
+    });
 });
 
-async function translateFile(file, language) {
+async function translateFile(file, language, format = "HTML") {
     const options = {
       secret: SKYAPP_SECRET_KEY,
       apiKey: SKYAPP_PUBLIC_KEY,
       projectId: SKYAPP_PROJECT_ID,
       fileName: file,
-      format: "HTML",
+      format: format || null,
       language: LANGUAGE_TO_SKYAPP[language] || language
     };
 
     try {
-      return await onesky.getFile(options);
+      if(language == "") {
+        return await onesky.getMultilingualFile(options);
+      } else {
+        return await onesky.getFile(options);
+      }
     }
     catch (e) {
       console.error(`Failed to translate ${file} into ${language}: ${e}`);
@@ -373,11 +187,4 @@ gulp.task('update-remote-config', async function() {
     await updateRemoteConfig(values);
 });
 
-gulp.task('dist', function(done) {
-    runSequence('makecss', 'makejs', 'transfer', 'build-team', 'build-faq', 'update-remote-config', function() {
-        done();
-    });
-});
-
-// defaultni task
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('build-i18n'/*, 'update-remote-config'*/));
