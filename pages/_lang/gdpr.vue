@@ -1,51 +1,5 @@
-<!DOCTYPE html>
-<html class="no-js" lang="cs">
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="robots" content="index,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta name="description" content="Podmínky zpracování osobních údajů při používání aplikace eRouška při boji proti koronaviru v Česku">
-
-  <title>eRouška - Ochrana vašeho soukromí</title>
-
-  <meta property="og:title" itemprop="name" name="twitter:title" content="eRouška - Ochrana vašeho soukromí">
-  <meta property="og:url" name="twitter:url" content="https://www.erouska.cz/gdpr">
-  <meta property="og:description" itemprop="description" name="twitter:description" content="Podmínky zpracování osobních údajů při používání aplikace eRouška při boji proti koronaviru v Česku">
-
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css" type="text/css">
-  <script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
-
-</head>
-
-<body class="page-single page-tym">
-<div class="container-global">
-  <div class="container">
-    <header class="header" role="banner">
-      <div class="header__logo-wrapper">
-        <h2 class="header__logo">
-          <a href="/" title="eRouška - Hlavní stránka">
-            <img src="/img/logo.svg" alt="eRouška" />
-          </a>
-        </h2>
-      </div>
-
-      <nav class="header__nav-wrapper d-none d-md-block" role="navigation">
-        <ul class="header__nav">
-          <li><a title="Přejít na LinkedIn profil" href="/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="6.703" height="11.252" viewBox="0 0 6.703 11.252">
-              <path d="M.148-7.049a.422.422,0,0,0,0,.6l5.161,5.2a.422.422,0,0,0,.6,0l.7-.7a.422.422,0,0,0,0-.6L2.436-6.75,6.6-10.958a.422.422,0,0,0,0-.6l-.7-.7a.422.422,0,0,0-.6,0Z" transform="translate(-0.024 12.376)" fill="#222"/>
-            </svg>
-            Zpět na Hlavní stránku
-          </a></li>
-        </ul>
-      </nav>
-    </header> <!-- /header -->
-
+<template>
+  <div>
     <section class="heading" id="uvod">
       <h1 class="heading__title">Ochrana osobních údajů</h1>
       <div class="heading__perex">
@@ -96,58 +50,14 @@
     </main>
 
   </div>
+</template>
 
-  <div class="claim js-sticky-stop">
-    <div class="container">
-      <h2 class="claim__title">Než vyjdete ven, <br />nasaďte si také eRoušku. </h2>
-      <ul class="claim__actions">
-        <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" target="_blank" class="button button--blue">Stáhnout pro Android</a></li>
-        <li><a href="#" target="_blank" class="button button--disable">Brzy ke stažení pro iOS</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__col footer__col--1">
-          <div class="footer__logo">
-            <a href="/"><img src="/img/logo.svg" alt="eRouška" /></a>
-          </div>
-          <div class="footer__menu">
-            <ul class="footer__menu__list footer__menu__list--1">
-              <li><a href="mailto:info@erouska.cz">info@erouska.cz</a></li>
-              <li><a href="mailto:pr@erouska.cz">pr@erouska.cz</a></li>
-            </ul>
-            <ul class="footer__menu__list footer__menu__list--2">
-              <li><a href="/caste-dotazy">Časté dotazy</a></li>
-              <li><a href="/tym">Tým</a></li>
-            </ul>
-            <ul class="footer__menu__list footer__menu__list--3">
-              <li><a href="/gdpr">Ochrana osobních údajů</a></li>
-              <li><a href="/audit-kod">Audit a kód</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer__col footer__col--2">
-          <ul class="footer__partners">
-            <li><a href="https://covid19cz.cz/" target="_blank"><img src="/img/logo-covid.svg" /><br /><strong>chytrá karanténa</strong></a></li>
-            <li><a href="https://www.mzcr.cz/" target="_blank"><img src="/img/logo-mzcr.svg" /></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-</div>
-
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="/js/scripts.js"></script>
-
-</body>
-</html>
+<script>
+export default {
+  head: {
+    bodyAttrs: {
+      class: 'page-single page-tym'
+    }
+  }
+}
+</script>
