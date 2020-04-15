@@ -8,7 +8,7 @@
         "dev": "nuxt",
         "build": "nuxt build",
         "start": "nuxt start",
-        "generate": "gulp dist && nuxt generate",
+        "generate": "nuxt generate",
         "deploy": "gulp dist && nuxt generate --fail-on-error && gulp deploy"
     },
     "dependencies": {
