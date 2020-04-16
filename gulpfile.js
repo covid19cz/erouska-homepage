@@ -39,6 +39,7 @@ const SKYAPP_TO_ANDROID = {
 const TRANSLATION_SOURCE_FILE = "web.json";
 const TRANSLATION_BUILD_FILE = "./locales/web.json";
 const FAQ_STRUCTURE_FILE = "./assets/faq.json";
+const TEAM_FILE = "./assets/people.json";
 
 function escapeLineEndings(content) {
     return content.replace(/\n/g, "\\n");
@@ -197,42 +198,46 @@ async function buildI18n() {
     fs.writeFileSync(`${directory}/web.json`, JSON.stringify(vueTranslation, null, 4));
 }
 
+function getFirebaseLanguagePostfix(language) {
+    return language !== DEFAULT_LANGUAGE ? `_${SKYAPP_TO_ANDROID[language] || language}` : "";
+}
+
+function translate(translation, language, key) {
+    const strings = translation[language]["t"];
+    const result = dot.pick(key, strings);
+    if (result === undefined) {
+        if (language === DEFAULT_LANGUAGE) {
+            throw Error(`${key} not found for default language`);
+        }
+        console.warn(`${key} not found for ${language}, using ${DEFAULT_LANGUAGE}`);
+        return translate(translation, DEFAULT_LANGUAGE, key);
+    }
+    return result;
+}
+
 async function renderFAQToMarkdown(translation) {
     const faq = require(FAQ_STRUCTURE_FILE);
     const values = {};
     const referenceStructure = translation[DEFAULT_LANGUAGE]["t"];
 
-    function translate(language, key) {
-        const strings = translation[language]["t"];
-        const result = dot.pick(key, strings);
-        if (result === undefined) {
-            if (language === DEFAULT_LANGUAGE) {
-                throw Error(`${key} not found for default language`);
-            }
-            console.warn(`${key} not found for ${language}, using ${DEFAULT_LANGUAGE}`);
-            return translate(DEFAULT_LANGUAGE, key);
-        }
-        return result;
-    }
-
     for (const language of Object.keys(translation)) {
-        const postfix = language !== DEFAULT_LANGUAGE ? `_${SKYAPP_TO_ANDROID[language] || language}` : "";
+        const postfix = getFirebaseLanguagePostfix(language);
         const key = `helpMarkdown${postfix}`;
         let value = "";
 
         for (const section of faq) {
             const sectionId = section["section_id"];
-            const sectionName = translate(language, `web.faq.sections.${sectionId}`);
+            const sectionName = translate(translation, language, `web.faq.sections.${sectionId}`);
             value += `# ${sectionName}\n`;
 
             for (const questionId of section["questions"]) {
-                const question = convertToMarkdown(translate(language, `web.faq.questions.${questionId}.question`));
+                const question = convertToMarkdown(translate(translation, language, `web.faq.questions.${questionId}.question`));
                 value += `## ${question}\n`;
 
                 const answers = referenceStructure[`web.faq.questions.${questionId}.answer`] || [];
                 for (let index = 0; index < answers.length; index++) {
                     const key = `web.faq.questions.${questionId}.answer.${index}`;
-                    const answer = convertToMarkdown(translate(language, key));
+                    const answer = convertToMarkdown(translate(translation, language, key));
                     value += `${answer}\n\n`;
                 }
             }
@@ -256,6 +261,21 @@ async function renderPhoneGuidesToMarkdown() {
     return values;
 }
 
+async function translateTeam(translation) {
+    const values = {};
+    const team = require(TEAM_FILE);
+    for (const language of Object.keys(translation)) {
+        const postfix = getFirebaseLanguagePostfix(language);
+        const key = `aboutJson${postfix}`;
+        const translated = team.map(section => ({
+            ...section,
+            name: translate(translation, language, section["name"])
+        }));
+        values[key] = JSON.stringify(translated);
+    }
+    return values;
+}
+
 async function updateRemoteConfig() {
     if (CREDENTIALS_FILE === undefined) {
         console.log("GOOGLE_APPLICATION_CREDENTIALS not set, skipping remote config upload");
@@ -268,7 +288,8 @@ async function updateRemoteConfig() {
     const translation = require(TRANSLATION_BUILD_FILE);
     const values = {
         ...await renderFAQToMarkdown(translation),
-        ...await renderPhoneGuidesToMarkdown()
+        ...await renderPhoneGuidesToMarkdown(),
+        ...await translateTeam(translation)
     };
 
     await updateRemoteConfigValues(values);
