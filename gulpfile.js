@@ -7,6 +7,7 @@ const admin = require("firebase-admin");
 const onesky = require("@brainly/onesky-utils");
 const dot = require('dot-object');
 const {series} = require('gulp');
+const TurndownService = require("turndown");
 
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 const getServiceAccount = () => require(path.resolve(CREDENTIALS_FILE));
@@ -31,9 +32,20 @@ const LANGUAGE_TO_SKYAPP = {
 const SKYAPP_TO_VUE = {
     "en-GB": "en"
 };
+const SKYAPP_TO_ANDROID = {
+    "en-GB": "en"
+};
 
-function normalizeMarkdown(content) {
+const TRANSLATION_SOURCE_FILE = "web.json";
+const TRANSLATION_BUILD_FILE = "./locales/web.json";
+const FAQ_STRUCTURE_FILE = "./assets/faq.json";
+
+function escapeLineEndings(content) {
     return content.replace(/\n/g, "\\n");
+}
+function convertToMarkdown(content) {
+    const turndownService = new TurndownService();
+    return turndownService.turndown(content);
 }
 
 function isRemoteConfigDirty(data, values) {
@@ -160,8 +172,7 @@ async function sendAppForTranslation(fileName, content) {
 
     try {
         await onesky.postFile(options);
-    }
-    catch (e) {
+    } catch (e) {
         console.error(`Failed to upload translation of ${fileName}: ${JSON.stringify(e)}`);
     }
 }
@@ -186,35 +197,85 @@ async function buildI18n() {
     fs.writeFileSync(`${directory}/web.json`, JSON.stringify(vueTranslation, null, 4));
 }
 
+async function renderFAQToMarkdown(translation) {
+    const faq = require(FAQ_STRUCTURE_FILE);
+    const values = {};
+    const referenceStructure = translation[DEFAULT_LANGUAGE]["t"];
+
+    function translate(language, key) {
+        const strings = translation[language]["t"];
+        const result = dot.pick(key, strings);
+        if (result === undefined) {
+            if (language === DEFAULT_LANGUAGE) {
+                throw Error(`${key} not found for default language`);
+            }
+            console.warn(`${key} not found for ${language}, using ${DEFAULT_LANGUAGE}`);
+            return translate(DEFAULT_LANGUAGE, key);
+        }
+        return result;
+    }
+
+    for (const language of Object.keys(translation)) {
+        const postfix = language !== DEFAULT_LANGUAGE ? `_${SKYAPP_TO_ANDROID[language] || language}` : "";
+        const key = `helpMarkdown${postfix}`;
+        let value = "";
+
+        for (const section of faq) {
+            const sectionId = section["section_id"];
+            const sectionName = translate(language, `web.faq.sections.${sectionId}`);
+            value += `# ${sectionName}\n`;
+
+            for (const questionId of section["questions"]) {
+                const question = convertToMarkdown(translate(language, `web.faq.questions.${questionId}.question`));
+                value += `## ${question}\n`;
+
+                const answers = referenceStructure[`web.faq.questions.${questionId}.answer`] || [];
+                for (let index = 0; index < answers.length; index++) {
+                    const key = `web.faq.questions.${questionId}.answer.${index}`;
+                    const answer = convertToMarkdown(translate(language, key));
+                    value += `${answer}\n\n`;
+                }
+            }
+        }
+
+        values[key] = escapeLineEndings(value);
+    }
+    return values;
+}
+
+async function renderPhoneGuidesToMarkdown() {
+    const values = {};
+    for (const file of PHONE_GUIDE_FILES) {
+        const id = path.basename(file, ".html");
+        const name = `batteryOptimization${capitalize(id)}Markdown`;
+        values[name] = escapeLineEndings(convertToMarkdown(await translateFile(file, DEFAULT_LANGUAGE)));
+        for (const language of TRANSLATED_LANGUAGES) {
+            values[`${name}_${language}`] = escapeLineEndings(convertToMarkdown(await translateFile(file, language)));
+        }
+    }
+    return values;
+}
+
 async function updateRemoteConfig() {
     if (CREDENTIALS_FILE === undefined) {
         console.log("GOOGLE_APPLICATION_CREDENTIALS not set, skipping remote config upload");
         return;
     }
+    if (!fs.existsSync(TRANSLATION_BUILD_FILE)) {
+        throw new Error(`${TRANSLATION_BUILD_FILE} seems to be missing. Please run \`gulp dist\` first`);
+    }
 
-    const FAQ_FILE = "faq.html";
-    const faq = normalizeMarkdown(await translateFile(FAQ_FILE, DEFAULT_LANGUAGE));
+    const translation = require(TRANSLATION_BUILD_FILE);
     const values = {
-        helpMarkdown: faq
+        ...await renderFAQToMarkdown(translation),
+        ...await renderPhoneGuidesToMarkdown()
     };
-    for (const language of TRANSLATED_LANGUAGES) {
-        values[`helpMarkdown_${language}`] = normalizeMarkdown(await translateFile(FAQ_FILE, language));
-    }
-
-    for (const file of PHONE_GUIDE_FILES) {
-        const id = path.basename(file, ".html");
-        const name = `batteryOptimization${capitalize(id)}Markdown`;
-        values[name] = normalizeMarkdown(await translateFile(file, DEFAULT_LANGUAGE));
-        for (const language of TRANSLATED_LANGUAGES) {
-            values[`${name}_${language}`] = normalizeMarkdown(await translateFile(file, language));
-        }
-    }
 
     await updateRemoteConfigValues(values);
 }
 
 async function uploadStrings() {
-    await sendAppForTranslation("web.json", fs.readFileSync("web.json").toString());
+    await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString());
 }
 
 exports.buildI18n = buildI18n;
