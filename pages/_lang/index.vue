@@ -145,7 +145,6 @@
         },
         head() {
             return {
-                // title: this.$t('t.web.audit.page_title'),
                 bodyAttrs: {
                     class: 'page-homepage'
                 }
