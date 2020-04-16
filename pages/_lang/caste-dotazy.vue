@@ -12,9 +12,11 @@
                         <div class="section__item faq__item faq__item--open" v-for="question in section.questions" :id="question.anchor">
                             <h3 class="faq__q">{{ $t('t.web.faq.questions.' + question.id + '.question') }}</h3>
                             <div class="faq__a">
-                                <p v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].t.web.faq.questions[question.id].answer).length"
-                                   v-html="$t('t.web.faq.questions.' + question.id + '.answer[' + index + ']')">
-                                </p>
+                                <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].t.web.faq.questions[question.id].answer).length">
+                                   <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('t.web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
+                                   v-html="$t('t.web.faq.questions.' + question.id + '.answer[' + index + ']')"></div>
+                                   <p v-else v-html="$t('t.web.faq.questions.' + question.id + '.answer[' + index + ']')"></p>
+                                </template>
                             </div>
                         </div>
                     </div>
