@@ -17,9 +17,7 @@ export default {
     */
     head() {
         return {
-            titleTemplate: (titleChunk) => {
-                return titleChunk ? `${titleChunk} – eRouška` : 'eRouška – ' + this.$t('t.web.motto');
-            },
+            titleTemplate: '%s – eRouška',
             meta: [
                 {charset: 'utf-8'},
                 {name: 'viewport', content: 'width=device-width, initial-scale=1'},
