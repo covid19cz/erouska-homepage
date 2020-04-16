@@ -1,9 +1,10 @@
 [
     {
         "section_id": "functioning",
+        "section_anchor": "fungovani",
         "color": "blue",
         "questions": [
-            "why_is_erouska_needed"
+            {"id": "why_is_erouska_needed", "anchor": "proc-erouska"}
         ]
     }
 ]
