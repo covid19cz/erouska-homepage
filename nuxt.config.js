@@ -1,15 +1,22 @@
+const locales = ['cs', 'en'];
+const pages = ['', 'audit-kod', 'caste-dotazy', 'gdpr', 'tym'];
+const routes = [];
+for (const locale of locales) {
+    for (const page of pages) {
+        const url = page === '' ? '' : `/${page}`;
+        routes.push(`/${locale}${url}`);
+    }
+}
+
 export default {
     mode: 'universal',
     env: {
         description: 'Mobilní aplikace eRouška usnadní vyhledávání lidí s rizikem nákazy koronavirem v Česku v rámci systému Chytré karantény',
         defaultLanguage: 'cs',
-        locales: ['cs', 'en'],
+        locales
     },
     generate: {
-        routes: [
-            '/cs', '/cs/audit-kod', '/cs/caste-dotazy', '/cs/gdpr', '/cs/tym',
-            '/en', '/en/audit-kod', '/en/caste-dotazy', '/en/gdpr', '/en/tym'
-        ],
+        routes,
         fallback: true
     },
     /*
