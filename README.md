@@ -4,13 +4,19 @@
 
 ## Build Setup
 
+### Install dependencies
 ```bash
-# install dependencies
 $ npm install
+```
 
-# prepare files for build
+### Download translations from SkyApp
+You will need `SKYAPP_SECRET_KEY` env variable with the SkyApp secret key.
+```bash
 $ gulp dist
+``` 
 
+### Build the web
+```bash
 # serve with hot reload at localhost:3000
 $ npm run dev
 
@@ -21,9 +27,19 @@ $ npm run start
 # generate static project and launch firebase server at localhost:5000
 $ npm run generate
 $ firebase serve --only hosting
-
-# upload data to firebase
-$ gulp deploy
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org) and [Vue I18n docs](https://kazupon.github.io/vue-i18n/).
+
+### Deploy remote config and site to Firebase
+You will need `GOOGLE_APPLICATION_CREDENTIALS` env variable with path to a service account JSON.
+```bash
+$ export GOOGLE_APPLICATION_CREDENTIALS=...
+$ gulp deploy
+```
+
+### Upload strings for translation
+You will again need the SKYAPP secret key in `SKYAPP_SECRET_KEY`.
+```bash
+$ gulp uploadStrings
+```

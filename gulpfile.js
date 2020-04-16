@@ -141,8 +141,28 @@ async function translateFile(file, language = undefined, format = "HTML") {
             return await onesky.getFile(options);
         }
     } catch (e) {
-        console.error(`Failed to translate ${file} into ${language}: ${e}`);
+        console.error(`Failed to translate ${file} into ${language}: ${JSON.stringify(e)}`);
         return "";
+    }
+}
+
+async function sendAppForTranslation(fileName, content) {
+    const options = {
+        secret: SKYAPP_SECRET_KEY,
+        apiKey: SKYAPP_PUBLIC_KEY,
+        projectId: SKYAPP_PROJECT_ID,
+        language: DEFAULT_LANGUAGE,
+        fileName: fileName,
+        format: 'HIERARCHICAL_JSON',
+        content,
+        keepStrings: true // avoid deleting all translations with an erroneous upload
+    };
+
+    try {
+        await onesky.postFile(options);
+    }
+    catch (e) {
+        console.error(`Failed to upload translation of ${fileName}: ${JSON.stringify(e)}`);
     }
 }
 
@@ -193,8 +213,13 @@ async function updateRemoteConfig() {
     await updateRemoteConfigValues(values);
 }
 
+async function uploadStrings() {
+    await sendAppForTranslation("web.json", fs.readFileSync("web.json").toString());
+}
+
 exports.buildI18n = buildI18n;
 exports.updateRemoteConfig = updateRemoteConfig;
+exports.uploadStrings = uploadStrings;
 
 exports.dist = series(buildI18n);
 exports.deploy = series(updateRemoteConfig);
