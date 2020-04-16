@@ -13,7 +13,7 @@
             <section class="section section--full">
                 <div class="section__content">
                     <div class="team" v-for="section in people">
-                        <h2 class="team__title">{{ section.name }}</h2>
+                        <h2 class="team__title">{{ $t('t.' + section.name) }}</h2>
                         <ul class="team__list">
                             <li v-for="person in section.people">
                                 <a title="Přejít na odkaz" :href="person.linkedin" target="_blank">
