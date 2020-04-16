@@ -27,8 +27,6 @@
                             <a href="https://github.com/covid19cz/erouska-ios"
                                target="_blank">iOS</a>).</p>
                         <p v-html="$t('t.web.audit.section1.covid19')"></p>
-                        <!-- <p v-html="tr"></p> -->
-
                     </div>
                 </div>
             </section>
