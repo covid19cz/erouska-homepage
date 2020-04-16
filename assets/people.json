@@ -1,6 +1,6 @@
 [
     {
-        "name": "Řízení projektu",
+        "name": "web.team.sections.management",
         "id": 0,
         "people": [
             {
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "name": "Android",
+        "name": "web.team.sections.android",
         "id": 1,
         "people": [
             {
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "name": "iOS",
+        "name": "web.team.sections.ios",
         "id": 2,
         "people": [
             {
@@ -78,7 +78,7 @@
         ]
     },
     {
-        "name": "Testing",
+        "name": "web.team.sections.testing",
         "id": 3,
         "people": [
             {
@@ -294,7 +294,7 @@
         ]
     },
     {
-        "name": "UX",
+        "name": "web.team.sections.ux",
         "id": 4,
         "people": [
             {
@@ -351,7 +351,7 @@
         ]
     },
     {
-        "name": "Backend",
+        "name": "web.team.sections.backend",
         "id": 5,
         "people": [
             {
@@ -411,7 +411,7 @@
         ]
     },
     {
-        "name": "Překlad",
+        "name": "web.team.sections.translation",
         "id": 6,
         "people": [
             {
@@ -438,7 +438,7 @@
         ]
     },
     {
-        "name": "Web",
+        "name": "web.team.sections.web",
         "id": 7,
         "people": [
             {
@@ -492,7 +492,7 @@
         ]
     },
     {
-        "name": "PR",
+        "name": "web.team.sections.pr",
         "id": 8,
         "people": [
             {
