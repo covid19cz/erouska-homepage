@@ -145,6 +145,7 @@
         },
         head() {
             return {
+                titleTemplate: 'eRouška – ' + this.$t('t.web.motto'),
                 bodyAttrs: {
                     class: 'page-homepage'
                 }
