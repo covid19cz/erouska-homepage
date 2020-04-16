@@ -31,3 +31,8 @@ jobs:
           GOOGLE_JSON: ${{ secrets.FIREBASE_PROD_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: creds.json
           SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}
+      - name: Upload strings to SkyApp
+        if: github.ref == 'refs/heads/develop'
+        run: gulp uploadStrings
+        env:
+          SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}
