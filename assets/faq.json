@@ -4,7 +4,40 @@
         "section_anchor": "fungovani",
         "color": "blue",
         "questions": [
-            {"id": "why_is_erouska_needed", "anchor": "proc-erouska"}
+            {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
+            {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"}
+        ]
+    },
+    {
+        "section_id": "settings",
+        "section_anchor": "nastaveni",
+        "color": "blue",
+        "questions": [
+            {"id": "on_which_phones_does_erouska_work", "anchor": "jake-telefony"}
+        ]
+    },
+    {
+        "section_id": "my_data",
+        "section_anchor": "moje-data",
+        "color": "blue",
+        "questions": [
+            {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "ukladana-data"}
+        ]
+    },
+    {
+        "section_id": "connection",
+        "section_anchor": "pripojeni",
+        "color": "blue",
+        "questions": [
+            {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"}
+        ]
+    },
+    {
+        "section_id": "security",
+        "section_anchor": "zabezpeceni",
+        "color": "blue",
+        "questions": [
+            {"id": "why_the_app_need_my_phone_number", "anchor": "proc-tel-cislo"}
         ]
     }
 ]
