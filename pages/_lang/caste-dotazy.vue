@@ -9,7 +9,8 @@
                 <h2 :class="'section__title section__title--' + section.color">{{ $t('t.web.faq.sections.' + section.section_id) }}</h2>
                 <div class="section__content">
                     <div class="faq">
-                        <div class="section__item faq__item faq__item--open" v-for="question in section.questions" :id="question.anchor">
+                        <div v-for="(question, q_index) in section.questions" :id="question.anchor"
+                        :class="[q_index == 0 ? 'faq__item--open' : '', 'section__item faq__item']">
                             <h3 class="faq__q">{{ $t('t.web.faq.questions.' + question.id + '.question') }}</h3>
                             <div class="faq__a">
                                 <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].t.web.faq.questions[question.id].answer).length">
