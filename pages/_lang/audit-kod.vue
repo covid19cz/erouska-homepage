@@ -10,8 +10,8 @@
                 <div class="section__content">
                     <div class="section__item">
 
-                        <p>{{ $t('t.web.audit.section1.perex') }} <a href="/gdpr">{{
-                            $t('t.web.audit.section1.perex_gdpr') }}</a>.</p>
+                        <p>{{ $t('t.web.audit.section1.perex') }} <nuxt-link to="/gdpr">{{
+                            $t('t.web.audit.section1.perex_gdpr') }}</nuxt-link>.</p>
                         <ul>
                             <li><a href="/downloads/cvut.pdf" target="_blank">{{
                                 $t('t.web.audit.section1.review_cvut_1') }}</a></li>
