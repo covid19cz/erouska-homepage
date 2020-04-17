@@ -4,17 +4,14 @@
             <h1 class="heading__title">{{ $t('web.gdpr.title') }}</h1>
             <div class="heading__perex">
                 <p>{{ $t('web.gdpr.perex.part_1') }}</p>
-                <p>{{ $t('web.gdpr.perex.part_2') }}</p>
                 <p>{{ $t('web.gdpr.perex.part_3') }}</p>
             </div>
         </section>  <!-- /heading -->
 
         <main class="main" role="main">
-
             <section class="section section--full">
             <div class="section__content">
                 <div class="section__item">
-
                     <h2>{{ $t('web.gdpr.who_we_are.heading') }}</h2>
                     <p>{{ $t('web.gdpr.who_we_are.part_1') }}</p>
                     <p>{{ $t('web.gdpr.who_we_are.part_2') }}</p>
@@ -44,12 +41,10 @@
                     <p>{{ $t('web.gdpr.your_rights.part_3') }}<a href="mailto:oia@mzcr.cz">oia@mzcr.cz</a>,
                         {{ $t('web.gdpr.your_rights.part_5') }} <a href="https://www.mzcr.cz" target="_blank">www.mzcr.cz</a>.</p>
                     <p>{{ $t('web.gdpr.your_rights.part_4') }}<a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>).</p>
-
                 </div>
             </div>
             </section>
         </main>
-
     </div>
 </template>
 
