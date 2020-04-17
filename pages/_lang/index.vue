@@ -2,18 +2,14 @@
     <div>
         <section class="hero-wrapper" id="uvod">
             <div class="hero">
-                <h2 class="hero__title"><span>Chráním sebe,</span> <br/>chráním tebe!</h2>
+                <h2 class="hero__title">{{ $t('t.web.index.title') }}</h2>
                 <div class="hero__intro">
-                    <p>Aplikace <em>eRouška</em> si díky Bluetooth pamatuje ostatní
-                        <em>eRoušky</em>, které jste potkali. Usnadní tak hygienické stanici
-                        dohledávání rizikových kontaktů.</p>
-                    <p>Přispějte i vy k tomu, aby nakažených koronavirem přibývalo méně.</p>
+                    <p>{{ $t('t.web.index.intro.part_1') }}</p>
+                    <p>{{ $t('t.web.index.intro.part_2') }}</p>
                 </div>
                 <ul class="hero__actions">
-                    <li><a
-                        href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
-                        target="_blank" class="button button--blue">Stáhnout pro Android</a></li>
-                    <li><span class="button button--disable">Brzy ke stažení pro iOS</span></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" target="_blank" class="button button--blue">{{ $t('t.web.index.downoad.android') }}</a></li>
+                    <li><span class="button button--disable">{{ $t('t.web.index.downoad.ios') }}</span></li>
                 </ul>
             </div>
 
@@ -30,27 +26,19 @@
         <main class="main" role="main">
 
             <section class="section section--first">
-                <h2 class="section__title section__title--blue" id="jak-erouska-chrani">Jak eRouška
-                    chrání?</h2>
-                <h3 class="section__subtitle">eRouška je součástí systému Chytrá karanténa
-                    Ministerstva zdravotnictví ČR</h3>
+                <h2 class="section__title section__title--blue" id="jak-erouska-chrani">{{ $t('t.web.index.key_message') }}</h2>
+                <h3 class="section__subtitle">{{ $t('t.web.index.smart_quarantine') }}</h3>
                 <div class="section__content">
 
                     <div class="section__item">
-                        <h3>Když jste nakaženého potkali</h3>
-                        <p>Když potkáte někoho, u koho se později prokáže koronavirus, hygienická
-                            stanice vás bude moci telefonicky kontaktovat. I když jste spolu třeba
-                            jen stáli ve frontě v obchodě.</p>
+                        <h3>{{ $t('t.web.index.you_have_meet_infected.question') }}</h3>
+                        <p>{{ $t('t.web.index.you_have_meet_infected.answer') }}</p>
                     </div>
 
                     <div class="section__item">
-                        <h3>Když se nakazíte vy</h3>
-                        <p>Pokud se u vás koronavirus prokáže, pracovník hygienické stanice vás
-                            požádá o přehled lidí, které jste v posledních dnech potkali. Vy mu
-                            jednoduše na jeden klik odešlete anonymní seznam uživatelů eRoušky, se
-                            kterými jste byli v rizikovém kontaktu. Včetně těch, které osobně
-                            neznáte, jen jste s nimi třeba jeli autobusem.</p>
-                        <p><em>Nikdo se z aplikace nedozví, že jste nakaženi koronavirem.</em></p>
+                        <h3>{{ $t('t.web.index.when_you_become_infected.question') }}</h3>
+                        <p>{{ $t('t.web.index.when_you_become_infected.answer_1') }}</p>
+                        <p>{{ $t('t.web.index.when_you_become_infected.answer_2') }}</p>
                     </div>
 
                 </div>
@@ -66,71 +54,48 @@
             </section>
 
             <section class="section section--last">
-                <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">
-                    eRouška chrání <br/>vaše soukromí</h2>
+                <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">{{ $t('t.web.index.your_privacy') }}</h2>
                 <div class="section__content">
 
                     <div class="section__item">
-                        <h3>Jak se eRouška liší od jiných podobných aplikací?</h3>
-                        <p>Na rozdíl od jiných aplikací eRouška nesleduje a nesbírá informace o
-                            vaší poloze, ale pouze anonymně zjišťuje, se kterými dalšími uživateli
-                            aplikace jste přišli do bližšího kontaktu. Aplikace ke správnému
-                            fungování nepotřebuje připojení k internetu, takže funguje například i
-                            v metru.</p>
+                        <h3>{{ $t('t.web.index.how_does_erouska_differ.question') }}</h3>
+                        <p>{{ $t('t.web.index.how_does_erouska_differ.answer') }}</p>
                     </div>
 
                     <div class="section__item">
-                        <h3>Proč je k registraci vyžadováno telefonní číslo?</h3>
-                        <p>Telefonní číslo využije hygienická stanice, aby vás mohla co nejdříve
-                            kontaktovat, pokud bude mít na základě informací z eRoušky nakaženého
-                            člověka podezření, že jste s ním byli v rizikovém kontaktu. Proto
-                            telefonní číslo registrujete hned při prvním spuštění eRoušky.</p>
+                        <h3>{{ $t('t.web.index.why_require_phone_number.question') }}</h3>
+                        <p>{{ $t('t.web.index.why_require_phone_number.answer') }}</p>
                     </div>
 
                     <div class="section__item">
-                        <h3>Dozví se ostatní moji identitu, pokud onemocním?</h3>
-                        <p>Pokud onemocníte, vaše totožnost je známá jen a pouze pracovníkům
-                            hygienické stanice. Tak jako doposud. Kritické kontakty se nedozví, kdo
-                            je mohl nakazit, ani kde a kdy. Vaše identita je ochráněna. </p>
+                        <h3>{{ $t('t.web.index.me_identity.question') }}</h3>
+                        <p>{{ $t('t.web.index.me_identity.answer') }}</p>
                     </div>
 
                     <div class="section__item">
-                        <h3>Jakou roli hraje moje jedna instalace? Změní se něco?</h3>
-                        <p>Čím více nás bude eRoušku používat, tím lepší vytvoříme síť, která nás
-                            bude vzájemně chránit a varovat před rizikem. Spolupracujeme s vládou
-                            ČR a dalšími organizacemi na tom, aby se o eRoušce dozvědělo co nejvíce
-                            lidí. Pomozte nám i vy. Instalací aplikace se můžete aktivně zapojit do
-                            boje proti koronaviru.</p>
+                        <h3>{{ $t('t.web.index.will_one_installation_matter.question') }}</h3>
+                        <p>{{ $t('t.web.index.will_one_installation_matter.answer') }}</p>
                     </div>
 
                     <div class="section__item">
-                        <h3>Kdo eRoušku provozuje? Jsou u vás má data v bezpečí?</h3>
-                        <p>Aplikaci vytvořili dobrovolníci spolupracující na platformě <a
-                            href="https://covid19cz.cz/" target="_blank">Covid19CZ</a> pod záštitou
-                            <a href="https://www.mzcr.cz/" target="_blank">Ministerstva
-                                zdravotnictví České republiky</a>. Bezpečnost dat zaštiťuje řada
-                            nezávislých odborníků,
-                            <nuxt-link to="/audit-kod">včetně zástupců akademické sféry</nuxt-link>
-                            .
-                        </p>
+                        <h3>{{ $t('t.web.index.who_is_running_it.question') }}</h3>
+                        <p>{{ $t('t.web.index.who_is_running_it.answer') }}</p>
                     </div>
 
                     <div class="section__item">
-                        <h3>Máte další otázky?</h3>
-                        <p>Zajímá vás, na jakých telefonech eRouška funguje? Nebo třeba jaká data
-                            eRoušce sdílíte a jaká data sbírá? </p>
+                        <h3>{{ $t('t.web.index.further_questions.question') }}</h3>
+                        <p>{{ $t('t.web.index.further_questions.more') }}</p>
                     </div>
 
                     <ul class="section__actions">
                         <li>
-                            <nuxt-link to="/caste-dotazy" class="button button--red">Přejděte do
-                                sekce s často kladenými dotazy
-                            </nuxt-link>
+                            <nuxt-link to="/caste-dotazy" class="button button--red">{{ $t('t.web.index.further_questions.goto') }}</nuxt-link>
                         </li>
                     </ul>
 
                 </div>
             </section>
+
             <box/>
         </main>
     </div>
