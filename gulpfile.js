@@ -185,9 +185,7 @@ async function buildI18n() {
 
     for (const key of Object.keys(content)) {
         const vueKey = SKYAPP_TO_VUE[key] || key;
-        vueTranslation[vueKey] = {
-            t: dot.object(content[key]["translation"])
-        };
+        vueTranslation[vueKey] = dot.object(content[key]["translation"]);
     }
 
     const directory = "locales";
