@@ -2,13 +2,14 @@
     <div>
         <section class="hero-wrapper" id="uvod">
             <div class="hero">
-                <h2 class="hero__title">{{ $t('web.index.title') }}</h2>
+                <h2 class="hero__title"><span>{{ $t('web.index.title.part_1') }}</span> <br>{{ $t('web.index.title.part_2') }}</h2>
                 <div class="hero__intro">
-                    <p>{{ $t('web.index.intro.part_1') }}</p>
+                    <p v-html="$t('web.index.intro.part_1')"></p>
                     <p>{{ $t('web.index.intro.part_2') }}</p>
                 </div>
                 <ul class="hero__actions">
-                    <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" target="_blank" class="button button--blue">{{ $t('web.index.downoad.android') }}</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
+                    target="_blank" class="button button--blue">{{ $t('web.index.downoad.android') }}</a></li>
                     <li><span class="button button--disable">{{ $t('web.index.downoad.ios') }}</span></li>
                 </ul>
             </div>
@@ -38,7 +39,7 @@
                     <div class="section__item">
                         <h3>{{ $t('web.index.when_you_become_infected.question') }}</h3>
                         <p>{{ $t('web.index.when_you_become_infected.answer_1') }}</p>
-                        <p>{{ $t('web.index.when_you_become_infected.answer_2') }}</p>
+                        <p><em>{{ $t('web.index.when_you_become_infected.answer_2') }}</em></p>
                     </div>
 
                 </div>
@@ -54,7 +55,7 @@
             </section>
 
             <section class="section section--last">
-                <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">{{ $t('web.index.your_privacy') }}</h2>
+                <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">{{ $t('web.index.your_privacy.part_1') }} <br>{{ $t('web.index.your_privacy.part_2') }}</h2>
                 <div class="section__content">
 
                     <div class="section__item">
@@ -79,7 +80,11 @@
 
                     <div class="section__item">
                         <h3>{{ $t('web.index.who_is_running_it.question') }}</h3>
-                        <p>{{ $t('web.index.who_is_running_it.answer') }}</p>
+                        <i18n path="web.index.who_is_running_it.answer.text" tag="p">
+                            <a href="https://covid19cz.cz/" target="_blank">Covid19CZ</a>
+                            <a href="https://www.mzcr.cz/" target="_blank">{{ $t('web.index.who_is_running_it.answer.ministry') }}</a>
+                            <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.index.who_is_running_it.answer.audit') }}</nuxt-link>
+                        </i18n>
                     </div>
 
                     <div class="section__item">
@@ -89,7 +94,7 @@
 
                     <ul class="section__actions">
                         <li>
-                            <nuxt-link to="/caste-dotazy" class="button button--red">{{ $t('web.index.further_questions.goto') }}</nuxt-link>
+                            <nuxt-link :to="homeUrl + 'caste-dotazy'" class="button button--red">{{ $t('web.index.further_questions.goto') }}</nuxt-link>
                         </li>
                     </ul>
 
@@ -104,6 +109,14 @@
 <script>
     import Box from '~/components/Box.vue'
 
+    function getHomeUrl(lang) {
+        if (lang && process.env.locales.includes(lang)) {
+            return "/" + lang;
+        } else {
+            return "/";
+        }
+    }
+
     export default {
         components: {
             Box
@@ -114,6 +127,15 @@
                 bodyAttrs: {
                     class: 'page-homepage'
                 }
+            }
+        },
+        computed: {
+            homeUrl() {
+                const home = getHomeUrl(this.$route.params.lang || false);
+                if (home.length > 0 && home[home.length - 1] !== "/") {
+                    return `${home}/`;
+                }
+                return home;
             }
         }
     }
