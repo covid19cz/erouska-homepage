@@ -108,14 +108,7 @@
 
 <script>
     import Box from '~/components/Box.vue'
-
-    function getHomeUrl(lang) {
-        if (lang && process.env.locales.includes(lang)) {
-            return "/" + lang;
-        } else {
-            return "/";
-        }
-    }
+    import {getHomeUrl} from "../../lib/url";
 
     export default {
         components: {
