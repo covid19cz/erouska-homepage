@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="heading" id="uvod">
-            <h1 class="heading__title">Tým tvůrců</h1>
+            <h1 class="heading__title">{{ $t('web.team.title') }}</h1>
             <div class="heading__perex">
                 <p>Všichni lidé, kteří se tvorbě eRoušky podílejí, tak činí z vlastní iniciativy,
                     bez nároku na honorář a dobrovolně.</p>
@@ -87,7 +87,7 @@
         },
         head() {
             return {
-                // title: this.$t('web.audit.page_title'),
+                title: this.$t('web.team.page_title'),
                 bodyAttrs: {
                     class: 'page-single page-tym'
                 }
