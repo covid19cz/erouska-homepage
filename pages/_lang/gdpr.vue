@@ -42,7 +42,7 @@
                     <p>{{ $t('web.gdpr.your_rights.part_1') }}</p>
                     <p>{{ $t('web.gdpr.your_rights.part_2') }}</p>
                     <p>{{ $t('web.gdpr.your_rights.part_3') }}<a href="mailto:oia@mzcr.cz">oia@mzcr.cz</a>,
-                        web: <a href="https://www.mzcr.cz" target="_blank">www.mzcr.cz</a>.</p>
+                        {{ $t('web.gdpr.your_rights.part_5') }} <a href="https://www.mzcr.cz" target="_blank">www.mzcr.cz</a>.</p>
                     <p>{{ $t('web.gdpr.your_rights.part_4') }}<a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>).</p>
 
                 </div>
