@@ -5,7 +5,16 @@
         "color": "blue",
         "questions": [
             {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
-            {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"}
+            {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},
+            {"id": "wrong_contact_assessment", "anchor": "mylny-kontakt"},
+            {"id": "does_it_make_sense_to_install_erouska", "anchor": "proc-instalovat"},
+            {"id": "how_does_erouska_differ", "anchor": "jak-se-lisi"},
+            {"id": "how_is_the_data_processed", "anchor": "sber-dat"},
+            {"id": "how_do_i_proceed_in_a_positive_test", "anchor": "pozitivni-test"},
+            {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
+            {"id": "what_if_somebody_does_not_admit", "anchor": "neprizna-se"},
+            {"id": "will_erouska_know_i_violate_quarantine", "anchor": "poruseni-karanteny"},
+            {"id": "what_is_the_role_of_erouska_in_smart_quarantine", "anchor": "role-erousky"}
         ]
     },
     {
@@ -13,7 +22,10 @@
         "section_anchor": "nastaveni",
         "color": "blue",
         "questions": [
-            {"id": "on_which_phones_does_erouska_work", "anchor": "jake-telefony"}
+            {"id": "on_which_phones_does_erouska_work", "anchor": "kde-funguje"},
+            {"id": "how_can_i_download_erouska", "anchor": "stahnout"},
+            {"id": "how_much_battery_it_consumes", "anchor": "spotreba"},
+            {"id": "what_if_phone_switches_erouska_off", "anchor": "tel-vypina"}           
         ]
     },
     {
@@ -21,7 +33,13 @@
         "section_anchor": "moje-data",
         "color": "blue",
         "questions": [
-            {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "ukladana-data"}
+            {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"},
+            {"id": "what_is_is_and_rssi", "anchor": "id-rssi"},
+            {"id": "only_one_phone_is_nearby", "anchor": "blizko-jeden-tel"},
+            {"id": "there_is_lot_of_ids_in_the_my_data_tab", "anchor": "vidim-moc-id"},
+            {"id": "can_i_mark_a_friend", "anchor": "oznacit-znameho"},
+            {"id": "one_phone_is_visible_the_other_is_not", "anchor": "jeden-tel-vidi"},
+            {"id": "my_data_has_no_records", "anchor": "moje-data-prazdna"}
         ]
     },
     {
@@ -29,7 +47,11 @@
         "section_anchor": "pripojeni",
         "color": "blue",
         "questions": [
-            {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"}
+            {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"},
+            {"id": "does_bluetooth_be_always_enabled", "anchor": "neustale-bt"},
+            {"id": "why_bluetooth", "anchor": "proc-bt"},
+            {"id": "does_erouska_need_internet", "anchor": "potrebuje-internet"},
+            {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"}
         ]
     },
     {
@@ -37,7 +59,19 @@
         "section_anchor": "zabezpeceni",
         "color": "blue",
         "questions": [
-            {"id": "why_the_app_need_my_phone_number", "anchor": "proc-tel-cislo"}
+            {"id": "why_the_app_need_my_phone_number", "anchor": "proc-tel-cislo"},
+            {"id": "what_if_i_lose_the_phone", "anchor": "ztratim-tel"},
+            {"id": "gdpr_compliance", "anchor": "gdpr"},
+            {"id": "how_do_you_protect_users_from_data_misuse", "anchor": "zneuziti-dat"},
+            {"id": "is_there_an_independent_body", "anchor": "nezavisla-org"},
+            {"id": "can_someone_track_me", "anchor": "sledovani"},
+            {"id": "can_i_verify_the_app_does_not_record_location", "anchor": "zaznam-polohy"},
+            {"id": "can_a_particular_person_be_paired", "anchor": "id-osoba"},
+            {"id": "who_can_access_the_data", "anchor": "data-pristup"},
+            {"id": "how_long_is_the_data_kept", "anchor": "doba-uchovani-dat"},
+            {"id": "can_i_change_my_mind_about_using_it", "anchor": "nepouzivat"},
+            {"id": "data_after_the_app_is_deleted", "anchor": "data-po-smazani"},
+            {"id": "where_is_the_source_code", "anchor": "zdrojovy-kod"}
         ]
     }
 ]
