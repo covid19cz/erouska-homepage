@@ -330,7 +330,7 @@
   <div class="section__content">
     <div class="faq">
 
-        <div class="section__item faq__item--open">
+        <div class="section__item faq__item">
         <h3 class="faq__q">Jak si můžu stáhnout eRoušku?</h3>
         <div class="faq__a">
             <p>Pro stažení eRoušky pro Android postupujte podle následujícího návodu (pdf, video):</p>
@@ -375,6 +375,27 @@
             <li><a href="https://www.erouska.cz/navody/Huawei/5_overeni_zpusobu_napajeni.pdf" target="_blank">Oveření způsobu napájení (.pdf)</a></li>
             <li><a href="https://www.erouska.cz/navody/Huawei/6_deaktivace_aplikace_powerGenie.pdf" target="_blank">Deaktivace aplikace powerGenie (.pdf)</a></li>
           </ul>
+          
+          <h4>Video návod pro Huawei: výjimka z optimalizace baterie pro eRoušku</h4>
+          <section class="section video" style="padding-top: 0;">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/bvsd8yqaHmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>https://www.youtube.com/embed/bvsd8yqaHmg</iframe>
+           </div>
+          </section>
+          
+          <h4>Video návod pro Huawei: ruční zajištění běhu eRoušky na pozadí</h4>
+          <section class="section video" style="padding-top: 0;">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/gM5amheQlRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>https://www.youtube.com/embed/gM5amheQlRw</iframe>
+           </div>
+          </section>
+          
+          <h4>Video návod pro Huawei: zajištění spuštění eRoušky po vypnutí obrazovky</h4>
+          <section class="section video" style="padding-top: 0;">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/2vkenND0Zrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>https://www.youtube.com/embed/2vkenND0Zrw</iframe>
+           </div>
+          </section>
 
           <h4>Telefony značky Lenovo:</h4>
           <ul>
