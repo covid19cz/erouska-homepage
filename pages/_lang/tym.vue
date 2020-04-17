@@ -14,7 +14,7 @@
                         <h2 class="team__title">{{ $t(section.name) }}</h2>
                         <ul class="team__list">
                             <li v-for="person in section.people">
-                                <a title="Přejít na odkaz" :href="person.linkedin" target="_blank">
+                                <a :title="$t('web.team.member_link_title')" :href="person.linkedin" target="_blank">
                                     <img :src="person.photoUrl" class="team__list__photo"
                                          :alt="person.name + ' ' + person.surname"/>{{person.name}}
                                     {{person.surname}}
