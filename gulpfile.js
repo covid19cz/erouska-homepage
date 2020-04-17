@@ -230,9 +230,10 @@ async function renderFAQToMarkdown(translation) {
             const sectionName = translate(translation, language, `web.faq.sections.${sectionId}`);
             value += `# ${sectionName}\n`;
 
-            for (const questionId of section["questions"]) {
-                const question = convertToMarkdown(translate(translation, language, `web.faq.questions.${questionId}.question`));
-                value += `## ${question}\n`;
+            for (const question of section["questions"]) {
+                const questionId = question["id"];
+                const questionText = convertToMarkdown(translate(translation, language, `web.faq.questions.${questionId}.question`));
+                value += `## ${questionText}\n`;
 
                 const answers = referenceStructure[`web.faq.questions.${questionId}.answer`] || [];
                 for (let index = 0; index < answers.length; index++) {
