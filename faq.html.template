@@ -25,14 +25,14 @@
 <p>ID každého uživatele se opakovaně mění, abychom zvýšili anonymitu a bezpečí uživatelů. Proto jich můžete v telefonu vidět řádově více, ale přitom může jít stále o jedno stejné zařízení.</p>
         </div>
       </div>
-      
+
       <div class="section__item faq__item">
         <h3 class="faq__q">Máme eRoušku nainstalovanou v domácnosti na dvou telefonech. V záložce Moje data jeden druhý vidí, ale druhý nevidí ten první. Čím to je?</h3>
         <div class="faq__a">
 <p>Některé starší modely telefonů (např. Google Nexus 5, Honor 7 lite, atp.) mohou fungovat jen částečně - vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.</p>
         </div>
       </div>
-      
+
        <div class="section__item faq__item">
         <h3 class="faq__q">Nainstaloval jsem eRoušku, ale v záložce Moje data nevidím žádné záznamy. Funguje to?</h3>
         <div class="faq__a">
@@ -55,7 +55,7 @@
 <p>Ve všech ostatních případech není připojení k internetu potřeba, protože aplikace neodesílá žádná data. Vaše data jsou uložena pouze ve Vašem telefonu, odkud se sama odmazávají po 30 dnech. Nemusíte se tedy bát, že by vám aplikace "žrala data".</p>
         </div>
       </div>
-      
+
         <div class="section__item faq__item">
         <h3 class="faq__q">Je možné, že se mi po zapnutí eRoušky se mi zpomalilo Wi-Fi / připojení k internetu?</h3>
         <div class="faq__a">
@@ -375,6 +375,27 @@
             <li><a href="https://www.erouska.cz/navody/Huawei/5_overeni_zpusobu_napajeni.pdf" target="_blank">Oveření způsobu napájení (.pdf)</a></li>
             <li><a href="https://www.erouska.cz/navody/Huawei/6_deaktivace_aplikace_powerGenie.pdf" target="_blank">Deaktivace aplikace powerGenie (.pdf)</a></li>
           </ul>
+
+          <h4>Video návod pro Huawei: výjimka z optimalizace baterie pro eRoušku</h4>
+          <section class="section video" style="padding-top: 0;">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/bvsd8yqaHmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>https://www.youtube.com/embed/bvsd8yqaHmg</iframe>
+           </div>
+          </section>
+
+          <h4>Video návod pro Huawei: ruční zajištění běhu eRoušky na pozadí</h4>
+          <section class="section video" style="padding-top: 0;">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/gM5amheQlRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>https://www.youtube.com/embed/gM5amheQlRw</iframe>
+           </div>
+          </section>
+
+          <h4>Video návod pro Huawei: zajištění spuštění eRoušky po vypnutí obrazovky</h4>
+          <section class="section video" style="padding-top: 0;">
+            <div class="section__content">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/2vkenND0Zrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>https://www.youtube.com/embed/2vkenND0Zrw</iframe>
+           </div>
+          </section>
 
           <h4>Telefony značky Lenovo:</h4>
           <ul>
