@@ -160,14 +160,15 @@ async function translateFile(file, language = undefined, format = "HTML") {
     }
 }
 
-async function sendAppForTranslation(fileName, content) {
+async function sendAppForTranslation(fileName, content, format="HIERARCHICAL_JSON") {
+    console.log(`Sending ${fileName} for translation`);
     const options = {
         secret: SKYAPP_SECRET_KEY,
         apiKey: SKYAPP_PUBLIC_KEY,
         projectId: SKYAPP_PROJECT_ID,
         language: DEFAULT_LANGUAGE,
         fileName: fileName,
-        format: 'HIERARCHICAL_JSON',
+        format,
         content,
         keepStrings: true // avoid deleting all translations with an erroneous upload
     };
@@ -309,6 +310,13 @@ async function updateRemoteConfig() {
 }
 
 async function uploadStrings() {
+     for (const file of fs.readdirSync("static/navody")) {
+      if (file.endsWith(".html")) {
+        const filePath = `static/navody/${file}`;
+        const content = fs.readFileSync(filePath).toString();
+        await sendAppForTranslation(file, content, "HTML");
+      }
+    }
     await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString());
 }
 
