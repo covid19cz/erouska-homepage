@@ -87,7 +87,7 @@
         },
         head() {
             return {
-                // title: this.$t('t.web.audit.page_title'),
+                // title: this.$t('web.audit.page_title'),
                 bodyAttrs: {
                     class: 'page-single page-tym'
                 }
