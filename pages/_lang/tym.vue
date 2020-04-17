@@ -3,13 +3,11 @@
         <section class="heading" id="uvod">
             <h1 class="heading__title">{{ $t('web.team.title') }}</h1>
             <div class="heading__perex">
-                <p>Všichni lidé, kteří se tvorbě eRoušky podílejí, tak činí z vlastní iniciativy,
-                    bez nároku na honorář a dobrovolně.</p>
+                <p>{{ $t('web.team.perex') }}</p>
             </div>
         </section>  <!-- /heading -->
 
         <main class="main" role="main">
-
             <section class="section section--full">
                 <div class="section__content">
                     <div class="team" v-for="section in people">
@@ -28,16 +26,13 @@
             </section>
 
             <section class="section">
-                <h2 class="section__title section__title--blue">Poděkování</h2>
+                <h2 class="section__title section__title--blue">{{ $t('web.team.thanks.header') }}</h2>
                 <div class="section__content">
                     <div class="section__item">
-                        <p>Aplikace eRouška vzniká v rámci iniciativy <a
-                            href="https://covid19cz.cz/" target="_blank">COVID19CZ</a>.</p>
-                        <p>Poděkování za darování domény patří Petru Adamovi z firmy S4U, s.r.o a&nbsp;Martovi
-                            Šimákovi z firmy CBDcz s.r.o.</p>
-                        <p>Děkujeme zaměstnancům Komerční banky z KC Zlín za pomoc v rámci
-                            předprodukčních testů aplikace.</p>
-                        <p>Děkujeme Alza.cz za zapůjčení testovacích telefonů.</p>
+                        <p><span v-html="$t('web.team.thanks.covid19cz')"></span> <a href="https://covid19cz.cz/" target="_blank">COVID19CZ</a>.</p>
+                        <p v-html="$t('web.team.thanks.s4u')"></p>
+                        <p v-html="$t('web.team.thanks.kc')"></p>
+                        <p v-html="$t('web.team.thanks.alza')"></p>
                     </div>
                 </div>
             </section>
