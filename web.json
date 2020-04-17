@@ -1,5 +1,4 @@
 {
-
     "web.motto": "chráním sebe, chráním tebe",
     "web.index.title.part_1": "Chráním sebe,",
     "web.index.title.part_2": "chráním tebe!",
@@ -165,7 +164,6 @@
     "web.gdpr.page_title": "Ochrana osobních údajů",
     "web.gdpr.title": "Ochrana osobních údajů",
     "web.gdpr.perex.part_1": "Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz",
-    "web.gdpr.perex.part_2": "Verze 10.4.2020",
     "web.gdpr.perex.part_3": "Děkujeme, že pomáháte!",
     "web.gdpr.who_we_are.heading": "Kdo jsme",
     "web.gdpr.who_we_are.part_1": "Jsme Ministerstvo zdravotnictví ČR (dále jen “ministerstvo”) a provozujeme mobilní aplikaci eRouška (dále jen “aplikace”), která pomáhá ministerstvu a jemu podřízeným hygienickým stanicím při likvidaci epidemie nemoci Covid-19 způsobené koronavirem SARS-CoV-2 (dále jen “koronavirus”). Tato aplikace pomocí Bluetooth technologie zaznamenává ostatní telefony s nainstalovanou aplikací, které se pohybují ve vašem okolí.",
@@ -174,7 +172,7 @@
     "web.gdpr.what_data_we_hold": "S jakými údaji pracujeme a co s nimi děláme",
     "web.gdpr.data_with_consent.heading": "Údaje zpracované s vaším souhlasem",
     "web.gdpr.data_with_consent.part_1": "Do aplikace zadáte své <b>telefonní číslo</b>, které ověříme a které můžeme použít k tomu, abychom vás kontaktovali, pokud pomocí aplikace zjistíme, že se ve vašem okolí vyskytl člověk nakažený koronavirem a mohl vás případně nakazit.",
-    "web.gdpr.data_with_consent.part_2": "Dále pracujeme s <b>informací o tom, jaké další telefony s nainstalovanou aplikací se vyskytovaly ve vašem okolí</b>, kdy k setkání došlo a jaká byla síla Bluetooth signálu mezi vaším a každým dalším telefonem s aplikací. Každá aplikace ukládá historii setkávání v posledních 30 dnech a uživatel může ze svého telefonu historii kdykoliv vymazat.",
+    "web.gdpr.data_with_consent.part_2": "Dále pracujeme s <b>informací o tom, jaké další telefony s nainstalovanou aplikací se vyskytovaly ve vašem okolí, kdy k setkání došlo a jaká byla síla Bluetooth signálu mezi vaším a každým dalším telefonem s aplikací</b>. Pro určení síly signálu pracujeme i s informací o modelu vašeho telefonu a jeho operačním systému. Každá aplikace ukládá historii setkávání v posledních 30 dnech a uživatel může ze svého telefonu historii kdykoliv vymazat.",
     "web.gdpr.data_with_consent.part_3": "S touto informací pracujeme dvěma způsoby:",
     "web.gdpr.data_with_consent.part_4": "1) Pokud nám nakažená osoba s nainstalovanou aplikací sama odešle informace o tom, jaké telefony byly v její blízkosti, a bude mezi nimi i váš přístroj s nainstalovanou aplikací, můžeme u vás vyhodnotit riziko nakažení a ozvat se vám na telefonní číslo, které jste zadali. Telefonní číslo není nikdy uložené v aplikaci v telefonech, které potkáváte. Tam je váš telefon identifikován jen náhodným identifikačním číslem. Ale díky tomu, že jste nám telefonní číslo poskytli při registraci, se nám přes identifikační číslo propojí s informacemi od nakažené osoby a můžeme vás kontaktovat a varovat. Přitom pracujeme i s informací o riziku nakažení koronavirem, což je osobní údaj zvláštní kategorie.",
     "web.gdpr.data_with_consent.part_5": "2) Pokud budete sami pozitivně testováni na koronavirus, můžeme vás požádat o odeslání historie setkávání s dalšími telefony s nainstalovanou aplikací. Pokud nám tuto informaci dobrovolně předáte pomocí aplikace (konkrétně pomocí funkce “odeslat data”), pak tuto informaci využijeme k varování ohrožených osob a zjišťování dalších epidemiologických souvislostí. To znamená, že se snažíme zjistit, od koho jste se mohli nakazit a koho jste případně mohli nakazit. O odeslání vás požádáme v souvislosti s informací o vašem nakažení koronavirem, což je osobní údaj zvláštní kategorie.",
@@ -197,9 +195,10 @@
     "web.audit.title": "Audit a kód",
     "web.audit.section1.perex": "Kód aplikace eRouška prochází audity nezávislých institucí, které prověřují jeho nezávadnost a soulad s",
     "web.audit.section1.perex_gdpr": "Podmínkami zpracování osobních údajů",
-    "web.audit.section1.review_cvut_1": "ČVUT – Posudek mobilní aplikace eRouška ze dne 2. 4. 2020",
-    "web.audit.section1.review_cvut_2": "ČVUT – Doplňující audit aplikace eRouška pro Android, verze 1.0.381",
+    "web.audit.section1.review_cvut_1": "FIT ČVUT – Posudek mobilní aplikace eRouška ze dne 2. 4. 2020",
+    "web.audit.section1.review_cvut_2": "FIT ČVUT – Doplňující audit aplikace eRouška pro Android, verze 1.0.381",
     "web.audit.section1.review_vesely": "Vyjádření důvěry aplikaci – Ondřej Veselý, externí etický expert v oblasti R&D pro Evropskou Komisi",
+    "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 - Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
     "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru Github",
     "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>."
 }
