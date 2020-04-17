@@ -42,6 +42,12 @@
     "web.team.sections.translation": "Překlad",
     "web.team.sections.web": "Web",
     "web.team.sections.pr": "PR",
+    "web.team.perex": "Všichni lidé, kteří se tvorbě eRoušky podílejí, tak činí z vlastní iniciativy, bez nároku na honorář a dobrovolně.",
+    "web.team.thanks.header": "Poděkování",
+    "web.team.thanks.covid19cz": "Aplikace eRouška vzniká v rámci iniciativy",
+    "web.team.thanks.s4u": "Poděkování za darování domény patří Petru Adamovi z firmy S4U, s.r.o a&nbsp;Martovi Šimákovi z firmy CBDcz s.r.o.",
+    "web.team.thanks.kc": "Děkujeme zaměstnancům Komerční banky z KC Zlín za pomoc v rámci předprodukčních testů aplikace.",
+    "web.team.thanks.alza": "Děkujeme Alza.cz za zapůjčení testovacích telefonů.",
 
     "web.faq.page_title": "Často kladené otázky",
     "web.faq.title": "Časté dotazy",
