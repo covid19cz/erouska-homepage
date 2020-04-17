@@ -10,7 +10,7 @@
                 <div class="section__content">
                     <div class="section__item">
 
-                        <p>{{ $t('web.audit.section1.perex') }} <nuxt-link to="/gdpr">{{
+                        <p>{{ $t('web.audit.section1.perex') }} <nuxt-link :to="homeUrl + 'gdpr'">{{
                             $t('web.audit.section1.perex_gdpr') }}</nuxt-link>.</p>
                         <ul>
                             <li><a href="/downloads/cvut.pdf" target="_blank">{{
@@ -39,6 +39,8 @@
 </template>
 
 <script>
+    import {getHomeUrl} from "../../lib/url";
+
     export default {
         head() {
             return {
@@ -46,6 +48,15 @@
                 bodyAttrs: {
                     class: 'page-single'
                 }
+            }
+        },
+        computed: {
+            homeUrl() {
+                const home = getHomeUrl(this.$route.params.lang || false);
+                if (home.length > 0 && home[home.length - 1] !== "/") {
+                    return `${home}/`;
+                }
+                return home;
             }
         }
     }
