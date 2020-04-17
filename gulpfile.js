@@ -40,6 +40,7 @@ const TRANSLATION_SOURCE_FILE = "web.json";
 const TRANSLATION_BUILD_FILE = "./locales/web.json";
 const FAQ_STRUCTURE_FILE = "./assets/faq.json";
 const TEAM_FILE = "./assets/people.json";
+const LEGACY_TEAM_PATH = "static/peoples.json";
 
 function escapeLineEndings(content) {
     return content.replace(/\n/g, "\\n");
@@ -201,7 +202,7 @@ function getFirebaseLanguagePostfix(language) {
 }
 
 function translate(translation, language, key) {
-    const strings = translation[language]["t"];
+    const strings = translation[language];
     const result = dot.pick(key, strings);
     if (result === undefined) {
         if (language === DEFAULT_LANGUAGE) {
@@ -216,7 +217,7 @@ function translate(translation, language, key) {
 async function renderFAQToMarkdown(translation) {
     const faq = require(FAQ_STRUCTURE_FILE);
     const values = {};
-    const referenceStructure = translation[DEFAULT_LANGUAGE]["t"];
+    const referenceStructure = translation[DEFAULT_LANGUAGE];
 
     for (const language of Object.keys(translation)) {
         const postfix = getFirebaseLanguagePostfix(language);
@@ -246,6 +247,23 @@ async function renderFAQToMarkdown(translation) {
     return values;
 }
 
+function translateTeam(translation, language, team) {
+    return team.map(section => ({
+        ...section,
+        name: translate(translation, language, section["name"])
+    }));
+}
+
+async function createLegacyTeamJson() {
+    if (!fs.existsSync(TRANSLATION_BUILD_FILE)) {
+        throw new Error(`${TRANSLATION_BUILD_FILE} seems to be missing. Please run \`gulp dist\` first`);
+    }
+
+    const translation = require(TRANSLATION_BUILD_FILE);
+    const team = translateTeam(translation, DEFAULT_LANGUAGE, require(TEAM_FILE));
+    fs.writeFileSync(LEGACY_TEAM_PATH, JSON.stringify(team));
+}
+
 async function renderPhoneGuidesToMarkdown() {
     const values = {};
     for (const file of PHONE_GUIDE_FILES) {
@@ -259,16 +277,13 @@ async function renderPhoneGuidesToMarkdown() {
     return values;
 }
 
-async function translateTeam(translation) {
+async function renderTeamsToJson(translation) {
     const values = {};
     const team = require(TEAM_FILE);
     for (const language of Object.keys(translation)) {
         const postfix = getFirebaseLanguagePostfix(language);
         const key = `aboutJson${postfix}`;
-        const translated = team.map(section => ({
-            ...section,
-            name: translate(translation, language, section["name"])
-        }));
+        const translated = translateTeam(translation, language, team);
         values[key] = JSON.stringify(translated);
     }
     return values;
@@ -287,7 +302,7 @@ async function updateRemoteConfig() {
     const values = {
         ...await renderFAQToMarkdown(translation),
         ...await renderPhoneGuidesToMarkdown(),
-        ...await translateTeam(translation)
+        ...await renderTeamsToJson(translation)
     };
 
     await updateRemoteConfigValues(values);
@@ -301,7 +316,7 @@ exports.buildI18n = buildI18n;
 exports.updateRemoteConfig = updateRemoteConfig;
 exports.uploadStrings = uploadStrings;
 
-exports.dist = series(buildI18n);
+exports.dist = series(buildI18n, createLegacyTeamJson);
 exports.deploy = series(updateRemoteConfig);
 
 exports.default = exports.dist;
