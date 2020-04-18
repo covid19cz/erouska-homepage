@@ -180,6 +180,23 @@ async function sendAppForTranslation(fileName, content, format="HIERARCHICAL_JSO
     }
 }
 
+function insertNonBreakingSpace(data) {
+    if (Array.isArray(data)) {
+        return data.map(insertNonBreakingSpace);
+    }
+    else if (typeof data === "string") {
+        return data.replace(/ ([kvszaiou]) /gi, " $1\u00A0"); // replace with non-breaking space
+    }
+    else if (typeof data === 'object' && data !== null) {
+        const modified = {};
+        for (const key of Object.keys(data)) {
+            modified[key] = insertNonBreakingSpace(data[key]);
+        }
+        return modified;
+    }
+    throw Error("Wrong type supplied to insertNonBreakingSpace");
+}
+
 async function buildI18n() {
     const translationFile = await translateFile("web.json", undefined, "I18NEXT_MULTILINGUAL_JSON");
     const content = JSON.parse(translationFile);
@@ -187,7 +204,11 @@ async function buildI18n() {
 
     for (const key of Object.keys(content)) {
         const vueKey = SKYAPP_TO_VUE[key] || key;
-        vueTranslation[vueKey] = dot.object(content[key]["translation"]);
+        let data = content[key]["translation"];
+        if (vueKey === DEFAULT_LANGUAGE) {
+            data = insertNonBreakingSpace(data);
+        }
+        vueTranslation[vueKey] = dot.object(data);
     }
 
     const directory = "locales";
