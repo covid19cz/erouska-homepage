@@ -235,7 +235,10 @@ async function renderFAQToMarkdown(translation) {
                 const questionText = convertToMarkdown(translate(translation, language, `web.faq.questions.${questionId}.question`));
                 value += `## ${questionText}\n`;
 
-                const answers = referenceStructure[`web.faq.questions.${questionId}.answer`] || [];
+                const answers = dot.pick(`web.faq.questions.${questionId}.answer`, referenceStructure) || [];
+                if (answers.length === 0) {
+                    console.warn(`Missing answers for question ${questionId}`);
+                }
                 for (let index = 0; index < answers.length; index++) {
                     const key = `web.faq.questions.${questionId}.answer.${index}`;
                     const answer = convertToMarkdown(translate(translation, language, key));
