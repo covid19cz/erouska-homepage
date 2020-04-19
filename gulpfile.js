@@ -65,6 +65,7 @@ async function updateRemoteConfigValues(values) {
     try {
         const account = getServiceAccount();
         const firebaseProject = account.project_id;
+        console.log(`Updating remote config of ${firebaseProject}`);
         const credential = admin.credential.cert(account);
         const token = (await credential.getAccessToken()).access_token;
         const config = await fetch(`https://firebaseremoteconfig.googleapis.com/v1/projects/${firebaseProject}/remoteConfig`, {
@@ -194,7 +195,22 @@ function insertNonBreakingSpace(data) {
         }
         return modified;
     }
-    throw Error("Wrong type supplied to insertNonBreakingSpace");
+    throw Error(`Wrong type supplied to insertNonBreakingSpace: ${typeof data}, ${data}`);
+}
+
+function normalizeTranslations(data, reference) {
+    if (data !== reference) {
+        for (const key of Object.keys(reference)) {
+            if (!data.hasOwnProperty(key)) {
+                data[key] = ""; // allow removing keys in translations
+            }
+        }
+    }
+    for (const key of Object.keys(data)) {
+        if (Array.isArray(data[key])) {
+            data[key] = data[key].join(" ").trim();
+        }
+    }
 }
 
 async function buildI18n() {
@@ -205,6 +221,7 @@ async function buildI18n() {
     for (const key of Object.keys(content)) {
         const vueKey = SKYAPP_TO_VUE[key] || key;
         let data = content[key]["translation"];
+        normalizeTranslations(data, content[DEFAULT_LANGUAGE]["translation"]);
         if (vueKey === DEFAULT_LANGUAGE) {
             data = insertNonBreakingSpace(data);
         }
@@ -248,7 +265,7 @@ async function renderFAQToMarkdown(translation) {
 
         for (const section of faq) {
             const sectionId = section["section_id"];
-            const sectionName = translate(translation, language, `web.faq.sections.${sectionId}`);
+            const sectionName = translate(translation, language, `web.faq.sections.${sectionId}.title`);
             value += `# ${sectionName}\n`;
 
             for (const question of section["questions"]) {
