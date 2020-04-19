@@ -35,6 +35,9 @@ const SKYAPP_TO_VUE = {
 const SKYAPP_TO_ANDROID = {
     "en-GB": "en"
 };
+const FALLBACK_LANGUAGE = {
+    "en": DEFAULT_LANGUAGE
+};
 
 const TRANSLATION_SOURCE_FILE = "web.json";
 const TRANSLATION_BUILD_FILE = "./locales/web.json";
@@ -198,11 +201,21 @@ function insertNonBreakingSpace(data) {
     throw Error(`Wrong type supplied to insertNonBreakingSpace: ${typeof data}, ${data}`);
 }
 
-function normalizeTranslations(data, reference) {
-    if (data !== reference) {
-        for (const key of Object.keys(reference)) {
+function getFallback(language) {
+    if (FALLBACK_LANGUAGE.hasOwnProperty(language)) {
+        return FALLBACK_LANGUAGE[language];
+    }
+    return DEFAULT_LANGUAGE;
+}
+
+function normalizeTranslations(translations, language) {
+    const fallback = getFallback(language);
+    const data = translations[language];
+
+    if (language !== DEFAULT_LANGUAGE) {
+        for (const key of Object.keys(translations[DEFAULT_LANGUAGE])) {
             if (!data.hasOwnProperty(key)) {
-                data[key] = ""; // allow removing keys in translations
+                data[key] = translate(translations, fallback, key);
             }
         }
     }
@@ -216,16 +229,19 @@ function normalizeTranslations(data, reference) {
 async function buildI18n() {
     const translationFile = await translateFile("web.json", undefined, "I18NEXT_MULTILINGUAL_JSON");
     const content = JSON.parse(translationFile);
+    for (const key of Object.keys(content)) {
+        content[key] = content[key]["translation"];
+    }
     const vueTranslation = {};
 
     for (const key of Object.keys(content)) {
         const vueKey = SKYAPP_TO_VUE[key] || key;
-        let data = content[key]["translation"];
-        normalizeTranslations(data, content[DEFAULT_LANGUAGE]["translation"]);
+        let currentTranslation = content[key];
+        normalizeTranslations(content, key);
         if (vueKey === DEFAULT_LANGUAGE) {
-            data = insertNonBreakingSpace(data);
+            currentTranslation = insertNonBreakingSpace(currentTranslation);
         }
-        vueTranslation[vueKey] = dot.object(data);
+        vueTranslation[vueKey] = dot.object(currentTranslation);
     }
 
     const directory = "locales";
@@ -242,13 +258,19 @@ function getFirebaseLanguagePostfix(language) {
 
 function translate(translation, language, key) {
     const strings = translation[language];
-    const result = dot.pick(key, strings);
+    let result;
+    if (strings.hasOwnProperty(key)) {
+        result = strings[key];
+    }
+    else result = dot.pick(key, strings);
+
     if (result === undefined) {
         if (language === DEFAULT_LANGUAGE) {
             throw Error(`${key} not found for default language`);
         }
-        console.warn(`${key} not found for ${language}, using ${DEFAULT_LANGUAGE}`);
-        return translate(translation, DEFAULT_LANGUAGE, key);
+        const fallback = getFallback(language);
+        console.warn(`${key} not found for ${language}, using ${fallback}`);
+        return translate(translation, fallback, key);
     }
     return result;
 }
