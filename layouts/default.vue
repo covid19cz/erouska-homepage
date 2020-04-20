@@ -21,7 +21,7 @@
                                         d="M.148-7.049a.422.422,0,0,0,0,.6l5.161,5.2a.422.422,0,0,0,.6,0l.7-.7a.422.422,0,0,0,0-.6L2.436-6.75,6.6-10.958a.422.422,0,0,0,0-.6l-.7-.7a.422.422,0,0,0-.6,0Z"
                                         transform="translate(-0.024 12.376)" fill="#222"/>
                                 </svg>
-                                Zpět na Hlavní stránku
+                                {{ $t('web.default.back_to_main_page') }}
                             </nuxt-link>
                         </li>
                     </ul>
@@ -29,14 +29,15 @@
             </header> <!-- /header -->
             <nuxt/>
         </div>
+
         <div class="claim">
             <div class="container">
-                <h2 class="claim__title">Než vyjdete ven, <br/>nasaďte si také eRoušku. </h2>
+                <h2 class="claim__title">{{ $t('web.default.before_you_go_out') }}<br>{{ $t('web.default.use_erouska_too') }}</h2>
                 <ul class="claim__actions">
-                    <li><a
+                    <li><a 
                         href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
-                        target="_blank" class="button button--blue">Stáhnout pro Android</a></li>
-                    <li><span class="button button--disable">Brzy ke stažení pro iOS</span></li>
+                        target="_blank" class="button button--blue">{{ $t('web.default.download_for_android') }}</a></li>
+                    <li><span class="button button--disable">{{ $t('web.default.download_for_ios') }}</span></li>
                 </ul>
             </div>
         </div>
@@ -57,20 +58,18 @@
                             </ul>
                             <ul class="footer__menu__list footer__menu__list--2">
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'caste-dotazy'">Časté dotazy
-                                    </nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'caste-dotazy'">{{ $t('web.faq.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'tym'">Tým</nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list footer__menu__list--3">
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'gdpr'">Ochrana osobních údajů
-                                    </nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'gdpr'">{{ $t('web.gdpr.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'audit-kod'">Audit a kód</nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>
                                 </li>
                             </ul>
                         </div>
@@ -78,8 +77,7 @@
                     <div class="footer__col footer__col--2">
                         <ul class="footer__partners">
                             <li><a href="https://covid19cz.cz/" target="_blank"><img
-                                src="/img/logo-covid.svg"/><br/><strong>chytrá
-                                karanténa</strong></a></li>
+                                src="/img/logo-covid.svg"/><br/><strong>{{ $t('web.default.smart_quarantine') }}</strong></a></li>
                             <li><a href="https://www.mzcr.cz/" target="_blank"><img
                                 src="/img/logo-mzcr.svg"/></a></li>
                         </ul>
