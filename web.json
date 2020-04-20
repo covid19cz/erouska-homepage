@@ -33,6 +33,7 @@
 
     "web.team.page_title": "Tvůrci mobilní aplikace proti koronaviru",
     "web.team.title": "Tým tvůrců",
+    "web.team.link": "Tým",
     "web.team.sections.management": "Řízení projektu",
     "web.team.sections.android": "Android",
     "web.team.sections.ios": "iOS",
@@ -52,6 +53,7 @@
 
     "web.faq.page_title": "Často kladené otázky",
     "web.faq.title": "Časté dotazy",
+    "web.faq.link": "Časté dotazy",
     "web.faq.sections.functioning": "Fungování eRoušky, postup hygieny",
     "web.faq.sections.settings": "Nastavení: Podporované mobily, spotřeba baterie",
     "web.faq.sections.my_data": "Moje data: Vysvětlení údajů ID, RSSI…",
@@ -172,6 +174,7 @@
 
     "web.gdpr.page_title": "Ochrana osobních údajů",
     "web.gdpr.title": "Ochrana osobních údajů",
+    "web.gdpr.link": "Ochrana osobních údajů",
     "web.gdpr.perex.part_1": "Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz",
     "web.gdpr.perex.part_3": "Děkujeme, že pomáháte!",
     "web.gdpr.who_we_are.heading": "Kdo jsme",
@@ -202,6 +205,7 @@
 
     "web.audit.page_title": "Audit a kód aplikace",
     "web.audit.title": "Audit a kód",
+    "web.audit.link": "Audit a kód",
     "web.audit.section1.perex": "Kód aplikace eRouška prochází audity nezávislých institucí, které prověřují jeho nezávadnost a soulad s",
     "web.audit.section1.perex_gdpr": "Podmínkami zpracování osobních údajů",
     "web.audit.section1.review_cvut_1": "FIT ČVUT – Posudek mobilní aplikace eRouška ze dne 2. 4. 2020",
@@ -209,5 +213,13 @@
     "web.audit.section1.review_vesely": "Vyjádření důvěry aplikaci – Ondřej Veselý, externí etický expert v oblasti R&D pro Evropskou Komisi",
     "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 - Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
     "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru GitHub",
-    "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>."
+    "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>.",
+
+    "web.default.back_to_main_page": "Zpět na Hlavní stránku",
+    "web.default.before_you_go_out": "Než vyjdete ven,",
+    "web.default.use_erouska_too": "nasaďte si také eRoušku.",
+    "web.default.download_for_android": "Stáhnout pro Android",
+    "web.default.download_for_ios": "Brzy ke stažení pro iOS",
+    "web.default.smart_quarantine": "chytrá karanténa"
+
 }
