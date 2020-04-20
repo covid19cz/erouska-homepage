@@ -330,7 +330,7 @@
   <div class="section__content">
     <div class="faq">
 
-        <div class="section__item faq__item--open">
+        <div class="section__item faq__item faq__item--open">
         <h3 class="faq__q">Jak si můžu stáhnout eRoušku?</h3>
         <div class="faq__a">
             <p>Pro stažení eRoušky pro Android postupujte podle následujícího návodu (pdf, video):</p>
@@ -350,7 +350,7 @@
           </div>
         </div>
 
-      <div class="section__item faq__item faq__item">
+      <div class="section__item faq__item faq__item--open">
         <h3 class="faq__q">Co mám dělat, když mi telefon vypíná aplikaci?</h3>
         <div class="faq__a">
           <p>Na odkazech níže najdete stručné návody pro nejpoužívanější telefony, v jejichž nastavení je potřeba zakázat automatické vypínání aplikace eRouška:</p>
