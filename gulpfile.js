@@ -252,6 +252,35 @@ async function buildI18n() {
     fs.writeFileSync(`${directory}/web.json`, JSON.stringify(vueTranslation, null, 4));
 }
 
+/**
+ * Creates ~/locales/web.json directly from ~/web.json to allow test of changes in ~/web.json for local development
+ * TODO: Clean duplicit code with buildI18n
+ */
+async function verifyI18nDefiniton() {
+    const translationFile = fs.readFileSync(TRANSLATION_SOURCE_FILE).toString();
+    const content = {};
+    content["cs"] = JSON.parse(translationFile);
+
+    const vueTranslation = {};
+
+    for (const key of Object.keys(content)) {
+        const vueKey = SKYAPP_TO_VUE[key] || key;
+        let currentTranslation = content[key];
+        normalizeTranslations(content, key);
+        if (vueKey === DEFAULT_LANGUAGE) {
+            currentTranslation = insertNonBreakingSpace(currentTranslation);
+        }
+        vueTranslation[vueKey] = dot.object(currentTranslation);
+    }
+
+    const directory = "locales";
+    if (!fs.existsSync(directory)) {
+        fs.mkdirSync(directory);
+    }
+
+    fs.writeFileSync(`${directory}/web.json`, JSON.stringify(vueTranslation, null, 4));
+}
+
 function getFirebaseLanguagePostfix(language) {
     return language !== DEFAULT_LANGUAGE ? `_${SKYAPP_TO_ANDROID[language] || language}` : "";
 }
@@ -384,6 +413,7 @@ async function uploadStrings() {
     await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString());
 }
 
+exports.verifyI18nDefiniton = verifyI18nDefiniton;
 exports.buildI18n = buildI18n;
 exports.updateRemoteConfig = updateRemoteConfig;
 exports.uploadStrings = uploadStrings;
