@@ -220,6 +220,10 @@
     "web.default.use_erouska_too": "nasaďte si také eRoušku.",
     "web.default.download_for_android": "Stáhnout pro Android",
     "web.default.download_for_ios": "Brzy ke stažení pro iOS",
-    "web.default.smart_quarantine": "chytrá karanténa"
+    "web.default.smart_quarantine": "chytrá karanténa",
+
+    "web.error.page_title": "Error",
+    "web.error.page_not_found.part_1": "Stránka nebyla nalezena,",
+    "web.error.page_not_found.part_2": "asi je doma v karanténě."
 
 }
