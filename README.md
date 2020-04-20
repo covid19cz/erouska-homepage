@@ -43,3 +43,8 @@ You will again need the SKYAPP secret key in `SKYAPP_SECRET_KEY`.
 ```bash
 $ gulp uploadStrings
 ```
+
+### Verification of strings for translation
+```bash
+$ gulp verifyI18nDefiniton
+```
