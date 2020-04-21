@@ -1,5 +1,11 @@
 .main {
     position: relative;
+}
 
-    overflow: auto;
+.main--flex {
+    display: flex;
+
+    div {
+        flex-grow: 1;
+    }
 }

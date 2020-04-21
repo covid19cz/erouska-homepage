@@ -3,33 +3,57 @@
         <section class="heading" id="uvod">
             <h1 class="heading__title">Časté dotazy</h1>
         </section>  <!-- /heading -->
-
-        <main class="main" role="main">
-            <section class="section" v-for="section in sections" :id="section.section_anchor">
-                <h2 :class="'section__title section__title--' + section.color">{{ $t('web.faq.sections.' + section.section_id) }}</h2>
-                <div class="section__content">
-                    <div class="faq">
-                        <div v-for="(question, q_index) in section.questions" :id="question.anchor"
-                        :class="[q_index == 0 ? 'faq__item--open' : '', 'section__item faq__item']">
-                            <h3 class="faq__q">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
-                            <div class="faq__a">
-                                <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
-                                   <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
-                                   v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></div>
-                                   <p v-else v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></p>
-                                </template>
+        <div class="mobile-menu d-block d-xl-none">
+            <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
+            <ul class="aside__actions">
+                <li v-for="(section, s_index) in sections">
+                    <a :href="'#' + section.section_anchor" class="aside__anchor">
+                        <div class="aside__anchor__title">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</div>
+                        <span class="aside__anchor__description">{{ $t('web.faq.sections.' + section.section_id + '.description') }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main class="main main--flex" role="main">
+            <div>
+                <section class="section" v-for="(section, s_index) in sections" :id="section.section_anchor">
+                    <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
+                    <div class="section__content">
+                        <div class="faq">
+                            <div v-for="(question, q_index) in section.questions" :id="question.anchor"
+                            :class="[(s_index + q_index == 0) ? 'faq__item--open' : '', 'section__item faq__item']">
+                                <h3 class="faq__q">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <div class="faq__a">
+                                    <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
+                                    <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
+                                    v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></div>
+                                    <p v-else v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></p>
+                                    </template>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+            </div>
+            <div>
+                <div class="aside d-none d-xl-block">
+                    <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
+                    <ul class="aside__actions">
+                        <li v-for="(section, s_index) in sections">
+                            <a :href="'#' + section.section_anchor" class="aside__anchor">
+                                <div class="aside__anchor__title">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</div>
+                                <span class="aside__anchor__description">{{ $t('web.faq.sections.' + section.section_id + '.description') }}</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <box/>
+            </div>
         </main>
     </div>
 </template>
 
 <script>
-    import Box from '~/components/Box.vue'
+    import _ from 'lodash'
     import sectionsJson from '~/assets/faq.json'
 
     export default {
@@ -38,15 +62,43 @@
                 sections: sectionsJson
             }
         },
-        components: {
-            Box
-        },
         head() {
             return {
                 title: this.$t('web.faq.page_title'),
                 bodyAttrs: {
                     class: 'page-single page-caste-dotazy'
                 }
+            }
+        },
+        methods: {
+            handleScroll: _.throttle(() => {
+                let mainNavLinks = document.querySelectorAll(".aside li a");
+                let mainSections = document.querySelectorAll("main section");
+
+                let lastId;
+
+                let fromTop = window.scrollY;
+
+                mainNavLinks.forEach(link => {
+                    let section = document.querySelector(link.hash);
+
+                    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                        link.classList.add("aside__anchor--active");
+                    } else {
+                        link.classList.remove("aside__anchor--active");
+                    }
+                });
+            }, 100)
+        },
+        created () {
+            if (process.client) {
+                window.addEventListener("scroll", this.handleScroll);
+                this.handleScroll();
+            }
+        },
+        destroyed () {
+            if (process.client) {
+                window.removeEventListener('scroll', this.handleScroll);
             }
         }
     }
