@@ -226,12 +226,7 @@ function normalizeTranslations(translations, language) {
     }
 }
 
-async function buildI18n() {
-    const translationFile = await translateFile("web.json", undefined, "I18NEXT_MULTILINGUAL_JSON");
-    const content = JSON.parse(translationFile);
-    for (const key of Object.keys(content)) {
-        content[key] = content[key]["translation"];
-    }
+async function buildI18n(content) {
     const vueTranslation = {};
 
     for (const key of Object.keys(content)) {
@@ -253,32 +248,26 @@ async function buildI18n() {
 }
 
 /**
- * Creates ~/locales/web.json directly from ~/web.json to allow test of changes in ~/web.json for local development
- * TODO: Clean duplicit code with buildI18n
+ * Creates ~/locales/web.json from OneSky translations.
  */
-async function verifyI18nDefiniton() {
-    const translationFile = fs.readFileSync(TRANSLATION_SOURCE_FILE).toString();
-    const content = {};
-    content["cs"] = JSON.parse(translationFile);
-
-    const vueTranslation = {};
-
+async function buildI18nOneSky() {
+    const translationFile = await translateFile("web.json", undefined, "I18NEXT_MULTILINGUAL_JSON");
+    const content = JSON.parse(translationFile);
     for (const key of Object.keys(content)) {
-        const vueKey = SKYAPP_TO_VUE[key] || key;
-        let currentTranslation = content[key];
-        normalizeTranslations(content, key);
-        if (vueKey === DEFAULT_LANGUAGE) {
-            currentTranslation = insertNonBreakingSpace(currentTranslation);
-        }
-        vueTranslation[vueKey] = dot.object(currentTranslation);
+        content[key] = content[key]["translation"];
     }
+    await buildI18n(content);
+}
 
-    const directory = "locales";
-    if (!fs.existsSync(directory)) {
-        fs.mkdirSync(directory);
-    }
-
-    fs.writeFileSync(`${directory}/web.json`, JSON.stringify(vueTranslation, null, 4));
+/**
+ * Creates ~/locales/web.json directly from ~/web.json to allow test of changes in ~/web.json for local development
+ */
+async function buildI18nLocal() {
+    const translationFile = fs.readFileSync(TRANSLATION_SOURCE_FILE).toString();
+    const content = {
+        [DEFAULT_LANGUAGE]: JSON.parse(translationFile)
+    };
+    await buildI18n(content);
 }
 
 function getFirebaseLanguagePostfix(language) {
@@ -413,12 +402,12 @@ async function uploadStrings() {
     await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString());
 }
 
-exports.verifyI18nDefiniton = verifyI18nDefiniton;
-exports.buildI18n = buildI18n;
+exports.buildI18nLocal = buildI18nLocal;
+exports.buildI18n = buildI18nOneSky;
 exports.updateRemoteConfig = updateRemoteConfig;
 exports.uploadStrings = uploadStrings;
 
-exports.dist = series(buildI18n, createLegacyTeamJson);
+exports.dist = series(buildI18nOneSky, createLegacyTeamJson);
 exports.deploy = series(updateRemoteConfig);
 
 exports.default = exports.dist;
