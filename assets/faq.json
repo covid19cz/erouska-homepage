@@ -2,7 +2,6 @@
     {
         "section_id": "functioning",
         "section_anchor": "fungovani",
-        "color": "blue",
         "questions": [
             {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
             {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},
@@ -20,18 +19,16 @@
     {
         "section_id": "settings",
         "section_anchor": "nastaveni",
-        "color": "blue",
         "questions": [
             {"id": "on_which_phones_does_erouska_work", "anchor": "kde-funguje"},
             {"id": "how_can_i_download_erouska", "anchor": "stahnout"},
             {"id": "how_much_battery_it_consumes", "anchor": "spotreba"},
-            {"id": "what_if_phone_switches_erouska_off", "anchor": "tel-vypina"}           
+            {"id": "what_if_phone_switches_erouska_off", "anchor": "tel-vypina"}
         ]
     },
     {
         "section_id": "my_data",
         "section_anchor": "moje-data",
-        "color": "blue",
         "questions": [
             {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"},
             {"id": "what_is_is_and_rssi", "anchor": "id-rssi"},
@@ -45,7 +42,6 @@
     {
         "section_id": "connection",
         "section_anchor": "pripojeni",
-        "color": "blue",
         "questions": [
             {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"},
             {"id": "does_bluetooth_be_always_enabled", "anchor": "neustale-bt"},
@@ -57,7 +53,6 @@
     {
         "section_id": "security",
         "section_anchor": "zabezpeceni",
-        "color": "blue",
         "questions": [
             {"id": "why_the_app_need_my_phone_number", "anchor": "proc-tel-cislo"},
             {"id": "what_if_i_lose_the_phone", "anchor": "ztratim-tel"},
