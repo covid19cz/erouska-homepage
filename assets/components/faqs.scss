@@ -14,9 +14,19 @@
 
 .faq__q {
     cursor: pointer;
+    position: relative;
 
     &:hover {
         color: $color_blue;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        bottom: -10px;
+        left: -40px;
+        right: -40px;
     }
 }
 
