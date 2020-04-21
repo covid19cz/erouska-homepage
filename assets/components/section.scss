@@ -6,6 +6,20 @@
         max-width: 700px;
         margin-bottom: 50px;
         padding-top: 140px;
+
+        .page-caste-dotazy & {
+            margin-bottom: 0;
+            padding-top: 30px;
+            padding-bottom: 110px;
+
+            &:first-child {
+                margin-top: 110px;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
     }
 }
 

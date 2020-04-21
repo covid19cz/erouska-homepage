@@ -54,11 +54,17 @@
     "web.faq.page_title": "Často kladené otázky",
     "web.faq.title": "Časté dotazy",
     "web.faq.link": "Časté dotazy",
-    "web.faq.sections.functioning": "Fungování eRoušky, postup hygieny",
-    "web.faq.sections.settings": "Nastavení: Podporované mobily, spotřeba baterie",
-    "web.faq.sections.my_data": "Moje data: Vysvětlení údajů ID, RSSI…",
-    "web.faq.sections.connection": "Připojení: Bluetooth, GPS, internet",
-    "web.faq.sections.security": "Zabezpečení dat: Osobní údaje a ochrana soukromí",
+    "web.faq.sections.table_of_contents": "Obsah",
+    "web.faq.sections.functioning.title": "Fungování eRoušky",
+    "web.faq.sections.functioning.description": "postup hygieny",
+    "web.faq.sections.settings.title": "Nastavení",
+    "web.faq.sections.settings.description": "podporované mobily, spotřeba baterie",
+    "web.faq.sections.my_data.title": "Moje data",
+    "web.faq.sections.my_data.description": "vysvětlení údajů ID, RSSI…",
+    "web.faq.sections.connection.title": "Připojení",
+    "web.faq.sections.connection.description": "Bluetooth, GPS, internet",
+    "web.faq.sections.security.title": "Zabezpečení dat",
+    "web.faq.sections.security.description": "osobní údaje a ochrana soukromí",
     "web.faq.questions.why_is_erouska_needed.question": "Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?",
     "web.faq.questions.why_is_erouska_needed.answer.0": "Cílem aplikace eRouška je zpomalit a ideálně zastavit šíření nákazy. Pomáhá co nejdříve izolovat potenciálně nakažené osoby od ostatních. Tím přispívá k postupnému uvolňování celostátní karantény a snížení dopadů pandemie na společnost a ekonomiku ČR. Aplikace na podobném principu fungují i v dalších státech a většinou jsou velmi účinným prostředkem v boji proti šíření koronaviru.",
     "web.faq.questions.why_is_erouska_needed.answer.1": "Aplikace eRouška je jedním z konceptů chytré karantény. Aplikace se přes Bluetooth spojí s dalšími telefony s eRouškou v nejbližším okolí a uloží jejich identifikátory. Pokud bude později některý z uživatelů eRoušky označen pracovníkem hygieny za pomoci testů jako nakažený, epidemiologický model vyhodnotí, zda jste s ním přišli do kontaktu dost dlouho na to, aby bylo nutné vás varovat a směřovat k dalšímu vyšetření.",
@@ -225,5 +231,4 @@
     "web.error.page_title": "Error",
     "web.error.page_not_found.part_1": "Stránka nebyla nalezena,",
     "web.error.page_not_found.part_2": "asi je doma v karanténě."
-
 }
