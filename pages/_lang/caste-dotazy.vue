@@ -121,17 +121,20 @@
                 }
             }
         },
-        created () {
+        mounted () {
             if (process.client) {
-                window.addEventListener("scroll", this.handleScroll);
-                this.handleScroll();
-
                 document.querySelectorAll(".faq__a").forEach(question => {
                     var isCollapsed = question.getAttribute("data-collapsed") === "true";
                     if (isCollapsed) {
                         question.style.height = 0;
                     }
                 });
+            }
+        },
+        created () {
+            if (process.client) {
+                window.addEventListener("scroll", this.handleScroll);
+                this.handleScroll();
             }
         },
         destroyed () {
