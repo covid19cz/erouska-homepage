@@ -48,10 +48,6 @@ export default {
                     rel: 'stylesheet',
                     'href': 'https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext'
                 },
-            ],
-            script: [
-                {src: 'https://code.jquery.com/jquery-3.4.1.min.js'},
-                {src: '/main.js'}
             ]
         }
     },
