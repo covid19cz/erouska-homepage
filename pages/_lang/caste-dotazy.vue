@@ -20,10 +20,9 @@
                     <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
                     <div class="section__content">
                         <div class="faq">
-                            <div v-for="(question, q_index) in section.questions" :id="question.anchor"
-                            :class="[(s_index + q_index == 0) ? 'faq__item--open' : '', 'section__item faq__item']">
-                                <h3 class="faq__q">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
-                                <div class="faq__a">
+                            <div v-for="(question, q_index) in section.questions" :id="question.anchor" class="section__item faq__item">
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <div class="faq__a" :data-collapsed="[(s_index + q_index == 0) ? 'false' : 'true']">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
                                     v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></div>
@@ -88,17 +87,56 @@
                         link.classList.remove("aside__anchor--active");
                     }
                 });
-            }, 100)
+            }, 100),
+            collapseQuestion(element) {
+                var questionHeight = element.scrollHeight;
+                var elementTransition = element.style.transition;
+                element.style.transition = "";
+                requestAnimationFrame(function() {
+                    element.style.height = questionHeight + "px";
+                    element.style.transition = elementTransition;
+                    requestAnimationFrame(function() {
+                        element.style.height = 0;
+                    });
+                });
+                element.setAttribute("data-collapsed", "true");
+            },
+            expandQuestion(element) {
+                var questionHeight = element.scrollHeight;
+                element.style.height = questionHeight + "px";
+                element.addEventListener("transitionend", function(e) {
+                    element.removeEventListener("transitionend", arguments.callee);
+                    element.style.height = null;
+                });
+                element.setAttribute("data-collapsed", "false");
+            },
+            toggleQuestion(questionId) {
+                var question = document.querySelector("#" + questionId + " .faq__a");
+                var isCollapsed = question.getAttribute("data-collapsed") === "true";
+                if(isCollapsed) {
+                    this.expandQuestion(question);
+                    question.setAttribute("data-collapsed", "false");
+                } else {
+                    this.collapseQuestion(question);
+                }
+            }
         },
         created () {
             if (process.client) {
                 window.addEventListener("scroll", this.handleScroll);
                 this.handleScroll();
+
+                document.querySelectorAll(".faq__a").forEach(question => {
+                    var isCollapsed = question.getAttribute("data-collapsed") === "true";
+                    if (isCollapsed) {
+                        question.style.height = 0;
+                    }
+                });
             }
         },
         destroyed () {
             if (process.client) {
-                window.removeEventListener('scroll', this.handleScroll);
+                window.removeEventListener("scroll", this.handleScroll);
             }
         }
     }
