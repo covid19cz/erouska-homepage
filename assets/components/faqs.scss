@@ -31,11 +31,7 @@
 }
 
 .faq__a {
-    display: none;
-}
-
-.faq__item--open {
-    .faq__a {
-        display: block;
-    }
+    overflow: hidden;
+    transition: height 0.4s;
+    height: auto;
 }
