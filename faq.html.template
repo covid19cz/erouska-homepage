@@ -226,6 +226,13 @@
 <p>Soukromí uživatelů je pro nás na prvním místě, a právě technologie Bluetooth nabízí nejvyváženější poměr přesnosti záznamu a minimálního zásahu do soukromí. Technologie GPS ani triangulace vysílačů od operátorů nemohou poskytnout potřebné údaje s požadovanou přesností. Mimo jiné i proto, že jejich funkčnost je v budovách, garážích či metru velmi omezená. Aplikace eRouška potřebuje pro svoji funkci informace o tom, že došlo k setkání, na jakou vzdálenost a po jakou dobu. Není důležité, kde k setkání došlo.</p>
         </div>
       </div>
+      
+      <div class="section__item faq__item">
+        <h3 class="faq__q">Je Bluetooth dostatečně bezpečná technologie?</h3>
+        <div class="faq__a">
+<p>Bluetooth je dnes běžně rozšířená a podporovaná komunikační technologie pro propojení zařízení s dalšími periferiemi, jako jsou bezdrátová sluchátka, reproduktory, chytré náramky nebo hodinky. Vzhledem k tomu, že na další podpoře jejího použití v aplikacích trasujících rizikové kontakty spolupracují i Apple a Google, jsme přesvědčení, že jsme pro eRoušku zvolili správně. Je však potřeba říct, že úplně každá technologie je zranitelná. <b>I proto všem uživatelům doporučujeme, aby operační systém a aplikace ve svém telefonu pravidelně aktualizovali.</b> Aktualizace totiž mohou obsahovat důležité bezpečnostní záplaty.</p>
+        </div>
+      </div>
 
       <div class="section__item faq__item">
         <h3 class="faq__q">Nemůže se stát, že eRouška mylně vyhodnotí kontakt s jinou osobou, která je například vedle v autě na křižovatce, za dveřmi nebo tenkou zdí?</h3>
