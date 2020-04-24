@@ -70,6 +70,7 @@
             }
         },
         methods: {
+            // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
             handleScroll: _.throttle(() => {
                 let mainNavLinks = document.querySelectorAll(".aside li a");
                 let mainSections = document.querySelectorAll("main section");
@@ -88,6 +89,8 @@
                     }
                 });
             }, 100),
+
+            // slide toggle from https://css-tricks.com/using-css-transitions-auto-dimensions/
             collapseQuestion(element) {
                 var questionHeight = element.scrollHeight;
                 var elementTransition = element.style.transition;
@@ -121,6 +124,8 @@
                 }
             }
         },
+
+        // changes height of each collapsed element to zero, it allows users to disable js
         mounted () {
             if (process.client) {
                 document.querySelectorAll(".faq__a").forEach(question => {
@@ -131,6 +136,8 @@
                 });
             }
         },
+
+        // part of active navigation snippet
         created () {
             if (process.client) {
                 window.addEventListener("scroll", this.handleScroll);
