@@ -1,5 +1,5 @@
 const locales = ['cs', 'en'];
-const pages = ['', 'audit-kod', 'caste-dotazy', 'gdpr', 'tym'];
+const pages = ['', 'audit-kod', 'caste-dotazy', 'gdpr', 'tym', 'navody'];
 const routes = [];
 for (const locale of locales) {
     for (const page of pages) {
