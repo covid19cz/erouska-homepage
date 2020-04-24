@@ -65,19 +65,7 @@ export default {
     ** Plugins to load before mounting the App
     */
     router: {
-        middleware: 'i18n',
-        scrollBehavior: function (to, from, savedPosition) {
-            //scroll after the call backback to avoid mixing transition and smooth scrooling
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    if (to.hash) { 
-                        resolve({selector: to.hash}); //when #
-                    } else {
-                        resolve({ x: 0, y: 0 }); //otherwise go top
-                    }
-                }, 100);
-            })        
-        }
+        middleware: 'i18n'
     },
     plugins: ['~/plugins/i18n.js'],
     /*
