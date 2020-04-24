@@ -20,6 +20,10 @@
                 padding-bottom: 0;
             }
         }
+
+        .page-navody & {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -93,6 +97,12 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
+
+    .page-navody & {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 26px;
+    }
 }
 
 .section__item {
@@ -115,6 +125,10 @@
 
         @include respond-to('medium') {
             font-size: 20px;
+        }
+
+        .page-navody & {
+            font-size: 24px;
         }
     }
 

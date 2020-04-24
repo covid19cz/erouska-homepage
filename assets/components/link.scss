@@ -1,0 +1,35 @@
+.link {
+    display: flex;
+    text-decoration: none;
+    margin: 28px 0;
+}
+
+.link__icon {
+    width: 42px;
+    opacity: .3;
+    transition: opacity .1s;
+    flex-shrink: 0;
+
+    .link:hover & {
+        opacity: 1;
+    }
+}
+
+.link__text {
+    padding-left: 24px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.4em;
+}
+
+.link__title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $color_blue;
+}
+
+.link__description {
+    color: $color_black;
+}
