@@ -6,7 +6,8 @@
             {
                 "id": "making_sure",
                 "src": "1_zajisteni_behu_eRousky_na_pozadi",
-                "type": 0
+                "type": "pdf",
+                "size": 80
             }
         ]
     },
@@ -17,12 +18,14 @@
             {
                 "id": "exception",
                 "src": "1_vyjimka_z_optimalizace_baterie_pro_eRousku",
-                "type": 0
+                "type": "pdf",
+                "size": 500
             },
             {
                 "id": "manual_switch_on",
                 "src": "2_rucni_zapnuti_behu_eRousky_na_pozadi",
-                "type": 0
+                "type": "pdf",
+                "size": 500
             }
         ]
     }
