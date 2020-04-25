@@ -21,7 +21,7 @@
                     <div class="section__content">
                         <div class="faq">
                             <div v-for="(question, q_index) in section.questions" :id="question.anchor" class="section__item faq__item">
-                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)" @click.ctrl.exact="copyUrl(question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
@@ -29,6 +29,7 @@
                                     <p v-else v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></p>
                                     </template>
                                 </div>
+                                <div class="clipboard-url">{{ getFullUrl + "#" + question.anchor }}</div>
                             </div>
                         </div>
                     </div>
@@ -66,6 +67,15 @@
                 title: this.$t('web.faq.page_title'),
                 bodyAttrs: {
                     class: 'page-single page-caste-dotazy'
+                }
+            }
+        },
+        computed: {
+            getFullUrl() {
+                if(process.client) {
+                    return window.location.origin + this.$route.path;
+                } else {
+                    return "";
                 }
             }
         },
@@ -130,7 +140,17 @@
                         question.setAttribute("data-collapsed", "false");
                     }
                 }
-            } 
+            },
+
+            // copy from https://css-tricks.com/copy-paste-the-web/
+            copyUrl(anchor) {
+                var url = document.querySelector("#" + anchor + " .clipboard-url");
+                var range = document.createRange();
+                range.selectNode(url);
+                window.getSelection().addRange(range);
+                var successful = document.execCommand("copy");
+                window.getSelection().removeAllRanges();
+            }
         },
 
         // changes height of each collapsed element to zero, it allows users to disable js
