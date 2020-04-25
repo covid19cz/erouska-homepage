@@ -2,13 +2,48 @@
 }
 
 .faq__item {
+    padding-top: 30px;
+    margin-bottom: 0;
     padding-bottom: 30px;
 
     border-bottom: 3px solid #eef6fc;
 
     @include respond-to('medium') {
-        margin-bottom: 40px;
+        padding-top: 40px;
+        margin-bottom: 0;
         padding-bottom: 40px;
+    }
+}
+
+.faq__item:target{
+    animation: highlight 10s ease;
+
+    .faq__a {
+        height: auto !important;
+    }
+}
+
+@keyframes highlight {
+    0% {
+        background-color: #eef6fc;
+        margin-left: -30px;
+        padding-left: 30px;
+        margin-right: -30px;
+        padding-right: 30px;
+    }
+    90% {
+        background-color: #eef6fc;
+        margin-left: -30px;
+        padding-left: 30px;
+        margin-right: -30px;
+        padding-right: 30px;
+    }
+    100% {
+        background-color: $color_white;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
     }
 }
 
