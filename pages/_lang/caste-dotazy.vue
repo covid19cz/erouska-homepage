@@ -21,7 +21,7 @@
                     <div class="section__content">
                         <div class="faq">
                             <div v-for="(question, q_index) in section.questions" :id="question.anchor" class="section__item faq__item">
-                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)" @click.ctrl.exact="copyUrl(question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)" @click.ctrl.exact="copyTextToClipboard(getFullUrl + '#' + question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
@@ -29,7 +29,6 @@
                                     <p v-else v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></p>
                                     </template>
                                 </div>
-                                <div class="clipboard-url">{{ getFullUrl + "#" + question.anchor }}</div>
                             </div>
                         </div>
                     </div>
@@ -144,14 +143,40 @@
                 return false;
             },
 
-            // copy from https://css-tricks.com/copy-paste-the-web/
-            copyUrl(anchor) {
-                var url = document.querySelector("#" + anchor + " .clipboard-url");
-                var range = document.createRange();
-                range.selectNode(url);
-                window.getSelection().addRange(range);
-                var successful = document.execCommand("copy");
-                window.getSelection().removeAllRanges();
+            // https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+            fallbackCopyTextToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+
+                // Avoid scrolling to bottom
+                textArea.style.top = "0";
+                textArea.style.left = "0";
+                textArea.style.position = "fixed";
+
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+
+                try {
+                    var successful = document.execCommand('copy');
+                    var msg = successful ? 'successful' : 'unsuccessful';
+                    console.log('Fallback: Copying text command was ' + msg);
+                } catch (err) {
+                    console.error('Fallback: Oops, unable to copy', err);
+                }
+
+                document.body.removeChild(textArea);
+            },
+            copyTextToClipboard(text) {
+                if (!navigator.clipboard) {
+                    fallbackCopyTextToClipboard(text);
+                    return;
+                }
+                navigator.clipboard.writeText(text).then(function() {
+                    console.log('Async: Copying to clipboard was successful!');
+                }, function(err) {
+                    console.error('Async: Could not copy text: ', err);
+                });
             }
         },
 
