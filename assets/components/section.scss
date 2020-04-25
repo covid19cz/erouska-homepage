@@ -9,8 +9,8 @@
 
         .page-caste-dotazy & {
             margin-bottom: 0;
-            padding-top: 30px;
-            padding-bottom: 110px;
+            padding-top: 0;
+            padding-bottom: 170px;
 
             &:first-child {
                 margin-top: 110px;
@@ -63,8 +63,16 @@
     line-height: 1.3em;
     text-align: left;
 
+    .page-caste-dotazy & {
+        margin-bottom: 10px;
+    }
+
     @include respond-to('medium') {
         margin-bottom: 65px;
+
+        .page-caste-dotazy & {
+            margin-bottom: 25px;
+        }
 
         font-size: 67px;
 
