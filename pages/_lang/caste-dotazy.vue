@@ -139,7 +139,9 @@
                     if (question) {
                         question.setAttribute("data-collapsed", "false");
                     }
+                    return this.$route.hash.substr(1);
                 }
+                return false;
             },
 
             // copy from https://css-tricks.com/copy-paste-the-web/
@@ -156,13 +158,16 @@
         // changes height of each collapsed element to zero, it allows users to disable js
         mounted () {
             if (process.client) {
-                this.expandQuestionFromUrl();
+                let hashPresent = this.expandQuestionFromUrl();
                 document.querySelectorAll(".faq__a").forEach(question => {
                     var isCollapsed = question.getAttribute("data-collapsed") === "true";
                     if (isCollapsed) {
                         question.style.height = 0;
                     }
                 });
+                if(hashPresent) {
+                    location.hash = hashPresent;
+                }
             }
         },
 
