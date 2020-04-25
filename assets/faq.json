@@ -46,6 +46,7 @@
             {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"},
             {"id": "does_bluetooth_be_always_enabled", "anchor": "neustale-bt"},
             {"id": "why_bluetooth", "anchor": "proc-bt"},
+            {"id": "is_bt_secure", "anchor": "bt-bezpeci"},
             {"id": "does_erouska_need_internet", "anchor": "potrebuje-internet"},
             {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"}
         ]
