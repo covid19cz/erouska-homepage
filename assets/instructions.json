@@ -28,5 +28,167 @@
                 "size": 500
             }
         ]
+    },
+    {
+        "brand_id": "huawei",
+        "brand_folder": "Huawei",
+        "links": [
+            {
+                "id": "exception",
+                "src": "1_vyjimka_z_optimalizace_baterie_pro_eRousku",
+                "type": "pdf",
+                "size": 920
+            },
+            {
+                "id": "exception_yt",
+                "src": "bvsd8yqaHmg",
+                "type": "youtube",
+                "size": 2
+            },
+            {
+                "id": "manual_switch_on",
+                "src": "2_rucni_zajistei_behu_eRousky_na_pozadi",
+                "type": "pdf",
+                "size": 490
+            },
+            {
+                "id": "manual_switch_on_yt",
+                "src": "gM5amheQlRw",
+                "type": "youtube",
+                "size": 1
+            },
+            {
+                "id": "screen_turn_off",
+                "src": "3_zajisteni_spusteni_eRousky_po_vypnuti_obrazovky",
+                "type": "pdf",
+                "size": 370
+            },
+            {
+                "id": "screen_turn_off_yt",
+                "src": "2vkenND0Zrw",
+                "type": "youtube",
+                "size": 1
+            },
+            {
+                "id": "protected_mode",
+                "src": "4_chraneny_status_pro_eRousku",
+                "type": "pdf",
+                "size": 90
+            },
+            {
+                "id": "battery_management",
+                "src": "5_overeni_zpusobu_napajeni",
+                "type": "pdf",
+                "size": 90
+            },
+            {
+                "id": "powergene_deactivation",
+                "src": "6_deaktivace_aplikace_powerGenie",
+                "type": "pdf",
+                "size": 90
+            }
+        ]
+    },
+    {
+        "brand_id": "lenovo",
+        "brand_folder": "Lenovo",
+        "links": [
+            {
+                "id": "lock_erouska",
+                "src": "1_uzamceni_behu_eRousky",
+                "type": "pdf",
+                "size": 80
+            }
+        ]
+    },
+    {
+        "brand_id": "samsung",
+        "brand_folder": "Samsung",
+        "links": [
+            {
+                "id": "battery_management",
+                "src": "1_nastaveni_baterie_pro_beh_eRousky",
+                "type": "pdf",
+                "size": 360
+            },
+            {
+                "id": "optimal_battery_use_off",
+                "src": "2_omezeni_optimalizace_vyuziti_baterie_pro_eRousku",
+                "type": "pdf",
+                "size": 430
+            },
+            {
+                "id": "battery_app_monitor",
+                "src": "3_pridani_eRousky_do_seznamu_App_power_monitor",
+                "type": "pdf",
+                "size": 90
+            }
+        ]
+    },
+    {
+        "brand_id": "sony",
+        "brand_folder": "Sony",
+        "links": [
+            {
+                "id": "run_in_background",
+                "src": "1_zajisteni_behu_eRousky_na_pozadi",
+                "type": "pdf",
+                "size": 90
+            }
+        ]
+    },
+    {
+        "brand_id": "xiaomi",
+        "brand_folder": "Xiaomi",
+        "links": [
+            {
+                "id": "complex_manual",
+                "src": "1_komplexni_navod_pro_Redmi_Note_5_a_vyssi",
+                "type": "pdf",
+                "size": 410
+            },
+            {
+                "id": "battery_saving_mode_on",
+                "src": "2_vypnuti_sporice_baterie",
+                "type": "pdf",
+                "size": 200
+            },
+            {
+                "id": "run_in_background",
+                "src": "3_nastaveni_behu_na_pozadi_pro_eRousku",
+                "type": "pdf",
+                "size": 280
+            },
+            {
+                "id": "adaptive_battery_off",
+                "src": "4_omezeni_adaptivni_baterie",
+                "type": "pdf",
+                "size": 320
+            },
+            {
+                "id": "optimalisation_exception1",
+                "src": "5_vyjimka_z_optimaizace_baterie_pro_eRousku",
+                "type": "pdf",
+                "size": 640
+            },
+            {
+                "id": "optimalisation_exception2",
+                "src": "6_vyjimka_z_omezeni_na_pozadi_pro_eRousku",
+                "type": "pdf",
+                "size": 430
+            },
+            {
+                "id": "protected_mode",
+                "src": "7_chraneny_status_pro_eRousku",
+                "type": "pdf",
+                "size": 90
+            },
+            {
+                "id": "battery_management",
+                "src": "8_overeni_zpusobu_napajeni",
+                "type": "pdf",
+                "size": 90
+            }
+        ]
     }
 ]
