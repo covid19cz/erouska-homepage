@@ -2,14 +2,13 @@
 .button {
     display: block;
 
-    padding: 0 40px;
+    padding: 16px 40px;
 
     color: $color_white;
     font: inherit; // pro sladění vzhledu buttonu a odkazu
     font-size: 15px;
     font-weight: 700;
-    line-height: 16px; // pro sladění výšky tlačítka
-    line-height: 64px;
+    line-height: 32px;
     text-align: center;
     text-decoration: none;
 
