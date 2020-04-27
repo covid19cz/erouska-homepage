@@ -43,14 +43,22 @@
                             <h3>{{ $t('web.instructions.settings.brands.' + brand.brand_id + '.name') }}</h3>
                             <template v-for="link in brand.links">
                                 <a v-if="link.type === 'pdf'" class="link" :href="'/navody/' + brand.brand_folder + '/' + link.src + '.pdf'" target="_blank">
-                                    <img class="link__icon" src="/img/fa/file-pdf.svg" />
+                                    <div class="link__icon-container">
+                                        <div>
+                                            <img class="link__icon" src="/img/fa/file-pdf.svg" />
+                                        </div>
+                                    </div>
                                     <div class="link__text">
                                         <span class="link__title">{{ $t('web.instructions.settings.brands.' + brand.brand_id + '.links.' + link.id) }}</span>
                                         <span class="link__description">{{ $t('web.instructions.descriptions.pdf_comma') + ' ' + link.size + ' ' + $t('web.instructions.descriptions.kilobytes') }}</span>
                                     </div>
                                 </a>
                                 <a v-else-if="link.type === 'youtube'" class="link" :href="'https://youtu.be/' + link.src" target="_blank" @click.prevent="openVideo($event, link.src)">
-                                    <img class="link__icon" src="/img/fa/play-circle.svg" />
+                                    <div class="link__icon-container">
+                                        <div>
+                                            <img class="link__icon" src="/img/fa/play-circle.svg" />
+                                        </div>
+                                    </div>
                                     <div class="link__text">
                                         <span class="link__title">{{ $t('web.instructions.settings.brands.' + brand.brand_id + '.links.' + link.id) }}</span>
                                         <span class="link__description">{{ $t('web.instructions.descriptions.video_comma') + ' ' + link.size + ' ' + $t('web.instructions.descriptions.minutes') }}</span>
