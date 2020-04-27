@@ -95,6 +95,10 @@
     font-weight: bold;
     text-decoration: underline;
     color: $color_blue;
+
+    .aside__anchor:hover & {
+        text-decoration: none;
+    }
 }
 
 .aside__anchor__description {
