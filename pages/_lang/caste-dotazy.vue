@@ -184,26 +184,28 @@
         mounted () {
             if (process.client) {
                 let hashPresent = this.expandQuestionFromUrl();
-                document.querySelectorAll(".faq__a").forEach(question => {
-                    var isCollapsed = question.getAttribute("data-collapsed") === "true";
-                    if (isCollapsed) {
-                        question.style.height = 0;
+                this.$nextTick(() => {
+                    document.querySelectorAll(".faq__a").forEach(question => {
+                        var isCollapsed = question.getAttribute("data-collapsed") === "true";
+                        if (isCollapsed) {
+                            question.style.height = 0;
+                        }
+                    });
+                    if (hashPresent) {
+                        location.hash = hashPresent;
                     }
                 });
-                if(hashPresent) {
-                    location.hash = hashPresent;
-                }
             }
         },
 
         // part of active navigation snippet
-        created () {
+        beforeMount () {
             if (process.client) {
                 window.addEventListener("scroll", this.handleScroll);
                 this.handleScroll();
             }
         },
-        destroyed () {
+        beforeDestroy () {
             if (process.client) {
                 window.removeEventListener("scroll", this.handleScroll);
             }
