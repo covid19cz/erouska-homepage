@@ -40,14 +40,19 @@ export default {
                 {property: 'twitter:url', content: 'https://erouska.cz'},
                 {property: 'twitter:title', content: 'eRouška - Chráním sebe, chráním tebe'},
                 {property: 'twitter:description', content: process.env.description},
-                {property: 'twitter:image', content: 'https://erouska.cz/img/share-banner.png'}
+                {property: 'twitter:image', content: 'https://erouska.cz/img/share-banner.png'},
+
+                {name: 'msapplication-TileColor', content: '#b91d47'},
+                {name: 'theme-color', content: '#ffffff'}
             ],
             link: [
                 {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-                {
-                    rel: 'stylesheet',
-                    'href': 'https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext'
-                },
+                {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'},
+                {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'},
+                {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'},
+                {rel: 'manifest', href: '/site.webmanifest'},
+                {rel: 'mask-icon', href: '/safari-pinned-tab.svg" color="#ff0d58'},
+                {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext'}
             ]
         }
     },
