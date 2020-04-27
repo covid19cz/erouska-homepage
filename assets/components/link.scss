@@ -36,6 +36,10 @@
     font-weight: bold;
     text-decoration: underline;
     color: $color_blue;
+
+    .link:hover & {
+        text-decoration: none;
+    }
 }
 
 .link__description {
