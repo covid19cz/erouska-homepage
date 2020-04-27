@@ -14,7 +14,7 @@
                 </li>
             </ul>
         </div>
-        <main class="main main--flex" role="main">
+        <main class="main d-flex" role="main">
             <div>
                 <section class="section" v-for="(section, s_index) in sections" :id="section.section_anchor">
                     <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
@@ -193,6 +193,8 @@
                     });
                     if (hashPresent) {
                         location.hash = hashPresent;
+                    } else {
+                        window.scrollTo(0, 0);
                     }
                 });
             }
