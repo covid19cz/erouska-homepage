@@ -4,11 +4,18 @@
     margin: 28px 0;
 }
 
+.link__icon-container {
+    flex-grow: 0;
+    width: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .link__icon {
     width: 42px;
     opacity: .3;
     transition: opacity .1s;
-    flex-shrink: 0;
 
     .link:hover & {
         opacity: 1;
@@ -19,6 +26,7 @@
     padding-left: 24px;
     font-size: 20px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-around;
     line-height: 1.4em;

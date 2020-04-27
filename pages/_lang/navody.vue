@@ -3,21 +3,29 @@
         <section class="heading" id="uvod">
             <h1 class="heading__title">{{ $t('web.instructions.title') }}</h1>
         </section>  <!-- /heading -->
-        <main class="main main--flex" role="main">
+        <main class="main d-flex" role="main">
             <div>
                 <section class="section" id="instalace">
                     <h2 class="section__subtitle">{{ $t('web.instructions.installation.android.title') }}</h2>
                     <div class="section__content section__item">
                         <p>{{ $t('web.instructions.installation.android.text') }}</p>
                         <a class="link" href="/navody/instalace_aplikace_eRouska.pdf" target="_blank">
-                            <img class="link__icon" src="/img/fa/file-pdf.svg" />
+                            <div class="link__icon-container">
+                                <div>
+                                    <img class="link__icon" src="/img/fa/file-pdf.svg" />
+                                </div>
+                            </div>
                             <div class="link__text">
                                 <span class="link__title">{{ $t('web.instructions.installation.android.links.pdf') }}</span>
                                 <span class="link__description">{{ $t('web.instructions.descriptions.pdf_comma') + ' 700 ' + $t('web.instructions.descriptions.kilobytes') }}</span>
                             </div>
                         </a>
                         <a class="link" href="https://youtu.be/hVu71yWAIcA" target="_blank" @click.prevent="openVideo($event, 'hVu71yWAIcA')">
-                            <img class="link__icon" src="/img/fa/play-circle.svg" />
+                            <div class="link__icon-container">
+                                <div>
+                                    <img class="link__icon" src="/img/fa/play-circle.svg" />
+                                </div>
+                            </div>
                             <div class="link__text">
                                 <span class="link__title">{{ $t('web.instructions.installation.android.links.youtube') }}</span>
                                 <span class="link__description">{{ $t('web.instructions.descriptions.video_comma') + ' 2 ' + $t('web.instructions.descriptions.minutes') }}</span>
