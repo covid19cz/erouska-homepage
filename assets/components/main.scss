@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.main--flex {
-    display: flex;
-
-    div {
-        flex-grow: 1;
-    }
+.main.d-flex > div {
+    flex-grow: 1;
 }
