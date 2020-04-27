@@ -24,7 +24,7 @@
 
         </section>  <!-- /hero -->
 
-        <main class="main main--flex" role="main">
+        <main class="main d-flex" role="main">
             <div>
                 <section class="section section--first">
                     <h2 class="section__title section__title--blue" id="jak-erouska-chrani">{{ $t('web.index.key_message') }}</h2>
