@@ -1,9 +1,9 @@
 <template>
     <section class="hero-wrapper" id="uvod">
         <div class="hero">
-            <h2 class="hero__title"><span>{{ $t('web.error.page_title') }}</span> 404</h2>
+            <h2 class="hero__title"><span>Error</span> 404</h2>
             <div class="hero__intro">
-                <p>{{ $t('web.error.page_not_found.part_1') }}<br>{{ $t('web.error.page_not_found.part_2') }}</p>
+                <p>Stránka nebyla nalezena, <br>asi je doma v karanténě.</p>
             </div>
             <ul class="hero__actions">
                 <li>
