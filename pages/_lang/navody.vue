@@ -71,7 +71,7 @@
             </div>
             <div>
                 <div class="aside d-none d-xl-block">
-                    <h3 class="aside__title">Značky</h3>
+                    <h3 class="aside__title">{{ $t('web.instructions.aside.title') }}</h3>
                     <ul class="aside__actions">
                         <li v-for="brand in instructions">
                             <a :href="'#' + brand.brand_id" class="aside__anchor"><div class="aside__anchor__title">{{ $t('web.instructions.settings.brands.' + brand.brand_id + '.name') }}</div></a>

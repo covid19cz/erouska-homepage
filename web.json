@@ -57,6 +57,7 @@
     "web.instructions.description": "Návody popisující instalaci a zprovoznění aplikace eRouška.",
     "web.instructions.title": "Návody",
     "web.instructions.link": "Návody",
+    "web.instructions.aside.title": "Návod pro",
     "web.instructions.descriptions.pdf_comma": "PDF,",
     "web.instructions.descriptions.kilobytes": "kB",
     "web.instructions.descriptions.video_comma": "Video,",
@@ -273,7 +274,7 @@
     "web.audit.section1.review_cvut_1": "FIT ČVUT – Posudek mobilní aplikace eRouška ze dne 2. 4. 2020",
     "web.audit.section1.review_cvut_2": "FIT ČVUT – Doplňující audit aplikace eRouška pro Android, verze 1.0.381",
     "web.audit.section1.review_vesely": "Vyjádření důvěry aplikaci – Ondřej Veselý, externí etický expert v oblasti R&D pro Evropskou Komisi",
-    "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 - Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
+    "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 – Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
     "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru GitHub",
     "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>.",
 
