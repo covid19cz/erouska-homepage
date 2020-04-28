@@ -9,27 +9,20 @@
                         </nuxt-link>
                     </h2>
                 </div>
-
                 <nav v-if="!isHome" class="header__nav-wrapper d-none d-md-block"
                      role="navigation">
                     <ul class="header__nav">
                         <li>
                             <nuxt-link :to="homeUrl">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="6.703"
-                                     height="11.252" viewDownloadBox="0 0 6.703 11.252">
-                                    <path
-                                        d="M.148-7.049a.422.422,0,0,0,0,.6l5.161,5.2a.422.422,0,0,0,.6,0l.7-.7a.422.422,0,0,0,0-.6L2.436-6.75,6.6-10.958a.422.422,0,0,0,0-.6l-.7-.7a.422.422,0,0,0-.6,0Z"
-                                        transform="translate(-0.024 12.376)" fill="#222"/>
-                                </svg>
-                                {{ $t('web.default.back_to_main_page') }}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="6.703" height="11.252" viewDownloadBox="0 0 6.703 11.252"><path d="M.148-7.049a.422.422,0,0,0,0,.6l5.161,5.2a.422.422,0,0,0,.6,0l.7-.7a.422.422,0,0,0,0-.6L2.436-6.75,6.6-10.958a.422.422,0,0,0,0-.6l-.7-.7a.422.422,0,0,0-.6,0Z" transform="translate(-0.024 12.376)" fill="#222"/></svg>
+                                <span>{{ $t('web.default.back_to_main_page') }}</span>
                             </nuxt-link>
                         </li>
                     </ul>
                 </nav>
-            </header> <!-- /header -->
+            </header>
             <nuxt/>
         </div>
-
         <div class="claim">
             <div class="container">
                 <h2 class="claim__title">{{ $t('web.default.before_you_go_out') }}<br>{{ $t('web.default.use_erouska_too') }}</h2>
@@ -41,7 +34,6 @@
                 </ul>
             </div>
         </div>
-
         <footer class="footer">
             <div class="container">
                 <div class="footer__content">
