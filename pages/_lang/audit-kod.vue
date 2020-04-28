@@ -27,8 +27,6 @@
 </template>
 
 <script>
-    import {getHomeUrl} from "../../lib/url";
-
     export default {
         data() {
             return {
@@ -52,11 +50,7 @@
         },
         computed: {
             homeUrl() {
-                const home = getHomeUrl(this.$route.params.lang || false);
-                if (home.length > 0 && home[home.length - 1] !== "/") {
-                    return `${home}/`;
-                }
-                return home;
+                return this.$i18n.locale != this.$i18n.fallbackLocale ? "/" + this.$i18n.locale + "/" : "/";
             }
         }
     }
