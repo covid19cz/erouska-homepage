@@ -2,7 +2,7 @@
     <div>
         <section class="heading" id="uvod">
             <h1 class="heading__title">{{ $t('web.instructions.title') }}</h1>
-        </section>  <!-- /heading -->
+        </section>
         <main class="main d-flex" role="main">
             <div>
                 <section class="section" id="instalace">

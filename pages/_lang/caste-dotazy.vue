@@ -2,7 +2,7 @@
     <div>
         <section class="heading" id="uvod">
             <h1 class="heading__title">Časté dotazy</h1>
-        </section>  <!-- /heading -->
+        </section>
         <div class="mobile-menu d-block d-xl-none">
             <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
             <ul class="aside__actions">
