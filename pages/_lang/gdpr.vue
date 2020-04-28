@@ -64,7 +64,7 @@
                     {property: 'twitter:description', content: this.$t('web.gdpr.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page-single page-tym'
+                    class: 'page--background-shifted'
                 }
             }
         }

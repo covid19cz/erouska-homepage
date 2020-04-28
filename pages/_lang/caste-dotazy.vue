@@ -74,7 +74,7 @@
                     {property: 'twitter:description', content: this.$t('web.faq.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page-single page-caste-dotazy'
+                    class: 'page--faq'
                 }
             }
         },
