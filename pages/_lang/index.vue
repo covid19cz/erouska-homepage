@@ -109,9 +109,9 @@
                 title: 'eRouška – ' + this.$t('web.motto'),
                 meta: [
                     {name: 'description', content: this.$t('web.index.description')},
-                    {property: 'og:title', content: this.$t('web.index.page_title') + this.titleTemplate},
+                    {property: 'og:title', content: 'eRouška – ' + this.$t('web.motto')},
                     {property: 'og:description', content: this.$t('web.index.description')},
-                    {property: 'twitter:title', content: this.$t('web.index.page_title') + this.titleTemplate},
+                    {property: 'twitter:title', content: 'eRouška – ' + this.$t('web.motto')},
                     {property: 'twitter:description', content: this.$t('web.index.description')}
                 ],
                 bodyAttrs: {
