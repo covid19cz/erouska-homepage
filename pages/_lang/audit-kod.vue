@@ -42,10 +42,7 @@
                     {property: 'og:description', content: this.$t('web.audit.description')},
                     {property: 'twitter:title', content: this.$t('web.audit.page_title') + this.titleTemplate},
                     {property: 'twitter:description', content: this.$t('web.audit.description')}
-                ],
-                bodyAttrs: {
-                    class: 'page-single'
-                }
+                ]
             }
         },
         computed: {

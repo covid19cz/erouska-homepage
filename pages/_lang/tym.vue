@@ -76,7 +76,7 @@
                     {property: 'twitter:description', content: this.$t('web.team.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page-single page-tym'
+                    class: 'page--background-shifted'
                 }
             }
         }

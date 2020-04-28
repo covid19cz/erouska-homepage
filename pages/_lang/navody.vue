@@ -105,7 +105,7 @@
                     {property: 'twitter:description', content: this.$t('web.instructions.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page-single page-caste-dotazy page-navody'
+                    class: 'page--faq page--instructions'
                 }
             }
         },

@@ -115,7 +115,7 @@
                     {property: 'twitter:description', content: this.$t('web.index.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page-homepage'
+                    class: 'page--homepage'
                 }
             }
         },
