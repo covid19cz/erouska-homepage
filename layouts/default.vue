@@ -3,11 +3,11 @@
         <div class="container">
             <header class="header" role="banner">
                 <div class="header__logo-wrapper">
-                    <h2 class="header__logo">
+                    <h1 class="header__logo">
                         <nuxt-link :to="homeUrlNoTrailingSlash">
                             <img src="/img/logo.svg" alt="eRouška"/>
                         </nuxt-link>
-                    </h2>
+                    </h1>
                 </div>
                 <nav v-if="!isHome" class="header__nav-wrapper d-none d-md-block"
                      role="navigation">
