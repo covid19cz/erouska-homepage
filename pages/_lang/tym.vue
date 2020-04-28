@@ -65,12 +65,20 @@
     export default {
         data() {
             return {
-                people: peopleJson
+                people: peopleJson,
+                titleTemplate: process.env.titleTemplate
             }
         },
         head() {
             return {
-                title: this.$t('web.team.page_title'),
+                title: this.$t('web.team.page_title') + this.titleTemplate,
+                meta: [
+                    {name: 'description', content: this.$t('web.team.description')},
+                    {property: 'og:title', content: this.$t('web.team.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.team.description')},
+                    {property: 'twitter:title', content: this.$t('web.team.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.team.description')}
+                ],
                 bodyAttrs: {
                     class: 'page-single page-tym'
                 }

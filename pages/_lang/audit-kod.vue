@@ -3,13 +3,10 @@
         <section class="heading" id="uvod">
             <h1 class="heading__title">{{ $t('web.audit.title') }}</h1>
         </section>  <!-- /heading -->
-
         <main class="main" role="main">
-
             <section class="section section--full">
                 <div class="section__content">
                     <div class="section__item">
-
                         <p>{{ $t('web.audit.section1.perex') }} <nuxt-link :to="homeUrl + 'gdpr'">{{
                             $t('web.audit.section1.perex_gdpr') }}</nuxt-link>.</p>
                         <ul>
@@ -32,9 +29,7 @@
                     </div>
                 </div>
             </section>
-
         </main>
-
     </div>
 </template>
 
@@ -42,9 +37,21 @@
     import {getHomeUrl} from "../../lib/url";
 
     export default {
+        data() {
+            return {
+                titleTemplate: process.env.titleTemplate
+            }
+        },
         head() {
             return {
-                title: this.$t('web.audit.page_title'),
+                title: this.$t('web.audit.page_title') + this.titleTemplate,
+                meta: [
+                    {name: 'description', content: this.$t('web.audit.description')},
+                    {property: 'og:title', content: this.$t('web.audit.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.audit.description')},
+                    {property: 'twitter:title', content: this.$t('web.audit.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.audit.description')}
+                ],
                 bodyAttrs: {
                     class: 'page-single'
                 }
