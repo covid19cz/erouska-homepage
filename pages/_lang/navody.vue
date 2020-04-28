@@ -2,7 +2,7 @@
     <div>
         <section class="heading" id="uvod">
             <h1 class="heading__title">{{ $t('web.instructions.title') }}</h1>
-        </section>  <!-- /heading -->
+        </section>
         <main class="main d-flex" role="main">
             <div>
                 <section class="section" id="instalace">
@@ -71,7 +71,7 @@
             </div>
             <div>
                 <div class="aside d-none d-xl-block">
-                    <h3 class="aside__title">Značky</h3>
+                    <h3 class="aside__title">{{ $t('web.instructions.aside.title') }}</h3>
                     <ul class="aside__actions">
                         <li v-for="brand in instructions">
                             <a :href="'#' + brand.brand_id" class="aside__anchor"><div class="aside__anchor__title">{{ $t('web.instructions.settings.brands.' + brand.brand_id + '.name') }}</div></a>
@@ -90,14 +90,22 @@
     export default {
         data() {
             return {
-                instructions: instructionsJson
+                instructions: instructionsJson,
+                titleTemplate: process.env.titleTemplate
             }
         },
         head() {
             return {
-                title: this.$t('web.instructions.page_title'),
+                title: this.$t('web.instructions.page_title') + this.titleTemplate,
+                meta: [
+                    {name: 'description', content: this.$t('web.instructions.description')},
+                    {property: 'og:title', content: this.$t('web.instructions.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.instructions.description')},
+                    {property: 'twitter:title', content: this.$t('web.instructions.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.instructions.description')}
+                ],
                 bodyAttrs: {
-                    class: 'page-single page-caste-dotazy page-navody'
+                    class: 'page--faq page--instructions'
                 }
             }
         },

@@ -7,7 +7,7 @@
         margin-bottom: 50px;
         padding-top: 140px;
 
-        .page-caste-dotazy & {
+        .page--faq & {
             margin-bottom: 0;
             padding-top: 0;
             padding-bottom: 170px;
@@ -21,7 +21,7 @@
             }
         }
 
-        .page-navody & {
+        .page--instructions & {
             padding-bottom: 0;
             margin-bottom: 100px;
 
@@ -68,14 +68,14 @@
     line-height: 1.3em;
     text-align: left;
 
-    .page-caste-dotazy & {
+    .page--faq & {
         margin-bottom: 10px;
     }
 
     @include respond-to('medium') {
         margin-bottom: 65px;
 
-        .page-caste-dotazy & {
+        .page--faq & {
             margin-bottom: 25px;
         }
 
@@ -111,7 +111,7 @@
     font-weight: 700;
     line-height: 36px;
 
-    .page-navody & {
+    .page--instructions & {
         margin-top: 0;
         margin-bottom: 25px;
         font-size: 26px;
@@ -140,7 +140,7 @@
             font-size: 20px;
         }
 
-        .page-navody & {
+        .page--instructions & {
             font-size: 24px;
         }
     }

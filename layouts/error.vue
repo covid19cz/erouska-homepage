@@ -1,9 +1,9 @@
 <template>
     <section class="hero-wrapper" id="uvod">
         <div class="hero">
-            <h2 class="hero__title"><span>{{ $t('web.error.page_title') }}</span> 404</h2>
+            <h2 class="hero__title"><span>Error</span> 404</h2>
             <div class="hero__intro">
-                <p>{{ $t('web.error.page_not_found.part_1') }}<br>{{ $t('web.error.page_not_found.part_2') }}</p>
+                <p>Stránka nebyla nalezena, <br>asi je doma v karanténě.</p>
             </div>
             <ul class="hero__actions">
                 <li>
@@ -11,7 +11,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="hero__example d-none d-md-block">
             <div class="hero__example__phone">
                 <div class="hero__example__phone__screen"></div>
@@ -19,7 +18,7 @@
             </div>
             <div class="hero__example__mask"></div>
         </div>
-    </section>  <!-- /hero -->
+    </section>
 </template>
 
 <style>
@@ -27,3 +26,18 @@
         min-height: 600px;
     }
 </style>
+
+<script>
+    export default {
+        data() {
+            return {
+                titleTemplate: process.env.titleTemplate
+            }
+        },
+        head() {
+            return {
+                title: this.$t('web.error.page_title') + ' 404' + this.titleTemplate
+            }
+        }
+    }
+</script>
