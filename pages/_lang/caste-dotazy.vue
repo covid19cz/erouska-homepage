@@ -21,7 +21,7 @@
                     <div class="section__content">
                         <div class="faq">
                             <div v-for="(question, q_index) in section.questions" :id="question.anchor" class="section__item faq__item">
-                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)" @click.ctrl.exact="copyTextToClipboard(getFullUrl + '#' + question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)" @click.ctrl.exact="copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
@@ -58,23 +58,23 @@
     export default {
         data() {
             return {
-                sections: sectionsJson
+                sections: sectionsJson,
+                titleTemplate: process.env.titleTemplate,
+                baseUrl: process.env.baseUrl
             }
         },
         head() {
             return {
-                title: this.$t('web.faq.page_title'),
+                title: this.$t('web.faq.page_title') + this.titleTemplate,
+                meta: [
+                    {name: 'description', content: this.$t('web.faq.description')},
+                    {property: 'og:title', content: this.$t('web.faq.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.faq.description')},
+                    {property: 'twitter:title', content: this.$t('web.faq.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.faq.description')}
+                ],
                 bodyAttrs: {
                     class: 'page-single page-caste-dotazy'
-                }
-            }
-        },
-        computed: {
-            getFullUrl() {
-                if(process.client) {
-                    return window.location.origin + this.$route.path;
-                } else {
-                    return "";
                 }
             }
         },

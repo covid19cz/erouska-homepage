@@ -34,7 +34,7 @@
             <div class="container">
                 <h2 class="claim__title">{{ $t('web.default.before_you_go_out') }}<br>{{ $t('web.default.use_erouska_too') }}</h2>
                 <ul class="claim__actions">
-                    <li><a 
+                    <li><a
                         href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
                         target="_blank" class="button button--blue">{{ $t('web.default.download_for_android') }}</a></li>
                     <li><span class="button button--disable">{{ $t('web.default.download_for_ios') }}</span></li>
@@ -92,6 +92,19 @@
     import {getHomeUrl} from "../lib/url";
 
     export default {
+        data() {
+            return {
+                baseUrl: process.env.baseUrl
+            }
+        },
+        head() {
+            return {
+                meta: [
+                    {property: 'og:url', content: this.baseUrl + this.$nuxt.$route.path},
+                    {property: 'twitter:url', content: this.baseUrl + this.$nuxt.$route.path}
+                ]
+            }
+        },
         computed: {
             isHome() {
                 const homeUrl = getHomeUrl(this.$route.params.lang || false);

@@ -116,9 +116,21 @@
         components: {
             DownloadBox
         },
+        data() {
+            return {
+                titleTemplate: process.env.titleTemplate
+            }
+        },
         head() {
             return {
-                titleTemplate: 'eRouška – ' + this.$t('web.motto'),
+                title: 'eRouška – ' + this.$t('web.motto'),
+                meta: [
+                    {name: 'description', content: this.$t('web.index.description')},
+                    {property: 'og:title', content: this.$t('web.index.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.index.description')},
+                    {property: 'twitter:title', content: this.$t('web.index.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.index.description')}
+                ],
                 bodyAttrs: {
                     class: 'page-homepage'
                 }
