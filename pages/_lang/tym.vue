@@ -5,8 +5,7 @@
             <div class="heading__perex">
                 <p>{{ $t('web.team.perex') }}</p>
             </div>
-        </section>  <!-- /heading -->
-
+        </section>
         <main class="main" role="main">
             <section class="section section--full">
                 <div class="section__content">
@@ -14,16 +13,14 @@
                         <h2 class="team__title">{{ $t(section.name) }}</h2>
                         <ul class="team__list">
                             <li v-for="person in section.people">
-                                <a :title="$t('web.team.member_link_title')" :href="person.linkedin" target="_blank">
-                                    <img :src="person.photoUrl ? person.photoUrl : 'https://erouska.cz/img/photo-avatar.png'" class="team__list__photo" />
-                                    {{person.name}} {{person.surname}}
-                                </a>
+                                <a :title="$t('web.team.member_link_title')" :href="person.linkedin" target="_blank"><img
+                                :src="person.photoUrl ? person.photoUrl : 'https://erouska.cz/img/photo-avatar.png'"
+                                class="team__list__photo" />{{person.name}} {{person.surname}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-
             <section class="section">
                 <h2 class="section__title section__title--blue">{{ $t('web.team.thanks.header') }}</h2>
                 <div class="section__content">
@@ -35,7 +32,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="section section--full">
                 <div class="section__content">
                     <ul class="partners">
@@ -65,14 +61,22 @@
     export default {
         data() {
             return {
-                people: peopleJson
+                people: peopleJson,
+                titleTemplate: process.env.titleTemplate
             }
         },
         head() {
             return {
-                title: this.$t('web.team.page_title'),
+                title: this.$t('web.team.page_title') + this.titleTemplate,
+                meta: [
+                    {name: 'description', content: this.$t('web.team.description')},
+                    {property: 'og:title', content: this.$t('web.team.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.team.description')},
+                    {property: 'twitter:title', content: this.$t('web.team.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.team.description')}
+                ],
                 bodyAttrs: {
-                    class: 'page-single page-tym'
+                    class: 'page--background-shifted'
                 }
             }
         }

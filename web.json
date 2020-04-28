@@ -1,5 +1,6 @@
 {
     "web.motto": "chráním sebe, chráním tebe",
+    "web.index.description": "Mobilní aplikace eRouška usnadní vyhledávání lidí s rizikem nákazy koronavirem v Česku v rámci systému Chytré karantény.",
     "web.index.title.part_1": "Chráním sebe,",
     "web.index.title.part_2": "chráním tebe!",
     "web.index.intro.part_1": "Aplikace <em>eRouška</em> si díky Bluetooth pamatuje ostatní <em>eRoušky</em>, které jste potkali. Usnadní tak hygienické stanici dohledávání rizikových kontaktů.",
@@ -31,7 +32,15 @@
     "web.index.further_questions.more": "Zajímá vás, na jakých telefonech eRouška funguje? Nebo třeba jaká data eRoušce sdílíte a jaká data sbírá?",
     "web.index.further_questions.goto": "Přejděte do sekce s často kladenými dotazy",
 
+    "web.default.back_to_main_page": "Zpět na Hlavní stránku",
+    "web.default.before_you_go_out": "Než vyjdete ven,",
+    "web.default.use_erouska_too": "nasaďte si také eRoušku.",
+    "web.default.download_for_android": "Stáhnout pro Android",
+    "web.default.download_for_ios": "Brzy ke stažení pro iOS",
+    "web.default.smart_quarantine": "chytrá karanténa",
+
     "web.team.page_title": "Tvůrci mobilní aplikace proti koronaviru",
+    "web.team.description": "Skupina COVID19CZ pomáhá s bojem proti koronaviru v Česku. Přehled tvůrců aplikace eRouška.",
     "web.team.title": "Tým tvůrců",
     "web.team.link": "Tým",
     "web.team.sections.management": "Řízení projektu",
@@ -52,8 +61,10 @@
     "web.team.member_link_title": "Přejít na odkaz",
 
     "web.instructions.page_title": "Návody",
+    "web.instructions.description": "Návody popisující instalaci a zprovoznění aplikace eRouška.",
     "web.instructions.title": "Návody",
     "web.instructions.link": "Návody",
+    "web.instructions.aside.title": "Návod pro",
     "web.instructions.descriptions.pdf_comma": "PDF,",
     "web.instructions.descriptions.kilobytes": "kB",
     "web.instructions.descriptions.video_comma": "Video,",
@@ -99,6 +110,7 @@
     "web.instructions.settings.brands.xiaomi.links.battery_management": "Ověření způsobu napajení",
 
     "web.faq.page_title": "Často kladené otázky",
+    "web.faq.description": "Odpovědi na často kladené otázky ohledně koronaviru v Česku a mobilní aplikace eRouška, která je součástí systému Chytrá karanténa.",
     "web.faq.title": "Časté dotazy",
     "web.faq.link": "Časté dotazy",
     "web.faq.sections.table_of_contents": "Obsah",
@@ -112,7 +124,7 @@
     "web.faq.sections.connection.description": "Bluetooth, GPS, internet",
     "web.faq.sections.security.title": "Zabezpečení dat",
     "web.faq.sections.security.description": "osobní údaje a ochrana soukromí",
-    
+
     "web.faq.questions.why_is_erouska_needed.question": "Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?",
     "web.faq.questions.why_is_erouska_needed.answer.0": "Cílem aplikace eRouška je zpomalit a ideálně zastavit šíření nákazy. Pomáhá co nejdříve izolovat potenciálně nakažené osoby od ostatních. Tím přispívá k postupnému uvolňování celostátní karantény a snížení dopadů pandemie na společnost a ekonomiku ČR. Aplikace na podobném principu fungují i v dalších státech a většinou jsou velmi účinným prostředkem v boji proti šíření koronaviru.",
     "web.faq.questions.why_is_erouska_needed.answer.1": "Aplikace eRouška je jedním z konceptů chytré karantény. Aplikace se přes Bluetooth spojí s dalšími telefony s eRouškou v nejbližším okolí a uloží jejich identifikátory. Pokud bude později některý z uživatelů eRoušky označen pracovníkem hygieny za pomoci testů jako nakažený, epidemiologický model vyhodnotí, zda jste s ním přišli do kontaktu dost dlouho na to, aby bylo nutné vás varovat a směřovat k dalšímu vyšetření.",
@@ -229,6 +241,7 @@
     "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška.",
 
     "web.gdpr.page_title": "Ochrana osobních údajů",
+    "web.gdpr.description": "Podmínky zpracování osobních údajů při používání aplikace eRouška při boji proti koronaviru v Česku.",
     "web.gdpr.title": "Ochrana osobních údajů",
     "web.gdpr.link": "Ochrana osobních údajů",
     "web.gdpr.perex.part_1": "Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz",
@@ -260,6 +273,7 @@
     "web.gdpr.your_rights.part_4": "Pokud byste se domnívali, že zpracování Vašich osobních údajů porušuje právní předpisy, můžete podat stížnost u národního dozorového úřadu, kterým je Úřad pro ochranu osobních údajů (",
 
     "web.audit.page_title": "Audit a kód aplikace",
+    "web.audit.description": "Kód mobilní aplikace eRouška, která pomáhá zpomalit šíření koronaviru v Česku, prochází audity nezávislých institucí.",
     "web.audit.title": "Audit a kód",
     "web.audit.link": "Audit a kód",
     "web.audit.section1.perex": "Kód aplikace eRouška prochází audity nezávislých institucí, které prověřují jeho nezávadnost a soulad s",
@@ -267,18 +281,7 @@
     "web.audit.section1.review_cvut_1": "FIT ČVUT – Posudek mobilní aplikace eRouška ze dne 2. 4. 2020",
     "web.audit.section1.review_cvut_2": "FIT ČVUT – Doplňující audit aplikace eRouška pro Android, verze 1.0.381",
     "web.audit.section1.review_vesely": "Vyjádření důvěry aplikaci – Ondřej Veselý, externí etický expert v oblasti R&D pro Evropskou Komisi",
-    "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 - Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
+    "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 – Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
     "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru GitHub",
-    "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>.",
-
-    "web.default.back_to_main_page": "Zpět na Hlavní stránku",
-    "web.default.before_you_go_out": "Než vyjdete ven,",
-    "web.default.use_erouska_too": "nasaďte si také eRoušku.",
-    "web.default.download_for_android": "Stáhnout pro Android",
-    "web.default.download_for_ios": "Brzy ke stažení pro iOS",
-    "web.default.smart_quarantine": "chytrá karanténa",
-
-    "web.error.page_title": "Error",
-    "web.error.page_not_found.part_1": "Stránka nebyla nalezena,",
-    "web.error.page_not_found.part_2": "asi je doma v karanténě."
+    "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>."
 }
