@@ -21,7 +21,7 @@
                     <div class="section__content">
                         <div class="faq">
                             <div v-for="(question, q_index) in section.questions" :id="question.anchor" class="section__item faq__item">
-                                <h3 class="faq__q" @click="toggleQuestion(question.anchor)" @click.ctrl.exact="copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor)">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
@@ -167,16 +167,18 @@
 
                 document.body.removeChild(textArea);
             },
-            copyTextToClipboard(text) {
-                if (!navigator.clipboard) {
-                    fallbackCopyTextToClipboard(text);
-                    return;
+            copyTextToClipboard(text, e) {
+                if (e.metaKey || e.ctrlKey) {
+                    if (!navigator.clipboard) {
+                        fallbackCopyTextToClipboard(text);
+                        return;
+                    }
+                    navigator.clipboard.writeText(text).then(function() {
+                        console.log('Async: Copying to clipboard was successful!');
+                    }, function(err) {
+                        console.error('Async: Could not copy text: ', err);
+                    });
                 }
-                navigator.clipboard.writeText(text).then(function() {
-                    console.log('Async: Copying to clipboard was successful!');
-                }, function(err) {
-                    console.error('Async: Could not copy text: ', err);
-                });
             }
         },
 
