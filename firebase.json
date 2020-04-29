@@ -6,6 +6,15 @@
             "npm install && npm run deploy"
         ],
         "appAssociation": "AUTO",
+        "redirects": [{
+            "source": "/faq*",
+            "destination": "/caste-dotazy",
+            "type": 302
+        }, {
+            "source": "/:lang/faq*",
+            "destination": "/:lang/caste-dotazy",
+            "type": 302
+        }],
         "rewrites": [
             {
                 "source": "/app/**",
