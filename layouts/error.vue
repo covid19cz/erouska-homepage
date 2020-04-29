@@ -36,7 +36,7 @@
         },
         head() {
             return {
-                title: this.$t('web.error.page_title') + ' 404' + this.titleTemplate
+                title: 'Error 404' + this.titleTemplate
             }
         }
     }
