@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="heading" id="uvod">
-            <h1 class="heading__title">Časté dotazy</h1>
+            <h1 class="heading__title">{{ $t('web.faq.title') }}</h1>
         </section>
         <div class="mobile-menu d-block d-xl-none">
             <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
@@ -185,8 +185,8 @@
         // changes height of each collapsed element to zero, it allows users to disable js
         mounted () {
             if (process.client) {
-                let hashPresent = this.expandQuestionFromUrl();
                 this.$nextTick(() => {
+                    let hashPresent = this.expandQuestionFromUrl();
                     document.querySelectorAll(".faq__a").forEach(question => {
                         var isCollapsed = question.getAttribute("data-collapsed") === "true";
                         if (isCollapsed) {
