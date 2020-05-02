@@ -14,7 +14,7 @@
                         <ul class="team__list">
                             <li v-for="person in section.people">
                                 <a :title="$t('web.team.member_link_title')" :href="person.linkedin" target="_blank"><img
-                                :src="person.photoUrl ? person.photoUrl : 'https://erouska.cz/img/photo-avatar.png'"
+                                :src="person.photoUrl || 'https://erouska.cz/img/photo-avatar.png'"
                                 class="team__list__photo" />{{person.name}} {{person.surname}}</a>
                             </li>
                         </ul>
