@@ -148,10 +148,22 @@
                 "size": 410
             },
             {
+                "id": "complex_manual_yt",
+                "src": "HYYLw9pF-Sw",
+                "type": "youtube",
+                "size": 2
+            },
+            {
                 "id": "battery_saving_mode_on",
                 "src": "2_vypnuti_sporice_baterie",
                 "type": "pdf",
                 "size": 190
+            },
+            {
+                "id": "battery_saving_mode_on_yt",
+                "src": "pCAZkkYbRlM",
+                "type": "youtube",
+                "size": 1
             },
             {
                 "id": "run_in_background",
@@ -160,10 +172,22 @@
                 "size": 280
             },
             {
+                "id": "run_in_background_yt",
+                "src": "X8KNmLNvoJY",
+                "type": "youtube",
+                "size": 1
+            },
+            {
                 "id": "adaptive_battery_off",
                 "src": "4_omezeni_adaptivni_baterie",
                 "type": "pdf",
                 "size": 320
+            },
+            {
+                "id": "adaptive_battery_off_yt",
+                "src": "3x25WJTgNdQ",
+                "type": "youtube",
+                "size": 1
             },
             {
                 "id": "optimalisation_exception1",
@@ -172,10 +196,22 @@
                 "size": 640
             },
             {
+                "id": "optimalisation_exception1_yt",
+                "src": "HHjJdvx4wsw",
+                "type": "youtube",
+                "size": 2
+            },
+            {
                 "id": "optimalisation_exception2",
                 "src": "6_vyjimka_z_omezeni_na_pozadi_pro_eRousku",
                 "type": "pdf",
                 "size": 430
+            },
+            {
+                "id": "optimalisation_exception2_yt",
+                "src": "hhNPWfkLJ30",
+                "type": "youtube",
+                "size": 2
             },
             {
                 "id": "protected_mode",
