@@ -7,7 +7,7 @@
                 "id": "making_sure",
                 "src": "1_zajisteni_behu_eRousky_na_pozadi",
                 "type": "pdf",
-                "size": 80
+                "size": 280
             }
         ]
     },
@@ -19,13 +19,13 @@
                 "id": "exception",
                 "src": "1_vyjimka_z_optimalizace_baterie_pro_eRousku",
                 "type": "pdf",
-                "size": 500
+                "size": 490
             },
             {
                 "id": "manual_switch_on",
                 "src": "2_rucni_zapnuti_behu_eRousky_na_pozadi",
                 "type": "pdf",
-                "size": 500
+                "size": 490
             }
         ]
     },
@@ -151,7 +151,7 @@
                 "id": "battery_saving_mode_on",
                 "src": "2_vypnuti_sporice_baterie",
                 "type": "pdf",
-                "size": 200
+                "size": 190
             },
             {
                 "id": "run_in_background",
