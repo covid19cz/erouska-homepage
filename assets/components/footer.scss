@@ -69,9 +69,6 @@
 
         text-align: left;
     }
-    @include respond-to('xlarge') {
-        max-width: 86%;
-    }
 }
 
 .footer__menu__list {

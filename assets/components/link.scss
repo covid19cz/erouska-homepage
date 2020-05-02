@@ -6,6 +6,7 @@
 
 .link__icon-container {
     flex-grow: 0;
+    flex-shrink: 0;
     width: 42px;
     display: flex;
     flex-direction: column;
@@ -28,17 +29,27 @@
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     line-height: 1.4em;
 }
 
 .link__title {
     font-weight: bold;
-    text-decoration: underline;
-    color: $color_blue;
+    color: $color_black;
+    margin-bottom: 10px;
+
+    .page--instructions & {
+        text-decoration: underline;
+        color: $color_blue;
+        margin-bottom: 0;
+    }
 
     .link:hover & {
         text-decoration: none;
+
+        .page--press & {
+            text-decoration: underline;
+        }
     }
 }
 
