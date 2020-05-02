@@ -1,4 +1,5 @@
 const locales = ['cs', 'en'];
+const localeCaptions = {cs: 'Čeština', en: 'English', vi: 'Tiếng Việt'};
 const pages = ['', 'audit-kod', 'caste-dotazy', 'gdpr', 'napsali-o-nas', 'navody', 'tym'];
 const routes = [];
 for (const locale of locales) {
@@ -14,7 +15,8 @@ export default {
         titleTemplate: ' – eRouška',
         baseUrl: 'https://erouska.cz',
         defaultLanguage: 'cs',
-        locales
+        locales,
+        localeCaptions
     },
     generate: {
         routes,
