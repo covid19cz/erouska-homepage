@@ -27,10 +27,10 @@
             <div class="container">
                 <h2 class="claim__title">{{ $t('web.default.before_you_go_out') }}<br>{{ $t('web.default.use_erouska_too') }}</h2>
                 <ul class="claim__actions">
-                    <li><a
-                        href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
-                        target="_blank" class="button button--blue">{{ $t('web.default.download_for_android') }}</a></li>
-                    <li><span class="button button--disable">{{ $t('web.default.download_for_ios') }}</span></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
+                           target="_blank" class="button button--blue">{{ $t('web.index.download.android') }}</a></li>
+                    <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215"
+                           target="_blank" class="button button--blue">{{ $t('web.index.download.ios') }}</a></li>
                 </ul>
             </div>
         </div>
