@@ -2,6 +2,14 @@
     display: flex;
     text-decoration: none;
     margin: 28px 0;
+
+    .page--press & {
+        margin: 16px 0;
+    }
+
+    .page--press .faq__item:first-child & {
+        margin-top: 0;
+    }
 }
 
 .link__icon-container {
