@@ -53,10 +53,18 @@
                                     <nuxt-link :to="homeUrl + 'caste-dotazy'">{{ $t('web.faq.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'napsali-o-nas'">{{ $t('web.press.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list footer__menu__list--3">
+                                <li>
+                                    <nuxt-link :to="homeUrl + 'navody'">{{ $t('web.instructions.link') }}</nuxt-link>
+                                </li>
+                                <li>
+                                    <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
+                                </li>
+                            </ul>
+                            <ul class="footer__menu__list footer__menu__list--4">
                                 <li>
                                     <nuxt-link :to="homeUrl + 'gdpr'">{{ $t('web.gdpr.link') }}</nuxt-link>
                                 </li>
