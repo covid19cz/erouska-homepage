@@ -32,6 +32,7 @@
         "questions": [
             {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"},
             {"id": "what_is_is_and_rssi", "anchor": "id-rssi"},
+            {"id": "iphone_sleeps", "anchor": "iphone-pozadi"},
             {"id": "only_one_phone_is_nearby", "anchor": "blizko-jeden-tel"},
             {"id": "there_is_lot_of_ids_in_the_my_data_tab", "anchor": "vidim-moc-id"},
             {"id": "can_i_mark_a_friend", "anchor": "oznacit-znameho"},
