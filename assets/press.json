@@ -50,7 +50,7 @@
     {
         "date": "2020-04-16",
         "medium": "TN.cz",
-        "type": "text",
+        "type": "video",
         "lang": "cs",
         "name": "Experti ukázali, jak funguje chytrá karanténa. Odmítlo ji 15 procent lidí",
         "url": "https://tn.nova.cz/clanek/blizi-se-spusteni-chytre-karanteny-hygienici-priblizili-jeji-fungovani.html"
@@ -114,7 +114,7 @@
     {
         "date": "2020-04-13",
         "medium": "iDNES.cz",
-        "type": "text",
+        "type": "video",
         "lang": "cs",
         "name": "Podívejte se, jak funguje aplikace eRouška",
         "url": "https://tv.idnes.cz/technika/erouska-aplikace-koronavirus.V200413_091224_idnestv_rejs"
