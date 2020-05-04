@@ -1,260 +1,120 @@
-[
-    {
-        "id": "why_is_erouska_needed",
-        "questions": [
-            "Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?"
-        ]
-    },
-    {
-		"id": "why_is_erouska_needed",
-		"questions": [
-			"Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?"
-		]
-	},
-    {
-		"id": "how_does_healthcare_work",
-		"questions": [
-			"Jak postupuje hygiena? To budu muset pokaždé automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?"
-		]
-	},
-    {
-		"id": "only_one_phone_is_nearby",
-		"questions": [
-			"V mé blízkosti je jen jeden, nebo dva telefony s aplikací eRouška, přitom ale vidím v záložce Moje Data řadu dalších ID? To chytám i signál lidí z okolních bytů nebo domů?"
-		]
-	},
-    {
-		"id": "one_phone_is_visible_the_other_is_not",
-		"questions": [
-			"Máme eRoušku nainstalovanou v domácnosti na dvou telefonech. V záložce Moje data jeden druhý vidí, ale druhý nevidí ten první. Čím to je?"
-		]
-	},
-    {
-		"id": "my_data_has_no_records",
-		"questions": [
-			"Nainstaloval jsem eRoušku, ale v záložce Moje data nevidím žádné záznamy. Funguje to?"
-		]
-	},
-    {
-		"id": "can_i_mark_a_friend",
-		"questions": [
-			"Je možné označit člena mé domácnosti jako známého, aby ho aplikace zbytečně neskenovala?"
-		]
-	},
-    {
-		"id": "does_erouska_need_internet",
-		"questions": [
-			"Potřebuje aplikace připojení k internetu?"
-		]
-	},
-    {
-		"id": "does_erouska_slow_traffic",
-		"questions": [
-			"Je možné, že se mi po zapnutí eRoušky zpomalilo Wi-Fi / připojení k internetu?"
-		]
-	},
-    {
-		"id": "does_it_make_sense_to_install_erouska",
-		"questions": [
-			"Má smysl si eRoušku instalovat, když ji nebude používat dost lidí?"
-		]
-	},
-    {
-		"id": "how_does_erouska_differ",
-		"questions": [
-			"Jak se eRouška liší od jiných podobných aplikací?"
-		]
-	},
-    {
-		"id": "why_the_app_need_my_phone_number",
-		"questions": [
-			"Proč chce aplikace znát mé telefonní číslo?"
-		]
-	},
-    {
-		"id": "how_do_i_proceed_in_a_positive_test",
-		"questions": [
-			"Jak mám postupovat, když mi test potvrdí nákazu?"
-		]
-	},
-    {
-		"id": "will_others_know_i_have_covid",
-		"questions": [
-			"Takže všichni budou vědět, že mám COVID-19?"
-		]
-	},
-    {
-		"id": "what_if_somebody_does_not_admit",
-		"questions": [
-			"Co když někdo nepřizná, že je nemocný?"
-		]
-	},
-    {
-		"id": "what_is_the_role_of_erouska_in_smart_quarantine",
-		"questions": [
-			"Co je to chytrá karanténa? Jakou v ní hraje roli eRouška?"
-		]
-	},
-    {
-		"id": "will_erouska_know_i_violate_quarantine",
-		"questions": [
-			"Pozná eRouška, když poruším lékařem nařízenou karanténu nebo třeba pojedu na chatu?"
-		]
-	},
-    {
-		"id": "how_long_is_the_data_kept",
-		"questions": [
-			"Jak dlouho do minulosti jsou data k dispozici? Kdy a jak probíhá jejich mazání?"
-		]
-	},
-    {
-		"id": "what_if_i_lose_the_phone",
-		"questions": [
-			"Co když mi telefon ukradnou nebo ho ztratím?"
-		]
-	},
-    {
-		"id": "gdpr_compliance",
-		"questions": [
-			"Je aplikace eRouška v souladu s GDPR?"
-		]
-	},
-    {
-		"id": "on_which_phones_does_erouska_work",
-		"questions": [
-			"Na jakých telefonech aplikace eRouška funguje?"
-		]
-	},
-    {
-		"id": "why_gps_needs_to_be_enabled",
-		"questions": [
-			"Proč je potřeba aplikaci povolit přístup k GPS/polohovým/lokačním údajům?"
-		]
-	},
-    {
-		"id": "how_is_the_data_processed",
-		"questions": [
-			"Jak probíhá sběr dat a jejich zpracování?"
-		]
-	},
-    {
-		"id": "there_is_lot_of_ids_in_the_my_data_tab",
-		"questions": [
-			"V záložce Moje Data vidím spoustu ID, přitom v mém okolí je jen pár lidí/telefonů s aplikací eRouška. Funguje to?"
-		]
-	},
-    {
-		"id": "does_bluetooth_be_always_enabled",
-		"questions": [
-			"Musím mít Bluetooth zapnutý neustále?"
-		]
-	},
-    {
-		"id": "how_much_battery_it_consumes",
-		"questions": [
-			"Kolik baterie aplikace a zapnutý Bluetooth spotřebují?"
-		]
-	},
-    {
-		"id": "why_bluetooth",
-		"questions": [
-			"Proč aplikace používá zrovna Bluetooth? Neexistují lepší řešení jako GPS nebo triangulace od operátorů?"
-		]
-	},
-    {
-		"id": "is_bt_secure",
-		"questions": [
-			"Je Bluetooth dostatečně bezpečná technologie?"
-		]
-	},
-    {
-		"id": "wrong_contact_assessment",
-		"questions": [
-			"Nemůže se stát, že eRouška mylně vyhodnotí kontakt s jinou osobou, která je například vedle v autě na křižovatce, za dveřmi nebo tenkou zdí?"
-		]
-	},
-    {
-		"id": "what_is_is_and_rssi",
-		"questions": [
-			"Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?"
-		]
-	},
-    {
-		"id": "iphone_sleeps",
-		"questions": [
-			"Na iPhonu eRouška ukazuje, že je aktivní, ale v sekci „Moje data“ vidím mezi záznamy větší mezery. Funguje aplikace na pozadí?"
-		]
-	},
-    {
-		"id": "can_someone_track_me",
-		"questions": [
-			"Může mě někdo pomocí aplikace eRouška sledovat?"
-		]
-	},
-    {
-		"id": "can_i_verify_the_app_does_not_record_location",
-		"questions": [
-			"Lze ověřit, že aplikace nezaznamenává moji polohu?"
-		]
-	},
-    {
-		"id": "can_a_particular_person_be_paired",
-		"questions": [
-			"Lze identifikátor aplikace (ID) uživatele spárovat s konkrétní osobou?"
-		]
-	},
-    {
-		"id": "who_can_access_the_data",
-		"questions": [
-			"Kdo má (může mít) přístup k mým datům?"
-		]
-	},
-    {
-		"id": "how_can_i_find_all_saved_and_sent_data",
-		"questions": [
-			"Jak zjistím, která všechna data přesně aplikace ukládá a odesílá hygienické stanici?"
-		]
-	},
-    {
-		"id": "how_do_you_protect_users_from_data_misuse",
-		"questions": [
-			"Jak uživatele chráníte před zneužitím dat?"
-		]
-	},
-    {
-		"id": "is_there_an_independent_body",
-		"questions": [
-			"Dohlíží na zabezpečení dat z aplikace nějaká nezávislá organizace?"
-		]
-	},
-    {
-		"id": "can_i_change_my_mind_about_using_it",
-		"questions": [
-			"Můžu si používání aplikace kdykoli rozmyslet? Můžu smazat své telefonní číslo a data, která jsem předal hygienikům?"
-		]
-	},
-    {
-		"id": "data_after_the_app_is_deleted",
-		"questions": [
-			"Co se děje s daty po smazání aplikace z mobilu?"
-		]
-	},
-    {
-		"id": "where_is_the_source_code",
-		"questions": [
-			"Kde najdu zdrojový kód aplikace?"
-		]
-	},
-    {
-		"id": "how_can_i_download_erouska",
-		"questions": [
-			"Jak si můžu stáhnout eRoušku?"
-		]
-	},
-    {
-		"id": "what_if_phone_switches_erouska_off",
-		"questions": [
-			"Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?"
-		]
-	}
-]
+{
+    "web.faq.questions.why_is_erouska_needed.question": "Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?",
+    "web.faq.questions.why_is_erouska_needed.answer.0": "Cílem aplikace eRouška je zpomalit a ideálně zastavit šíření nákazy. Pomáhá co nejdříve izolovat potenciálně nakažené osoby od ostatních. Tím přispívá k postupnému uvolňování celostátní karantény a snížení dopadů pandemie na společnost a ekonomiku ČR. Aplikace na podobném principu fungují i v dalších státech a většinou jsou velmi účinným prostředkem v boji proti šíření koronaviru.",
+    "web.faq.questions.why_is_erouska_needed.answer.1": "Aplikace eRouška je jedním z konceptů chytré karantény. Aplikace se přes Bluetooth spojí s dalšími telefony s eRouškou v nejbližším okolí a uloží jejich identifikátory. Pokud bude později některý z uživatelů eRoušky označen pracovníkem hygieny za pomoci testů jako nakažený, epidemiologický model vyhodnotí, zda jste s ním přišli do kontaktu dost dlouho na to, aby bylo nutné vás varovat a směřovat k dalšímu vyšetření.",
+    "web.faq.questions.why_is_erouska_needed.answer.2": "eRouška tedy pomáhá pracovníkům hygienické stanice co nejefektivněji identifikovat potenciální přenašeče viru, spojit se s nimi a dohodnout se, zda je na nezbytně nutnou dobu potřebná domácí izolace a testování. Tím se sníží počet infikovaných ve společnosti i riziko vaší infekce.",
+    "web.faq.questions.how_does_healthcare_work.question": "Jak postupuje hygiena? To budu muset pokaždé automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?",
+    "web.faq.questions.how_does_healthcare_work.answer.0": "Pokud u někoho test potvrdí nákazu, kontaktuje ho hygienická stanice, aby zjistila, s kým byl v rizikovém kontaktu za posledních pět dní, a mohla tak omezit další šíření. Když používá aplikaci eRouška, nemusí se spoléhat jen na svou paměť, ale může se rozhodnout, jestli z aplikace odešle sesbíraná data do zabezpečeného systému hygieny k vyhodnocení.",
+    "web.faq.questions.how_does_healthcare_work.answer.1": "Systém pověřeným pracovníkům hygieny zpřístupní telefonní čísla na osoby, se kterými byl nakažený v kritickém kontaktu (blíže než 2 metry po dobu delší než 15 min. v součtu za 24 h), aby s nimi mohli probrat další postup – dobrovolnou karanténu a přednostní testování.",
+    "web.faq.questions.how_does_healthcare_work.answer.2": "Aplikace tedy pomáhá hygieně rychleji se spojit s potenciálně rizikovými kontakty a na základě osobního pohovoru vyhodnotit, jestli šlo jen o „planý poplach“, nebo je potřeba vás a ostatní nějak dál chránit. Nemusíte mít proto obavu, že by šlo o automatizovaný proces, který nemůžete ovlivnit.",
+    "web.faq.questions.only_one_phone_is_nearby.question": "V mé blízkosti je jen jeden, nebo dva telefony s aplikací eRouška, přitom ale vidím v záložce Moje Data řadu dalších ID? To chytám i signál lidí z okolních bytů nebo domů?",
+    "web.faq.questions.only_one_phone_is_nearby.answer.0": "ID každého uživatele se opakovaně mění, abychom zvýšili anonymitu a bezpečí uživatelů. Proto jich můžete v telefonu vidět řádově více, ale přitom může jít stále o jedno stejné zařízení.",
+    "web.faq.questions.one_phone_is_visible_the_other_is_not.question": "Máme eRoušku nainstalovanou v domácnosti na dvou telefonech. V záložce Moje data jeden druhý vidí, ale druhý nevidí ten první. Čím to je?",
+    "web.faq.questions.one_phone_is_visible_the_other_is_not.answer.0": "Některé starší modely telefonů (např. Google Nexus 5, Honor 7 lite, atp.) mohou fungovat jen částečně – vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.",
+    "web.faq.questions.my_data_has_no_records.question": "Nainstaloval jsem eRoušku, ale v záložce Moje data nevidím žádné záznamy. Funguje to?",
+    "web.faq.questions.my_data_has_no_records.answer.0": "Aplikace vidí ve svém okolí pouze telefony, které mají taky nainstalovanou eRoušku. Je možné, že jste zatím nikoho takového nepotkali. Zkuste prosím eRoušku doporučit někomu blízkému a ověřit, zda se uvidíte.",
+    "web.faq.questions.my_data_has_no_records.answer.1": "Některé starší modely telefonů mohou fungovat jen částečně – vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.",
+    "web.faq.questions.can_i_mark_a_friend.question": "Je možné označit člena mé domácnosti jako známého, aby ho aplikace zbytečně neskenovala?",
+    "web.faq.questions.can_i_mark_a_friend.answer.0": "Každá eRouška mění z důvodu bezpečnosti a ochrany soukromí pravidelně své vysílané ID, proto jeden telefon můžete vidět i několikrát pod různými ID. Z toho důvodu není možné označit danou osobu, respektive konkrétní ID jako člena vaší rodiny, aby ji aplikace vynechala ze skenování.",
+    "web.faq.questions.does_erouska_need_internet.question": "Potřebuje aplikace připojení k internetu?",
+    "web.faq.questions.does_erouska_need_internet.answer.0": "Připojení k internetu je nutné pouze pro stažení (instalaci) a aktivaci aplikace. Pouze za předpokladu, že by se u vás potvrdila nákaza koronavirem, by vás o zaslání sesbíraných dat požádala hygienická stanice a tehdy by bylo potřeba eRoušku opět připojit k internetu.",
+    "web.faq.questions.does_erouska_need_internet.answer.1": "Ve všech ostatních případech není připojení k internetu potřeba, protože aplikace neodesílá žádná data. Vaše data jsou uložena pouze ve vašem telefonu, odkud se sama odmazávají po 30 dnech. Nemusíte se tedy bát, že by vám aplikace „žrala data“.",
+    "web.faq.questions.does_erouska_slow_traffic.question": "Je možné, že se mi po zapnutí eRoušky zpomalilo Wi-Fi / připojení k internetu?",
+    "web.faq.questions.does_erouska_slow_traffic.answer.0": "Sama od sebe eRouška žádná data nikam neodesílá, ponechává je uložená v telefonu, takže nemá vliv na vaše připojení k internetu. U některých modelů mobilů s OS Android je bohužel známé, že vysílání Bluetooth může částečně negativně ovlivňovat signál Wi-Fi a naopak.",
+    "web.faq.questions.does_it_make_sense_to_install_erouska.question": "Má smysl si eRoušku instalovat, když ji nebude používat dost lidí?",
+    "web.faq.questions.does_it_make_sense_to_install_erouska.answer.0": "Právě proto byste neměli váhat. Čím více nás bude eRoušku používat, tím lepší vytvoříme síť, která nás bude vzájemně chránit a varovat před rizikem.",
+    "web.faq.questions.does_it_make_sense_to_install_erouska.answer.1": "Spolupracujeme s vládou ČR a dalšími organizacemi na tom, aby se o eRoušce dozvědělo co nejvíce lidí. Pomozte nám i vy. Instalací aplikace se můžete aktivně zapojit do boje proti koronaviru. O aplikaci můžete říct i lidem ve svém okolí, případně jim s jejich souhlasem pomoci s instalací.",
+    "web.faq.questions.how_does_erouska_differ.question": "Jak se eRouška liší od jiných podobných aplikací?",
+    "web.faq.questions.how_does_erouska_differ.answer.0": "Z dat aplikace eRouška nelze zjistit, kdy jste se kde pohybovali. Aplikace eRouška nezaznamenává vaši geografickou polohu, ale rozpoznává ostatní zařízení s aplikací eRouška v okolí využitím technologie Bluetooth. Tyto informace jsou anonymizované.",
+    "web.faq.questions.how_does_erouska_differ.answer.1": "<em>Zapsaná informace vypadá např. takto: 31.3.2020 od 12:15 do 13:15 byla ve vaší blízkosti aplikace s identifikátorem ID 29091. </em>",
+    "web.faq.questions.how_does_erouska_differ.answer.2": "Kromě toho eRouška sama od sebe informace nikam neodesílá, zůstávají uložené ve vašem zařízení. K odeslání dat ministerstvu zdravotnictví či jemu podřízené hygienické stanici může dojít až ve chvíli, kdy vás pracovník call centra hygieny kontaktuje na základě pozitivního testu a požádá vás o souhlas se zpracováním dat, která aplikace sesbírala. Na základě tohoto požadavku pak přímo z aplikace odešlete vámi nasbíraná data do centralizované databáze hygienické stanice.",
+    "web.faq.questions.how_does_erouska_differ.answer.3": "Tato odeslaná data vyhodnotí pověřený pracovník hygienické stanice. Uživatele aplikace eRouška, kteří se delší dobu vyskytovali ve vaší blízkosti, kontaktuje pracovník hygienické stanice s pokyny o dalším postupu.",
+    "web.faq.questions.why_the_app_need_my_phone_number.question": "Proč chce aplikace znát mé telefonní číslo?",
+    "web.faq.questions.why_the_app_need_my_phone_number.answer.0": "Telefonní číslo využije hygienická stanice, aby vás mohla v případě potřeby co nejdříve kontaktovat. To nastane jen tehdy, pokud bude mít na základě informací z eRoušky nakaženého člověka podezření, že jste s ním byli v rizikovém kontaktu. Proto telefonní číslo registrujete hned při prvním spuštění eRoušky.",
+    "web.faq.questions.how_do_i_proceed_in_a_positive_test.question": "Jak mám postupovat, když mi test potvrdí nákazu?",
+    "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.0": "V první řadě kontaktujte hygienickou stanici, pod kterou místně spadáte, pokud vás již nekontaktovala sama. Pověřený pracovník hygieny vám poskytne informace o tom, jak dále postupovat, a případně vás požádá o souhlas s odesláním dat z aplikace. Dále byste měli zavolat svému praktickému lékaři, který vám indikuje léčbu.",
+    "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.1": "<strong>V případě závažných zdravotních komplikací volejte linky 112 a 155.</strong>",
+    "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.2": "Aktuální informace se dozvíte vždy na celostátní informační telefonní lince <strong>1212</strong> nebo <a href=\"https://koronavirus.mzcr.cz/\" target=\"_blank\">na webu Ministerstva zdravotnictví ČR</a>.",
+    "web.faq.questions.will_others_know_i_have_covid.question": "Takže všichni budou vědět, že mám COVID-19?",
+    "web.faq.questions.will_others_know_i_have_covid.answer.0": "Nebudou. Pověřený pracovník hygienické stanice sice kontaktuje registrované uživatele, se kterými byl nakažený podle dat z aplikace v rizikovém kontaktu, ale bez jeho souhlasu nesmí tuto informaci s nikým dalším sdílet. Nikdo se tedy nedozví, že jste to zrovna vy.",
+    "web.faq.questions.what_if_somebody_does_not_admit.question": "Co když někdo nepřizná, že je nemocný?",
+    "web.faq.questions.what_if_somebody_does_not_admit.answer.0": "I to se může stát. Věříme však, že uživatelé eRoušky chtějí aktivně pomáhat se zastavením dalšího šíření nákazy a aplikaci využijí, aby mohli co nejdříve varovat osoby, se kterými přišli do rizikového kontaktu. Záměrné šíření koronaviru je v ČR považováno za trestný čin.",
+    "web.faq.questions.what_is_the_role_of_erouska_in_smart_quarantine.question": "Co je to chytrá karanténa? Jakou v ní hraje roli eRouška?",
+    "web.faq.questions.what_is_the_role_of_erouska_in_smart_quarantine.answer.0": "Jde o soubor chytrých opatření, která chrání lidi před nákazou a ekonomiku před kolapsem. Místo toho, aby do karantény uvrhla celý národ, do striktní karantény izoluje pouze nemocné a z nemoci důvodně podezřelé lidi. Pomocí dostupných technologií pak následně můžeme aktivně upozornit rizikové jedince, kteří se setkali s nakaženým, a i je dát do preventivní karantény, čímž zamezíme skokovému šíření nákazy. Důsledné testování pak oddělí zdravé od těch, kteří jsou nakažení a potřebují další zdravotnickou péči. Díky těmto krokům věříme, že se podaří zmírnit šíření nákazy a ušetřit zdravotnictví fatálního přetížení.",
+    "web.faq.questions.what_is_the_role_of_erouska_in_smart_quarantine.answer.1": "Aplikace eRouška je jeden z projektů, který vznikl na podporu <a href=\"https://www.covid19cz.cz/covid19-cz/manifest/chytra-karantena\" target=\"_blank\">chytré karantény</a>.",
+    "web.faq.questions.will_erouska_know_i_violate_quarantine.question": "Pozná eRouška, když poruším lékařem nařízenou karanténu nebo třeba pojedu na chatu?",
+    "web.faq.questions.will_erouska_know_i_violate_quarantine.answer.0": "Aplikace nesleduje vaši polohu, není to její účel a ani pro to není navržena. Nepozná tedy, zda jste porušili karanténní opatření nebo odjeli na chatu. Má naopak pomoci k tomu, aby v karanténě byly pouze osoby s diagnostikovaným onemocněním nebo s vážným podezřením nákazy.",
+    "web.faq.questions.how_long_is_the_data_kept.question": "Jak dlouho do minulosti jsou data k dispozici? Kdy a jak probíhá jejich mazání?",
+    "web.faq.questions.how_long_is_the_data_kept.answer.0": "V aplikaci eRouška se uchovávají data zaznamenaná za posledních 30 dní, starší záznamy se automaticky odmazávají. Pokud na výzvu pracovníka hygieny udělíte souhlas se zpracováním a odešlete data z telefonu na server, zůstanou zde maximálně 12 hodin a poté dojde k jejich smazání.",
+    "web.faq.questions.how_long_is_the_data_kept.answer.1": "Telefonní číslo uchováváme po dobu 6 měsíců od registrace, nebo do rozhodnutí ministerstva zdravotnictví o tom, že tento údaj není nutné dále zpracovávat, nebo do vaší žádosti o zrušení registrace, podle toho, co nastane dříve. Data můžete smazat kdykoliv sami přímo v aplikaci v sekci Moje data, registraci tel. čísla zrušíte v aplikaci kliknutím na „Zrušit registraci“ pod třemi tečkami vpravo nahoře.",
+    "web.faq.questions.how_long_is_the_data_kept.answer.2": "Informace o správcích a zpracovatelích dat naleznete v <a href=\"https://erouska.cz/gdpr\" target=\"_blank\">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a>.",
+    "web.faq.questions.what_if_i_lose_the_phone.question": "Co když mi telefon ukradnou nebo ho ztratím?",
+    "web.faq.questions.what_if_i_lose_the_phone.answer.0": "V aplikaci eRouška jsou lokálně uložené jen anonymní informace o dalších zařízeních, která eRouška zaznamenala ve svém okolí. Žádné riziko to nepřináší pro vás ani pro majitele takto zaznamenaných zařízení. Jiné aplikace, které běžně využíváte, mohou ve vašem telefonu pravděpodobně ukládat mnohem citlivější údaje. Mějte proto svůj telefon chráněný kódem nebo biometricky (otiskem prstu nebo obličejem).",
+    "web.faq.questions.gdpr_compliance.question": "Je aplikace eRouška v souladu s GDPR?",
+    "web.faq.questions.gdpr_compliance.answer.0": "Celý systém aplikace eRouška, včetně webových stránek, je navržen plně v souladu s GDPR i zákonem o zpracování osobních údajů.",
+    "web.faq.questions.gdpr_compliance.answer.1": "Zde naleznete bližší informace:",
+    "web.faq.questions.gdpr_compliance.answer.2": "<ul><li><a href=\"https://erouska.cz/gdpr\" target=\"_blank\">Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz</a></li><li><a href=\"https://erouska.cz/audit-kod\" target=\"_blank\">Audit zdrojového kódu aplikace</a></li><li><a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry iniciativy COVID19CZ</a></li></ul>",
+    "web.faq.questions.on_which_phones_does_erouska_work.question": "Na jakých telefonech aplikace eRouška funguje?",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.0": "Pokud váš telefon není s eRouškou kompatibilní (nemá potřebné technologie/funkce), Google Play ani App Store vám neumožní aplikaci nainstalovat.",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.1": "Pro instalaci aplikace eRouška potřebujete chytrý telefon s těmito parametry:",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.2": "<ul><li>iOS verze 11 a vyšší</li><li>OS Android verze 5.0 a vyšší s Google services (nemá jen malé procento telefonů Huawei a některé telefony s vlastní ROM)</li><li>Bluetooth LE (Low Energy) <sup>*</sup></li></ul>",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.3": "<sup>*</sup> Některé starší modely telefonů (např. Google Nexus 5, Honor 7 lite, atp.) mohou fungovat jen částečně – vidí přes Bluetooth telefony v okolí, ale ostatní smartphony je bohužel zpětně nevidí. Důvodem je, že ještě nejsou vybavené funkcí Bluetooth LE Advertising. I přesto má jejich použití smysl.",
+    "web.faq.questions.why_gps_needs_to_be_enabled.question": "Proč je potřeba aplikaci povolit přístup k GPS/polohovým/lokačním údajům?",
+    "web.faq.questions.why_gps_needs_to_be_enabled.answer.0": "Aplikace eRouška nesbírá a neukládá data z GPS, avšak operační systém Android zahrnuje pod určování polohy také některé služby Bluetooth LE (LE = low energy), které eRouška pro své fungování potřebuje. Proto je nutný souhlas uživatele s přístupem aplikace k polohovým údajům. V iOS tento souhlas nutný není.",
+    "web.faq.questions.why_gps_needs_to_be_enabled.answer.1": "Více informací je k dispozici <a href=\"https://developer.android.com/guide/topics/connectivity/bluetooth#Permissions\" target=\"_blank\">na webu OS Android pro vývojáře</a>.",
+    "web.faq.questions.how_is_the_data_processed.question": "Jak probíhá sběr dat a jejich zpracování?",
+    "web.faq.questions.how_is_the_data_processed.answer.0": "Chytrý telefon s aplikací eRouška zaznamená přes Bluetooth anonymní identifikátory (ID) z jiných zařízení s touto aplikací. Informaci o „setkání“ a jeho délce ukládá do své vnitřní paměti.",
+    "web.faq.questions.how_is_the_data_processed.answer.1": "<em>Zapsaná informace vypadá např. takto: 31.3.2020 od 12:15 do 13:15 byla ve vaší blízkosti aplikace s identifikátorem ID 29091. </em>",
+    "web.faq.questions.how_is_the_data_processed.answer.2": "Seznam těchto „setkání“ můžete z aplikace odeslat do centrální databáze v případě, že budete osloveni pracovníkem hygienické stanice z důvodu pozitivního testu, nebo kvůli podezření na rizikový kontakt s nakaženým. Do centrální databáze mají přístup jen pověření pracovníci hygienické stanice. Ti mohou spojit identifikátor aplikace s registrovaným telefonním číslem a upozornit uživatele eRoušky, kteří s vámi přišli do rizikového kontaktu.",
+    "web.faq.questions.how_is_the_data_processed.answer.3": "<em>Pracovníci hygieny tedy vidí, že např. ID 29091 je propojeno s telefonním číslem 123 456 789.</em>",
+    "web.faq.questions.there_is_lot_of_ids_in_the_my_data_tab.question": "V záložce Moje Data vidím spoustu ID, přitom v mém okolí je jen pár lidí/telefonů s aplikací eRouška. Funguje to?",
+    "web.faq.questions.there_is_lot_of_ids_in_the_my_data_tab.answer.0": "Každá eRouška z důvodu bezpečnosti a ochrany soukromí uživatelů mění pravidelně své vysílané ID, proto jeden telefon můžete vidět i několikrát pod různými ID. Z důvodu transparentnosti vám ukazujeme všechna data, která aplikace zaznamená. Přítomnost jiné eRoušky ve vašem okolí, zapisujeme každé 2 minuty.",
+    "web.faq.questions.does_bluetooth_be_always_enabled.question": "Musím mít Bluetooth zapnutý neustále?",
+    "web.faq.questions.does_bluetooth_be_always_enabled.answer.0": "Ano. Bez zapnutého Bluetooth není možné zjišťovat blízkost dalších zařízení s nainstalovanou aplikací eRouška. Tuto funkci máte zapnutou možná i nyní, například v případě, že používáte bezdrátová sluchátka, připojení v autě, chytrý náramek nebo hodinky.",
+    "web.faq.questions.how_much_battery_it_consumes.question": "Kolik baterie aplikace a zapnutý Bluetooth spotřebují?",
+    "web.faq.questions.how_much_battery_it_consumes.answer.0": "Jestliže již nyní používáte telefon se stále zapnutým Bluetooth, spotřeba energie se výrazněji nezvýší.",
+    "web.faq.questions.how_much_battery_it_consumes.answer.1": "Pokud Bluetooth nyní běžně nepoužíváte, podle výsledků našeho testování s neustále zapnutým Bluetooth a ukládáním dat do aplikace byla denní spotřeba energie v řádu jednotek procent. Ve většině případů to je méně než 20 % kapacity baterie za den. Záleží přitom na konkrétním chytrém telefonu, stylu jeho používání a stavu baterie.",
+    "web.faq.questions.how_much_battery_it_consumes.answer.2": "Pokud vám připadá spotřeba příliš vysoká, zkuste prosím zkontrolovat nastavení &rarr; baterie/spotřeba, jestli udělená povolení nezačala využívat jiná aplikace na pozadí. Na optimalizaci spotřeby eRoušky stále pracujeme. Častější nabíjení je bohužel částečná daň za to, že vás a vaše okolí pomůže telefon s eRouškou lépe chránit.",
+    "web.faq.questions.why_bluetooth.question": "Proč aplikace používá zrovna Bluetooth? Neexistují lepší řešení jako GPS nebo triangulace od operátorů?",
+    "web.faq.questions.why_bluetooth.answer.0": "Soukromí uživatelů je pro nás na prvním místě, a právě technologie Bluetooth nabízí nejvyváženější poměr přesnosti záznamu a minimálního zásahu do soukromí. Technologie GPS ani triangulace vysílačů od operátorů nemohou poskytnout potřebné údaje s požadovanou přesností. Mimo jiné i proto, že jejich funkčnost je v budovách, garážích či metru velmi omezená. Aplikace eRouška potřebuje pro svoji funkci informace o tom, že došlo k setkání, na jakou vzdálenost a po jakou dobu. Není důležité, kde k setkání došlo.",
+    "web.faq.questions.is_bt_secure.question": "Je Bluetooth dostatečně bezpečná technologie?",
+    "web.faq.questions.is_bt_secure.answer.0": "Bluetooth je dnes běžně rozšířená a podporovaná komunikační technologie pro propojení zařízení s dalšími periferiemi, jako jsou bezdrátová sluchátka, reproduktory, chytré náramky nebo hodinky. Vzhledem k tomu, že na další podpoře jejího použití v aplikacích trasujících rizikové kontakty spolupracují i Apple a Google, jsme přesvědčení, že jsme pro eRoušku zvolili správně. Je však potřeba říct, že úplně každá technologie je zranitelná. I proto všem uživatelům doporučujeme, aby operační systém a aplikace ve svém telefonu pravidelně aktualizovali. Aktualizace totiž mohou obsahovat důležité bezpečnostní záplaty.",
+    "web.faq.questions.wrong_contact_assessment.question": "Nemůže se stát, že eRouška mylně vyhodnotí kontakt s jinou osobou, která je například vedle v autě na křižovatce, za dveřmi nebo tenkou zdí?",
+    "web.faq.questions.wrong_contact_assessment.answer.0": "Aplikace eRouška funguje na principu měření síly signálu mezi dvěma zařízeními. Technicky nelze vyloučit, že dojde k mylné detekci – například blízký kontakt skrz tenkou zeď se podobá vzdálenějšímu kontaktu bez překážky. Těmto omylům, byť jsou výjimečné, se nedá úplně zabránit. Pracovníci hygienických stanic a jejich call centra jsou s tímto jevem seznámeni a pracují s ním při telefonickém rozhovoru s rizikovými kontakty nakaženého.",
+    "web.faq.questions.wrong_contact_assessment.answer.1": "Pro vyhodnocení kontaktu jako rizikového je kromě vzdálenosti (do 2 m) relevantní též délka kontaktu – prosté zastavení na semaforech na 1–2 minuty je tedy nevýznamné.",
+    "web.faq.questions.what_is_is_and_rssi.question": "Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?",
+    "web.faq.questions.what_is_is_and_rssi.answer.0": "V sekci Moje data vidíte ID jako část anonymního čísla dalšího uživatele aplikace eRouška, kterého jste potkali. RSSI pak ukazuje sílu Bluetooth signálu při vašem setkání. Čím je číslo vyšší, tím blíže jste k sobě byli (pozor na záporné znaménko). Barva RSSI údajů navíc znázorňuje, v jak těsné blízkosti druhého uživatele jste byli (červená = velmi blízko, oranžová – žlutá = středně blízko, zelená = nevýznamné setkání).",
+    "web.faq.questions.iphone_sleeps.question": "Na iPhonu eRouška ukazuje, že je aktivní, ale v sekci „Moje data“ vidím mezi záznamy větší mezery. Funguje aplikace na pozadí?",
+    "web.faq.questions.iphone_sleeps.answer.0": "Kvůli úspoře baterie se může stát, že iPhone aplikaci eRouška na pozadí částečně „uspí“ – je viditelná pro ostatní eRoušky, ale sama je neskenuje pořád. Proto doporučujeme na rušných místech nechat aplikaci běžet na obrazovce a telefon nezamykat. Pro snížení spotřeby baterie pak stačí na stole otočit telefon displejem dolů (obrazovka sama zhasne), nebo do kapsy či kabelky dávat telefon nabíjecím konektorem nahoru (zakrytá obrazovka opět automaticky zhasne).",
+    "web.faq.questions.can_someone_track_me.question": "Může mě někdo pomocí aplikace eRouška sledovat?",
+    "web.faq.questions.can_someone_track_me.answer.0": "Ne. Aplikace nesbírá údaje o vaší poloze a k uloženým datům máte přístup pouze vy. Samotné údaje, které aplikace po vašem souhlasu odesílá, nemohou být použity k vašemu sledování. Každá eRouška navíc mění z důvodu bezpečnosti a ochrany soukromí uživatelů pravidelně své vysílané ID, aby nebylo snadné jej odchytit a nějak zneužít.",
+    "web.faq.questions.can_someone_track_me.answer.1": "<em>Aplikace automaticky ukládá pouze informace typu: 31.3.2020 v 12:15 byla ve vaší blízkosti (určené sílou Bluetooth signálu v dB) aplikace s identifikátorem ID 29091.</em>",
+    "web.faq.questions.can_someone_track_me.answer.2": "Za pár minut se však podobný záznam může v aplikaci ukázat už pod jiným ID, ačkoliv jde stále o stejné zařízení.",
+    "web.faq.questions.can_i_verify_the_app_does_not_record_location.question": "Lze ověřit, že aplikace nezaznamenává moji polohu?",
+    "web.faq.questions.can_i_verify_the_app_does_not_record_location.answer.0": "Ano. Nasbíraná data lze kdykoli zobrazit v záložce Moje data. Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href=\"https://github.com/covid19cz/erouska-android\" target=\"_blank\">Android</a>, <a href=\"https://github.com/covid19cz/erouska-ios\" target=\"_blank\">iOS</a>), takže znalý člověk může snadno ověřit, že údaje o poloze aplikace opravdu nesbírá.",
+    "web.faq.questions.can_i_verify_the_app_does_not_record_location.answer.1": "Zdrojové kódy aplikace eRouška byly <a href=\"https://erouska.cz/audit-kod\" target=\"_blank\">prověřeny nezávislými autoritami</a>, jejichž kontrola potvrdila, že aplikace:",
+    "web.faq.questions.can_i_verify_the_app_does_not_record_location.answer.2": "<ul><li>nesleduje polohu</li><li>sama automaticky data nikam neodesílá</li></ul>",
+    "web.faq.questions.can_a_particular_person_be_paired.question": "Lze identifikátor aplikace (ID) uživatele spárovat s konkrétní osobou?",
+    "web.faq.questions.can_a_particular_person_be_paired.answer.0": "Vygenerovaná ID eRoušky lze spojit pouze s telefonním číslem uživatele. Pravomoc k tomu mají v zabezpečeném systému jenom určení pracovníci hygienických stanic, a to pouze u těch ID, které jsou na základě odeslaných dat od nakažených uživatelů vyhodnocené jako ohrožené nákazou koronavirem.",
+    "web.faq.questions.who_can_access_the_data.question": "Kdo má (může mít) přístup k mým datům?",
+    "web.faq.questions.who_can_access_the_data.answer.0": "K seznamu setkání máte přístup pouze vy. Až když se dobrovolně na vyzvání rozhodnete odeslat tato data hygienické stanici, přístup získají na omezenou dobu (maximálně na 12 h.) také její pověření pracovníci. Telefonní číslo má k dispozici ministerstvo zdravotnictví a jemu podřízené hygienické stanice, aby vás mohli kontaktovat v případě zjištění, že ve vašem okolí byl nakažený uživatel aplikace eRouška.",
+    "web.faq.questions.how_can_i_find_all_saved_and_sent_data.question": "Jak zjistím, která všechna data přesně aplikace ukládá a odesílá hygienické stanici?",
+    "web.faq.questions.how_can_i_find_all_saved_and_sent_data.answer.0": "Nasbíraná data lze kdykoli v aplikaci zobrazit v záložce Moje data. Aplikace žádná data sama nikam neodesílá.",
+    "web.faq.questions.how_do_you_protect_users_from_data_misuse.question": "Jak uživatele chráníte před zneužitím dat?",
+    "web.faq.questions.how_do_you_protect_users_from_data_misuse.answer.0": "Uživatele chráníme především minimálním rozsahem zaznamenávaných dat a jejich ukládáním přímo do zařízení. Data uživatelů se bez jejich vědomí a souhlasu nikam neposílají ani nezpracovávají. Do telefonů se zaznamenávají anonymní identifikátory (ID) zařízení s nainstalovanou aplikací eRouška a informace o čase, délce a blízkosti jejich výskytu v okolí uživatele. Zpracovat je mohou po výslovném souhlasu uživatele jen určení pracovníci hygieny.",
+    "web.faq.questions.is_there_an_independent_body.question": "Dohlíží na zabezpečení dat z aplikace nějaká nezávislá organizace?",
+    "web.faq.questions.is_there_an_independent_body.answer.0": "Ano. Celý systém aplikace eRouška, včetně podpůrných webových stránek, je navržený plně v souladu s GDPR. Kód aplikace je jako open-source volně k dispozici (<a href=\"https://github.com/covid19cz/erouska-android\" target=\"_blank\">Android</a>, <a href=\"https://github.com/covid19cz/erouska-ios\" target=\"_blank\">iOS</a>) a prošel <a href=\"https://erouska.cz/audit-kod\" target=\"_blank\">auditem nezávislých vzdělávacích institucí</a>.",
+    "web.faq.questions.is_there_an_independent_body.answer.1": "Další informace naleznete v <a href=\"https://erouska.cz/gdpr\" target=\"_blank\">Podmínkách zpracování osobních údajů při užívání aplikace eRouška.cz</a> a v <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazku datové důvěry iniciativy COVID19CZ</a>.",
+    "web.faq.questions.can_i_change_my_mind_about_using_it.question": "Můžu si používání aplikace kdykoli rozmyslet? Můžu smazat své telefonní číslo a data, která jsem předal hygienikům?",
+    "web.faq.questions.can_i_change_my_mind_about_using_it.answer.0": "Ano. V aplikaci je možné smazat veškerá nasbíraná data – jak z vašeho zařízení, tak i ze serveru hygieniků. Stejně tak zde můžete smazat telefonní číslo (zrušit registraci), které jste poskytli při aktivaci aplikace. Historicky přidělená identifikační čísla (ID) vaší eRoušky ovšem zůstanou zaznamenaná v eRouškách ostatních uživatelů, kteří vás v předešlých dnech potkali. Tato ID ale nebude na základě ostatních údajů z aplikace eRouška nadále možné přiřadit k žádnému telefonu, telefonnímu číslu ani osobě.",
+    "web.faq.questions.can_i_change_my_mind_about_using_it.answer.1": "Pamatujte, že po smazání (zrušení registrace) vašeho telefonního čísla vás nebudou moci hygienici kontaktovat v případě podezření na rizikové setkání s nakaženou osobou.",
+    "web.faq.questions.data_after_the_app_is_deleted.question": "Co se děje s daty po smazání aplikace z mobilu?",
+    "web.faq.questions.data_after_the_app_is_deleted.answer.0": "Když smažete aplikaci z telefonu, smažou se i v něm uložená sesbíraná data. Pokud aplikaci znovu nainstalujete, začnou se sbírat a do telefonu ukládat zcela nová data.",
+    "web.faq.questions.data_after_the_app_is_deleted.answer.1": "Smazáním aplikace se automaticky nesmažou data z databáze (serveru), pokud jste je tam již odeslali, ani se tím nezruší registrace vaše telefonního čísla. Pokud zrušíte registraci svého tel. čísla, nebude vás moci v případě potřeby kontaktovat hygiena.",
+    "web.faq.questions.where_is_the_source_code.question": "Kde najdu zdrojový kód aplikace?",
+    "web.faq.questions.where_is_the_source_code.answer.0": "Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href=\"https://github.com/covid19cz/erouska-android\" target=\"_blank\">Android</a>, <a href=\"https://github.com/covid19cz/erouska-ios\" target=\"_blank\">iOS</a>).",
+    "web.faq.questions.how_can_i_download_erouska.question": "Jak si můžu stáhnout eRoušku?",
+    "web.faq.questions.how_can_i_download_erouska.answer.0": "Pro stažení eRoušky pro Android postupujte prosím podle <a href=\"https://erouska.cz/navody#instalace\">PDF či video návodu</a>.",
+    "web.faq.questions.what_if_phone_switches_erouska_off.question": "Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?",
+    "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška."
+}
