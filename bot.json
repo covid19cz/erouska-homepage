@@ -1,0 +1,260 @@
+[
+    {
+        "id": "why_is_erouska_needed",
+        "questions": [
+            "Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?"
+        ]
+    },
+    {
+		"id": "why_is_erouska_needed",
+		"questions": [
+			"Proč je eRouška potřeba? Dokáže mě vůbec efektivně chránit před nákazou?"
+		]
+	},
+    {
+		"id": "how_does_healthcare_work",
+		"questions": [
+			"Jak postupuje hygiena? To budu muset pokaždé automaticky do karantény nebo na testy, když aplikace hygieně zahlásí, že jsem byl v kontaktu s někým nakaženým?"
+		]
+	},
+    {
+		"id": "only_one_phone_is_nearby",
+		"questions": [
+			"V mé blízkosti je jen jeden, nebo dva telefony s aplikací eRouška, přitom ale vidím v záložce Moje Data řadu dalších ID? To chytám i signál lidí z okolních bytů nebo domů?"
+		]
+	},
+    {
+		"id": "one_phone_is_visible_the_other_is_not",
+		"questions": [
+			"Máme eRoušku nainstalovanou v domácnosti na dvou telefonech. V záložce Moje data jeden druhý vidí, ale druhý nevidí ten první. Čím to je?"
+		]
+	},
+    {
+		"id": "my_data_has_no_records",
+		"questions": [
+			"Nainstaloval jsem eRoušku, ale v záložce Moje data nevidím žádné záznamy. Funguje to?"
+		]
+	},
+    {
+		"id": "can_i_mark_a_friend",
+		"questions": [
+			"Je možné označit člena mé domácnosti jako známého, aby ho aplikace zbytečně neskenovala?"
+		]
+	},
+    {
+		"id": "does_erouska_need_internet",
+		"questions": [
+			"Potřebuje aplikace připojení k internetu?"
+		]
+	},
+    {
+		"id": "does_erouska_slow_traffic",
+		"questions": [
+			"Je možné, že se mi po zapnutí eRoušky zpomalilo Wi-Fi / připojení k internetu?"
+		]
+	},
+    {
+		"id": "does_it_make_sense_to_install_erouska",
+		"questions": [
+			"Má smysl si eRoušku instalovat, když ji nebude používat dost lidí?"
+		]
+	},
+    {
+		"id": "how_does_erouska_differ",
+		"questions": [
+			"Jak se eRouška liší od jiných podobných aplikací?"
+		]
+	},
+    {
+		"id": "why_the_app_need_my_phone_number",
+		"questions": [
+			"Proč chce aplikace znát mé telefonní číslo?"
+		]
+	},
+    {
+		"id": "how_do_i_proceed_in_a_positive_test",
+		"questions": [
+			"Jak mám postupovat, když mi test potvrdí nákazu?"
+		]
+	},
+    {
+		"id": "will_others_know_i_have_covid",
+		"questions": [
+			"Takže všichni budou vědět, že mám COVID-19?"
+		]
+	},
+    {
+		"id": "what_if_somebody_does_not_admit",
+		"questions": [
+			"Co když někdo nepřizná, že je nemocný?"
+		]
+	},
+    {
+		"id": "what_is_the_role_of_erouska_in_smart_quarantine",
+		"questions": [
+			"Co je to chytrá karanténa? Jakou v ní hraje roli eRouška?"
+		]
+	},
+    {
+		"id": "will_erouska_know_i_violate_quarantine",
+		"questions": [
+			"Pozná eRouška, když poruším lékařem nařízenou karanténu nebo třeba pojedu na chatu?"
+		]
+	},
+    {
+		"id": "how_long_is_the_data_kept",
+		"questions": [
+			"Jak dlouho do minulosti jsou data k dispozici? Kdy a jak probíhá jejich mazání?"
+		]
+	},
+    {
+		"id": "what_if_i_lose_the_phone",
+		"questions": [
+			"Co když mi telefon ukradnou nebo ho ztratím?"
+		]
+	},
+    {
+		"id": "gdpr_compliance",
+		"questions": [
+			"Je aplikace eRouška v souladu s GDPR?"
+		]
+	},
+    {
+		"id": "on_which_phones_does_erouska_work",
+		"questions": [
+			"Na jakých telefonech aplikace eRouška funguje?"
+		]
+	},
+    {
+		"id": "why_gps_needs_to_be_enabled",
+		"questions": [
+			"Proč je potřeba aplikaci povolit přístup k GPS/polohovým/lokačním údajům?"
+		]
+	},
+    {
+		"id": "how_is_the_data_processed",
+		"questions": [
+			"Jak probíhá sběr dat a jejich zpracování?"
+		]
+	},
+    {
+		"id": "there_is_lot_of_ids_in_the_my_data_tab",
+		"questions": [
+			"V záložce Moje Data vidím spoustu ID, přitom v mém okolí je jen pár lidí/telefonů s aplikací eRouška. Funguje to?"
+		]
+	},
+    {
+		"id": "does_bluetooth_be_always_enabled",
+		"questions": [
+			"Musím mít Bluetooth zapnutý neustále?"
+		]
+	},
+    {
+		"id": "how_much_battery_it_consumes",
+		"questions": [
+			"Kolik baterie aplikace a zapnutý Bluetooth spotřebují?"
+		]
+	},
+    {
+		"id": "why_bluetooth",
+		"questions": [
+			"Proč aplikace používá zrovna Bluetooth? Neexistují lepší řešení jako GPS nebo triangulace od operátorů?"
+		]
+	},
+    {
+		"id": "is_bt_secure",
+		"questions": [
+			"Je Bluetooth dostatečně bezpečná technologie?"
+		]
+	},
+    {
+		"id": "wrong_contact_assessment",
+		"questions": [
+			"Nemůže se stát, že eRouška mylně vyhodnotí kontakt s jinou osobou, která je například vedle v autě na křižovatce, za dveřmi nebo tenkou zdí?"
+		]
+	},
+    {
+		"id": "what_is_is_and_rssi",
+		"questions": [
+			"Co znamená to ID a RSSI v záložce Moje data a proč má RSSI různé barvy?"
+		]
+	},
+    {
+		"id": "iphone_sleeps",
+		"questions": [
+			"Na iPhonu eRouška ukazuje, že je aktivní, ale v sekci „Moje data“ vidím mezi záznamy větší mezery. Funguje aplikace na pozadí?"
+		]
+	},
+    {
+		"id": "can_someone_track_me",
+		"questions": [
+			"Může mě někdo pomocí aplikace eRouška sledovat?"
+		]
+	},
+    {
+		"id": "can_i_verify_the_app_does_not_record_location",
+		"questions": [
+			"Lze ověřit, že aplikace nezaznamenává moji polohu?"
+		]
+	},
+    {
+		"id": "can_a_particular_person_be_paired",
+		"questions": [
+			"Lze identifikátor aplikace (ID) uživatele spárovat s konkrétní osobou?"
+		]
+	},
+    {
+		"id": "who_can_access_the_data",
+		"questions": [
+			"Kdo má (může mít) přístup k mým datům?"
+		]
+	},
+    {
+		"id": "how_can_i_find_all_saved_and_sent_data",
+		"questions": [
+			"Jak zjistím, která všechna data přesně aplikace ukládá a odesílá hygienické stanici?"
+		]
+	},
+    {
+		"id": "how_do_you_protect_users_from_data_misuse",
+		"questions": [
+			"Jak uživatele chráníte před zneužitím dat?"
+		]
+	},
+    {
+		"id": "is_there_an_independent_body",
+		"questions": [
+			"Dohlíží na zabezpečení dat z aplikace nějaká nezávislá organizace?"
+		]
+	},
+    {
+		"id": "can_i_change_my_mind_about_using_it",
+		"questions": [
+			"Můžu si používání aplikace kdykoli rozmyslet? Můžu smazat své telefonní číslo a data, která jsem předal hygienikům?"
+		]
+	},
+    {
+		"id": "data_after_the_app_is_deleted",
+		"questions": [
+			"Co se děje s daty po smazání aplikace z mobilu?"
+		]
+	},
+    {
+		"id": "where_is_the_source_code",
+		"questions": [
+			"Kde najdu zdrojový kód aplikace?"
+		]
+	},
+    {
+		"id": "how_can_i_download_erouska",
+		"questions": [
+			"Jak si můžu stáhnout eRoušku?"
+		]
+	},
+    {
+		"id": "what_if_phone_switches_erouska_off",
+		"questions": [
+			"Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?"
+		]
+	}
+]
