@@ -108,5 +108,16 @@
     "web.faq.questions.how_can_i_download_erouska.question": "Jak si můžu stáhnout eRoušku?",
     "web.faq.questions.how_can_i_download_erouska.answer.0": "Pro stažení eRoušky pro Android postupujte prosím podle <a href=\"https://erouska.cz/navody#instalace\">PDF či video návodu</a>.",
     "web.faq.questions.what_if_phone_switches_erouska_off.question": "Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?",
-    "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška."
+    "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška.",
+    
+    "web.faq.questions.internal_sms_does_not_arrive.question": "Nepřichází mi registrační SMS",
+    "web.faq.questions.internal_sms_does_not_arrive.answer.0": "Kvůli náporu nových uživatelů může docházet ke zpoždění doručení ověřovacích SMS zpráv. Zkuste prosím registraci provést znovu později.",
+    "web.faq.questions.internal_sms_arrives_but_error_follows.question": "Zpráva přijde, ale už ji nemůžu zadat / Zadal jsem kód, ale aplikace hází chybu",
+    "web.faq.questions.internal_sms_arrives_but_error_follows.answer.0": "Kvůli náporu nových uživatelů dochází ke zpoždění doručení ověřovacích SMS zpráv a v některých případech k vypršení intervalu pro zadání. Opakovaným zadáním Vás mohl dočasně zablokovat antispam. Napište nám prosím na email info@erouska.cz a naši operátoři Vám pomohou.",
+    "web.faq.questions.internal_do_you_plan_translations.questions": "Plánujete překlad do angličtiny a dalších jazyků?",
+    "web.faq.questions.internal_do_you_plan_translations.answer.0": "Prioritně pracujeme na překladu aplikace i webu eRouška.cz do angličtiny a plánujeme i vietnamštinu a případně další jazyky. Zkuste aplikaci aktualizovat na nejnovější verzi.",
+    "web.faq.questions.internal_not_closing_app_on_ios.question": "Když radíte aplikaci nezavírat, tak jak se pak dostanu třeba k jiným aplikacím třeba sms nebo k telefonu?",
+    "web.faq.questions.internal_not_closing_app_on_ios.answer.0": "Když telefon aktivně používáte, aplikace eRouška by měla běžet na pozadí bez problému. Uspání eRoušky na iOS může nastat po určité době, když je telefon nepoužívaný/neaktivní a uzamčený. Proto doporučujeme pro jistotu, než telefon odložíte na stůl, do kabelky nebo do kapsy nechat eRoušku spuštěnou na hlavní obrazovce.",
+    "web.faq.questions.internal_why_not_just_update_zachranka.question": "Proč eRouška není jen další funkcí Záchranky, ale musí si ji instalovat jako samostatnou aplikaci?",
+    "web.faq.questions.internal_why_not_just_update_zachranka.answer.0": "Aplikaci Záchranka vyvíjí jiná skupina vývojářů. Vyvinout eRoušku samostatně bylo rychlejší, což teď potřebujeme. Navíc chceme dát uživatelům na výběr, jestli chtějí používat obě aplikace nebo jen některou z nich. U každé aplikace pak mohou dát i kdykoliv odvolat samostatný souhlas se zpracováním údajů.",
 }
