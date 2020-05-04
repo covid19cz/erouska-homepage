@@ -72,6 +72,10 @@
         margin-bottom: 10px;
     }
 
+    br {
+        display: none;
+    }
+
     @include respond-to('medium') {
         margin-bottom: 65px;
 
@@ -89,10 +93,6 @@
         padding-top: 20px;
 
         text-align: left;
-    }
-
-    br {
-        display: none;
     }
 }
 
