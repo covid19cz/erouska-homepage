@@ -132,20 +132,20 @@
     "web.faq.questions.internal_smartwatch.answer.2": "Zvažujeme do budoucna možnost rozšířit eRoušku i o chytré hodinky. Musely by být však vybavené funkcemi Bluetooth LE (Low Energy), aby dokázaly podle síly signálu “změřit vzdálenost” od ostatních uživatelů - tzn. jestli šlo o rizikový kontakt. Základní Bluetooth bez LE sám o sobě pouze zajišťuje přenos dat, ale měření intenzity setkání takto přesně neumožňuje.",
     "web.faq.questions.internal_false_dispatch.question": "Omylem jsem odeslal/a data. Nebude mi teď hygiena volat?",
     "web.faq.questions.internal_false_dispatch.answer.0": "Nemusíte se obávat. Data odeslaná do centrální databáze se automaticky mažou po 6 hodinách. Zůstanou jen ve Vašem telefonu pro případné další odeslání, a odmazávají se z něj po 30 dnech. Hygiena ani nedostává informaci o tom, že jste data odeslal bez vyzvání. Pověřený pracovník hygieny by Vás vyzval k odeslání dat až v případě, že jste byl předtím pozitivně testován na koronavirus, a bylo by potřeba kontaktovat další osoby, se kterými jste byl v těsném kontaktu.",
-    
+
     "web.faq.questions.internal_what_is_erouska.question": "Co je eRouška",
-    "web.faq.questions.internal_what_is_erouska.answer.0": "Aplikace eRouška si díky Bluetooth pamatuje ostatní eRoušky, které jste potkali. Usnadní tak hygienické stanici dohledávání rizikových kontaktů."
-    
-    "web.faq.questions.internal_thank_you.question": "Díky"
-    "web.faq.questions.internal_thank_you.answer.0": "Jsem ráda, že jsem pomohla. Pokud se chcete ještě na něco zeptat, ráda vám odpovím."
-    "web.faq.questions.internal_who_are_you.question": "Kdo jsi?"
-    "web.faq.questions.internal_who_are_you.answer.0": "Nejsem skutečný člověk, jsem chatbot a jmenuji se Anežka, jsem virtuální sestra. Jsem tu, abych pomohla odpovědět na otázky ohledně koronaviru."  
-    "web.faq.questions.internal_who_are_you.answer.1": "Jestli máte ještě nějaké dotazy, jsem tu pro vás."
-    "web.faq.questions.internal_how_are_you.question": "Jak se máš?"
-    "web.faq.questions.internal_how_are_you.answer.0": "V pořádku, jestli máte ještě nějaké dotazy, jsem tu pro vás."
-    "web.faq.questions.internal_jokes.question": "Znáš nějaký vtip?"
-    "web.faq.questions.internal_jokes.answer.0": "Chuck Norris chytil koronavirus! Bylo mu ho ale líto, tak ho zase pustil. 😅"
-    "web.faq.questions.internal_jokes.answer.1": "Jestli máte ještě nějaké dotazy, jsem tu pro vás."
-    "web.faq.questions.internal_help.question": "Dokážeš mi pomoct"
+    "web.faq.questions.internal_what_is_erouska.answer.0": "Aplikace eRouška si díky Bluetooth pamatuje ostatní eRoušky, které jste potkali. Usnadní tak hygienické stanici dohledávání rizikových kontaktů.",
+
+    "web.faq.questions.internal_thank_you.question": "Díky",
+    "web.faq.questions.internal_thank_you.answer.0": "Jsem ráda, že jsem pomohla. Pokud se chcete ještě na něco zeptat, ráda vám odpovím.",
+    "web.faq.questions.internal_who_are_you.question": "Kdo jsi?",
+    "web.faq.questions.internal_who_are_you.answer.0": "Nejsem skutečný člověk, jsem chatbot a jmenuji se Anežka, jsem virtuální sestra. Jsem tu, abych pomohla odpovědět na otázky ohledně koronaviru.",
+    "web.faq.questions.internal_who_are_you.answer.1": "Jestli máte ještě nějaké dotazy, jsem tu pro vás.",
+    "web.faq.questions.internal_how_are_you.question": "Jak se máš?",
+    "web.faq.questions.internal_how_are_you.answer.0": "V pořádku, jestli máte ještě nějaké dotazy, jsem tu pro vás.",
+    "web.faq.questions.internal_jokes.question": "Znáš nějaký vtip?",
+    "web.faq.questions.internal_jokes.answer.0": "Chuck Norris chytil koronavirus! Bylo mu ho ale líto, tak ho zase pustil. 😅",
+    "web.faq.questions.internal_jokes.answer.1": "Jestli máte ještě nějaké dotazy, jsem tu pro vás.",
+    "web.faq.questions.internal_help.question": "Dokážeš mi pomoct",
     "web.faq.questions.internal_help.answer.0": "Pokud jste v životu ohrožující situaci, volejte prosím 112, pokud potřebujete přepojit na živého operátora, klikněte na tlačítko níže. Máte-li psychické obtíže, mohla by vám pomoci <a href=\"https://koronavirus.mzcr.cz/jak-se-vyrovnat-se-svou-psychikou-behem-karanteny\" target=\"_blank\">tato stránka</a>, kde se dozvíte rady, jak se vyrovnat se svou psychikou. Pokud si nevíte rady a zvažujete zavolat na bezplatnou poradenskou linku 1212, podívejte se <a href=\"https://koronavirus.mzcr.cz/kdy-volat-psychickou-pomoc-na-lince-1212\" target=\"_blank\">sem</a>. V případě, že potřebujete zodpovědět nějaký dotaz, jsem tu pro vás."
 }
