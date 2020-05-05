@@ -1,5 +1,17 @@
 [
     {
+        "brand_id": "apple",
+        "brand_folder": "Apple",
+        "links": [
+            {
+                "id": "keep_running",
+                "src": "",
+                "type": "text",
+                "size": 0
+            }
+        ]
+    },
+    {
         "brand_id": "asus",
         "brand_folder": "Asus",
         "links": [

@@ -79,6 +79,8 @@
     "web.instructions.settings.title": "Nastavení pro jednotlivé značky telefonů",
     "web.instructions.settings.text": "Na odkazech níže najdete stručné návody pro nejpoužívanější telefony, v jejichž nastavení je potřeba zakázat automatické vypínání aplikace eRouška:",
 
+    "web.instructions.settings.brands.apple.name": "Apple",
+    "web.instructions.settings.brands.apple.links.keep_running": "Pokud se zařízením Apple zrovna nepracujete, doporučujeme na rušnějších místech nechat aplikaci běžet na obrazovce a přístroj nezamykat. Pro snížení spotřeby baterie pak stačí na stole otočit zařízení displejem dolů (obrazovka sama zhasne), nebo jej do kapsy dávat nabíjecím konektorem nahoru (zakrytá obrazovka opět automaticky zhasne).",
     "web.instructions.settings.brands.asus.name": "Asus",
     "web.instructions.settings.brands.asus.links.making_sure": "Zajištění běhu eRoušky na pozadí",
     "web.instructions.settings.brands.honor.name": "Honor",

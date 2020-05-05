@@ -64,6 +64,9 @@
                                         <span class="link__description">{{ $t('web.instructions.descriptions.video_comma') + ' ' + link.size + ' ' + $t('web.instructions.descriptions.minutes') }}</span>
                                     </div>
                                 </a>
+                                <p v-else-if="link.type === 'text'">
+                                    {{ $t('web.instructions.settings.brands.' + brand.brand_id + '.links.' + link.id) }}
+                                </p>
                             </template>
                         </div>
                     </div>
