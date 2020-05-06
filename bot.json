@@ -147,5 +147,14 @@
     "web.faq.questions.internal_jokes.answer.0": "Chuck Norris chytil koronavirus! Bylo mu ho ale líto, tak ho zase pustil. 😅",
     "web.faq.questions.internal_jokes.answer.1": "Jestli máte ještě nějaké dotazy, jsem tu pro vás.",
     "web.faq.questions.internal_help.question": "Dokážeš mi pomoct",
-    "web.faq.questions.internal_help.answer.0": "Ráda vám zodpovím dotazy ohledně aplikace eRouška, jsem tu pro vás."
+    "web.faq.questions.internal_help.answer.0": "Ráda vám zodpovím dotazy ohledně aplikace eRouška, jsem tu pro vás.",
+    
+    "web.faq.questions.internal_authors_bot.question": "Kdo vytvořil virtuální asistentku Anežku?",
+    "web.faq.questions.internal_authors_bot.answer.0": "Mě, virtuální asistentku Anežku, vytvořili společnými silami <a href=\"https://erouska.cz/tym" target=\"_blank\">tvůrci</a> aplikace eRouška a společnost IBM pod záštitou Ministerstva zdravotnictví.",
+    "web.faq.questions.internal_authors_erouska.question": "Kdo vytvořil aplikaci eRouška?",
+    "web.faq.questions.internal_authors_erouska.answer.0": "Aplikaci eRouška vytvořili dobrovolníci z <a href=\"https://www.covid19cz.cz/" target=\"_blank\">iniciativy Covid19CZ</a>.",
+    "web.faq.questions.internal_authors_erouska.answer.1": "<a href=\"https://erouska.cz/tym" target=\"_blank\">Celý tým</a>, který se na tvorbě eRoušky podílí, tak činí dobrovolně z vlastní iniciativy a bez nároku na honorář.",
+    "web.faq.questions.internal_no_data_displayed.question": "eRouška mi přestala sbírat data / přestala ukazovat záznamy / přestala skenovat.",
+    "web.faq.questions.internal_no_data_displayed.answer.0": "Pokud máte Android a aplikaci správně nastavenou podle <a href=\"https://erouska.cz/navody#nastaveni" target=\"_blank\">návodu</a>, zkuste prosím postupně tyto kroky: <ol><li>Vypnout a zapnout Bluetooth</li><li>V eRoušce pozastavit a spustit sběr dat</li><li>Vypnout/zapnout aplikaci (přes spodní tlačítko pro zobrazení běžících aplikací vybrat eRoušku a ručně ukončit)</li></ol>",
+    "web.faq.questions.internal_no_data_displayed.answer.1": "Pokud máte iOS, doporučujeme pro správné fungování zatím nechat aplikaci běžet na obrazovce a přístroj nezamykat. Pro snížení spotřeby baterie pak stačí na stole otočit zařízení displejem dolů (obrazovka sama zhasne), nebo jej do kapsy dávat nabíjecím konektorem nahoru (zakrytá obrazovka opět automaticky zhasne)."    
 }
