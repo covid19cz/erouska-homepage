@@ -156,5 +156,12 @@
     "web.faq.questions.internal_authors_erouska.answer.1": "<a href=\"https://erouska.cz/tym\" target=\"_blank\">Celý tým</a>, který se na tvorbě eRoušky podílí, tak činí dobrovolně z vlastní iniciativy a bez nároku na honorář.",
     "web.faq.questions.internal_no_data_displayed.question": "eRouška mi přestala sbírat data / přestala ukazovat záznamy / přestala skenovat.",
     "web.faq.questions.internal_no_data_displayed.answer.0": "Pokud máte Android a aplikaci správně nastavenou podle <a href=\"https://erouska.cz/navody#nastaveni\" target=\"_blank\">návodu</a>, zkuste prosím postupně tyto kroky: <ol><li>Vypnout a zapnout Bluetooth</li><li>V eRoušce pozastavit a spustit sběr dat</li><li>Vypnout/zapnout aplikaci (přes spodní tlačítko pro zobrazení běžících aplikací vybrat eRoušku a ručně ukončit)</li></ol>",
-    "web.faq.questions.internal_no_data_displayed.answer.1": "Pokud máte iOS, doporučujeme pro správné fungování zatím nechat aplikaci běžet na obrazovce a přístroj nezamykat. Pro snížení spotřeby baterie pak stačí na stole otočit zařízení displejem dolů (obrazovka sama zhasne), nebo jej do kapsy dávat nabíjecím konektorem nahoru (zakrytá obrazovka opět automaticky zhasne)."
+    "web.faq.questions.internal_no_data_displayed.answer.1": "Pokud máte iOS, doporučujeme pro správné fungování zatím nechat aplikaci běžet na obrazovce a přístroj nezamykat. Pro snížení spotřeby baterie pak stačí na stole otočit zařízení displejem dolů (obrazovka sama zhasne), nebo jej do kapsy dávat nabíjecím konektorem nahoru (zakrytá obrazovka opět automaticky zhasne).",
+    "web.faq.questions.internal_submitting_data.question": "Jak probíhá odeslání dat?",
+    "web.faq.questions.internal_submitting_data.answer.0": "Data hygienické stanici odesíláte až poté, co vás k tomu telefonicky vyzve pověřený pracovník hygienické stanice. Pro odeslání dat musíte být připojeni k internetu.",
+    "web.faq.questions.internal_submitting_data.answer.1": "Data odešlete kliknutím na tlačítko ODESLAT DATA v záložce Moje data.",
+    "web.faq.questions.internal_who_is_operating_erouska.question": "Kdo eRoušku provozuje?",
+    "web.faq.questions.internal_who_is_operating_erouska.answer.0": "Aplikaci vytvořili dobrovolníci spolupracující na platformě <a href=\"https://covid19cz.cz/\" target=\"_blank\">Covid19CZ</a> pod záštitou Ministerstva zdravotnictví České republiky. Bezpečnost dat zaštiťuje řada nezávislých odborníků, včetně <a href=\"https://erouska.cz/audit-kod\" target=\"_blank\">zástupců akademické sféry</a>.",
+    "web.faq.questions.internal_is_erouska_free.question": "Musím za eRoušku platit?",
+    "web.faq.questions.internal_is_erouska_free.answer.0": "Aplikace eRouška je dostupná zdarma."
 }
