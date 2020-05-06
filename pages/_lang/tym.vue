@@ -48,6 +48,7 @@
                         <li><a href="https://www.mobilnirozhlas.cz/" target="_blank"><img src="/img/partners/logo-mobilnirozhlas.png"/></a></li>
                         <li><a href="https://svejda-goldmann.cz/" target="_blank"><img src="/img/partners/logo-svejda-goldmann.png"/></a></li>
                         <li><a href="https://www.zachrankaapp.cz/" target="_blank"><img src="/img/partners/logo-zachranka.png"/></a></li>
+                        <li><a href="https://citadelo.com/cz/" target="_blank"><img src="/img/partners/logo-citadelo.png"/></a></li>
                     </ul>
                 </div>
             </section>
