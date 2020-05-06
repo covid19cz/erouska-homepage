@@ -48,7 +48,7 @@ export default {
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext'}
             ],
             script: [
-                {src: 'https://e-rouska-custom-ui-test.eu-de.mybluemix.net/chatWindow.js', async:'', defer:'', body: true}
+                {src: 'https://e-rouska-custom-ui-test.eu-de.mybluemix.net/chatWindow.js', async: true, defer: true, body: true}
             ]
         }
     },
