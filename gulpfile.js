@@ -25,7 +25,7 @@ const PHONE_GUIDE_FILES = [
     "xiaomi.html"
 ];
 const DEFAULT_LANGUAGE = "cs";
-const TRANSLATED_LANGUAGES = ["en"];
+const TRANSLATED_LANGUAGES = ["en", "vi", "ru", "ro", "sk"];
 const LANGUAGE_TO_SKYAPP = {
     "en": "en_GB"
 };
@@ -36,7 +36,11 @@ const SKYAPP_TO_ANDROID = {
     "en-GB": "en"
 };
 const FALLBACK_LANGUAGE = {
-    "en": DEFAULT_LANGUAGE
+    "en": DEFAULT_LANGUAGE,
+    "vi": "en",
+    "ru": "en",
+    "ro": "en",
+    "sk": DEFAULT_LANGUAGE
 };
 
 const TRANSLATION_SOURCE_FILE = "web.json";
@@ -253,10 +257,18 @@ async function buildI18n(content) {
 async function buildI18nOneSky() {
     const translationFile = await translateFile("web.json", undefined, "I18NEXT_MULTILINGUAL_JSON");
     const content = JSON.parse(translationFile);
-    for (const key of Object.keys(content)) {
-        content[key] = content[key]["translation"];
+    const translation = {};
+    const allLanguages = [...TRANSLATED_LANGUAGES, DEFAULT_LANGUAGE]
+    for (const language of allLanguages) {
+        const key = LANGUAGE_TO_SKYAPP[language] || language;
+        let data = {};
+        if (content.hasOwnProperty(key))
+        {
+            data = content[key]["translation"];
+        }
+        translation[language] = data;
     }
-    await buildI18n(content);
+    await buildI18n(translation);
 }
 
 /**
@@ -275,7 +287,7 @@ function getFirebaseLanguagePostfix(language) {
 }
 
 function translate(translation, language, key) {
-    const strings = translation[language];
+    const strings = translation[language] || {};
     let result;
     if (strings.hasOwnProperty(key)) {
         result = strings[key];
