@@ -1,0 +1,13 @@
+.chatbot-open-button {
+    img {
+        font-size: 0;
+    }
+}
+
+.toggle-button-tooltip {
+    cursor: pointer;
+
+    &::after {
+        transition: border 0.3s;
+    }
+}
