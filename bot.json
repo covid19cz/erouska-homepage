@@ -163,5 +163,10 @@
     "web.faq.questions.internal_submitting_data.answer.0": "Data hygienické stanici odesíláte až poté, co vás k tomu telefonicky vyzve pověřený pracovník hygienické stanice. Pro odeslání dat musíte být připojeni k internetu.",
     "web.faq.questions.internal_submitting_data.answer.1": "Data odešlete kliknutím na tlačítko ODESLAT DATA v záložce Moje data.",
     "web.faq.questions.internal_is_erouska_free.question": "Musím za eRoušku platit?",
-    "web.faq.questions.internal_is_erouska_free.answer.0": "Aplikace eRouška je dostupná zdarma."
+    "web.faq.questions.internal_is_erouska_free.answer.0": "Aplikace eRouška je dostupná zdarma.",
+    
+    "web.faq.questions.internal_question_in_english.question": "Any question in English",
+    "web.faq.questions.internal_question_in_english.answer.0": "I'm sorry but I can only speak Czech.",
+    "web.faq.questions.internal_question_in_english.answer.1": "Please have a look at the <a href=\"https://erouska.cz/en/caste-dotazy\" target=\"_blank\">FAQ section</a> of our website.",
+    "web.faq.questions.internal_question_in_english.answer.2": "If you have further questions, you can contact us (in English) by email info@erouska.cz"
 }
