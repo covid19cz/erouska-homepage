@@ -114,7 +114,7 @@
     "web.faq.questions.internal_sms_does_not_arrive.question": "Nepřichází mi registrační SMS",
     "web.faq.questions.internal_sms_does_not_arrive.answer.0": "Kvůli náporu nových uživatelů může docházet ke zpoždění doručení ověřovacích SMS zpráv. Zkuste prosím registraci provést znovu později.",
     "web.faq.questions.internal_sms_arrives_but_error_follows.question": "Zpráva přijde, ale už ji nemůžu zadat / Zadal jsem kód, ale aplikace hází chybu",
-    "web.faq.questions.internal_sms_arrives_but_error_follows.answer.0": "Kvůli náporu nových uživatelů dochází ke zpoždění doručení ověřovacích SMS zpráv a v některých případech k vypršení intervalu pro zadání. Opakovaným zadáním Vás mohl dočasně zablokovat antispam. Napište nám prosím na email info@erouska.cz a naši operátoři Vám pomohou.",
+    "web.faq.questions.internal_sms_arrives_but_error_follows.answer.0": "Kvůli náporu nových uživatelů dochází ke zpoždění doručení ověřovacích SMS zpráv a v některých případech k vypršení intervalu pro zadání. Opakovaným zadáním Vás mohl dočasně zablokovat antispam. Napište nám prosím na email <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a> a naši operátoři Vám pomohou.",
     "web.faq.questions.internal_do_you_plan_translations.questions": "Plánujete překlad do angličtiny a dalších jazyků?",
     "web.faq.questions.internal_do_you_plan_translations.answer.0": "Prioritně pracujeme na překladu aplikace i webu eRouška.cz do angličtiny a plánujeme i vietnamštinu a případně další jazyky. Zkuste aplikaci aktualizovat na nejnovější verzi.",
     "web.faq.questions.internal_why_not_just_update_zachranka.question": "Proč eRouška není jen další funkcí Záchranky, ale musí si ji instalovat jako samostatnou aplikaci?",
@@ -164,9 +164,9 @@
     "web.faq.questions.internal_submitting_data.answer.1": "Data odešlete kliknutím na tlačítko ODESLAT DATA v záložce Moje data.",
     "web.faq.questions.internal_is_erouska_free.question": "Musím za eRoušku platit?",
     "web.faq.questions.internal_is_erouska_free.answer.0": "Aplikace eRouška je dostupná zdarma.",
-    
+
     "web.faq.questions.internal_question_in_english.question": "Any question in English",
     "web.faq.questions.internal_question_in_english.answer.0": "I'm sorry but I can only speak Czech.",
     "web.faq.questions.internal_question_in_english.answer.1": "Please have a look at the <a href=\"https://erouska.cz/en/caste-dotazy\" target=\"_blank\">FAQ section</a> of our website.",
-    "web.faq.questions.internal_question_in_english.answer.2": "If you have further questions, you can contact us (in English) by email info@erouska.cz"
+    "web.faq.questions.internal_question_in_english.answer.2": "If you have further questions, you can contact us (in English) by email <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>."
 }
