@@ -27,7 +27,7 @@ const PHONE_GUIDE_FILES = [
 const DEFAULT_LANGUAGE = "cs";
 const TRANSLATED_LANGUAGES = ["en", "vi", "ru", "ro", "sk"];
 const LANGUAGE_TO_SKYAPP = {
-    "en": "en_GB"
+    "en": "en-GB"
 };
 const SKYAPP_TO_VUE = {
     "en-GB": "en"
@@ -266,6 +266,7 @@ async function buildI18nOneSky() {
         {
             data = content[key]["translation"];
         }
+        else console.warn(`Language ${language} not found in OneSky`);
         translation[language] = data;
     }
     await buildI18n(translation);
