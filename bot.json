@@ -107,9 +107,9 @@
     "web.faq.questions.where_is_the_source_code.question": "Kde najdu zdrojový kód aplikace?",
     "web.faq.questions.where_is_the_source_code.answer.0": "Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href=\"https://github.com/covid19cz/erouska-android\" target=\"_blank\">Android</a>, <a href=\"https://github.com/covid19cz/erouska-ios\" target=\"_blank\">iOS</a>).",
     "web.faq.questions.how_can_i_download_erouska.question": "Jak si můžu stáhnout eRoušku?",
-    "web.faq.questions.how_can_i_download_erouska.answer.0": "Aplikace eRouška je dostupná pro mobilní zařízení s operačními systémy Android a iOS. Stáhnout a nainstalovat si ji můžete <a href=\"https://erouska.cz/app/sdilej\" target=\"_blank\">zde</a>.",
+    "web.faq.questions.how_can_i_download_erouska.answer.0": "Aplikace eRouška je dostupná pro mobilní zařízení s operačními systémy Android a iOS. Stáhnout a nainstalovat si ji můžete <a href=\"https://erouska.cz/app/sdilej\" target=\"_blank\">prostřednictvím tohoto odkazu</a>.",
     "web.faq.questions.how_can_i_download_erouska.answer.1": "Pro operační systém Android je také dostupný <a href=\"https://erouska.cz/navody#instalace\" target=\"_blank\">obrázkový a video návod</a>.",
-    
+
     "web.faq.questions.what_if_phone_switches_erouska_off.question": "Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?",
     "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\" target=\"_blank\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška.",
 
@@ -171,7 +171,7 @@
     "web.faq.questions.internal_question_in_english.answer.0": "I'm sorry but I can only speak Czech.",
     "web.faq.questions.internal_question_in_english.answer.1": "Please have a look at the <a href=\"https://erouska.cz/en/caste-dotazy\" target=\"_blank\">FAQ section</a> of our website.",
     "web.faq.questions.internal_question_in_english.answer.2": "If you have further questions, you can contact us (in English) by email <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>.",
-    
+
     "web.faq.questions.internal_about_coronavirus.question": "Jakákoli otázka ohledně koronaviru, vládních opatření apod.",
     "web.faq.questions.internal_about_coronavirus.answer.0": "S obecnými otázkami ohledně koronaviru Vám bohužel neporadím, obraťte se prosím na mou kolegyni, <a href=\"https://koronavirus.mzcr.cz/#chat-open\" target=\"_blank\">virtuální sestru Anežku</a>, která Vaše dotazy ráda zodpoví."
 }
