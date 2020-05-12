@@ -45,7 +45,7 @@ export default {
                 {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'},
                 {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'},
                 {rel: 'manifest', href: '/site.webmanifest'},
-                {rel: 'mask-icon', href: '/safari-pinned-tab.svg" color="#ff0d58'},
+                {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color:'#ff0d58'},
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext'}
             ],
             script: [
