@@ -107,7 +107,9 @@
     "web.faq.questions.where_is_the_source_code.question": "Kde najdu zdrojový kód aplikace?",
     "web.faq.questions.where_is_the_source_code.answer.0": "Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href=\"https://github.com/covid19cz/erouska-android\" target=\"_blank\">Android</a>, <a href=\"https://github.com/covid19cz/erouska-ios\" target=\"_blank\">iOS</a>).",
     "web.faq.questions.how_can_i_download_erouska.question": "Jak si můžu stáhnout eRoušku?",
-    "web.faq.questions.how_can_i_download_erouska.answer.0": "Pro stažení eRoušky pro Android postupujte prosím podle <a href=\"https://erouska.cz/navody#instalace\" target=\"_blank\">PDF či video návodu</a>.",
+    "web.faq.questions.how_can_i_download_erouska.answer.0": "Aplikace eRouška je dostupná pro mobilní zařízení s operačními systémy Android a iOS. Stáhnout a nainstalovat si ji můžete <a href=\"https://erouska.cz/app/sdilej\" target=\"_blank\">zde</a>.",
+    "web.faq.questions.how_can_i_download_erouska.answer.1": "Pro operační systém Android je také dostupný <a href=\"https://erouska.cz/navody#instalace\" target=\"_blank\">obrázkový a video návod</a>.",
+    
     "web.faq.questions.what_if_phone_switches_erouska_off.question": "Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?",
     "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\" target=\"_blank\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška.",
 
