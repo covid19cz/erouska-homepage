@@ -255,10 +255,10 @@
     "web.faq.questions.what_if_phone_switches_erouska_off.question": "Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?",
     "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška.",
 
-    "web.gdpr.page_title": "Ochrana osobních údajů",
+    "web.gdpr.page_title": "Ochrana soukromí a cookies",
     "web.gdpr.description": "Podmínky zpracování osobních údajů při používání aplikace eRouška při boji proti koronaviru v Česku.",
-    "web.gdpr.title": "Ochrana osobních údajů",
-    "web.gdpr.link": "Ochrana osobních údajů",
+    "web.gdpr.title": "Ochrana soukromí a cookies",
+    "web.gdpr.link": "Ochrana soukromí a cookies",
     "web.gdpr.perex.part_1": "Podmínky zpracování osobních údajů při užívání aplikace eRouška.cz",
     "web.gdpr.perex.part_3": "Děkujeme, že pomáháte!",
     "web.gdpr.who_we_are.heading": "Kdo jsme",
