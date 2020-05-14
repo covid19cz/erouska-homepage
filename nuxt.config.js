@@ -73,7 +73,12 @@ export default {
     /*
     ** Nuxt.js dev-modules
     */
-    buildModules: [],
+    buildModules: [
+        ['@nuxtjs/google-analytics', {
+            id: 'UA-166645464-1',
+            set: [{field: 'anonymizeIp', value: true}]
+        }]
+    ],
     /*
     ** Nuxt.js modules
     */
