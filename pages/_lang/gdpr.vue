@@ -53,18 +53,19 @@
     export default {
         data() {
             return {
-                titleTemplate: process.env.titleTemplate
+                titleTemplate: process.env.titleTemplate,
+                pageCode: 'gdpr'
             }
         },
         head() {
             return {
-                title: this.$t('web.gdpr.page_title') + this.titleTemplate,
+                title: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate,
                 meta: [
-                    {name: 'description', content: this.$t('web.gdpr.description')},
-                    {property: 'og:title', content: this.$t('web.gdpr.page_title') + this.titleTemplate},
-                    {property: 'og:description', content: this.$t('web.gdpr.description')},
-                    {property: 'twitter:title', content: this.$t('web.gdpr.page_title') + this.titleTemplate},
-                    {property: 'twitter:description', content: this.$t('web.gdpr.description')}
+                    {name: 'description', content: this.$t('web.' + this.pageCode + '.description')},
+                    {property: 'og:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.' + this.pageCode + '.description')},
+                    {property: 'twitter:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
                 ],
                 bodyAttrs: {
                     class: 'page--background-shifted'

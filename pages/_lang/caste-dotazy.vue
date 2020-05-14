@@ -60,18 +60,19 @@
             return {
                 sections: sectionsJson,
                 titleTemplate: process.env.titleTemplate,
+                pageCode: 'faq',
                 baseUrl: process.env.baseUrl
             }
         },
         head() {
             return {
-                title: this.$t('web.faq.page_title') + this.titleTemplate,
+                title: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate,
                 meta: [
-                    {name: 'description', content: this.$t('web.faq.description')},
-                    {property: 'og:title', content: this.$t('web.faq.page_title') + this.titleTemplate},
-                    {property: 'og:description', content: this.$t('web.faq.description')},
-                    {property: 'twitter:title', content: this.$t('web.faq.page_title') + this.titleTemplate},
-                    {property: 'twitter:description', content: this.$t('web.faq.description')}
+                    {name: 'description', content: this.$t('web.' + this.pageCode + '.description')},
+                    {property: 'og:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.' + this.pageCode + '.description')},
+                    {property: 'twitter:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
                 ],
                 bodyAttrs: {
                     class: 'page--faq'
