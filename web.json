@@ -96,6 +96,7 @@
     "web.instructions.settings.brands.huawei.links.protected_mode": "Chráněný status pro eRoušku",
     "web.instructions.settings.brands.huawei.links.battery_management": "Ověření způsobu napájení",
     "web.instructions.settings.brands.huawei.links.powergene_deactivation": "Deaktivace aplikace powerGenie",
+    "web.instructions.settings.brands.huawei.links.ensuring_bt_visibility": "Zajištění viditelnosti Bluetooth",
     "web.instructions.settings.brands.lenovo.name": "Lenovo",
     "web.instructions.settings.brands.lenovo.links.lock_erouska": "Uzamčení běhu eRoušky",
     "web.instructions.settings.brands.samsung.name": "Samsung",
