@@ -1,5 +1,37 @@
 [
     {
+        "date": "2020-05-04",
+        "medium": "Czechcrunch",
+        "type": "text",
+        "lang": "cs",
+        "name": "V Česku se rozjela chytrá karanténa. Aplikace eRouška je konečně i pro iPhone, na Androidu ji má 160 tisíc lidí",
+        "url": "https://www.czechcrunch.cz/2020/05/v-cesku-se-rozjela-chytra-karantena-aplikace-erouska-je-konecne-i-pro-iphone-na-androidu-ji-ma-160-tisic-lidi/"
+    },
+    {
+        "date": "2020-05-04",
+        "medium": "Radio Prague Interantional",
+        "type": "text",
+        "lang": "en",
+        "name": "Mobile app eRouska now available for iPhone users",
+        "url": "https://www.radio.cz/en/section/news/mobile-app-erouska-now-available-for-iphone-users"
+    },
+    {
+        "date": "2020-05-04",
+        "medium": "Prague Morning",
+        "type": "text",
+        "lang": "en",
+        "name": "eRouška app now available for Apple iOS",
+        "url": "https://www.praguemorning.cz/erouska-app-now-available-for-apple-ios/"
+    },
+    {
+        "date": "2020-05-04",
+        "medium": "mobilizujeme.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška je nově pro iOS. Hygienikům řekne, kdo vás mohl nakazit",
+        "url": "https://mobilizujeme.cz/clanky/erouska-je-nove-pro-ios-hygienikum-rekne-kdo-vas-mohl-nakazit"
+    },
+    {
         "date": "2020-04-24",
         "medium": "Blesk.cz",
         "type": "text",
@@ -118,6 +150,14 @@
         "lang": "cs",
         "name": "Podívejte se, jak funguje aplikace eRouška",
         "url": "https://tv.idnes.cz/technika/erouska-aplikace-koronavirus.V200413_091224_idnestv_rejs"
+    },
+    {
+        "date": "2020-04-13",
+        "medium": "mobilizujeme.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Stáhněte si aplikaci eRouška! Chytrá karanténa pomůže zastavit koronavirus",
+        "url": "https://mobilizujeme.cz/clanky/stahnete-si-aplikaci-erouska-rekne-hygienikum-s-kym-se-setkal-nakazeny-koronavirem"
     },
     {
         "date": "2020-04-12",
