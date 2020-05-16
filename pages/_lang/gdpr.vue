@@ -40,8 +40,8 @@
                         <p>{{ $t('web.gdpr.your_rights.part_3') }} <a href="mailto:oia@mzcr.cz">oia@mzcr.cz</a>, {{ $t('web.gdpr.your_rights.part_5') }} <a href="https://www.mzcr.cz" target="_blank">www.mzcr.cz</a>.</p>
                         <p>{{ $t('web.gdpr.your_rights.part_4') }}<a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>).</p>
 
-                        <h2>Jak využíváme cookies</h2>
-                        <p><nuxt-link :to="homeUrl + 'cookies'">Informace o využívání cookies naleznete na této stránce.</nuxt-link></p>
+                        <h2>{{ $t('web.gdpr.cookies.heading') }}</h2>
+                        <p><nuxt-link :to="homeUrl + 'cookies'">{{ $t('web.gdpr.cookies.link') }}</nuxt-link></p>
                     </div>
                 </div>
             </section>

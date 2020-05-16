@@ -6,9 +6,14 @@
         <main class="main d-flex" role="main">
             <div>
                 <section class="section">
-                    <h2 class="section__subtitle">Jak využíváme cookies?</h2>
                     <div class="section__content section__item">
-                        <p>Zatím nijak.</p>
+                        <h2>{{ $t('web.cookies.heading') }}</h2>
+                        <p>{{ $t('web.cookies.intro') }}</p>
+                        <h3>{{ $t('web.cookies.control_heading') }}</h3>
+                        <p>{{ $t('web.cookies.control') }} <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">tools.google.com/dlpage/gaoptout</a>.</p>
+                        <p><b>{{ $t('web.cookies.consent') }}</b></p>
+                        <p>{{ $t('web.cookies.more_information') }} <a href="https://www.google.com/analytics" target="_blank">www.google.com/analytics</a> {{
+                        $t('web.cookies.more_information_or') }} <a href="https://www.google.com" target="_blank">www.google.com</a>. {{ $t('web.cookies.anonymize') }}</p>
                     </div>
                 </section>
             </div>

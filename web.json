@@ -287,6 +287,8 @@
     "web.gdpr.your_rights.part_3": "Ministerstvo zdravotnictví ČR, Palackého nám. 4, 128 01 Praha 2, IČO: 00024341, tel.: +420 224 972 457, e-mail:",
     "web.gdpr.your_rights.part_5": "web:",
     "web.gdpr.your_rights.part_4": "Pokud byste se domnívali, že zpracování Vašich osobních údajů porušuje právní předpisy, můžete podat stížnost u národního dozorového úřadu, kterým je Úřad pro ochranu osobních údajů (",
+    "web.gdpr.cookies.heading": "Jak využíváme cookies",
+    "web.gdpr.cookies.link": "Informace o využívání cookies naleznete na této stránce.",
 
     "web.audit.page_title": "Audit a kód aplikace",
     "web.audit.description": "Kód mobilní aplikace eRouška, která pomáhá zpomalit šíření koronaviru v Česku, prochází audity nezávislých institucí.",
@@ -300,5 +302,17 @@
     "web.audit.section1.review_vesely": "Vyjádření důvěry aplikaci – Ondřej Veselý, externí etický expert v oblasti R&D pro Evropskou Komisi",
     "web.audit.section1.review_cerge": "Využití technologie Bluetooth pro trasování šíření covid-19 – Ole Jann, Pavel Kocourek, Jakub Steiner (CERGE-EI), duben 2020",
     "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru GitHub",
-    "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>."
+    "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>.",
+
+    "web.cookies.page_title": "Cookies",
+    "web.cookies.description": "Podrobnosti k používání cookies na webu aplikace eRouška.",
+    "web.cookies.title": "Cookies",
+    "web.cookies.heading": "Informace o cookies",
+    "web.cookies.intro": "Na internetové stránce erouska.cz používáme službu Google Analytics, což je analytická služba poskytovaná společností Google Inc. („Google“). Google Analytics používá tzv. „cookies“, textové soubory, které se ukládají ve vašem počítači a umožňují analýzu vašeho používání webové stránky za účelem zlepšování služeb erouska.cz. Přitom však nedochází k vaší identifikaci. I vaše IP adresa je zpracována pouze ve zkrácené podobě, aby vás opravdu nebylo možné identifikovat.",
+    "web.cookies.control_heading": "Používání cookies máte pod kontrolou",
+    "web.cookies.control": "Všechny standardní prohlížeče Vám umožňují nastavit, zda se budou cookies na vašem počítači ukládat, a umožňují Vám vymazat již uložené cookies. Kromě toho můžete použití Google Analytics zakázat použitím doplňku dostupného z",
+    "web.cookies.consent": "Pokud máte ukládání cookies povolené a navštívíte naše webové stránky, souhlasíte tím s používáním cookies podle těchto informací a podle podmínek Google Analytics.",
+    "web.cookies.more_information": "Bližší informace o podmínkách používání a ochraně dat v souvislosti se službou Google Analytics naleznete na adrese",
+    "web.cookies.more_information_or": "nebo",
+    "web.cookies.anonymize": "Tato webová stránka používá rozšíření „anonymizeIp“, takže jsou IP adresy zpracovávány pouze zkráceně, aby se vyloučila přímá osobní identifikovatelnost."
 }
