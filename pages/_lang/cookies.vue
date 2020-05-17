@@ -7,9 +7,8 @@
             <div>
                 <section class="section">
                     <div class="section__content section__item">
-                        <h2>{{ $t('web.cookies.heading') }}</h2>
                         <p>{{ $t('web.cookies.intro') }}</p>
-                        <h3>{{ $t('web.cookies.control_heading') }}</h3>
+                        <h2 class="h3">{{ $t('web.cookies.control_heading') }}</h2>
                         <p>{{ $t('web.cookies.control') }} <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">tools.google.com/dlpage/gaoptout</a>.</p>
                         <p><b>{{ $t('web.cookies.consent') }}</b></p>
                         <p>{{ $t('web.cookies.more_information') }} <a href="https://www.google.com/analytics" target="_blank">www.google.com/analytics</a> {{

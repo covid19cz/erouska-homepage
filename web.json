@@ -288,7 +288,7 @@
     "web.gdpr.your_rights.part_5": "web:",
     "web.gdpr.your_rights.part_4": "Pokud byste se domnívali, že zpracování Vašich osobních údajů porušuje právní předpisy, můžete podat stížnost u národního dozorového úřadu, kterým je Úřad pro ochranu osobních údajů (",
     "web.gdpr.cookies.heading": "Jak využíváme cookies",
-    "web.gdpr.cookies.link": "Informace o využívání cookies naleznete na této stránce.",
+    "web.gdpr.cookies.part_1": "Informace o využívání cookies naleznete na stránce",
 
     "web.audit.page_title": "Audit a kód aplikace",
     "web.audit.description": "Kód mobilní aplikace eRouška, která pomáhá zpomalit šíření koronaviru v Česku, prochází audity nezávislých institucí.",
@@ -304,10 +304,10 @@
     "web.audit.section1.code_text": "Kód aplikace eRouška je jako open-source k dispozici na serveru GitHub",
     "web.audit.section1.covid19": "Za tvorbou eRoušky stojí iniciativa COVID19CZ – zde je její <a href=\"https://www.covid19cz.cz/covid19-cz/zavazek-datove-duvery\" target=\"_blank\">Závazek datové důvěry</a>.",
 
-    "web.cookies.page_title": "Cookies",
+    "web.cookies.page_title": "Informace o cookies",
     "web.cookies.description": "Podrobnosti k používání cookies na webu aplikace eRouška.",
-    "web.cookies.title": "Cookies",
-    "web.cookies.heading": "Informace o cookies",
+    "web.cookies.title": "Informace o cookies",
+    "web.cookies.link": "Informace o cookies",
     "web.cookies.intro": "Na internetové stránce erouska.cz používáme službu Google Analytics, což je analytická služba poskytovaná společností Google Inc. („Google“). Google Analytics používá tzv. „cookies“, textové soubory, které se ukládají ve vašem počítači a umožňují analýzu vašeho používání webové stránky za účelem zlepšování služeb erouska.cz. Přitom však nedochází k vaší identifikaci. I vaše IP adresa je zpracována pouze ve zkrácené podobě, aby vás opravdu nebylo možné identifikovat.",
     "web.cookies.control_heading": "Používání cookies máte pod kontrolou",
     "web.cookies.control": "Všechny standardní prohlížeče Vám umožňují nastavit, zda se budou cookies na vašem počítači ukládat, a umožňují Vám vymazat již uložené cookies. Kromě toho můžete použití Google Analytics zakázat použitím doplňku dostupného z",

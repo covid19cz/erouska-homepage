@@ -41,7 +41,7 @@
                         <p>{{ $t('web.gdpr.your_rights.part_4') }}<a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>).</p>
 
                         <h2>{{ $t('web.gdpr.cookies.heading') }}</h2>
-                        <p><nuxt-link :to="homeUrl + 'cookies'">{{ $t('web.gdpr.cookies.link') }}</nuxt-link></p>
+                        <p>{{ $t('web.gdpr.cookies.part_1') }} <nuxt-link :to="homeUrl + 'cookies'">{{ $t('web.cookies.link') }}</nuxt-link>.</p>
                     </div>
                 </div>
             </section>
