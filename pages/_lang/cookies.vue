@@ -1,27 +1,18 @@
 <template>
     <div>
         <section class="heading" id="uvod">
-            <h1 class="heading__title">{{ $t('web.press.title') }}</h1>
+            <h1 class="heading__title">{{ $t('web.cookies.title') }}</h1>
         </section>
         <main class="main d-flex" role="main">
             <div>
                 <section class="section">
-                    <div class="section__content">
-                        <div class="section__item faq__item" v-for="link in press">
-                            <a class="link" :href="link.url" target="_blank">
-                                <div class="link__icon-container">
-                                    <div>
-                                        <img v-if="link.type == 'text'" class="link__icon" src="/img/fa/newspaper.svg" />
-                                        <img v-else-if="link.type == 'video'" class="link__icon" src="/img/fa/film.svg" />
-                                    </div>
-                                    <div></div>
-                                </div>
-                                <div class="link__text">
-                                    <span class="link__title">{{ link.name.replace(/ ([kvszaiou]) /gi, " $1\u00A0") }}</span>
-                                    <span class="link__description">{{ link.medium }}, {{ $d(new Date(link.date)) }}</span>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="section__content section__item">
+                        <p>{{ $t('web.cookies.intro') }}</p>
+                        <h2 class="h3">{{ $t('web.cookies.control_heading') }}</h2>
+                        <p>{{ $t('web.cookies.control') }} <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">tools.google.com/dlpage/gaoptout</a>.</p>
+                        <p><b>{{ $t('web.cookies.consent') }}</b></p>
+                        <p>{{ $t('web.cookies.more_information') }} <a href="https://www.google.com/analytics" target="_blank">www.google.com/analytics</a> {{
+                        $t('web.cookies.more_information_or') }} <a href="https://www.google.com" target="_blank">www.google.com</a>. {{ $t('web.cookies.anonymize') }}</p>
                     </div>
                 </section>
             </div>
@@ -33,7 +24,6 @@
 </template>
 
 <script>
-    import pressJson from '~/assets/press.json'
     import DownloadBox from '~/components/DownloadBox.vue'
 
     export default {
@@ -42,9 +32,8 @@
         },
         data() {
             return {
-                press: pressJson,
                 titleTemplate: process.env.titleTemplate,
-                pageCode: 'press'
+                pageCode: 'cookies'
             }
         },
         head() {
@@ -56,10 +45,12 @@
                     {property: 'og:description', content: this.$t('web.' + this.pageCode + '.description')},
                     {property: 'twitter:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
                     {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
-                ],
-                bodyAttrs: {
-                    class: 'page--press'
-                }
+                ]
+            }
+        },
+        computed: {
+            homeUrl() {
+                return this.$i18n.locale != this.$i18n.fallbackLocale ? "/" + this.$i18n.locale + "/" : "/";
             }
         }
     }

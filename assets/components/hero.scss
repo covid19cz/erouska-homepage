@@ -1,6 +1,9 @@
 .hero-wrapper {
     position: relative;
-    //outline: 1px solid red;
+
+    .page--error & {
+        min-height: 600px;
+    }
 }
 
 .hero {

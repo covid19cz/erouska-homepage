@@ -21,12 +21,6 @@
     </section>
 </template>
 
-<style>
-    .hero-wrapper {
-        min-height: 600px;
-    }
-</style>
-
 <script>
     export default {
         data() {
@@ -36,7 +30,10 @@
         },
         head() {
             return {
-                title: 'Error 404' + this.titleTemplate
+                title: 'Error 404' + this.titleTemplate,
+                bodyAttrs: {
+                    class: 'page--homepage page--error'
+                }
             }
         }
     }

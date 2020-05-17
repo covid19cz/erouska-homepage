@@ -98,6 +98,12 @@
                 "src": "6_deaktivace_aplikace_powerGenie",
                 "type": "pdf",
                 "size": 90
+            },
+            {
+                "id": "ensuring_bt_visibility",
+                "src": "7_zajisteni_viditelnosti_bluetooth",
+                "type": "pdf",
+                "size": 230
             }
         ]
     },

@@ -39,6 +39,9 @@
                         <p>{{ $t('web.gdpr.your_rights.part_2') }}</p>
                         <p>{{ $t('web.gdpr.your_rights.part_3') }} <a href="mailto:oia@mzcr.cz">oia@mzcr.cz</a>, {{ $t('web.gdpr.your_rights.part_5') }} <a href="https://www.mzcr.cz" target="_blank">www.mzcr.cz</a>.</p>
                         <p>{{ $t('web.gdpr.your_rights.part_4') }}<a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>).</p>
+
+                        <h2>{{ $t('web.gdpr.cookies.heading') }}</h2>
+                        <p>{{ $t('web.gdpr.cookies.part_1') }} <nuxt-link :to="homeUrl + 'cookies'">{{ $t('web.cookies.link') }}</nuxt-link>.</p>
                     </div>
                 </div>
             </section>
@@ -50,22 +53,28 @@
     export default {
         data() {
             return {
-                titleTemplate: process.env.titleTemplate
+                titleTemplate: process.env.titleTemplate,
+                pageCode: 'gdpr'
             }
         },
         head() {
             return {
-                title: this.$t('web.gdpr.page_title') + this.titleTemplate,
+                title: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate,
                 meta: [
-                    {name: 'description', content: this.$t('web.gdpr.description')},
-                    {property: 'og:title', content: this.$t('web.gdpr.page_title') + this.titleTemplate},
-                    {property: 'og:description', content: this.$t('web.gdpr.description')},
-                    {property: 'twitter:title', content: this.$t('web.gdpr.page_title') + this.titleTemplate},
-                    {property: 'twitter:description', content: this.$t('web.gdpr.description')}
+                    {name: 'description', content: this.$t('web.' + this.pageCode + '.description')},
+                    {property: 'og:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
+                    {property: 'og:description', content: this.$t('web.' + this.pageCode + '.description')},
+                    {property: 'twitter:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
+                    {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
                 ],
                 bodyAttrs: {
                     class: 'page--background-shifted'
                 }
+            }
+        },
+        computed: {
+            homeUrl() {
+                return this.$i18n.locale != this.$i18n.fallbackLocale ? "/" + this.$i18n.locale + "/" : "/";
             }
         }
     }
