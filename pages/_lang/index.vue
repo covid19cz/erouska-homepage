@@ -8,9 +8,9 @@
                     <p>{{ $t('web.index.intro.part_2') }}</p>
                 </div>
                 <ul class="hero__actions">
-                    <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
+                    <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" @click="$ga.event('Download', 'Android', 'hero')"
                            target="_blank" class="button button--blue">{{ $t('web.index.download.android') }}</a></li>
-                    <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215"
+                    <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215" @click="$ga.event('Download', 'iOS', 'hero')"
                            target="_blank" class="button button--blue">{{ $t('web.index.download.ios') }}</a></li>
                 </ul>
             </div>

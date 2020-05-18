@@ -3,9 +3,9 @@
         <img src="/img/icon.svg"/>
         <h3 class="aside__title">eRouška</h3>
         <ul class="aside__actions">
-            <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska"
+            <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" @click="$ga.event('Download', 'Android', 'box')"
                    target="_blank" class="aside__button button button--blue">{{ $t('web.index.download.android') }}</a></li>
-            <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215"
+            <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215" @click="$ga.event('Download', 'iOS', 'box')"
                    target="_blank" class="aside__button button button--blue">{{ $t('web.index.download.ios') }}</a></li>
         </ul>
     </div>
