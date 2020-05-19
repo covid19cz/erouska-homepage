@@ -7,7 +7,7 @@
             <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
             <ul class="aside__actions">
                 <li v-for="(section, s_index) in sections">
-                    <a :href="'#' + section.section_anchor" class="aside__anchor">
+                    <a :href="'#' + section.section_anchor" class="aside__anchor" @click="$ga.event('FAQ', 'Section click', section.section_anchor, 0)">
                         <div class="aside__anchor__title">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</div>
                         <span class="aside__anchor__description">{{ $t('web.faq.sections.' + section.section_id + '.description') }}</span>
                     </a>
@@ -39,7 +39,7 @@
                     <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
                     <ul class="aside__actions">
                         <li v-for="(section, s_index) in sections">
-                            <a :href="'#' + section.section_anchor" class="aside__anchor">
+                            <a :href="'#' + section.section_anchor" class="aside__anchor" @click="$ga.event('FAQ', 'Section click', section.section_anchor, 1)">
                                 <div class="aside__anchor__title">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</div>
                                 <span class="aside__anchor__description">{{ $t('web.faq.sections.' + section.section_id + '.description') }}</span>
                             </a>
@@ -101,7 +101,7 @@
             }, 100),
 
             // slide toggle from https://css-tricks.com/using-css-transitions-auto-dimensions/
-            collapseQuestion(element) {
+            collapseQuestion(element, questionId) {
                 var questionHeight = element.scrollHeight;
                 var elementTransition = element.style.transition;
                 element.style.transition = "";
@@ -113,8 +113,9 @@
                     });
                 });
                 element.setAttribute("data-collapsed", "true");
+                this.$ga.event("FAQ", "Collapse", questionId);
             },
-            expandQuestion(element) {
+            expandQuestion(element, questionId) {
                 var questionHeight = element.scrollHeight;
                 element.style.height = questionHeight + "px";
                 element.addEventListener("transitionend", function(e) {
@@ -122,24 +123,27 @@
                     element.style.height = null;
                 });
                 element.setAttribute("data-collapsed", "false");
+                this.$ga.event("FAQ", "Expand", questionId);
             },
             toggleQuestion(questionId) {
                 var question = document.querySelector("#" + questionId + " .faq__a");
                 var isCollapsed = question.getAttribute("data-collapsed") === "true";
                 if(isCollapsed) {
-                    this.expandQuestion(question);
+                    this.expandQuestion(question, questionId);
                     question.setAttribute("data-collapsed", "false");
                 } else {
-                    this.collapseQuestion(question);
+                    this.collapseQuestion(question, questionId);
                 }
             },
             expandQuestionFromUrl() {
                 if (this.$route.hash) {
-                    let question = document.querySelector(".faq__a[data-question-anchor='" + this.$route.hash.substr(1) + "']");
+                    let questionId = this.$route.hash.substr(1);
+                    let question = document.querySelector(".faq__a[data-question-anchor='" + questionId + "']");
                     if (question) {
                         question.setAttribute("data-collapsed", "false");
                     }
-                    return this.$route.hash.substr(1);
+                    this.$ga.event("FAQ", "Expand from URL", questionId);
+                    return questionId;
                 }
                 return false;
             },
