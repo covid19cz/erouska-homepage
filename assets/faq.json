@@ -8,6 +8,7 @@
             {"id": "wrong_contact_assessment", "anchor": "mylny-kontakt"},
             {"id": "does_it_make_sense_to_install_erouska", "anchor": "proc-instalovat"},
             {"id": "how_does_erouska_differ", "anchor": "jak-se-lisi"},
+            {"id": "does_erouska_use_apple_google_api", "anchor": "appe-google-api"},
             {"id": "how_is_the_data_processed", "anchor": "sber-dat"},
             {"id": "how_do_i_proceed_in_a_positive_test", "anchor": "pozitivni-test"},
             {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
