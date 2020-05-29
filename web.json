@@ -255,7 +255,10 @@
     "web.faq.questions.how_can_i_download_erouska.answer.0": "Pro stažení eRoušky pro Android postupujte prosím podle <a href=\"https://erouska.cz/navody#instalace\">PDF či video návodu</a>.",
     "web.faq.questions.what_if_phone_switches_erouska_off.question": "Co mám dělat, když mi telefon vypíná nebo uspává aplikaci?",
     "web.faq.questions.what_if_phone_switches_erouska_off.answer.0": "<a href=\"https://erouska.cz/navody#nastaveni\">Na stránce s návody najdete stručné postupy</a> pro nejpoužívanější telefony, v jejichž nastavení je třeba zakázat automatické vypínání aplikace eRouška.",
-
+    "web.faq.questions.does_erouska_use_apple_google_api.question": "Používá eRouška Apple/Google API?",
+    "web.faq.questions.does_erouska_use_apple_google_api.answer.0": "Od okamžiku, kdy společnosti Apple a Google začaly uvolňovat informace o API autorizovaným vývojářům, se na něj připravujeme. Aktuálně využití API testujeme pro Android i iOS, ale v ostrém provozu zatím není. Použití nového protokolu v eRoušce závisí na rozhodnutí MZČR a má spoustu dalších dopadů – kromě úpravy velké části kódu a uživatelského rozhraní znamená změnu celého fungování aplikace vč. komunikace s hygienickými stanicemi a epidemiology.",
+    "web.faq.questions.does_erouska_use_apple_google_api.answer.1": "Další postup se řeší také na úrovni EU, aby jednotlivé aplikace z různých zemí dokázaly mezi sebou co nejlépe komunikovat. Řešíme také otázku zpětné podpory - eRouška dnes podporuje i starší iOS 11 a Android 5.0, ale s novým API by byla k dispozici jen pro nejnovější update iOS 13.5 a Android 6.0 a vyšší.",
+    
     "web.gdpr.page_title": "Ochrana soukromí a cookies",
     "web.gdpr.description": "Podmínky zpracování osobních údajů při používání aplikace eRouška při boji proti koronaviru v Česku.",
     "web.gdpr.title": "Ochrana soukromí a cookies",
