@@ -30,7 +30,6 @@
             {"id": "internal_sms_does_not_arrive", "anchor": "sms-nechodi"},
             {"id": "internal_sms_arrives_but_error_follows", "anchor": "sms-error"},
             {"id": "what_if_phone_switches_erouska_off", "anchor": "tel-vypina"},
-            {"id": "internal_pause", "anchor": "pauza"},
             {"id": "internal_smartwatch", "anchor": "smartwatch"}
         ]
     },
