@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    //background: red;
     align-items: center;
     flex-direction: row;
     justify-content: center;
@@ -10,13 +9,6 @@
     @include respond-to('medium') {
         justify-content: flex-start;
     }
-}
-
-.header__logo-wrapper {
-    //flex: 1;
-}
-
-.header__logo {
 }
 
 .header__logo__title {
@@ -33,6 +25,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0;
 
     margin: 0;
 
@@ -48,8 +41,6 @@
 
     a {
         position: relative;
-
-        display: block;
 
         color: $color_black;
         font-size: 13px;
@@ -89,4 +80,97 @@
             }
         }
     }
+}
+
+li.header__nav__lang-switch {
+    height: 34px;
+    margin-left: 0;
+    margin: 3px 0;
+    position: relative;
+    z-index: 1;
+
+    .lang-switch {
+        align-items: center;
+        height: inherit;
+        // background-color: white;
+        padding: 0 15px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 34px;
+        cursor: pointer;
+
+        @include respond-to('large') {
+            font-size: 16px;
+        }
+
+        svg {
+            width: 10px;
+            opacity: 1;
+            margin-left: 25px;
+            flex-shrink: 0;
+        }
+
+        svg:first-of-type {
+            width: 25px;
+            opacity: 0.7;
+            margin-left: 10px;
+
+            @include respond-to('small') {
+                margin-right: 10px;
+                margin-left: 0;
+            }
+        }
+
+        a {
+            color: $color_blue;
+            display: block;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+
+            &:hover {
+                &:after {
+                    opacity: 0;
+                }
+
+                text-decoration: underline;
+            }
+
+            @include respond-to('small') {
+                width: initial;
+            }
+        }
+
+        div {
+            align-self: start;
+            border-radius: 10px;
+            background-color: white;
+            padding-right: 50px;
+            margin-right: -50px;
+            padding-left: 20px;
+            margin-left: -20px;
+
+            @include respond-to('small') {
+                padding-left: 50px;
+                margin-left: -50px;
+            }
+        }
+    }
+
+    &:hover {
+        & > div > div {
+            padding-bottom: 6px;
+        }
+
+        a {
+            height: 40px;
+            width: auto !important;
+        }
+    }
+
+    // &:hover .lang-switch__dropdown {
+    //     display: block;
+    // }
 }

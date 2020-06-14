@@ -1,5 +1,5 @@
-const locales = ['cs', 'en'];
-const localeCaptions = {cs: 'Čeština', en: 'English', vi: 'Tiếng Việt'};
+const locales = ['cs', 'en', 'vi', 'ro', 'ru'];
+const localeCaptions = {cs: 'Čeština', en: 'English', vi: 'Tiếng Việt', ro: 'Română', ru: 'Русский', uk: 'Українська', pt: 'Português', nl: 'Nederlands', sk: 'Slovenčina'};
 const pages = ['', 'audit-kod', 'caste-dotazy', 'cookies', 'gdpr', 'napsali-o-nas', 'navody', 'tym'];
 const routes = [];
 for (const locale of locales) {
@@ -11,6 +11,9 @@ for (const locale of locales) {
 
 export default {
     mode: 'universal',
+    server: {
+        host: '192.168.1.110', // default: localhost
+    },
     env: {
         titleTemplate: ' – eRouška',
         baseUrl: 'https://erouska.cz',
