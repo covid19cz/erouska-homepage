@@ -89,10 +89,10 @@ li.header__nav__lang-switch {
     position: relative;
     z-index: 1;
 
-    .lang-switch {
+    .lang-switch--inner {
         align-items: center;
         height: inherit;
-        // background-color: white;
+
         padding: 0 15px;
         font-size: 13px;
         font-weight: 700;
@@ -111,11 +111,12 @@ li.header__nav__lang-switch {
         }
 
         svg:first-of-type {
-            width: 25px;
             opacity: 0.7;
             margin-left: 10px;
+            width: 30px;
 
             @include respond-to('small') {
+                width: 25px;
                 margin-right: 10px;
                 margin-left: 0;
             }
@@ -160,7 +161,7 @@ li.header__nav__lang-switch {
     }
 
     &:hover {
-        & > div > div {
+        .lang-switch--inner div {
             padding-bottom: 6px;
         }
 
@@ -169,8 +170,4 @@ li.header__nav__lang-switch {
             width: auto !important;
         }
     }
-
-    // &:hover .lang-switch__dropdown {
-    //     display: block;
-    // }
 }
