@@ -11,9 +11,6 @@ for (const locale of locales) {
 
 export default {
     mode: 'universal',
-    server: {
-        host: '192.168.1.110', // default: localhost
-    },
     env: {
         titleTemplate: ' – eRouška',
         baseUrl: 'https://erouska.cz',
