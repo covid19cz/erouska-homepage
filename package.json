@@ -19,7 +19,7 @@
         "firebase-tools": "^8.1.1",
         "fs": "0.0.1-security",
         "gulp": "^4.0.2",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.19",
         "node-fetch": "^2.6.0",
         "node-sass": "^4.13.1",
         "nuxt": "^2.0.0",
