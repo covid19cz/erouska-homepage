@@ -29,7 +29,7 @@
     "web.faq.questions.how_do_i_proceed_in_a_positive_test.question": "Jak mám postupovat, když mi test potvrdí nákazu?",
     "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.0": "V první řadě kontaktujte hygienickou stanici, pod kterou místně spadáte, pokud vás již nekontaktovala sama. Pověřený pracovník hygieny vám poskytne informace o tom, jak dále postupovat, a případně vás požádá o souhlas s odesláním dat z aplikace. Dále byste měli zavolat svému praktickému lékaři, který vám indikuje léčbu.",
     "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.1": "<strong>V případě závažných zdravotních komplikací volejte linky 112 a 155.</strong>",
-    "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.2": "Aktuální informace se dozvíte vždy na <a href=\"https://koronavirus.mzcr.cz/\" target=\"_blank\">na webu Ministerstva zdravotnictví ČR</a>.",
+    "web.faq.questions.how_do_i_proceed_in_a_positive_test.answer.2": "Aktuální informace se dozvíte vždy <a href=\"https://koronavirus.mzcr.cz/\" target=\"_blank\">na webu Ministerstva zdravotnictví ČR</a>.",
     "web.faq.questions.will_others_know_i_have_covid.question": "Takže všichni budou vědět, že mám COVID-19?",
     "web.faq.questions.will_others_know_i_have_covid.answer.0": "Nebudou. Pověřený pracovník hygienické stanice sice kontaktuje registrované uživatele, se kterými byl nakažený podle dat z aplikace v rizikovém kontaktu, ale bez jeho souhlasu nesmí tuto informaci s nikým dalším sdílet. Nikdo se tedy nedozví, že jste to zrovna vy.",
     "web.faq.questions.what_if_somebody_does_not_admit.question": "Co když někdo nepřizná, že je nemocný?",

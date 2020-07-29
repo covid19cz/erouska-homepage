@@ -62,19 +62,13 @@
                             </nuxt-link>
                         </div>
                         <div class="footer__menu">
-                            <ul class="footer__menu__list footer__menu__list--1">
+                            <ul class="footer__menu__list">
                                 <li><a href="mailto:info@erouska.cz">info@erouska.cz</a></li>
-                                <li><a href="mailto:pr@erouska.cz">pr@erouska.cz</a></li>
-                            </ul>
-                            <ul class="footer__menu__list footer__menu__list--2">
-                                <li>
-                                    <nuxt-link :to="homeUrl + 'caste-dotazy'">{{ $t('web.faq.link') }}</nuxt-link>
-                                </li>
                                 <li>
                                     <nuxt-link :to="homeUrl + 'napsali-o-nas'">{{ $t('web.press.link') }}</nuxt-link>
                                 </li>
                             </ul>
-                            <ul class="footer__menu__list footer__menu__list--3">
+                            <ul class="footer__menu__list">
                                 <li>
                                     <nuxt-link :to="homeUrl + 'navody'">{{ $t('web.instructions.link') }}</nuxt-link>
                                 </li>
@@ -82,7 +76,7 @@
                                     <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
                                 </li>
                             </ul>
-                            <ul class="footer__menu__list footer__menu__list--4">
+                            <ul class="footer__menu__list">
                                 <li>
                                     <nuxt-link :to="homeUrl + 'gdpr'">{{ $t('web.gdpr.link') }}</nuxt-link>
                                 </li>
@@ -90,14 +84,15 @@
                                     <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>
                                 </li>
                             </ul>
+                            <ul class="footer__menu__list">
+
+                            </ul>
                         </div>
                     </div>
                     <div class="footer__col footer__col--2">
                         <ul class="footer__partners">
-                            <li><a href="https://covid19cz.cz/" target="_blank"><img
-                                src="/img/logo-covid.svg"/><br/><strong>{{ $t('web.default.smart_quarantine') }}</strong></a></li>
-                            <li><a href="https://www.mzcr.cz/" target="_blank"><img
-                                src="/img/logo-mzcr.svg"/></a></li>
+                            <li><a href="https://www.mzcr.cz/" target="_blank"><img src="/img/logo-mzcr.svg" /></a></li>
+                            <li><a href="https://nakit.cz/" target="_blank"><img src="/img/logo-nakit.svg" /></a></li>
                         </ul>
                         <ul class="footer__social">
                             <li><a href="https://www.youtube.com/channel/UCODB2mRD77lT739s_R9E4dQ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="red"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>

@@ -93,10 +93,8 @@
             text-decoration: underline;
         }
     }
-}
 
-.footer__menu__list--1 {
-    a {
+    a[href^="mailto:"] {
         color: $color_red;
 
         &:hover {
