@@ -41,8 +41,8 @@
     @include respond-to('xlarge') {
         justify-content: space-between;
 
-        width: 300px;
-        margin-left: 50px;
+        width: 340px;
+        margin-left: 10px;
     }
 }
 
@@ -115,12 +115,11 @@
     list-style: none;
 
     @include respond-to('medium') {
-        align-items: flex-end;
+        align-items: flex-start;
         flex-direction: row;
         justify-content: flex-start;
     }
     @include respond-to('xlarge') {
-        align-items: center;
         justify-content: center;
     }
 
@@ -159,6 +158,7 @@
 }
 
 .footer__social {
+    align-items: center;
     flex-direction: row;
     padding: 0 20px;
     margin-top: 40px;

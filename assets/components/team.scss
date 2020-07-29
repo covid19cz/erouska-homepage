@@ -83,3 +83,41 @@
         border-radius: 100px;
     }
 }
+
+.mzcr-nakit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        width: 100%;
+        max-width: 250px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @include respond-to('small') {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        a {
+            width: 30%;
+            max-width: 300px;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

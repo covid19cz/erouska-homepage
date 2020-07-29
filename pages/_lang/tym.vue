@@ -2,15 +2,30 @@
     <div>
         <section class="heading" id="uvod">
             <h1 class="heading__title">{{ $t('web.team.title') }}</h1>
-            <div class="heading__perex">
-                <p>{{ $t('web.team.perex') }}</p>
-            </div>
         </section>
         <main class="main" role="main">
             <section class="section section--full">
                 <div class="section__content">
+                    <div class="section__item">
+                        <i18n path="web.team.current_state.text" tag="p">
+                            <a href="https://www.mzcr.cz/" target="_blank">{{ $t('web.team.current_state.mzcr') }}</a>
+                            <a href="https://nakit.cz/" target="_blank">{{ $t('web.index.who_is_running_it.answer.nakit') }}</a>
+                        </i18n>
+                    </div>
+                    <div class="mzcr-nakit">
+                        <a href="https://www.mzcr.cz/" target="_blank"><img src="/img/logo-mzcr.svg" /></a>
+                        <a href="https://nakit.cz/" target="_blank"><img src="/img/logo-nakit.svg" /></a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--full">
+                <h2 class="section__title section__title--blue">{{ $t('web.team.volunteers') }}</h2>
+                <div class="section__content">
+                    <div class="section__item">
+                        <p>{{ $t('web.team.perex') }}</p>
+                    </div>
                     <div class="team" v-for="section in people">
-                        <h2 class="team__title">{{ $t(section.name) }}</h2>
+                        <h3 class="team__title">{{ $t(section.name) }}</h3>
                         <ul class="team__list">
                             <li v-for="person in section.people">
                                 <a :title="$t('web.team.member_link_title')" :href="person.linkedin" target="_blank"><img
@@ -25,7 +40,7 @@
                 <h2 class="section__title section__title--blue">{{ $t('web.team.thanks.header') }}</h2>
                 <div class="section__content">
                     <div class="section__item">
-                        <p><span v-html="$t('web.team.thanks.covid19cz')"></span> <a href="https://covid19cz.cz/" target="_blank">COVID19CZ</a>.</p>
+                        <p><span v-html="$t('web.team.thanks.covid19cz')"></span> <a href="https://covid19cz.cz/" target="_blank">Covid19CZ</a>.</p>
                         <p v-html="$t('web.team.thanks.s4u')"></p>
                         <p v-html="$t('web.team.thanks.kc')"></p>
                         <p v-html="$t('web.team.thanks.alza')"></p>
@@ -76,10 +91,7 @@
                     {property: 'og:description', content: this.$t('web.' + this.pageCode + '.description')},
                     {property: 'twitter:title', content: this.$t('web.' + this.pageCode + '.page_title') + this.titleTemplate},
                     {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
-                ],
-                bodyAttrs: {
-                    class: 'page--background-shifted'
-                }
+                ]
             }
         }
     }

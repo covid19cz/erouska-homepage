@@ -434,6 +434,17 @@
             {
                 "name": "Hana",
                 "surname": "Dusáková"
+            },
+            {
+                "name": "Zuzana",
+                "surname": "Benko",
+                "linkedin": "https://www.linkedin.com/in/zuzana-benko-10189451/"
+            },
+            {
+                "name": "Bára",
+                "surname": "Drbohlavová",
+                "linkedin": "https://www.linkedin.com/in/baradrb/",
+                "photoUrl": "https://erouska.cz/img/photos/baradrb.jpeg"
             }
         ]
     },
@@ -494,6 +505,10 @@
                 "surname": "Kološ",
                 "linkedin": "https://www.linkedin.com/in/vitkolos/",
                 "photoUrl": "https://erouska.cz/img/photos/vitkolos.jpeg"
+            },
+            {
+                "name": "Jaroslav",
+                "surname": "Krch"
             }
         ]
     },
@@ -580,6 +595,22 @@
                 "surname": "Šlapáková",
                 "linkedin": "https://www.linkedin.com/in/veronikalosova/",
                 "photoUrl": "https://erouska.cz/img/photos/veronikalosova.jpeg"
+            },
+            {
+                "name": "Kamila",
+                "surname": "Šulcová"
+            },
+            {
+                "name": "Zuzana",
+                "surname": "Pozlovská",
+                "linkedin": "https://www.linkedin.com/in/zuzana-pozlovsk%C3%A1-557920196/",
+                "photoUrl": "https://erouska.cz/img/photos/zuzana-pozlovsk%C3%A1-557920196.jpeg"
+            },
+            {
+                "name": "Václav",
+                "surname": "Šísl",
+                "linkedin": "https://www.linkedin.com/in/vaclav-sisl/",
+                "photoUrl": "https://erouska.cz/img/photos/vaclav-sisl.jpeg"
             }
         ]
     }
