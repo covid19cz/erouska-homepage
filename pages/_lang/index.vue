@@ -52,10 +52,6 @@
                             <p>{{ $t('web.index.basic_version_comparison.answer') }}</p>
                         </div>
                         <div class="section__item">
-                            <h3>{{ $t('web.index.why_require_phone_number.question') }}</h3>
-                            <p>{{ $t('web.index.why_require_phone_number.answer') }}</p>
-                        </div>
-                        <div class="section__item">
                             <h3>{{ $t('web.index.me_identity.question') }}</h3>
                             <p>{{ $t('web.index.me_identity.answer') }}</p>
                         </div>
