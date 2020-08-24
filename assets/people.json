@@ -290,6 +290,12 @@
                 "surname": "Svoboda",
                 "linkedin": "http://astro.cas.cz/people/jiri-svoboda",
                 "photoUrl": "https://erouska.cz/img/photos/people-svoboda.jpeg"
+            },
+            {
+                "name": "Jan",
+                "surname": "Trnavský",
+                "linkedin": "https://www.linkedin.com/in/jan-trnavsk%C3%BD-a90836145/",
+                "photoUrl": "https://erouska.cz/img/photos/jan-trnavsky.jpeg"
             }
         ]
     },
