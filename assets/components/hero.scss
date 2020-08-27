@@ -13,7 +13,7 @@
 
     @include respond-to('medium') {
         margin-bottom: 100px;
-        padding-top: 50px;
+        padding-top: 20px;
     }
     @include respond-to('xlarge') {
         max-width: 550px;
