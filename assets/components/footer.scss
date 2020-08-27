@@ -103,6 +103,12 @@
     }
 }
 
+.footer__menu__list--shifted {
+    @include respond-to('medium') {
+        margin-top: -40px;
+    }
+}
+
 .footer__partners, .footer__social {
     display: flex;
     align-items: center;

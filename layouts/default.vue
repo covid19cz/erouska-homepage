@@ -62,8 +62,11 @@
                             </nuxt-link>
                         </div>
                         <div class="footer__menu">
-                            <ul class="footer__menu__list">
+                            <ul class="footer__menu__list footer__menu__list--shifted">
                                 <li><a href="mailto:info@erouska.cz">info@erouska.cz</a></li>
+                                <li>
+                                    <nuxt-link :to="homeUrl + 'caste-dotazy'">{{ $t('web.faq.link') }}</nuxt-link>
+                                </li>
                                 <li>
                                     <nuxt-link :to="homeUrl + 'napsali-o-nas'">{{ $t('web.press.link') }}</nuxt-link>
                                 </li>
