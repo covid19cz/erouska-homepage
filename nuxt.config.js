@@ -49,7 +49,7 @@ export default {
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext'}
             ],
             script: [
-                {src: process.env.chatbotScript, async: true, defer: true, body: true}
+                // {src: process.env.chatbotScript, async: true, defer: true, body: true}
             ]
         }
     },
