@@ -73,7 +73,7 @@
                             </ul>
                             <ul class="footer__menu__list">
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'navody'">{{ $t('web.instructions.link') }}</nuxt-link>
+                                    <!-- <nuxt-link :to="homeUrl + 'navody'">{{ $t('web.instructions.link') }}</nuxt-link> -->
                                 </li>
                                 <li>
                                     <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>

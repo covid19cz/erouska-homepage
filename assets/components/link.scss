@@ -46,12 +46,6 @@
     color: $color_black;
     margin-bottom: 10px;
 
-    .page--instructions & {
-        text-decoration: underline;
-        color: $color_blue;
-        margin-bottom: 0;
-    }
-
     .link:hover & {
         text-decoration: none;
 

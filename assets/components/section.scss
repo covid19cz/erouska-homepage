@@ -20,15 +20,6 @@
                 padding-bottom: 0;
             }
         }
-
-        .page--instructions & {
-            padding-bottom: 0;
-            margin-bottom: 100px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
     }
 }
 
@@ -110,12 +101,6 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
-
-    .page--instructions & {
-        margin-top: 0;
-        margin-bottom: 25px;
-        font-size: 26px;
-    }
 }
 
 .section__item {
@@ -138,10 +123,6 @@
 
         @include respond-to('medium') {
             font-size: 20px;
-        }
-
-        .page--instructions & {
-            font-size: 24px;
         }
     }
 
@@ -182,10 +163,6 @@
     p {
         &:first-of-type {
             margin-top: 5px;
-        }
-
-        .page--instructions & {
-            margin: 28px 0;
         }
     }
 
