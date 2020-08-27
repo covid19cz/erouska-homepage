@@ -31,13 +31,6 @@
         ]
     },
     {
-        "section_id": "my_data",
-        "section_anchor": "moje-data",
-        "questions": [
-            {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"}
-        ]
-    },
-    {
         "section_id": "connection",
         "section_anchor": "pripojeni",
         "questions": [
@@ -53,6 +46,7 @@
         "section_id": "security",
         "section_anchor": "zabezpeceni",
         "questions": [
+            {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"},
             {"id": "what_if_i_lose_the_phone", "anchor": "ztratim-tel"},
             {"id": "gdpr_compliance", "anchor": "gdpr"},
             {"id": "how_do_you_protect_users_from_data_misuse", "anchor": "zneuziti-dat"},
