@@ -1,4 +1,4 @@
-const locales = ['cs', 'en'];
+const locales = ['cs'];
 const localeCaptions = {cs: 'Čeština', en: 'English', vi: 'Tiếng Việt', ro: 'Română', ru: 'Русский', uk: 'Українська', pt: 'Português', nl: 'Nederlands', sk: 'Slovenčina'};
 const pages = ['', 'audit-kod', 'caste-dotazy', 'cookies', 'gdpr', 'napsali-o-nas', 'navody', 'tym'];
 const routes = [];
