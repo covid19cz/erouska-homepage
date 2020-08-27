@@ -7,7 +7,18 @@
             <section class="section section--full">
                 <div class="section__content">
                     <div class="section__item">
-                        <p>{{ $t('web.audit.section1.perex') }} <nuxt-link :to="homeUrl + 'gdpr'">{{ $t('web.audit.section1.perex_gdpr') }}</nuxt-link>.</p>
+                        <i18n path="web.audit.section1.perex" tag="p">
+                            <nuxt-link :to="homeUrl + 'gdpr'">{{ $t('web.audit.section1.perex_gdpr') }}</nuxt-link>
+                        </i18n>
+                        <i18n path="web.audit.section1.open_source.text" tag="p">
+                            <a href="https://github.com/covid19cz/erouska-android" target="_blank">{{ $t('web.audit.section1.open_source.android') }}</a>
+                            <a href="https://github.com/covid19cz/erouska-ios" target="_blank">{{ $t('web.audit.section1.open_source.ios') }}</a>
+                            <a href="https://www.apple.com/covid19/contacttracing" target="_blank">{{ $t('web.audit.section1.open_source.apple_info') }}</a>
+                            <a href="https://www.google.com/covid19/exposurenotifications/" target="_blank">{{ $t('web.audit.section1.open_source.google_info') }}</a>
+                        </i18n>
+                    </div>
+                    <div class="section__item">
+                        <h3>{{ $t('web.audit.section1.audits_v1') }}</h3>
                         <ul>
                             <li><a href="/downloads/cvut.pdf" target="_blank">{{ $t('web.audit.section1.review_cvut_1') }}</a></li>
                             <li><a href="/downloads/cvut2.pdf" target="_blank">{{ $t('web.audit.section1.review_cvut_2') }}</a></li>
@@ -17,9 +28,6 @@
                                    target="_blank">{{ $t('web.audit.section1.review_cerge') }}</a></li>
                             <li><a href="/downloads/cvut3.pdf" target="_blank">{{ $t('web.audit.section1.review_cvut_3') }}</a></li>
                         </ul>
-                        <p>{{ $t('web.audit.section1.code_text') }} (<a href="https://github.com/covid19cz/erouska-android"
-                        target="_blank">Android</a>, <a href="https://github.com/covid19cz/erouska-ios" target="_blank">iOS</a>).</p>
-                        <p v-html="$t('web.audit.section1.covid19')"></p>
                     </div>
                 </div>
             </section>
