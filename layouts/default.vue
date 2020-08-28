@@ -81,7 +81,7 @@
                             </ul>
                             <ul class="footer__menu__list">
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'podminky-zpracovani'">{{ $t('web.gdpr.link') }}</nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'podminky-zpracovani'">{{ $t('web.conditions.link') }}</nuxt-link>
                                 </li>
                                 <li>
                                     <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>

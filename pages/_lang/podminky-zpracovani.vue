@@ -1,60 +1,93 @@
 <template>
     <div>
         <section class="heading" id="uvod">
-            <h1 class="heading__title">{{ $t('web.gdpr.title') }}</h1>
+            <h1 class="heading__title">{{ $t('web.conditions.title') }}</h1>
             <div class="heading__perex">
-                <p>{{ $t('web.gdpr.perex.part_1') }}</p>
-                <p>{{ $t('web.gdpr.perex.part_3') }}</p>
+                <p>{{ $t('web.conditions.perex.part_1') }}</p>
             </div>
         </section>
-        <main class="main" role="main">
-            <section class="section section--full">
-                <div class="section__content">
-                    <div class="section__item">
-                        <h2>{{ $t('web.gdpr.who_we_are.heading') }}</h2>
-                        <p>{{ $t('web.gdpr.who_we_are.part_1') }}</p>
-                        <p>{{ $t('web.gdpr.who_we_are.part_2') }}</p>
-                        <p>{{ $t('web.gdpr.who_we_are.part_3') }}</p>
-
-                        <h2>{{ $t('web.gdpr.what_data_we_hold') }}</h2>
-                        <h3>{{ $t('web.gdpr.data_with_consent.heading') }}</h3>
-                        <p v-html="$t('web.gdpr.data_with_consent.part_1')"></p>
-                        <p v-html="$t('web.gdpr.data_with_consent.part_2')"></p>
-                        <p>{{ $t('web.gdpr.data_with_consent.part_3') }}</p>
-                        <p>{{ $t('web.gdpr.data_with_consent.part_4') }}</p>
-                        <p>{{ $t('web.gdpr.data_with_consent.part_5') }}</p>
-                        <p>{{ $t('web.gdpr.data_with_consent.part_6') }}</p>
-                        <p>{{ $t('web.gdpr.data_with_consent.part_7') }}</p>
-                        <p><strong>{{ $t('web.gdpr.data_with_consent.part_8') }}</strong></p>
-
-                        <h3>{{ $t('web.gdpr.app_related_data.heading') }}</h3>
-                        <p v-html="$t('web.gdpr.app_related_data.part_1')"></p>
-                        <p v-html="$t('web.gdpr.app_related_data.part_2')"></p>
-
-                        <h3>{{ $t('web.gdpr.where_we_use_your_data.heading') }}</h3>
-                        <p>{{ $t('web.gdpr.where_we_use_your_data.part_1') }}</p>
-
-                        <h2>{{ $t('web.gdpr.your_rights.heading') }}</h2>
-                        <p>{{ $t('web.gdpr.your_rights.part_1') }}</p>
-                        <p>{{ $t('web.gdpr.your_rights.part_2') }}</p>
-                        <p>{{ $t('web.gdpr.your_rights.part_3') }} <a href="mailto:oia@mzcr.cz">oia@mzcr.cz</a>, {{ $t('web.gdpr.your_rights.part_5') }} <a href="https://www.mzcr.cz" target="_blank">www.mzcr.cz</a>.</p>
-                        <p>{{ $t('web.gdpr.your_rights.part_4') }}<a href="https://www.uoou.cz" target="_blank">www.uoou.cz</a>).</p>
-
-                        <h2>{{ $t('web.gdpr.cookies.heading') }}</h2>
-                        <p>{{ $t('web.gdpr.cookies.part_1') }} <nuxt-link :to="homeUrl + 'cookies'">{{ $t('web.cookies.link') }}</nuxt-link>.</p>
+        <div class="mobile-menu d-block d-xl-none">
+            <h3 class="aside__title">{{ $t('web.conditions.sections.table_of_contents') }}</h3>
+            <ul class="aside__actions">
+                <li>
+                    <a :href="'#osobni'" class="aside__anchor">
+                        <div class="aside__anchor__title">{{ $t('web.conditions.sections.personal') }}</div>
+                    </a>
+                </li>
+                <li>
+                    <a :href="'#technicke'" class="aside__anchor">
+                        <div class="aside__anchor__title">{{ $t('web.conditions.sections.technical') }}</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main class="main d-flex" role="main">
+            <div>
+                <section class="section" id="osobni">
+                    <h2
+                        class="section__title section__title--red section__title--long"
+                    >{{ localizedConditionsTitle }}</h2>
+                    <div class="section__content">
+                        <div class="section__item">
+                            <component
+                                v-for="(block, key) in localizedConditions"
+                                :key="key"
+                                :is="block.substring(0, 2).replace('0', '')"
+                                v-html="block.substring(3)"
+                            ></component>
+                        </div>
                     </div>
+                </section>
+                <section class="section" id="technicke">
+                    <h2 class="section__title section__title--blue nowrap">{{ $t('web.conditions.technical.title') }}</h2>
+                    <div class="section__content">
+                        <div class="section__item">
+                            <h3>{{ $t('web.conditions.technical.devices.title') }}</h3>
+                            <p>{{ $t('web.conditions.technical.devices.text.part_1') }}</p>
+                            <p>{{ $t('web.conditions.technical.devices.text.part_2') }}</p>
+                        </div>
+                        <div class="section__item">
+                            <h3>{{ $t('web.conditions.technical.internet.title') }}</h3>
+                            <p>{{ $t('web.conditions.technical.internet.text.part_1') }}</p>
+                        </div>
+                        <div class="section__item">
+                            <h3>{{ $t('web.conditions.technical.battery.title') }}</h3>
+                            <p>{{ $t('web.conditions.technical.battery.text.part_1') }}</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <div class="aside d-none d-xl-block">
+                    <h3 class="aside__title">{{ $t('web.faq.sections.table_of_contents') }}</h3>
+                    <ul class="aside__actions">
+                        <li>
+                            <a :href="'#osobni'" class="aside__anchor">
+                                <div class="aside__anchor__title">{{ $t('web.conditions.sections.personal') }}</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a :href="'#technicke'" class="aside__anchor">
+                                <div class="aside__anchor__title">{{ $t('web.conditions.sections.technical') }}</div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
         </main>
     </div>
 </template>
 
 <script>
+    import _ from 'lodash'
+    import conditionsJson from '~/assets/conditions.json'
+
     export default {
         data() {
             return {
+                conditions: conditionsJson,
                 titleTemplate: process.env.titleTemplate,
-                pageCode: 'gdpr'
+                pageCode: 'conditions'
             }
         },
         head() {
@@ -68,13 +101,54 @@
                     {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page--background-shifted'
+                    class: 'page--background-shifted page--faq'
                 }
             }
         },
         computed: {
             homeUrl() {
                 return this.$i18n.locale != this.$i18n.fallbackLocale ? "/" + this.$i18n.locale + "/" : "/";
+            },
+
+            localizedConditions() {
+                return this.conditions[this.$i18n.locale] || this.conditions['en'] || this.conditions[this.$i18n.fallbackLocale];
+            },
+
+            localizedConditionsTitle() {
+                return this.conditions[this.$i18n.locale + '_title'] || this.conditions['en_title'] || this.conditions[this.$i18n.fallbackLocale + '_title'];
+            }
+        },
+
+        // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
+        methods: {
+            handleScroll: _.throttle(() => {
+                let mainNavLinks = document.querySelectorAll(".aside li a");
+                let mainSections = document.querySelectorAll("main section");
+
+                let lastId;
+
+                let fromTop = window.scrollY;
+
+                mainNavLinks.forEach(link => {
+                    let section = document.querySelector(link.hash);
+
+                    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                        link.classList.add("aside__anchor--active");
+                    } else {
+                        link.classList.remove("aside__anchor--active");
+                    }
+                });
+            }, 100)
+        },
+        beforeMount () {
+            if (process.client) {
+                window.addEventListener("scroll", this.handleScroll);
+                this.handleScroll();
+            }
+        },
+        beforeDestroy () {
+            if (process.client) {
+                window.removeEventListener("scroll", this.handleScroll);
             }
         }
     }

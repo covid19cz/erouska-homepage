@@ -87,6 +87,12 @@
     }
 }
 
+.section__title--long {
+    @include respond-to('medium') {
+        font-size: 36px;
+    }
+}
+
 .section__title--blue {
     color: $color_blue;
 }
