@@ -26,14 +26,14 @@
                 <section class="section" id="osobni">
                     <h2
                         class="section__title section__title--red section__title--long"
-                    >{{ localizedConditionsTitle }}</h2>
+                    >{{ insertNbsp(localizedConditionsTitle) }}</h2>
                     <div class="section__content">
                         <div class="section__item">
                             <component
                                 v-for="(block, key) in localizedConditions"
                                 :key="key"
                                 :is="block.substring(0, 2).replace('0', '')"
-                                v-html="block.substring(3)"
+                                v-html="insertNbsp(block.substring(3))"
                             ></component>
                         </div>
                     </div>
@@ -119,8 +119,12 @@
             }
         },
 
-        // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
         methods: {
+            insertNbsp(text) {
+                return this.$i18n.locale != this.$i18n.fallbackLocale ? text : text.replace(/ ([kvszaiou]) /gi, ' $1\u00A0');
+            },
+
+            // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
             handleScroll: _.throttle(() => {
                 let mainNavLinks = document.querySelectorAll(".aside li a");
                 let mainSections = document.querySelectorAll("main section");
@@ -140,6 +144,7 @@
                 });
             }, 100)
         },
+        // another part of active navigation snippet
         beforeMount () {
             if (process.client) {
                 window.addEventListener("scroll", this.handleScroll);

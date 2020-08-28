@@ -207,7 +207,7 @@
             }
         },
 
-        // part of active navigation snippet
+        // another part of active navigation snippet
         beforeMount () {
             if (process.client) {
                 window.addEventListener("scroll", this.handleScroll);
