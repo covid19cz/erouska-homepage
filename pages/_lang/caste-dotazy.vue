@@ -15,12 +15,22 @@
             </ul>
         </div>
         <main class="main d-flex" role="main">
-            <div>
+            <div :class="{searching: searchString}">
+                <input type="text" class="search__input" v-model="searchString" :placeholder="$t('web.faq.search.placeholder')" ref="searchInput" autofocus>
+                <p v-if="searchString" class="search__paragraph">
+                    <span>{{ $t('web.faq.search.results_info') }} </span>
+                    <button class="search__button button" @click="searchString = ''">{{ $t('web.faq.search.show_all') }}</button>
+                </p>
                 <section class="section" v-for="(section, s_index) in sections" :id="section.section_anchor">
                     <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
                     <div class="section__content">
                         <div class="faq">
-                            <div v-for="(question, q_index) in section.questions" :id="question.anchor" class="section__item faq__item">
+                            <div
+                                v-for="(question, q_index) in section.questions"
+                                :id="question.anchor"
+                                class="section__item faq__item"
+                                v-show="isSearchResult(question.id)"
+                            >
                                 <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
@@ -33,6 +43,10 @@
                         </div>
                     </div>
                 </section>
+                <p v-if="searchString" class="search__paragraph">
+                    <span>{{ $t('web.faq.search.not_successful') }} </span>
+                    <button class="search__button button" @click="searchString = ''; $refs.searchInput.focus();">{{ $t('web.faq.search.again') }}</button>
+                </p>
             </div>
             <div>
                 <div class="aside d-none d-xl-block">
@@ -61,7 +75,8 @@
                 sections: sectionsJson,
                 titleTemplate: process.env.titleTemplate,
                 pageCode: 'faq',
-                baseUrl: process.env.baseUrl
+                baseUrl: process.env.baseUrl,
+                searchString: ''
             }
         },
         head() {
@@ -80,6 +95,21 @@
             }
         },
         methods: {
+            isSearchResult(questionId) {
+                let text = this.$t('web.faq.questions.' + questionId + '.question');
+                text += ' ' + this.$t('web.faq.questions.' + questionId + '.answer').join(' ').replace(/<[^>]*>?/gm, ' ');
+                text = text.toLowerCase();
+
+                // remove interpunction
+                let searchString = this.searchString.replace(/[.,!?]/g, ' ');
+                // remove double spaces, split by space, and filter out empty strings
+                let searchTerms = searchString.replace(/ +(?= )/g,'').split(" ").filter(x => x.length > 0);
+                // perform the search for each term
+                let allHits = searchTerms.every(term => text.includes(term.toLowerCase()));
+
+                return (searchString.length === 0 || allHits);
+            },
+
             // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
             handleScroll: _.throttle(() => {
                 let mainNavLinks = document.querySelectorAll(".aside li a");

@@ -12,8 +12,8 @@
             padding-top: 0;
             padding-bottom: 170px;
 
-            &:first-child {
-                margin-top: 110px;
+            &:nth-child(2) {
+                margin-top: calc(3.6em + 10px);
             }
 
             &:last-child {

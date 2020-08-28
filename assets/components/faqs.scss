@@ -64,8 +64,13 @@
         position: absolute;
         top: -30px;
         bottom: -10px;
-        left: -40px;
-        right: -40px;
+        left: 0;
+        right: 0;
+
+        @include respond-to('medium') {
+            left: -40px;
+            right: -40px;
+        }
     }
 }
 

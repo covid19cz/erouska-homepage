@@ -82,6 +82,11 @@
     "web.faq.sections.connection.description": "Bluetooth, GPS, internet",
     "web.faq.sections.security.title": "Zabezpečení dat",
     "web.faq.sections.security.description": "osobní údaje a ochrana soukromí",
+    "web.faq.search.placeholder": "Hledat…",
+    "web.faq.search.results_info": "Zobrazují se výsledky vyhledávání.",
+    "web.faq.search.show_all": "Zobrazit všechny dotazy",
+    "web.faq.search.not_successful": "Nenašli jste, co jste hledali?",
+    "web.faq.search.again": "Hledat znova",
 
     "web.faq.questions.what_to_do_on_alert.question": "Jak mám postupovat, když mi aplikace zobrazila upozornění na rizikové setkání s nakaženým uživatelem?",
     "web.faq.questions.what_to_do_on_alert.answer.0": "Pokud máte příznaky nákazy (například zvýšenou teplotu, kašel, dušnost, bolest v krku, bolest hlavy), telefonicky kontaktujte svého praktického lékaře. V případě, že je váš stav akutní a nejste schopni navštívit svého lékaře, volejte pohotovost – 155. Uvedené příznaky se mohou objevit 2 až 14 dní po rizikovém setkání.",
