@@ -16,10 +16,10 @@
         </div>
         <main class="main d-flex" role="main">
             <div :class="{searching: searchString}">
-                <input type="text" class="search__input" v-model="searchString" :placeholder="$t('web.faq.search.placeholder')" ref="searchInput" autofocus>
+                <input type="text" class="search__input" @input="debounceInput" :placeholder="$t('web.faq.search.placeholder')" ref="searchInput" autofocus>
                 <p v-if="searchString" class="search__paragraph">
                     <span>{{ $t('web.faq.search.results_info') }} </span>
-                    <button class="search__button button" @click="searchString = ''">{{ $t('web.faq.search.show_all') }}</button>
+                    <button class="search__button button" @click="$refs.searchInput.value = ''; searchString = '';">{{ $t('web.faq.search.show_all') }}</button>
                 </p>
                 <section class="section" v-for="(section, s_index) in sections" :id="section.section_anchor">
                     <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
@@ -45,7 +45,7 @@
                 </section>
                 <p v-if="searchString" class="search__paragraph">
                     <span>{{ $t('web.faq.search.not_successful') }} </span>
-                    <button class="search__button button" @click="searchString = ''; $refs.searchInput.focus();">{{ $t('web.faq.search.again') }}</button>
+                    <button class="search__button button" @click="$refs.searchInput.value = ''; searchString = ''; $refs.searchInput.focus();">{{ $t('web.faq.search.again') }}</button>
                 </p>
             </div>
             <div>
@@ -94,20 +94,34 @@
                 }
             }
         },
-        methods: {
-            isSearchResult(questionId) {
-                let text = this.$t('web.faq.questions.' + questionId + '.question');
-                text += ' ' + this.$t('web.faq.questions.' + questionId + '.answer').join(' ').replace(/<[^>]*>?/gm, ' ');
-                text = text.toLowerCase();
-
+        computed: {
+            searchTerms() {
                 // remove interpunction
                 let searchString = this.searchString.replace(/[.,!?]/g, ' ');
                 // remove double spaces, split by space, and filter out empty strings
                 let searchTerms = searchString.replace(/ +(?= )/g,'').split(" ").filter(x => x.length > 0);
-                // perform the search for each term
-                let allHits = searchTerms.every(term => text.includes(term.toLowerCase()));
+                return searchTerms;
+            }
+        },
+        methods: {
+            debounceInput: _.debounce(function(e) {
+                this.searchString = e.target.value;
+            }, 250),
 
-                return (searchString.length === 0 || allHits);
+            isSearchResult(questionId) {
+                console.log('a');
+                if (this.searchString.length === 0) {
+                    return true;
+                }
+                let text = this.$t('web.faq.questions.' + questionId + '.question') + ' '
+                    + this.$t('web.faq.questions.' + questionId + '.answer').join(' ').replace(/<[^>]*>?/gm, ' ');
+                text = text.toLowerCase();
+                let allHits = 0;
+                if (this.searchTerms) {
+                    // perform the search for each term
+                    allHits = this.searchTerms.every(term => text.includes(term.toLowerCase()));
+                }
+                return allHits;
             },
 
             // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
