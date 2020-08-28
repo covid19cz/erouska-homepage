@@ -4,12 +4,21 @@
     border-radius: 10px;
     border: 3px solid $color_blue;
     background-color: $color_white;
+    line-height: 1.5em;
+
+    &, &:focus {
+        outline: none;
+    }
 }
 
 .search__button {
     padding: 5px 10px;
     font-size: inherit;
     line-height: inherit;
+
+    &, &:focus {
+        outline: none;
+    }
 }
 
 .search__paragraph {
