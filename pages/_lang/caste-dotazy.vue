@@ -109,7 +109,6 @@
             }, 250),
 
             isSearchResult(questionId) {
-                console.log('a');
                 if (this.searchString.length === 0) {
                     return true;
                 }
