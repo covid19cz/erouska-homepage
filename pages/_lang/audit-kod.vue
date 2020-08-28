@@ -8,7 +8,7 @@
                 <div class="section__content">
                     <div class="section__item">
                         <i18n path="web.audit.section1.perex" tag="p">
-                            <nuxt-link :to="homeUrl + 'gdpr'">{{ $t('web.audit.section1.perex_gdpr') }}</nuxt-link>
+                            <nuxt-link :to="homeUrl + 'podminky-zpracovani'">{{ $t('web.audit.section1.perex_gdpr') }}</nuxt-link>
                         </i18n>
                         <i18n path="web.audit.section1.open_source.text" tag="p">
                             <a href="https://github.com/covid19cz/erouska-android" target="_blank">{{ $t('web.audit.section1.open_source.android') }}</a>

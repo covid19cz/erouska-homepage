@@ -6,15 +6,28 @@
             "npm install && npm run deploy"
         ],
         "appAssociation": "AUTO",
-        "redirects": [{
-            "source": "/faq*",
-            "destination": "/caste-dotazy",
-            "type": 302
-        }, {
-            "source": "/:lang/faq*",
-            "destination": "/:lang/caste-dotazy",
-            "type": 302
-        }],
+        "redirects": [
+            {
+                "source": "/faq*",
+                "destination": "/caste-dotazy",
+                "type": 302
+            },
+            {
+                "source": "/:lang/faq*",
+                "destination": "/:lang/caste-dotazy",
+                "type": 302
+            },
+            {
+                "source": "/gdpr*",
+                "destination": "/podminky-zpracovani",
+                "type": 301
+            },
+            {
+                "source": "/:lang/gdpr*",
+                "destination": "/:lang/podminky-zpracovani",
+                "type": 301
+            }
+        ],
         "rewrites": [
             {
                 "source": "/app/**",
