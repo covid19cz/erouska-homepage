@@ -101,7 +101,7 @@
                     {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page--background-shifted page--faq'
+                    class: 'page--background-shifted page--faq page--conditions'
                 }
             }
         },
