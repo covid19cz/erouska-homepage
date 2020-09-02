@@ -73,10 +73,10 @@
                             </ul>
                             <ul class="footer__menu__list">
                                 <li>
-                                    <!-- <nuxt-link :to="homeUrl + 'navody'">{{ $t('web.instructions.link') }}</nuxt-link> -->
+                                    <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list">
@@ -84,7 +84,7 @@
                                     <nuxt-link :to="homeUrl + 'podminky-zpracovani'">{{ $t('web.conditions.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>
+                                    <nuxt-link :to="homeUrl + 'vyhodnoceni-rizika'">{{ $t('web.evaluation.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list">
