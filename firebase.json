@@ -19,12 +19,12 @@
             },
             {
                 "source": "/gdpr*",
-                "destination": "/podminky-zpracovani",
+                "destination": "/podminky-pouzivani",
                 "type": 301
             },
             {
                 "source": "/:lang/gdpr*",
-                "destination": "/:lang/podminky-zpracovani",
+                "destination": "/:lang/podminky-pouzivani",
                 "type": 301
             }
         ],

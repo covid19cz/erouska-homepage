@@ -50,7 +50,7 @@
                         <div class="section__item">
                             <h3>{{ $t('web.index.me_identity.question') }}</h3>
                             <i18n path="web.index.me_identity.answer" tag="p">
-                                <nuxt-link :to="homeUrl + 'podminky-zpracovani'">{{ $t('web.index.me_identity.link') }}</nuxt-link>
+                                <nuxt-link :to="homeUrl + 'podminky-pouzivani'">{{ $t('web.index.me_identity.link') }}</nuxt-link>
                             </i18n>
                         </div>
                         <div class="section__item">
