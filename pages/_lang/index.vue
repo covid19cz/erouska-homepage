@@ -5,8 +5,8 @@
                 <h2 class="hero__title"><span>{{ $t('web.index.title.part_1') }}</span> <br>{{ $t('web.index.title.part_2') }}</h2>
                 <div class="hero__intro">
                     <p v-html="$t('web.index.intro.part_1')"></p>
-                    <p>{{ $t('web.index.intro.part_1_extended') }}</p>
-                    <p>{{ $t('web.index.intro.part_2') }}</p>
+                    <p v-html="$t('web.index.intro.part_1_extended')"></p>
+                    <p v-html="$t('web.index.intro.part_2')"></p>
                 </div>
                 <ul class="hero__actions">
                     <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" @click="$ga.event('Download', 'Android', 'hero')"
@@ -36,7 +36,14 @@
                         <div class="section__item">
                             <h3>{{ $t('web.index.when_you_become_infected.question') }}</h3>
                             <p>{{ $t('web.index.when_you_become_infected.answer_1') }}</p>
-                            <p><em>{{ $t('web.index.when_you_become_infected.answer_2') }}</em></p>
+                            <p>
+                                <em>{{ $t('web.index.when_you_become_infected.answer_2') }}</em>
+                                <strong>{{ $t('web.index.when_you_become_infected.answer_3') }} <a
+                                    href="/img/infografika.png"
+                                    target="_blank"
+                                    @click.prevent="openPicture($event, '/img/infografika.png')"
+                                >{{ $t('web.index.when_you_become_infected.answer_4') }}</a>.</strong>
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -92,6 +99,7 @@
 
 <script>
     import DownloadBox from '~/components/DownloadBox.vue'
+    import BigPicture from 'bigpicture'
 
     export default {
         components: {
@@ -120,6 +128,14 @@
         computed: {
             homeUrl() {
                 return this.$i18n.locale != this.$i18n.fallbackLocale ? "/" + this.$i18n.locale + "/" : "/";
+            }
+        },
+        methods: {
+            openPicture(e, url) {
+                BigPicture({
+                    el: e.target,
+                    imgSrc: url
+                })
             }
         }
     }

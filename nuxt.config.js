@@ -1,6 +1,6 @@
 const locales = ['cs'];
 const localeCaptions = {cs: 'Čeština', en: 'English', vi: 'Tiếng Việt', ro: 'Română', ru: 'Русский', uk: 'Українська', pt: 'Português', nl: 'Nederlands', sk: 'Slovenčina'};
-const pages = ['', 'audit-kod', 'caste-dotazy', 'cookies', 'podminky-pouzivani', 'napsali-o-nas', 'tym'];
+const pages = ['', 'audit-kod', 'caste-dotazy', 'cookies', 'podminky-pouzivani', 'napsali-o-nas', 'tym', 'ke-stazeni'];
 const routes = [];
 for (const locale of locales) {
     for (const page of pages) {
