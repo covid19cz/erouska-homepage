@@ -1,0 +1,33 @@
+{
+    "ready": [
+        {
+            "text": "Leták s výzvou ke stažení aplikace eRouška",
+            "src": "todo",
+            "type": "pdf",
+            "size": 0
+        },
+        {
+            "text": "Infografika – fungování aplikace eRouška",
+            "src": "todo",
+            "type": "pdf",
+            "size": 0
+        },
+        {
+            "text": "Infografika – eRouška pro byznys",
+            "src": "todo",
+            "type": "pdf",
+            "size": 0
+        },
+        {
+            "text": "Informace pro praktické lékaře",
+            "src": "todo",
+            "type": "pdf",
+            "size": 0
+        }
+    ],
+    "soon": [
+        "eRouška pro obchody",
+        "eRouška pro hotely",
+        "eRouška koncerty, divadla, sportovní centra"
+    ]
+}

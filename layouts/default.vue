@@ -129,7 +129,10 @@
                 meta: [
                     {property: 'og:url', content: this.baseUrl + this.$nuxt.$route.path},
                     {property: 'twitter:url', content: this.baseUrl + this.$nuxt.$route.path}
-                ]
+                ],
+                htmlAttrs: {
+                    lang: this.$i18n.locale
+                }
             }
         },
         computed: {

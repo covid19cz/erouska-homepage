@@ -72,9 +72,10 @@
     "web.press.link": "Napsali o nás",
 
     "web.downloads.page_title": "Ke stažení",
-    "web.downloads.description": "",
+    "web.downloads.description": "Veřejně dostupné informační a propagační materiály aplikace eRouška ke stažení a volné distribuci.",
     "web.downloads.title": "Ke stažení",
     "web.downloads.link": "Ke stažení",
+    "web.downloads.summary": "Zde naleznete veřejně dostupné informační a propagační materiály aplikace eRouška ke stažení a volné distribuci.",
 
     "web.faq.page_title": "Často kladené otázky",
     "web.faq.description": "Odpovědi na často kladené otázky ohledně koronaviru v Česku a mobilní aplikace eRouška, která je součástí systému Chytrá karanténa.",
