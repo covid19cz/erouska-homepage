@@ -16,14 +16,6 @@ const SKYAPP_PROJECT_ID = "359388";
 const SKYAPP_PUBLIC_KEY = "e0DfHgNmzrc67zt3RabZRWcYpkSISL1W";
 const SKYAPP_SECRET_KEY = process.env.SKYAPP_SECRET_KEY;
 
-const PHONE_GUIDE_FILES = [
-    "asus.html",
-    "huawei.html",
-    "lenovo.html",
-    "samsung.html",
-    "sony.html",
-    "xiaomi.html"
-];
 const DEFAULT_LANGUAGE = "cs";
 const TRANSLATED_LANGUAGES = ["en", "vi", "ru", "ro", "sk"];
 const LANGUAGE_TO_SKYAPP = {
@@ -32,15 +24,17 @@ const LANGUAGE_TO_SKYAPP = {
 const SKYAPP_TO_VUE = {
     "en-GB": "en"
 };
-const SKYAPP_TO_ANDROID = {
-    "en-GB": "en"
-};
 const FALLBACK_LANGUAGE = {
     "en": DEFAULT_LANGUAGE,
     "vi": "en",
     "ru": "en",
     "ro": "en",
     "sk": DEFAULT_LANGUAGE
+};
+const DEFAULT_RC_LANGUAGE_VALUE = "DEFAULT";
+const LANGUAGE_TO_RC = {
+    "cs": "Cz value",
+    "en": DEFAULT_RC_LANGUAGE_VALUE
 };
 
 const TRANSLATION_SOURCE_FILE = "web.json";
@@ -103,15 +97,24 @@ async function updateRemoteConfigValues(values) {
                 console.warn(`Skipping remote config key ${key} because it's empty`);
                 continue;
             }
-            let object = {
-                defaultValue: {
-                    value
+            let object;
+            if (value.hasOwnProperty('defaultValue')) {
+                object = value;
+                if (parameters[key] !== undefined) {
+                    object = parameters[key];
                 }
-            };
-            if (parameters[key] !== undefined) {
-                object = parameters[key];
+                object = value;
+            } else {
+                object = {
+                    defaultValue: {
+                        value
+                    }
+                };
+                if (parameters[key] !== undefined) {
+                    object = parameters[key];
+                }
+                object.defaultValue.value = value;
             }
-            object.defaultValue.value = value;
             parameters[key] = object;
         }
 
@@ -140,10 +143,6 @@ async function updateRemoteConfigValues(values) {
     } catch (e) {
         console.error(e);
     }
-}
-
-function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 async function translateFile(file, language = undefined, format = "HTML") {
@@ -283,10 +282,6 @@ async function buildI18nLocal() {
     await buildI18n(content);
 }
 
-function getFirebaseLanguagePostfix(language) {
-    return language !== DEFAULT_LANGUAGE ? `_${SKYAPP_TO_ANDROID[language] || language}` : "";
-}
-
 function translate(translation, language, key) {
     const strings = translation[language] || {};
     let result;
@@ -308,12 +303,15 @@ function translate(translation, language, key) {
 
 async function renderFAQToMarkdown(translation) {
     const faq = require(FAQ_STRUCTURE_FILE);
-    const values = {};
+    const values = {
+        v2_helpMarkdown: {
+            defaultValue: {},
+            conditionalValues: {}
+        }
+    };
     const referenceStructure = translation[DEFAULT_LANGUAGE];
 
     for (const language of Object.keys(translation)) {
-        const postfix = getFirebaseLanguagePostfix(language);
-        const key = `helpMarkdown${postfix}`;
         let value = "";
 
         for (const section of faq) {
@@ -338,7 +336,13 @@ async function renderFAQToMarkdown(translation) {
             }
         }
 
-        values[key] = escapeLineEndings(value);
+        if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
+            values.v2_helpMarkdown.defaultValue.value = escapeLineEndings(value);
+        } else if (LANGUAGE_TO_RC[language]) {
+            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = {
+                value: escapeLineEndings(value)
+            };
+        }
     }
     return values;
 }
@@ -360,35 +364,7 @@ async function createLegacyTeamJson() {
     fs.writeFileSync(LEGACY_TEAM_PATH, JSON.stringify(team));
 }
 
-async function renderPhoneGuidesToMarkdown() {
-    const values = {};
-    for (const file of PHONE_GUIDE_FILES) {
-        const id = path.basename(file, ".html");
-        const name = `batteryOptimization${capitalize(id)}Markdown`;
-        values[name] = escapeLineEndings(convertToMarkdown(await translateFile(file, DEFAULT_LANGUAGE)));
-        for (const language of TRANSLATED_LANGUAGES) {
-            values[`${name}_${language}`] = escapeLineEndings(convertToMarkdown(await translateFile(file, language)));
-        }
-    }
-    return values;
-}
-
-async function renderTeamsToJson(translation) {
-    const values = {};
-    const team = require(TEAM_FILE);
-    for (const language of Object.keys(translation)) {
-        const postfix = getFirebaseLanguagePostfix(language);
-        const key = `aboutJson${postfix}`;
-        const translated = translateTeam(translation, language, team);
-        values[key] = JSON.stringify(translated);
-    }
-    return values;
-}
-
 async function updateRemoteConfig() {
-    console.log("skipping remote config upload");
-    return;
-
     if (CREDENTIALS_FILE === undefined) {
         console.log("GOOGLE_APPLICATION_CREDENTIALS not set, skipping remote config upload");
         return;
@@ -399,22 +375,13 @@ async function updateRemoteConfig() {
 
     const translation = require(TRANSLATION_BUILD_FILE);
     const values = {
-        ...await renderFAQToMarkdown(translation),
-        ...await renderPhoneGuidesToMarkdown(),
-        ...await renderTeamsToJson(translation)
+        ...await renderFAQToMarkdown(translation)
     };
 
     await updateRemoteConfigValues(values);
 }
 
 async function uploadStrings() {
-     for (const file of fs.readdirSync("static/navody")) {
-      if (file.endsWith(".html")) {
-        const filePath = `static/navody/${file}`;
-        const content = fs.readFileSync(filePath).toString();
-        await sendAppForTranslation(file, content, "HTML");
-      }
-    }
     await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString());
 }
 
