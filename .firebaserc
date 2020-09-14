@@ -1,6 +1,6 @@
 {
   "projects": {
-    "dev": "erouska-key-server-dev",
+    "dev": "covid19cz",
     "prod": "daring-leaf-272223"
   }
 }
