@@ -386,6 +386,9 @@ async function renderTeamsToJson(translation) {
 }
 
 async function updateRemoteConfig() {
+    console.log("skipping remote config upload");
+    return;
+
     if (CREDENTIALS_FILE === undefined) {
         console.log("GOOGLE_APPLICATION_CREDENTIALS not set, skipping remote config upload");
         return;
