@@ -7,21 +7,24 @@
             <div>
                 <section class="section">
                     <div class="section__content">
-                        <div class="section__item faq__item" v-for="link in press">
-                            <a class="link" :href="link.url" target="_blank">
-                                <div class="link__icon-container">
-                                    <div>
-                                        <img v-if="link.type == 'text'" class="link__icon" src="/img/fa/newspaper.svg" />
-                                        <img v-else-if="link.type == 'video'" class="link__icon" src="/img/fa/film.svg" />
+                        <template v-for="(link, key) in press">
+                            <h2 v-if="link.type == 'heading'" class="section__subtitle section__subtitle__press">{{ link.name }}</h2>
+                            <div v-else class="section__item faq__item" :key="key">
+                                <a class="link" :href="link.url" target="_blank">
+                                    <div class="link__icon-container">
+                                        <div :class="{ligray: link.lang != 'cs'}">
+                                            <img v-if="link.type == 'text'" class="link__icon" src="/img/fa/newspaper.svg" />
+                                            <img v-else-if="link.type == 'video'" class="link__icon" src="/img/fa/film.svg" />
+                                        </div>
+                                        <div></div>
                                     </div>
-                                    <div></div>
-                                </div>
-                                <div class="link__text">
-                                    <span class="link__title">{{ link.name.replace(/ ([kvszaiou]) /gi, " $1\u00A0") }}</span>
-                                    <span class="link__description">{{ link.medium }}, {{ $d(new Date(link.date)) }}</span>
-                                </div>
-                            </a>
-                        </div>
+                                    <div class="link__text">
+                                        <span class="link__title">{{ link.name.replace(/ ([kvszaiou]) /gi, " $1\u00A0") }}</span>
+                                        <span class="link__description">{{ link.medium }}, {{ $d(new Date(link.date)) }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </template>
                     </div>
                 </section>
             </div>

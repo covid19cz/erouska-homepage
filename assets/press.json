@@ -1,5 +1,65 @@
 [
     {
+        "date": "2020-09-06",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška 2.0 přijde do 14 dnů. Implementuje Apple/Google protokol a nesbírá o vás data",
+        "url": "https://www.mobilmania.cz/clanky/erouska-20-prijde-do-14-dnu-implementuje-apple/google-protokol-a-nesbira-o-vas-data/sc-3-a-1349208/default.aspx"
+    },
+    {
+        "date": "2020-09-03",
+        "medium": "Mobilizujeme.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Vývojáři zdokonalili aplikaci eRouška. Najde si ale dostatek uživatelů?",
+        "url": "https://mobilizujeme.cz/clanky/vyvojari-zdokonalili-aplikaci-erouska-najde-si-ale-dostatek-uzivatelu"
+    },
+    {
+        "date": "2020-09-02",
+        "medium": "Ministerstvo zdravotnictví ČR",
+        "type": "text",
+        "lang": "cs",
+        "name": "Ministerstvo dokončilo novou verzi eRoušky, ke stažení bude v polovině září",
+        "url": "https://www.mzcr.cz/tiskove-centrum-mz/ministerstvo-dokoncilo-novou-verzi-erousky-ke-stazeni-bude-v-polovine-zari/"
+    },
+    {
+        "date": "2020-09-01",
+        "medium": "TN.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Vojtěch uvedl eRoušku 2.0. Uživatele varuje, když se setkají s nakaženými",
+        "url": "https://tn.nova.cz/clanek/vojtech-uvedl-erousku-2-0-uzivatele-varuje-kdyz-se-setkaji-s-nakazenymi.html"
+    },
+    {
+        "date": "2020-09-01",
+        "medium": "ČTK",
+        "type": "text",
+        "lang": "cs",
+        "name": "Nová eRouška bude do dvou týdnů, varuje před setkáním s nakaženým",
+        "url": "https://www.ceskenoviny.cz/zpravy/nova-erouska-bude-do-dvou-tydnu-varuje-pred-setkanim-s-nakazenym/1927659"
+    },
+    {
+        "date": "2020-09-01",
+        "medium": "Lupa.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška 2.0 má dorazit do dvou týdnů, bude fungovat i na iPhonech a méně vybíjí baterii",
+        "url": "https://www.lupa.cz/aktuality/erouska-2-0-ma-dorazit-do-dvou-tydnu-bude-fungovat-i-na-iphonech-a-mene-vybiji-baterii/"
+    },
+    {
+        "date": "2020-08-30",
+        "medium": "iROZHLAS",
+        "type": "text",
+        "lang": "cs",
+        "name": "Na nezájmu hygieniků o eRoušku už nezáleží. Její nová verze bude rozumnější, věří analytik Koubský",
+        "url": "https://www.irozhlas.cz/veda-technologie/technologie/erouska-aplikace-hygienicke-stanice-trasovani-koronavirus-covid-19-petr-koubsky_2008300810_gak"
+    },
+    {
+        "type": "heading",
+        "name": "Květen, duben"
+    },
+    {
         "date": "2020-05-04",
         "medium": "Czechcrunch",
         "type": "text",

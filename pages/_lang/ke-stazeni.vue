@@ -26,12 +26,6 @@
                             </template>
                         </div>
                         <div class="section__item">
-                            <p>Dále připravujeme letáky:</p>
-                            <ul v-for="text in downloads.soon">
-                                <li>{{ text }}</li>
-                            </ul>
-                        </div>
-                        <div class="section__item">
                             <p>Pokud v materiálech naleznete nepřesnost, tiskovou chybu nebo potřebujete jejich úpravu, napište nám prosím na <a href="mailto:info@erouska.cz">info@erouska.cz</a>.</p>
                         </div>
                     </div>
