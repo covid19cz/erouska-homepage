@@ -19,7 +19,7 @@ jobs:
           printenv GOOGLE_JSON > creds.json
           firebase deploy -P dev --non-interactive
         env:
-          GOOGLE_JSON: ${{ secrets.FIREBASE_DEV_JSON }}
+          GOOGLE_JSON: ${{ secrets.FIREBASE_DEV_2_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: creds.json
           SKYAPP_SECRET_KEY: ${{ secrets.SKYAPP_SECRET_KEY }}
           CHATBOT_URL: https://e-rouska-custom-ui-test.eu-de.mybluemix.net/chatWindow.js
