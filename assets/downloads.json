@@ -1,28 +1,52 @@
 {
     "ready": [
         {
-            "text": "Leták s výzvou ke stažení aplikace eRouška",
-            "src": "todo",
+            "text": "Leták s výzvou ke stažení aplikace eRouška (RGB)",
+            "src": "eRouska-letak-rgb",
             "type": "pdf",
-            "size": 0
+            "size": 1994
         },
         {
-            "text": "Infografika – fungování aplikace eRouška",
-            "src": "todo",
+            "text": "Leták s výzvou ke stažení aplikace eRouška (tisk, CMYK)",
+            "src": "eRouska-letak-tisk-cmyk",
             "type": "pdf",
-            "size": 0
+            "size": 2288
         },
         {
-            "text": "Infografika – eRouška pro byznys",
-            "src": "todo",
+            "text": "Leták pro praktické lékaře (RGB)",
+            "src": "eRouska-letak-lekari-rgb",
             "type": "pdf",
-            "size": 0
+            "size": 892
         },
         {
-            "text": "Informace pro praktické lékaře",
-            "src": "todo",
+            "text": "Infografika – fungování aplikace eRouška (RGB)",
+            "src": "eRouska-infografika-rgb",
             "type": "pdf",
-            "size": 0
+            "size": 1145
+        },
+        {
+            "text": "Infografika – fungování aplikace eRouška (tisk, CMYK)",
+            "src": "eRouska-infografika-tisk-cmyk",
+            "type": "pdf",
+            "size": 1275
+        },
+        {
+            "text": "Infografika – eRouška pro byznys (RGB)",
+            "src": "eRouska-byznys-rgb",
+            "type": "pdf",
+            "size": 1415
+        },
+        {
+            "text": "Infografika – eRouška pro byznys (tisk, CMYK)",
+            "src": "eRouska-byznys-tisk-cmyk",
+            "type": "pdf",
+            "size": 1533
+        },
+        {
+            "text": "Informace pro praktické lékaře (RGB)",
+            "src": "eRouska-manual-pro-lekare-rgb",
+            "type": "pdf",
+            "size": 6567
         }
     ]
 }
