@@ -32,9 +32,9 @@ export default {
                 {charset: 'utf-8'},
                 {name: 'viewport', content: 'width=device-width, initial-scale=1'},
                 {property: 'og:type', content: 'website'},
-                {property: 'og:image', content: 'https://erouska.cz/img/share-banner.png'},
+                {property: 'og:image', content: 'https://erouska.cz/img/share-banner-2.png'},
                 {property: 'twitter:card', content: 'summary_large_image'},
-                {property: 'twitter:image', content: 'https://erouska.cz/img/share-banner.png'},
+                {property: 'twitter:image', content: 'https://erouska.cz/img/share-banner-2.png'},
 
                 {name: 'msapplication-TileColor', content: '#b91d47'},
                 {name: 'theme-color', content: '#ffffff'}
