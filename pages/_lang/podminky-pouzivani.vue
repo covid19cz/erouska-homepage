@@ -121,7 +121,7 @@
 
         methods: {
             insertNbsp(text) {
-                return this.$i18n.locale != this.$i18n.fallbackLocale ? text : text.replace(/ ([kvszaiou]) /gi, ' $1\u00A0');
+                return this.$i18n.locale != this.$i18n.fallbackLocale ? text : text.replace(/(?<=\s)([kvszaiou])\s/gi, '$1\u00A0');
             },
 
             // active navigation from https://css-tricks.com/sticky-smooth-active-nav/

@@ -192,7 +192,7 @@ function insertNonBreakingSpace(data) {
         return data.map(insertNonBreakingSpace);
     }
     else if (typeof data === "string") {
-        return data.replace(/ ([kvszaiou]) /gi, " $1\u00A0"); // replace with non-breaking space
+        return data.replace(/(?<=\s)([kvszaiou])\s/gi, "$1\u00A0"); // replace with non-breaking space
     }
     else if (typeof data === 'object' && data !== null) {
         const modified = {};
@@ -339,7 +339,7 @@ async function renderFAQToMarkdown(translation) {
         value = escapeLineEndings(value);
 
         if (language === DEFAULT_LANGUAGE) {
-            value = value.replace(/ ([kvszaiou])\s/gi, " $1&nbsp;"); // replace non-breaking space
+            value = value.replace(/(?<=\s)([kvszaiou])\s/gi, "$1&nbsp;"); // replace non-breaking space
         }
 
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
