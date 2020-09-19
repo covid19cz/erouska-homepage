@@ -336,12 +336,16 @@ async function renderFAQToMarkdown(translation) {
             }
         }
 
+        value = escapeLineEndings(value);
+
+        if (language === DEFAULT_LANGUAGE) {
+            value = value.replace(/ ([kvszaiou])\s/gi, " $1&nbsp;"); // replace non-breaking space
+        }
+
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
-            values.v2_helpMarkdown.defaultValue.value = escapeLineEndings(value);
+            values.v2_helpMarkdown.defaultValue = { value };
         } else if (LANGUAGE_TO_RC[language]) {
-            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = {
-                value: escapeLineEndings(value)
-            };
+            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { value };
         }
     }
     return values;
