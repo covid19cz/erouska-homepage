@@ -339,7 +339,7 @@ async function renderFAQToMarkdown(translation) {
         value = escapeLineEndings(value);
 
         if (language === DEFAULT_LANGUAGE) {
-            value = value.replace(/(?<=\s)([kvszaiou])\s/gi, "$1&nbsp;"); // replace non-breaking space
+            // value = value.replace(/(?<=\s)([kvszaiou])\s/gi, "$1&nbsp;"); // replace non-breaking space
         }
 
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
