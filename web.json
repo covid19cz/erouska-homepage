@@ -143,10 +143,12 @@
     "web.faq.questions.internal_do_you_plan_translations.question": "Plánujete u webu a aplikace překlad do angličtiny a dalších jazyků?",
     "web.faq.questions.internal_do_you_plan_translations.answer.0": "Prioritně pracujeme na překladu aplikace i webu eRouška.cz do angličtiny a plánujeme i vietnamštinu a případně další jazyky. Zkuste aplikaci aktualizovat na nejnovější verzi.",
 
-    "web.faq.questions.on_which_phones_does_erouska_work.question": "Na jakých telefonech aplikace eRouška funguje?",
-    "web.faq.questions.on_which_phones_does_erouska_work.answer.0": "Pokud vaše mobilní zařízení není s eRouškou kompatibilní (nemá potřebné technologie/funkce), Google Play ani Apple App Store vám neumožní aplikaci nainstalovat (podporu jiných platforem neplánujeme).",
-    "web.faq.questions.on_which_phones_does_erouska_work.answer.1": "Pro instalaci aplikace eRouška potřebujete mobilní zařízení s těmito parametry:",
-    "web.faq.questions.on_which_phones_does_erouska_work.answer.2": "<ul><li>iPhone s iOS verze 13.5 a vyšší</li><li>OS Android verze 6.0 a vyšší s Google Play Services (nemá jen malé procento telefonů Huawei a některé telefony s vlastní ROM)</li><li>Bluetooth LE (Low Energy)</li></ul>",
+    "web.faq.questions.on_which_phones_does_erouska_work.question": "Na jakých telefonech aplikace eRouška funguje? Proč jsou nároky vyšší než u eRoušky 1.0?",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.0": "Pro instalaci aplikace eRouška potřebujete mobilní zařízení s těmito parametry:",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.1": "<ul><li>iPhone s iOS verze 13.5 a vyšší</li><li>OS Android verze 6.0 a vyšší s Google Play Services (nemá jen malé procento telefonů Huawei a některé telefony s vlastní ROM)</li><li>Bluetooth LE (Low Energy)</li></ul>",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.2": "Pokud vaše mobilní zařízení není s eRouškou kompatibilní (nemá potřebné technologie/funkce), Google Play ani Apple App Store vám neumožní aplikaci nainstalovat. Aplikace je dostupná pouze pro některé tablety Android. Není k dispozici pro iPad.",
+    "web.faq.questions.on_which_phones_does_erouska_work.answer.3": "Minimální požadavky na kompatibilitu stanovují společnosti Apple a Google. Vycházejí z požadavků Apple/Google Exposure Notification protokolu, který nová eRouška používá. Na Apple/Google protokol jsme se rozhodli přejít kvůli zajištění fungování eRoušky na iPhonech a kvůli umožnění přeshraniční kompatibility s podobnými aplikacemi dalších evropských států.",
+    
     "web.faq.questions.internal_alternative_store.question": "Je možné aplikaci stáhnout i jinak než z Google Play nebo Apple App Store?",
     "web.faq.questions.internal_alternative_store.answer.0": "Aplikace eRouška 2.0 používá Apple/Google protokol pro zaznamenávání setkání a přenos dat. Proto je také závislá na službách Google Play services, bez kterých nebude fungovat, a není ji tedy možné instalovat z jiných než oficiálních aplikačních obchodů. Google Play a Apple App Store spolehlivě vyfiltruje podporovaná zařízení. Kromě toho bychom nedokázali pro aplikace nainstalované neoficiální cestou zajistit stejnou úroveň podpory a aktualizací.",
     "web.faq.questions.how_much_battery_it_consumes.question": "Kolik zapnutý Bluetooth a aplikace eRouška spotřebují baterie?",
@@ -159,7 +161,7 @@
     "web.faq.questions.does_bluetooth_be_always_enabled.question": "Musím mít Bluetooth zapnutý neustále?",
     "web.faq.questions.does_bluetooth_be_always_enabled.answer.0": "Ano. Bez zapnutého Bluetooth není možné zjišťovat blízkost dalších zařízení s nainstalovanou aplikací eRouška. Tuto funkci máte zapnutou možná i nyní, například v případě, že používáte bezdrátová sluchátka, připojení v autě, chytrý náramek nebo hodinky. V nastavení Bluetooth vašeho telefonu/tabletu navíc doporučujeme povolit, aby byl <em>viditelný pro všechna zařízení</em>.",
     "web.faq.questions.why_gps_needs_to_be_enabled.question": "Proč je potřeba mít povolený přístup k GPS/polohovým/lokačním údajům?",
-    "web.faq.questions.why_gps_needs_to_be_enabled.answer.0": "Aplikace eRouška nesbírá a neukládá data z GPS, avšak operační systém Android zahrnuje pod určování polohy také některé služby Bluetooth LE (LE = low energy), který komponenty eRoušky – konkrétně Google Play Services – pro své fungování vyžadují. Proto je nutný souhlas uživatele s přístupem aplikace k polohovým údajům. V iOS tento souhlas nutný není.",
+    "web.faq.questions.why_gps_needs_to_be_enabled.answer.0": "Aplikace eRouška nesbírá a neukládá data z GPS, avšak operační systém Android zahrnuje pod určování polohy také některé služby Bluetooth LE (LE = low energy), který komponenty eRoušky – konkrétně Google Play Services – pro své fungování vyžadují. Proto je nutný souhlas uživatele s přístupem aplikace k polohovým údajům. V iOS tento souhlas nutný není. Proč v telefonu musí být zapnuté určování polohy, <a href=\"https://support.google.com/android/answer/9930236\" target=\"_blank\">vysvětluje Google zde</a>.",
     "web.faq.questions.why_bluetooth.question": "Proč aplikace používá zrovna Bluetooth? Neexistují lepší řešení jako GPS nebo triangulace od operátorů?",
     "web.faq.questions.why_bluetooth.answer.0": "Soukromí uživatelů je pro nás na prvním místě, a právě technologie Bluetooth nabízí nejvyváženější poměr přesnosti záznamu a minimálního zásahu do soukromí. Technologie GPS ani triangulace vysílačů od operátorů nemohou poskytnout potřebné údaje s požadovanou přesností. Mimo jiné i proto, že jejich funkčnost je ve vnitřních prostorách či metru velmi omezená. Aplikace eRouška potřebuje pro svoji funkci informace o tom, že došlo k setkání, na jakou vzdálenost a po jakou dobu. Není důležité, kde k setkání došlo.",
     "web.faq.questions.is_bt_secure.question": "Je Bluetooth dostatečně bezpečná technologie?",
@@ -205,6 +207,42 @@
     "web.faq.questions.where_is_the_source_code.question": "Kde najdu zdrojový kód aplikace?",
     "web.faq.questions.where_is_the_source_code.answer.0": "Aplikace eRouška je publikována s otevřeným zdrojovým kódem (<a href=\"https://github.com/covid19cz/erouska-android\" target=\"_blank\">Android</a>, <a href=\"https://github.com/covid19cz/erouska-ios\" target=\"_blank\">iOS</a>).",
 
+    "web.faq.questions.how_often_does_erouska_update.question": "Jak často si aplikace aktualizuje data z internetu?",
+    "web.faq.questions.how_often_does_erouska_update.answer.0": "Klíče (identifikátory) nakažených uživatelů si eRouška stahuje 1-2x denně. Statistiky nakažených osob na obrazovce Aktuálně se aktualizují jednou denně.",
+    
+    "web.faq.questions.where_can_i_find_data_collected.question": "Proč v nové eRoušce nevidím obrazovku Moje data? Kde najdu informace o zaznamenaných setkáních?",
+    "web.faq.questions.where_can_i_find_data_collected.answer.0": "Nová eRouška 2.0 je již postavená na Apple/Google Exposure Notification protokolu, který zajišťuje zabezpečené zaznamenávání a vyhodnocení setkání. Z bezpečnostních důvodů však neposkytuje aplikaci přímý přístup k datům o zaznamenaných setkáních.",
+    "web.faq.questions.where_can_i_find_data_collected.answer.1": "Zda aplikace funguje správně, se dozvíte na její hlavní obrazovce. Informace o zaznamenaných setkáních jsou uložená na úrovni systému. Naleznete je v Nastavení:",
+    "web.faq.questions.where_can_i_find_data_collected.answer.2": "<ul><li>Android: Nastavení -> Google -> Oznámení o možném kontaktu COVID-19</li><li>iOS: Oznámení o kontaktech s nákazou -> Stav protokolování kontaktů s nákazou -> Kontroly kontaktů</li></ul>",
+
+    "web.faq.questions.how_can_i_check_if_app_works.question": "Jak zjistím, že eRouška funguje na pozadí, když už nevidím záznamy setkání? Proč na Androidu nevidím ikonku eRoušky v záhlaví?",
+    "web.faq.questions.how_can_i_check_if_app_works.answer.0": "Notifikační ikonu jsme odstranili, protože zaznamenávání a vyhodnocování setkání již zajišťuje přímo Apple/Google protokol na úrovni operačního systému. Samotná aplikace eRouška se pak stará o stahování klíčů (identifikátorů) nakažených uživatelů 1-2x denně a nemusí běžet permanentně na pozadí.",
+    "web.faq.questions.how_can_i_check_if_app_works.answer.1": "Že je aplikace aktuální, zjistíte na hlavní obrazovce. Stažení klíčů nakažených pak můžete ověřit v Nastavení telefonu:",
+    "web.faq.questions.how_can_i_check_if_app_works.answer.2": "<ul><li>Android: Nastavení -> Google -> Oznámení o možném kontaktu COVID-19</li><li>iOS: Oznámení o kontaktech s nákazou -> Stav protokolování kontaktů s nákazou -> Kontroly kontaktů</li></ul>",
+    
+    "web.faq.questions.how_much_data_erouska_consumes.question": "Jak velký objem mobilních dat eRouška denně spotřebuje?",
+    "web.faq.questions.how_much_data_erouska_consumes.answer.0": "Podle našich měření je to při 500 nově nakažených uživatelích denně přibližně 300 kB. Tato aktualizace klíčů nakažených uživatelů se stahuje 1-2 x denně (pro porovnání načtení průměrné stránky zpravodajství vyžaduje 1-5 MB dat). Aplikace nepotřebuje nutně mobilní datové připojení. Aplikace si data sama stáhne i na Wi-Fi.",
+    
+    "web.faq.questions.why_does_data_update_time_differ.question": "Proč se liší datum a čas „Poslední aktualizace dat“ na hlavní obrazovce eRoušky a data a časy „Kontroly kontaktů“, které vidím v Nastavení telefonu?",
+    "web.faq.questions.why_does_data_update_time_differ.answer.0": "Aplikace eRouška ukazuje na hlavní obrazovce datum a čas posledního úspěšného pokusu o kontrolu nových klíčů (identifikátorů) nakažených uživatelů na serveru. V Nastavení telefonu se zobrazují pouze data a časy, kdy byly naposledy klíče staženy do telefonu.",
+    "web.faq.questions.why_does_data_update_time_differ.answer.1": "Klíče nakažených uživatelů se do telefonu stahují 1-2x denně.",
+    
+    "web.faq.questions.matched_key_count.question": "Proč v Kontrole kontaktů v Nastavení telefonu vidím „Nalezené klíče: 0“?",
+    "web.faq.questions.matched_key_count.answer.0": "Znamená to, že eRouška ve vašem telefonu ještě nevyhodnotila žádné setkání jako rizikové. Jinak řečeno stažené klíče nakažených uživatelů se neshodují se zaznamenanými klíči ve vašem zařízení.",
+    
+    "web.faq.questions.can_i_use_more_contact_tracing_apps.question": "Můžu používat eRoušku spolu s jinou oficiální trasovací aplikací jiného státu?",
+    "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.0": "V telefonu můžete mít nainstalováno více trasovacích aplikací typu eRoušky. Pokud však také používají Apple/Google Exposure Notification protokol (platí zejména pro sousední státy ČR), můžete mít v jeden okamžik aktivní pouze jednu z těchto aplikací. Ostatní je potřeba pozastavit. K zaznamenávání setkání v Apple/Google protokolu totiž může mít přístup vždy pouze jedna aplikace.",
+    "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.1": "Do budoucna nebude nutné používat více aplikací, ale bude vám stačit pouze eRouška. Evropské státy totiž připravují systém vzájemné kompatibility aplikací. Do té doby můžete v daném státě používat příslušnou místní aplikaci.",
+    
+    "web.faq.questions.last_update_delayed.question": "Datum poslední aktualizace dat na domovské obrazovce eRoušky ukazuje starší než dnešní datum.",
+    "web.faq.questions.last_update_delayed.answer.0": "Chyba se týká stahování klíčů (identifikátorů) nakažených uživatelů a postihuje pouze část uživatelů. Na její opravě pracujeme. Chyba nemá negativní vliv na zaznamenávání setkání. Dočasným řešením může být odinstalování a opětovná instalace eRoušky.",
+    
+    "web.faq.questions.activation_error.question": "Nejde aktivovat eRouška / chyba aktivace 17 (Exposure Notification API není k dispozici)",
+    "web.faq.questions.activation_error.answer.0": "Pro vyřešení chyby na Android zařízení, zkuste prosím postupovat takto:",
+    "web.faq.questions.activation_error.answer.1": "<ol><li>Zkontrolovat, zda je zapnuté: <em>Nastavení -> Google -> Oznámení o možném kontaktu (COVID-19 Exposure Notifications)</em></li><li>Odinstalovat eRoušku</li><li>Smazat mezipaměť s data Google Play Services a data z Obchodu Play (<a href=\"https://support.google.com/googleplay/answer/9037938?hl=cs\" target=\"_blank\">postup zde, viz kroky 2 a 3</a>)</li><li>Nainstalovat eRoušku a zapnout opět <em>Oznámení o možném kontaktu COVID-19</em></li></ol>",
+    "web.faq.questions.activation_error.answer.2": "Pro vyřešení chyby na iPhonu, zkuste prosím postupovat takto:",
+    "web.faq.questions.activation_error.answer.3": "<ol><li>Odinstalovat eRoušku</li><li>Pokud je <em>Nastavení -> Oznámení o kontaktech s nákazou (nebo Zaznamenávání kontaktů s COVID-19)</em> vypnuté, zapněte jej prosím přepínačem.</li><li>Nainstalovat eRoušku a opět zapnout <em>Oznámení o kontaktech s nákazou</em></li></ol>",
+    
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
     "web.evaluation.title": "Spolehlivost vyhodnocení rizikového kontaktu",
