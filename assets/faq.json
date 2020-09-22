@@ -17,7 +17,12 @@
             {"id": "will_erouska_know_i_violate_quarantine", "anchor": "poruseni-karanteny"},
             {"id": "what_is_the_role_of_erouska_in_smart_quarantine", "anchor": "role-erousky"},
             {"id": "about_api", "anchor": "o-api"},
-            {"id": "internal_do_you_plan_translations", "anchor": "preklady"}
+            {"id": "internal_do_you_plan_translations", "anchor": "preklady"},
+            {"id": "where_can_i_find_data_collected", "anchor": "zaznamenana-data"},
+            {"id": "how_can_i_check_if_app_works", "anchor": "beh-na-pozadi"},
+            {"id": "why_does_data_update_time_differ", "anchor": "rozdily-aktualizace"},
+            {"id": "matched_key_count", "anchor": "nalezene-klice"},
+            {"id": "can_i_use_more_contact_tracing_apps", "anchor": "nalezene-klice"}
         ]
     },
     {
@@ -39,7 +44,9 @@
             {"id": "why_bluetooth", "anchor": "proc-bt"},
             {"id": "is_bt_secure", "anchor": "bt-bezpeci"},
             {"id": "does_erouska_need_internet", "anchor": "potrebuje-internet"},
-            {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"}
+            {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"},
+            {"id": "how_often_does_erouska_update", "anchor": "aktualizace-dat"},
+            {"id": "how_much_data_erouska_consumes", "anchor": "objem-dat"}
         ]
     },
     {
@@ -60,5 +67,13 @@
             {"id": "data_after_the_app_is_deleted", "anchor": "data-po-smazani"},
             {"id": "where_is_the_source_code", "anchor": "zdrojovy-kod"}
         ]
-    }
+    },
+    {
+        "section_id": "known-errors",
+        "section_anchor": "zname-chyby",
+        "questions": [
+            {"id": "last_update_delayed", "anchor": "opozdena-aktualizace"},
+            {"id": "activation_error", "anchor": "chyba-aktivace"}
+        ]
+    }   
 ]
