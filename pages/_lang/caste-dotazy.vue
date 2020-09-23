@@ -25,6 +25,9 @@
                     <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
                     <div class="section__content">
                         <div class="faq">
+                            <div class="section__item faq__item section__description" v-if="section.section_description">
+                                <p v-html="$t('web.faq.sections.' + section.section_id + '.long_description')"></p>
+                            </div>
                             <div
                                 v-for="(question, q_index) in section.questions"
                                 :id="question.anchor"

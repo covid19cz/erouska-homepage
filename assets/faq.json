@@ -22,7 +22,7 @@
             {"id": "how_can_i_check_if_app_works", "anchor": "beh-na-pozadi"},
             {"id": "why_does_data_update_time_differ", "anchor": "rozdily-aktualizace"},
             {"id": "matched_key_count", "anchor": "nalezene-klice"},
-            {"id": "can_i_use_more_contact_tracing_apps", "anchor": "nalezene-klice"}
+            {"id": "can_i_use_more_contact_tracing_apps", "anchor": "vice-aplikaci"}
         ]
     },
     {
@@ -69,11 +69,12 @@
         ]
     },
     {
-        "section_id": "known-errors",
+        "section_id": "known_errors",
         "section_anchor": "zname-chyby",
+        "section_description": true,
         "questions": [
             {"id": "last_update_delayed", "anchor": "opozdena-aktualizace"},
             {"id": "activation_error", "anchor": "chyba-aktivace"}
         ]
-    }   
+    }
 ]

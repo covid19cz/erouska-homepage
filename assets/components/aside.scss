@@ -7,6 +7,9 @@
     margin-top: 140px;
     padding: 40px;
 
+    max-height: calc(100vh - 35px);
+    overflow: auto;
+
     text-align: center;
 
     border-radius: $radius;
