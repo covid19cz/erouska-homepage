@@ -34,6 +34,7 @@ const FALLBACK_LANGUAGE = {
 const DEFAULT_RC_LANGUAGE_VALUE = "DEFAULT";
 const LANGUAGE_TO_RC = {
     "cs": "Cz value",
+    "sk": "Sk value",
     "en": DEFAULT_RC_LANGUAGE_VALUE
 };
 
