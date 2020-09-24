@@ -65,31 +65,31 @@
                             <ul class="footer__menu__list">
                                 <li><a href="mailto:info@erouska.cz">info@erouska.cz</a></li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'ke-stazeni'">{{ $t('web.downloads.link') }}</nuxt-link>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'ke-stazeni'">{{ $t('web.downloads.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list">
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'caste-dotazy'">{{ $t('web.faq.link') }}</nuxt-link>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'caste-dotazy'">{{ $t('web.faq.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'napsali-o-nas'">{{ $t('web.press.link') }}</nuxt-link>
-                                </li>
-                            </ul>
-                            <ul class="footer__menu__list">
-                                <li>
-                                    <nuxt-link :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
-                                </li>
-                                <li>
-                                    <nuxt-link :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'napsali-o-nas'">{{ $t('web.press.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list">
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'podminky-pouzivani'">{{ $t('web.conditions.link') }}</nuxt-link>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'tym'">{{ $t('web.team.link') }}</nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="homeUrl + 'vyhodnoceni-rizika'">{{ $t('web.evaluation.link') }}</nuxt-link>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'audit-kod'">{{ $t('web.audit.link') }}</nuxt-link>
+                                </li>
+                            </ul>
+                            <ul class="footer__menu__list">
+                                <li>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'podminky-pouzivani'">{{ $t('web.conditions.link') }}</nuxt-link>
+                                </li>
+                                <li>
+                                    <nuxt-link @click.native="menuClick" :to="homeUrl + 'vyhodnoceni-rizika'">{{ $t('web.evaluation.link') }}</nuxt-link>
                                 </li>
                             </ul>
                             <ul class="footer__menu__list">
@@ -121,7 +121,8 @@
                 baseUrl: process.env.baseUrl,
                 locales: process.env.locales,
                 localeCaptions: process.env.localeCaptions,
-                defaultLanguage: process.env.defaultLanguage
+                defaultLanguage: process.env.defaultLanguage,
+                lastRoute: this.$route.path
             }
         },
         head() {
@@ -154,6 +155,14 @@
                     return (route ? route : '/');
                 }
                 return langPart + route;
+            },
+
+            menuClick() {
+                if (this.$route.path == this.lastRoute) {
+                    window.scrollTo(0, 0);
+                }
+
+                this.lastRoute = this.$route.path;
             }
         }
     }
