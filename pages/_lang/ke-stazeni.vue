@@ -12,15 +12,17 @@
                         </div>
                         <div class="section__item">
                             <template v-for="link in downloads.ready">
-                                <a v-if="link.type === 'pdf'" class="link" :href="'/downloads/' + link.src + '.pdf'" target="_blank">
+                                <a class="link" :href="'/downloads/' + link.src + '.' + link.type" target="_blank">
                                     <div class="link__icon-container">
                                         <div>
-                                            <img class="link__icon" src="/img/fa/file-pdf.svg" />
+                                            <img v-if="link.type === 'pdf'" class="link__icon" src="/img/fa/file-pdf.svg" />
+                                            <img v-else-if="link.type === 'svg'" class="link__icon" :src="'/downloads/' + link.src + '.' + link.type" />
                                         </div>
                                     </div>
                                     <div class="link__text">
                                         <span class="link__title">{{ link.text }}</span>
-                                        <span class="link__description">{{ 'PDF, ' + link.size + ' kB' }}</span>
+                                        <span v-if="link.type === 'pdf'" class="link__description">{{ 'PDF, ' + $n(link.size) + ' kB' }}</span>
+                                        <span v-else-if="link.type === 'svg'" class="link__description">{{ 'SVG, ' + $n(link.size) + ' kB' }}</span>
                                     </div>
                                 </a>
                             </template>

@@ -41,6 +41,24 @@
             "src": "eRouska-manual-pro-lekare-rgb",
             "type": "pdf",
             "size": 6567
+        },
+        {
+            "text": "Ikona eRoušky",
+            "src": "eRouska-icon",
+            "type": "svg",
+            "size": 5
+        },
+        {
+            "text": "Horizontální logo eRoušky",
+            "src": "eRouska-logo",
+            "type": "svg",
+            "size": 5
+        },
+        {
+            "text": "Vertikální logo eRoušky",
+            "src": "eRouska-logo-vertical",
+            "type": "svg",
+            "size": 5
         }
     ]
 }
