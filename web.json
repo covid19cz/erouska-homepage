@@ -74,7 +74,7 @@
     "web.downloads.page_title": "Ke stažení",
     "web.downloads.description": "Veřejně dostupné informační a propagační materiály aplikace eRouška ke stažení a volné distribuci.",
     "web.downloads.title": "Ke stažení",
-    "web.downloads.link": "Ke stažení",
+    "web.downloads.link": "Promo materiály",
     "web.downloads.summary": "Zde naleznete veřejně dostupné informační a propagační materiály aplikace eRouška ke stažení a volné distribuci.",
 
     "web.faq.page_title": "Často kladené otázky",
@@ -242,7 +242,7 @@
     "web.faq.questions.last_update_delayed.question": "Datum poslední aktualizace dat na domovské obrazovce eRoušky ukazuje starší než dnešní datum.",
     "web.faq.questions.last_update_delayed.answer.0": "Chyba se týká stahování klíčů (identifikátorů) nakažených uživatelů a postihuje pouze část uživatelů. Na její opravě pracujeme. Chyba nemá negativní vliv na zaznamenávání setkání. Dočasným řešením může být odinstalování a opětovná instalace eRoušky, čímž však můžete přijít o uložené záznamy setkání (zaznamenané klíče).",
     "web.faq.questions.last_update_delayed.answer.1": "Na zařízeních se systémem Android ale v současné implementaci dojde při odinstalování aplikace eRouška také ke smazání zaznamenaných klíčů (identifikátorů). Na iPhonech se zaznamenané klíče odinstalováním eRoušky nesmažou.",
-    
+
     "web.faq.questions.activation_error.question": "Nejde aktivovat eRouška / chyba aktivace 17 (Exposure Notification API není k dispozici).",
     "web.faq.questions.activation_error.answer.0": "Pro vyřešení chyby na Android zařízení, zkuste prosím postupovat takto:",
     "web.faq.questions.activation_error.answer.1": "<ol><li>Zkontrolujte, zda je zapnuté: <em>Nastavení → Google → Oznámení o možném kontaktu (COVID-19 Exposure Notifications)</em>.</li><li>Odinstalujte eRoušku.</li><li>Smažte mezipaměť a data u Google Play Services a Obchodu Play (<a href=\"https://support.google.com/googleplay/answer/9037938\" target=\"_blank\">postup zde, viz kroky 2 a 3</a>).</li><li>Nainstalujte eRoušku a zapněte opět <em>Oznámení o možném kontaktu COVID-19</em>.</li></ol>",
