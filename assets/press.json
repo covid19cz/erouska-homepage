@@ -1,5 +1,117 @@
 [
     {
+        "date": "2020-09-30",
+        "medium": "Lupa.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Jak eRouška 2.0 chrání soukromí uživatelů?",
+        "url": "https://www.lupa.cz/clanky/jak-erouska-2-0-chrani-soukromi-uzivatelu/"
+    },
+    {
+        "date": "2020-09-29",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Kontakt s nakaženým. Hláška v mobilu zmátla uživatele eRoušky 2.0",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/kontakt-s-nakazenym-hlaska-v-mobilu-zmatla-uzivatele-erousky-2-0-40337607"
+    },
+    {
+        "date": "2020-09-28",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška opravdu neukáže čas kontaktu s nakaženým. Nenechte se zmást nešťastným překladem ani notifikací",
+        "url": "https://www.mobilmania.cz/clanky/erouska-opravdu-neukaze-cas-kontaktu-s-nakazenym-nenechte-se-zmast-nestastnym-prekladem-ani-notifikaci/sc-3-a-1349435/default.aspx"
+    },
+    {
+        "date": "2020-09-28",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikace eRouška 2.0 už překonala půl milionu instalací",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/aplikace-erouska-2-0-prekonala-pul-milionu-instalaci-uzivatele-varuje-o-setkani-s-nakazenym-40337604"
+    },
+    {
+        "date": "2020-09-25",
+        "medium": "iROZHLAS",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikaci eRouška si stáhlo 455 tisíc lidí. ‚Naše zkušenost s ní je nulová,‘ říká mluvčí hygieny",
+        "url": "https://www.irozhlas.cz/zpravy-domov/hygienici-erouska-rouska-aplikace-chytra-karantena_2009250727_sto"
+    },
+    {
+        "date": "2020-09-23",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "KOMENTÁŘ: Za kostku cukru se necháme sledovat, ale z eRoušky se panikaří",
+        "url": "https://www.idnes.cz/technet/technika/erouska-2-koronavirus-covid-sledovani-google-facebook-soukromi-vernostni-programy.A200923_115321_tec_technika_nyv"
+    },
+    {
+        "date": "2020-09-19",
+        "medium": "Jan Březina – Alisczech",
+        "type": "video",
+        "lang": "cs",
+        "name": "Proč si nainstalovat eRoušku 2",
+        "url": "https://www.alisczech.cz/2020/09/19/proc-si-nainstalovat-erousku-2-4k-alisczech-vol-362/"
+    },
+    {
+        "date": "2020-09-18",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška 2.0: Co to je, jak se používá a proč se nemusíte bát o soukromí",
+        "url": "https://www.mobilmania.cz/clanky/erouska-20-co-to-je-jak-se-pouziva-a-proc-se-nemusite-bat-o-soukromi/sc-3-a-1349357/default.aspx"
+    },
+    {
+        "date": "2020-09-18",
+        "medium": "DVTV.cz",
+        "type": "video",
+        "lang": "cs",
+        "name": "Na šmírování je Facebook, eRouška se o vás nedozví nic, určitě má smysl, říká Profant",
+        "url": "https://video.aktualne.cz/dvtv/na-smirovani-je-facebook-erouska-se-o-vas-nedozvi-nic-urcite/r~5803c7baf9d211ea9c800cc47ab5f122/"
+    },
+    {
+        "date": "2020-09-17",
+        "medium": "Letem světem Applem",
+        "type": "text",
+        "lang": "cs",
+        "name": "Vyšla eRouška 2 pro iPhony: Co je v ní nového a jak ji nainstalovat",
+        "url": "https://www.letemsvetemapplem.eu/2020/09/17/erouska-2/"
+    },
+    {
+        "date": "2020-09-17",
+        "medium": "Lupa.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikace eRouška 2.0 už je stažení pro Android i pro iOS",
+        "url": "https://www.lupa.cz/aktuality/aplikace-erouska-2-0-bude-ke-stazeni-od-patku-schvalil-ji-apple-i-google/"
+    },
+    {
+        "date": "2020-09-17",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Vyzkoušeli jsme eRoušku 2. Podívejte se, jak může pomoci i vám",
+        "url": "https://www.idnes.cz/technet/software/erouska-2-1-je-ke-stazeni-nainstalujte-chytra-karantena.A200917_184607_software_nyv"
+    },
+    {
+        "date": "2020-09-17",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Nová verze eRoušky je venku. Upozorní uživatele na kontakt s nakaženým",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/nova-verze-erousky-je-venku-upozorni-uzivatele-na-kontakt-s-nakazenym-40336704"
+    },
+    {
+        "date": "2020-09-06",
+        "medium": "iDNES.cz",
+        "type": "video",
+        "lang": "cs",
+        "name": "Rozstřel: Při 60% pokrytí populace by mohla eRouška ochránit lidi sama",
+        "url": "https://www.idnes.cz/technet/software/erouska-rozstrel-covid-19-koronavirus-aplikace-ios-android.A200918_234440_software_vse"
+    },
+    {
         "date": "2020-09-06",
         "medium": "MobilMania.cz",
         "type": "text",
