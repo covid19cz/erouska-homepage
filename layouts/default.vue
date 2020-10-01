@@ -16,7 +16,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6.703" height="11.252" viewDownloadBox="0 0 6.703 11.252"><path d="M.148-7.049a.422.422,0,0,0,0,.6l5.161,5.2a.422.422,0,0,0,.6,0l.7-.7a.422.422,0,0,0,0-.6L2.436-6.75,6.6-10.958a.422.422,0,0,0,0-.6l-.7-.7a.422.422,0,0,0-.6,0Z" transform="translate(-0.024 12.376)" fill="#222"/></svg>
                                 <span>{{ $t('web.default.back_to_main_page') }}</span>
                             </nuxt-link>
-                            <nuxt-link v-else :to="homeUrl + 'caste-dotazy'" @click.native="$ga.event('Link', 'FAQ', 'home-top')">
+                            <nuxt-link v-else :to="homeUrl + 'caste-dotazy'">
                                 <span>{{ $t('web.faq.link') }}</span>
                             </nuxt-link>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="22" viewBox="0 0 11.90625 5.8208335" style="opacity:0.2"><g transform="translate(0,-291.17914)"><circle style="fill:#228ed5" cx="5.953125" cy="294.08957" r="0.66145831"/></g></svg>
