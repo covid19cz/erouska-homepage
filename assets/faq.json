@@ -1,28 +1,34 @@
 [
     {
+        "section_id": "general",
+        "section_anchor": "obecne",
+        "questions": [
+            {"id": "what_to_do_on_alert", "anchor": "upozorneni"},
+            {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},
+            {"id": "will_erouska_know_i_violate_quarantine", "anchor": "poruseni-karanteny"},
+            {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
+            {"id": "what_if_somebody_does_not_admit", "anchor": "neprizna-se"},
+            {"id": "does_it_make_sense_to_install_erouska", "anchor": "proc-instalovat"},
+            {"id": "how_do_i_proceed_in_a_positive_test", "anchor": "pozitivni-test"},
+            {"id": "how_does_erouska_differ", "anchor": "jak-se-lisi"},
+            {"id": "what_is_the_role_of_erouska_in_smart_quarantine", "anchor": "role-erousky"},
+            {"id": "internal_do_you_plan_translations", "anchor": "preklady"}
+        ]
+    },
+    
+    {
         "section_id": "functioning",
         "section_anchor": "fungovani",
         "questions": [
-            {"id": "what_to_do_on_alert", "anchor": "upozorneni"},
-            {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
-            {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},
+            {"id": "how_is_the_data_processed", "anchor": "sber-dat"}
             {"id": "wrong_contact_assessment", "anchor": "mylny-kontakt"},
-            {"id": "does_it_make_sense_to_install_erouska", "anchor": "proc-instalovat"},
-            {"id": "how_does_erouska_differ", "anchor": "jak-se-lisi"},
-            {"id": "does_erouska_use_apple_google_api", "anchor": "apple-google-api"},
-            {"id": "how_is_the_data_processed", "anchor": "sber-dat"},
-            {"id": "how_do_i_proceed_in_a_positive_test", "anchor": "pozitivni-test"},
             {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
-            {"id": "what_if_somebody_does_not_admit", "anchor": "neprizna-se"},
-            {"id": "will_erouska_know_i_violate_quarantine", "anchor": "poruseni-karanteny"},
-            {"id": "what_is_the_role_of_erouska_in_smart_quarantine", "anchor": "role-erousky"},
+            {"id": "does_erouska_use_apple_google_api", "anchor": "apple-google-api"},
             {"id": "about_api", "anchor": "o-api"},
-            {"id": "internal_do_you_plan_translations", "anchor": "preklady"},
             {"id": "where_can_i_find_data_collected", "anchor": "zaznamenana-data"},
             {"id": "how_can_i_check_if_app_works", "anchor": "beh-na-pozadi"},
             {"id": "why_does_data_update_time_differ", "anchor": "rozdily-aktualizace"},
-            {"id": "matched_key_count", "anchor": "nalezene-klice"},
-            {"id": "can_i_use_more_contact_tracing_apps", "anchor": "vice-aplikaci"}
+            {"id": "matched_key_count", "anchor": "nalezene-klice"}
         ]
     },
     {
@@ -31,7 +37,7 @@
         "questions": [
             {"id": "on_which_phones_does_erouska_work", "anchor": "kde-funguje"},
             {"id": "internal_alternative_store", "anchor": "alternativni-store"},
-            {"id": "how_much_battery_it_consumes", "anchor": "spotreba"},
+            {"id": "can_i_use_more_contact_tracing_apps", "anchor": "vice-aplikaci"},
             {"id": "internal_smartwatch", "anchor": "smartwatch"}
         ]
     },
@@ -40,13 +46,14 @@
         "section_anchor": "pripojeni",
         "questions": [
             {"id": "does_bluetooth_be_always_enabled", "anchor": "neustale-bt"},
-            {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"},
-            {"id": "why_bluetooth", "anchor": "proc-bt"},
-            {"id": "is_bt_secure", "anchor": "bt-bezpeci"},
             {"id": "does_erouska_need_internet", "anchor": "potrebuje-internet"},
-            {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"},
             {"id": "how_often_does_erouska_update", "anchor": "aktualizace-dat"},
-            {"id": "how_much_data_erouska_consumes", "anchor": "objem-dat"}
+            {"id": "how_much_data_erouska_consumes", "anchor": "objem-dat"},
+            {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"},
+            {"id": "how_much_battery_it_consumes", "anchor": "spotreba"},
+            {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"},
+            {"id": "why_bluetooth", "anchor": "proc-bt"},
+            {"id": "is_bt_secure", "anchor": "bt-bezpeci"}    
         ]
     },
     {
@@ -74,7 +81,11 @@
         "section_description": true,
         "questions": [
             {"id": "last_update_delayed", "anchor": "opozdena-aktualizace"},
-            {"id": "activation_error", "anchor": "chyba-aktivace"}
+            {"id": "activation_error", "anchor": "chyba-aktivace"},
+            {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
+            {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
+            {"id": "EN_mistaken", "anchor": "oznameni-systemu"},
+            {"id": "multiple_risk_encounters_without_notification", "anchor": "vice-setkani"}  
         ]
     }
 ]
