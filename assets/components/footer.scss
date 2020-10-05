@@ -88,8 +88,12 @@
         color: $color_blue;
         text-decoration: none;
 
-        &:hover {
+        &:hover, &.nuxt-link-exact-active {
             color: $color_blue_dark;
+
+        }
+
+        &:hover {
             text-decoration: underline;
         }
     }
