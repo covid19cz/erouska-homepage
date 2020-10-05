@@ -146,7 +146,7 @@
     "web.faq.questions.about_api.answer.1": "Konkrétně jde například o rozhraní, které daným aplikacím (u nás eRouška) umožňuje spolehlivě přistupovat k systémovým prostředkům Android a Apple zařízení za účelem zaznamenání setkání – zejména využívat Bluetooth LE pro ověření kontaktu a běžet na pozadí bez potřeby dalších nastavení aplikace nebo operačního systému. Šifrovaný komunikační protokol pak zajišťuje zabezpečený přenos aktuálních seznamů identifikátorů nakažených uživatelů mezi trasovacími aplikacemi za účelem vyhodnocení rizikových setkání a včasného zobrazení notifikace.",
     "web.faq.questions.about_api.answer.2": "Bližší informace naleznete přímo na webových stránkách společností <a href=\"https://www.apple.com/covid19/contacttracing\" target=\"_blank\">Apple (anglicky)</a> a <a href=\"https://www.google.com/covid19/exposurenotifications/\" target=\"_blank\">Google (česky)</a>.",
     "web.faq.questions.internal_do_you_plan_translations.question": "Plánujete u webu a aplikace překlad do angličtiny a dalších jazyků?",
-    "web.faq.questions.internal_do_you_plan_translations.answer.0": "Prioritně pracujeme na překladu aplikace i webu eRouška.cz do angličtiny a plánujeme i vietnamštinu a případně další jazyky. Zkuste aplikaci aktualizovat na nejnovější verzi.",
+    "web.faq.questions.internal_do_you_plan_translations.answer.0": "Prioritně pracujeme na překladu aplikace i webu eRouska.cz do angličtiny a plánujeme i vietnamštinu a případně další jazyky. Zkuste aplikaci aktualizovat na nejnovější verzi.",
 
     "web.faq.questions.on_which_phones_does_erouska_work.question": "Na jakých telefonech aplikace eRouška funguje? Proč jsou nároky vyšší než u eRoušky 1.0?",
     "web.faq.questions.on_which_phones_does_erouska_work.answer.0": "Pro instalaci aplikace eRouška potřebujete mobilní zařízení s těmito parametry:",
@@ -328,5 +328,25 @@
     "web.cookies.consent": "Pokud máte ukládání cookies povolené a navštívíte naše webové stránky, souhlasíte tím s používáním cookies podle těchto informací a podle podmínek Google Analytics.",
     "web.cookies.more_information": "Bližší informace o podmínkách používání a ochraně dat v souvislosti se službou Google Analytics naleznete na adrese",
     "web.cookies.more_information_or": "nebo",
-    "web.cookies.anonymize": "Tato webová stránka používá rozšíření „anonymizeIp“, takže jsou IP adresy zpracovávány pouze zkráceně, aby se vyloučila přímá osobní identifikovatelnost."
+    "web.cookies.anonymize": "Tato webová stránka používá rozšíření „anonymizeIp“, takže jsou IP adresy zpracovávány pouze zkráceně, aby se vyloučila přímá osobní identifikovatelnost.",
+
+    "web.sms.page_title": "SMS kód",
+    "web.sms.description": "Informace o SMS kódu pro uživatele aplikace eRouška.",
+    "web.sms.title": "SMS kód",
+    "web.sms.perex": "Odeslání dat z eRoušky pro varování ostatních uživatelů v případě pozitivního testu na COVID-19",
+    "web.sms.questions.where.question": "Kam mám zadat ověřovací kód z SMS?",
+    "web.sms.questions.where.answer.text_1": "Pokud máte pozitivní test na COVID-19, používáte eRoušku a přišla vám SMS s kódem, postupujte prosím takto:",
+    "web.sms.questions.where.answer.steps": "<li>Ověřte prosím v Obchodě Play nebo App Store, že máte nejaktuálnější verzi aplikace eRouška (2.1.588 pro Android, 2.1.2 pro iOS).</li><li>Otevřete aplikaci eRouška, klikněte vpravo nahoře na tři tečky a na <em>Odeslat data</em>.</li><li>Do pole <em>Ověřovací kód (povinné)</em> vložte kód z SMS a klikněte na tlačítko <em>Ověřit a odeslat data</em>.</li>",
+    "web.sms.questions.where.answer.text_2": "Tímto se z vaší eRoušky odešlou klíče (identifikátory) do eRoušek všech ostatních uživatelů. V jejich eRouškách se vyhodnotí, jestli s vámi byli v rizikovém kontaktu, a případně se jim zobrazí anonymní varování s doporučením dalšího postupu.",
+    "web.sms.questions.expiration.question": "Jak dlouho kód z SMS platí?",
+    "web.sms.questions.expiration.answer": "Platnost SMS kódu je 2 hodiny od odeslání. Pokud kód nestihnete zadat v termínu nebo jej zadáte špatně, kontaktujte nás prosím na <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>.",
+    "web.sms.questions.why.question": "Proč mi přišla SMS s kódem eRoušky, když aplikaci nepoužívám?",
+    "web.sms.questions.why.answer": "SMS s kódem se odesílá automaticky všem lidem, kteří při testování na COVID-19 uvedli své telefonní číslo pro zaslání výsledků. Nová eRouška nezpracovává osobní údaje, nezná ani telefonní čísla uživatelů, proto nedokážeme rozlišit, jestli osoba používá, nebo nepoužívá eRoušku.",
+    "web.sms.questions.error.question": "Kód z SMS mi nejde zadat, eRouška po zadání kódu zobrazuje chybu.",
+    "web.sms.questions.error.answer": "Pokud vám aplikace po zadání kódu zobrazuje chybu, kontaktujte nás prosím na <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>.",
+    "web.sms.questions.identity.question": "Může se někdo dozvědět mou identitu, když data odešlu?",
+    "web.sms.questions.identity.answer.text_1": "Nemůže. Aplikace eRouška 2.0 <a href=\"https://erouska.cz/podminky-pouzivani\" target=\"_blank\">nepracuje s žádnými osobními údaji</a>. Odesílají se z ní pouze anonymní klíče (identifikátory), které si každá eRouška kvůli ochraně soukromí generuje každých 10–20 minut.",
+    "web.sms.questions.identity.answer.text_2": "Aplikace si pak tyto identifikátory porovná s těmi, které potkala, a vyhodnotí si rizikovost setkání. Mezi aplikacemi a servery se identifikátory přenášejí výhradně po chráněném komunikačním protokolu, který společně vyvinuly společnosti Apple a Google. K identifikátorům nemají přístup ani uživatelé, ani vývojáři, ani jiná autorita.",
+    "web.sms.questions.install.question": "Chci si nainstalovat eRoušku, ale nevím kde.",
+    "web.sms.questions.install.answer": "Aplikace eRouška je dostupná <a href=\"https://play.google.com/store/apps/details?id=cz.covid19cz.erouska\" target=\"_blank\">v Obchodě Play pro Android</a> a <a href=\"https://apps.apple.com/cz/app/erou%C5%A1ka/id1509210215\" target=\"_blank\">v App Store pro iPhone</a>."
 }
