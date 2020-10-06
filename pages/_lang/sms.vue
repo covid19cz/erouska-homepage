@@ -22,30 +22,22 @@
                                 <li v-html="$t('web.sms.questions.where.answer.steps.step_3')"></li>
                             </ol>
                             <p>{{ $t('web.sms.questions.where.answer.text_2') }}</p>
-                            <a
-                                href="/img/sms/SMS_Android.png"
-                                target="_blank"
-                                @click.prevent="openGallery($event, 0)"
-                                class="bpgallery"
-                                data-bp="/img/sms/SMS_Android.webp"
-                            >
-                                <picture>
-                                    <source srcset="/img/sms/SMS_Android.webp" type="image/webp">
-                                    <img src="/img/sms/SMS_Android.png" alt="Android">
-                                </picture>
-                            </a>
-                            <a
-                                href="/img/sms/SMS_iOS.png"
-                                target="_blank"
-                                @click.prevent="openGallery($event, 1)"
-                                class="bpgallery"
-                                data-bp="/img/sms/SMS_iOS.webp"
-                            >
-                                <picture>
-                                    <source srcset="/img/sms/SMS_iOS.webp" type="image/webp">
-                                    <img src="/img/sms/SMS_iOS.png" alt="iOS">
-                                </picture>
-                            </a>
+                            <p class="d-flex" v-for="(platform, key) in ['android', 'ios']" :key="key">
+                                <a
+                                    v-for="(number, key2) in [1, 2, 3, 4, 5]"
+                                    :key="key2"
+                                    :href="'/img/sms/' + platform + '/' + number + '.png'"
+                                    target="_blank"
+                                    @click.prevent="openGallery($event, ((number - 1) + (5 * key)))"
+                                    class="bpgallery"
+                                    :data-bp="'/img/sms/' + platform + '/' + number + '.webp'"
+                                >
+                                    <picture>
+                                        <source :srcset="'/img/sms/' + platform + '/' + number + '.webp'" type="image/webp">
+                                        <img :src="'/img/sms/' + platform + '/' + number + '.png'">
+                                    </picture>
+                                </a>
+                            </p>
                         </div>
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.expiration.question') }}</h2>
