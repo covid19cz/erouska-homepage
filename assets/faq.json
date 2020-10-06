@@ -36,6 +36,7 @@
         "section_anchor": "nastaveni",
         "questions": [
             {"id": "on_which_phones_does_erouska_work", "anchor": "kde-funguje"},
+            {"id": "instalation_of_eRouska", "anchor": "instalace-erousky"},
             {"id": "internal_alternative_store", "anchor": "alternativni-store"},
             {"id": "can_i_use_more_contact_tracing_apps", "anchor": "vice-aplikaci"},
             {"id": "internal_smartwatch", "anchor": "smartwatch"}
