@@ -342,9 +342,9 @@
     "web.cookies.more_information_or": "nebo",
     "web.cookies.anonymize": "Tato webová stránka používá rozšíření „anonymizeIp“, takže jsou IP adresy zpracovávány pouze zkráceně, aby se vyloučila přímá osobní identifikovatelnost.",
 
-    "web.sms.page_title": "SMS kód",
-    "web.sms.description": "Informace o SMS kódu pro uživatele aplikace eRouška.",
-    "web.sms.title": "SMS kód",
+    "web.sms.page_title": "Ověření pomocí SMS kódu",
+    "web.sms.description": "Informace o ověření pomocí SMS kódu pro uživatele aplikace eRouška.",
+    "web.sms.title": "Ověření pomocí SMS kódu",
     "web.sms.perex": "Odeslání dat z eRoušky pro varování ostatních uživatelů v případě pozitivního testu na COVID-19",
     "web.sms.questions.where.question": "Kam mám zadat ověřovací kód z SMS?",
     "web.sms.questions.where.answer.text_1": "Pokud máte pozitivní test na COVID-19, používáte eRoušku a přišla vám SMS s kódem, postupujte prosím takto:",
