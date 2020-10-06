@@ -15,23 +15,43 @@
                             <p>{{ $t('web.sms.questions.where.answer.text_1') }}</p>
                             <ol v-html="$t('web.sms.questions.where.answer.steps')"></ol>
                             <p>{{ $t('web.sms.questions.where.answer.text_2') }}</p>
+                            <!-- <picture>
+                                <source srcset="/img/sms/SMS_Android.webp" type="image/webp">
+                                <img src="/img/sms/SMS_Android.png" alt="Android">
+                            </picture> -->
+                            <picture>
+                                <source srcset="/img/sms/SMS_iOS.webp" type="image/webp">
+                                <img src="/img/sms/SMS_iOS.png" alt="iOS">
+                            </picture>
                         </div>
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.expiration.question') }}</h2>
                             <p v-html="$t('web.sms.questions.expiration.answer')"></p>
                         </div>
                         <div class="section__item">
+                            <h2 class="h3">{{ $t('web.sms.questions.error.question') }}</h2>
+                            <p v-html="$t('web.sms.questions.error.answer')"></p>
+                        </div>
+                        <div class="section__item">
+                            <h2 class="h3">{{ $t('web.sms.questions.multiple.question') }}</h2>
+                            <p>{{ $t('web.sms.questions.multiple.answer') }}</p>
+                        </div>
+                        <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.why.question') }}</h2>
                             <p>{{ $t('web.sms.questions.why.answer') }}</p>
                         </div>
                         <div class="section__item">
-                            <h2 class="h3">{{ $t('web.sms.questions.error.question') }}</h2>
-                            <p v-html="$t('web.sms.questions.error.answer')"></p>
+                            <h2 class="h3">{{ $t('web.sms.questions.who.question') }}</h2>
+                            <p>{{ $t('web.sms.questions.who.answer') }}</p>
                         </div>
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.identity.question') }}</h2>
                             <p v-html="$t('web.sms.questions.identity.answer.text_1')"></p>
                             <p>{{ $t('web.sms.questions.identity.answer.text_2') }}</p>
+                        </div>
+                        <div class="section__item">
+                            <h2 class="h3">{{ $t('web.sms.questions.anonymous.question') }}</h2>
+                            <p>{{ $t('web.sms.questions.anonymous.answer') }}</p>
                         </div>
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.install.question') }}</h2>
