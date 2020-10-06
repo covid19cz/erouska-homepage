@@ -117,7 +117,7 @@
                     {property: 'twitter:description', content: this.$t('web.' + this.pageCode + '.description')}
                 ],
                 bodyAttrs: {
-                    class: 'page--background-shifted'
+                    class: 'page--background-shifted page--sms'
                 }
             }
         },
