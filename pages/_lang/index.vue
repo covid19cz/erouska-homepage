@@ -47,6 +47,18 @@
                         </div>
                     </div>
                 </section>
+                <section class="section video">
+                    <div class="section__content">
+                        <iframe
+                            width="100%"
+                            height="400"
+                            src="https://www.youtube-nocookie.com/embed/MIxb-DWwJ4A?rel=0"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </section>
                 <section class="section section--last">
                     <h2 class="section__title section__title--red" id="erouska-chrani-vase-soukromi">{{ $t('web.index.your_privacy.part_1') }} <br>{{ $t('web.index.your_privacy.part_2') }}</h2>
                     <div class="section__content">

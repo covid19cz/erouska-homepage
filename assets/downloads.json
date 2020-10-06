@@ -59,6 +59,18 @@
             "src": "eRouska-logo-vertical",
             "type": "svg",
             "size": 5
+        },
+        {
+            "text": "Jak funguje eRouška",
+            "src": "https://youtu.be/MIxb-DWwJ4A",
+            "type": "youtube",
+            "size": "1:04"
+        },
+        {
+            "text": "Jak funguje eRouška (30 s)",
+            "src": "https://youtu.be/fttKVx0iXjI",
+            "type": "youtube",
+            "size": "0:27"
         }
     ]
 }
