@@ -22,7 +22,10 @@
                                 <li v-html="$t('web.sms.questions.where.answer.steps.step_3')"></li>
                             </ol>
                             <p>{{ $t('web.sms.questions.where.answer.text_2') }}</p>
-                            <p class="d-flex" v-for="(platform, key) in ['android', 'ios']" :key="key">
+                        </div>
+                        <div class="section__item" v-for="(platform, key) in ['android', 'ios']" :key="key">
+                            <h3>{{ $t('web.sms.questions.where.answer.photos.title.' + key) }}</h3>
+                            <p class="d-flex">
                                 <a
                                     v-for="(number, key2) in [1, 2, 3, 4, 5]"
                                     :key="key2"
