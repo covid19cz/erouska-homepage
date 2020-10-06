@@ -33,12 +33,9 @@
                                     target="_blank"
                                     @click.prevent="openGallery($event, ((number - 1) + (5 * key)))"
                                     class="bpgallery"
-                                    :data-bp="'/img/sms/' + platform + '/' + number + '.webp'"
+                                    :data-bp="'/img/sms/' + platform + '/' + number + '.png'"
                                 >
-                                    <picture>
-                                        <source :srcset="'/img/sms/' + platform + '/' + number + '.webp'" type="image/webp">
-                                        <img :src="'/img/sms/' + platform + '/' + number + '.png'">
-                                    </picture>
+                                    <img :src="'/img/sms/' + platform + '/' + number + '.png'">
                                 </a>
                             </p>
                         </div>
