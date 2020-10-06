@@ -264,7 +264,7 @@
 
     "web.faq.questions.instalation_of_eRouska.question": "Odkud si můžu eRoušku bezpečně stáhnout a nainstalovat?",
     "web.faq.questions.instalation_of_eRouska.answer.0": "Aplikace eRouška je dostupná pouze <a href=\"https://play.google.com/store/apps/details?id=cz.covid19cz.erouska\" target=\"_blank\">v Obchodě Play pro Android</a> a <a href=\"https://apps.apple.com/cz/app/erou%C5%A1ka/id1509210215\" target=\"_blank\">v App Store pro iPhone</a>.",
-    
+
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
     "web.evaluation.title": "Spolehlivost vyhodnocení rizikového kontaktu",
@@ -346,9 +346,9 @@
     "web.cookies.more_information_or": "nebo",
     "web.cookies.anonymize": "Tato webová stránka používá rozšíření „anonymizeIp“, takže jsou IP adresy zpracovávány pouze zkráceně, aby se vyloučila přímá osobní identifikovatelnost.",
 
-    "web.sms.page_title": "SMS kód",
-    "web.sms.description": "Informace o SMS kódu pro uživatele aplikace eRouška.",
-    "web.sms.title": "SMS kód",
+    "web.sms.page_title": "Ověření pomocí SMS kódu",
+    "web.sms.description": "Informace o ověření pomocí SMS kódu pro uživatele aplikace eRouška.",
+    "web.sms.title": "Ověření pomocí SMS kódu",
     "web.sms.perex": "Odeslání dat z eRoušky pro varování ostatních uživatelů v případě pozitivního testu na COVID-19",
     "web.sms.questions.where.question": "Kam mám zadat ověřovací kód z SMS?",
     "web.sms.questions.where.answer.text_1": "Pokud máte pozitivní test na COVID-19, používáte eRoušku a přišla vám SMS s kódem, postupujte prosím takto:",
