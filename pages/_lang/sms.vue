@@ -13,16 +13,39 @@
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.where.question') }}</h2>
                             <p>{{ $t('web.sms.questions.where.answer.text_1') }}</p>
-                            <ol v-html="$t('web.sms.questions.where.answer.steps')"></ol>
+                            <ol>
+                                <i18n path="web.sms.questions.where.answer.steps.step_1" tag="li">
+                                    <span>{{ versions.android }}</span>
+                                    <span>{{ versions.ios }}</span>
+                                </i18n>
+                                <li v-html="$t('web.sms.questions.where.answer.steps.step_2')"></li>
+                                <li v-html="$t('web.sms.questions.where.answer.steps.step_3')"></li>
+                            </ol>
                             <p>{{ $t('web.sms.questions.where.answer.text_2') }}</p>
-                            <!-- <picture>
-                                <source srcset="/img/sms/SMS_Android.webp" type="image/webp">
-                                <img src="/img/sms/SMS_Android.png" alt="Android">
-                            </picture> -->
-                            <picture>
-                                <source srcset="/img/sms/SMS_iOS.webp" type="image/webp">
-                                <img src="/img/sms/SMS_iOS.png" alt="iOS">
-                            </picture>
+                            <a
+                                href="/img/sms/SMS_Android.png"
+                                target="_blank"
+                                @click.prevent="openGallery($event, 0)"
+                                class="bpgallery"
+                                data-bp="/img/sms/SMS_Android.webp"
+                            >
+                                <picture>
+                                    <source srcset="/img/sms/SMS_Android.webp" type="image/webp">
+                                    <img src="/img/sms/SMS_Android.png" alt="Android">
+                                </picture>
+                            </a>
+                            <a
+                                href="/img/sms/SMS_iOS.png"
+                                target="_blank"
+                                @click.prevent="openGallery($event, 1)"
+                                class="bpgallery"
+                                data-bp="/img/sms/SMS_iOS.webp"
+                            >
+                                <picture>
+                                    <source srcset="/img/sms/SMS_iOS.webp" type="image/webp">
+                                    <img src="/img/sms/SMS_iOS.png" alt="iOS">
+                                </picture>
+                            </a>
                         </div>
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.expiration.question') }}</h2>
@@ -69,6 +92,8 @@
 
 <script>
     import DownloadBox from '~/components/DownloadBox.vue'
+    import versionsJson from '~/assets/versions.json'
+    import BigPicture from 'bigpicture'
 
     export default {
         components: {
@@ -76,6 +101,7 @@
         },
         data() {
             return {
+                versions: versionsJson,
                 titleTemplate: process.env.titleTemplate,
                 pageCode: 'sms'
             }
@@ -98,6 +124,15 @@
         computed: {
             homeUrl() {
                 return this.$i18n.locale != this.$i18n.fallbackLocale ? "/" + this.$i18n.locale + "/" : "/";
+            }
+        },
+        methods: {
+            openGallery(e, position) {
+                BigPicture({
+                    el: e.target,
+                    gallery: document.querySelectorAll('.bpgallery'),
+                    position
+                })
             }
         }
     }
