@@ -12,7 +12,8 @@
                         </div>
                         <div class="section__item">
                             <template v-for="link in downloads.ready">
-                                <a class="link" :href="[link.type == 'youtube' ? link.src : '/downloads/' + link.src + '.' + link.type]" target="_blank">
+                                <h2 class="h3 h3--margin-top" v-if="link.type == 'heading'">{{ link.text }}</h2>
+                                <a class="link" v-else :href="[link.type == 'youtube' ? link.src : '/downloads/' + link.src + '.' + link.type]" target="_blank">
                                     <div class="link__icon-container">
                                         <div>
                                             <img v-if="link.type === 'pdf'" class="link__icon" src="/img/fa/file-pdf.svg" />
