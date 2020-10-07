@@ -18,13 +18,13 @@
                                             <img v-if="link.type === 'pdf'" class="link__icon" src="/img/fa/file-pdf.svg" />
                                             <img v-else-if="link.type === 'svg'" class="link__icon" :src="'/downloads/' + link.src + '.' + link.type" />
                                             <img v-else-if="link.type === 'youtube'" class="link__icon" src="/img/fa/youtube.svg" />
+                                            <img v-else-if="link.type === 'zip'" class="link__icon" src="/img/fa/file-archive.svg" />
                                         </div>
                                     </div>
                                     <div class="link__text">
                                         <span class="link__title">{{ link.text }}</span>
-                                        <span v-if="link.type === 'pdf'" class="link__description">{{ 'PDF, ' + $n(link.size) + ' kB' }}</span>
-                                        <span v-else-if="link.type === 'svg'" class="link__description">{{ 'SVG, ' + $n(link.size) + ' kB' }}</span>
-                                        <span v-else-if="link.type === 'youtube'" class="link__description">{{ 'YouTube, ' + link.size }}</span>
+                                        <span v-if="link.type === 'youtube'" class="link__description">{{ 'YouTube, ' + link.size }}</span>
+                                        <span v-else class="link__description">{{ link.type.toUpperCase() + ', ' + $n(link.size) + ' kB' }}</span>
                                     </div>
                                 </a>
                             </template>

@@ -71,6 +71,18 @@
             "src": "https://youtu.be/fttKVx0iXjI",
             "type": "youtube",
             "size": "0:27"
+        },
+        {
+            "text": "Jak funguje eRouška (30 s, titulky)",
+            "src": "https://youtu.be/SMzXpI0U2yE",
+            "type": "youtube",
+            "size": "0:27"
+        },
+        {
+            "text": "Bannery",
+            "src": "eRouska-bannery",
+            "type": "zip",
+            "size": "164"
         }
     ]
 }
