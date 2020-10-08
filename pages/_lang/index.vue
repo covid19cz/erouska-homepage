@@ -52,7 +52,7 @@
                         <iframe
                             width="100%"
                             height="400"
-                            src="https://www.youtube-nocookie.com/embed/MIxb-DWwJ4A?rel=0"
+                            src="https://www.youtube-nocookie.com/embed/lr1Wmx0hJls?rel=0"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
