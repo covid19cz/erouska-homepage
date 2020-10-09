@@ -4,6 +4,7 @@
         "section_anchor": "obecne",
         "questions": [
             {"id": "what_to_do_on_alert", "anchor": "upozorneni"},
+            {"id": "what_to_do_on_sms", "anchor": "sms"},
             {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},
             {"id": "will_erouska_know_i_violate_quarantine", "anchor": "poruseni-karanteny"},
             {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
@@ -28,7 +29,9 @@
             {"id": "where_can_i_find_data_collected", "anchor": "zaznamenana-data"},
             {"id": "how_can_i_check_if_app_works", "anchor": "beh-na-pozadi"},
             {"id": "why_does_data_update_time_differ", "anchor": "rozdily-aktualizace"},
-            {"id": "matched_key_count", "anchor": "nalezene-klice"}
+            {"id": "matched_key_count", "anchor": "nalezene-klice"},
+            {"id": "why_notification_after_few_days", "anchor": "zpozdena-notifikace"},
+            {"id": "one_notification_more_encounters", "anchor": "vice-setkani"}
         ]
     },
     {
