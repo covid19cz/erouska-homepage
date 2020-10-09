@@ -81,7 +81,6 @@
         "section_anchor": "zname-chyby",
         "section_description": true,
         "questions": [
-            {"id": "last_update_delayed", "anchor": "opozdena-aktualizace"},
             {"id": "activation_error", "anchor": "chyba-aktivace"},
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
