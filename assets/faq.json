@@ -32,7 +32,7 @@
             {"id": "why_does_data_update_time_differ", "anchor": "rozdily-aktualizace"},
             {"id": "why_I_cant_see_time_of_encounters", "anchor": "cas-setkani"},
             {"id": "matched_key_count", "anchor": "nalezene-klice"},
-            {"id": "keys_found_in_settings_and_erouska_difference", "anchor": "nalezene-klice-vs-erouska"}
+            {"id": "keys_found_in_settings_and_erouska_difference", "anchor": "nalezene-klice-vs-erouska"},
             {"id": "why_notification_after_few_days", "anchor": "zpozdena-notifikace"},
             {"id": "one_notification_more_encounters", "anchor": "vice-setkani"}
         ]
