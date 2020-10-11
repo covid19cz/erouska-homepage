@@ -44,6 +44,8 @@ const FAQ_STRUCTURE_FILE = "./assets/faq.json";
 const TEAM_FILE = "./assets/people.json";
 const LEGACY_TEAM_PATH = "static/peoples.json";
 
+var currentVueKey = "";
+
 function escapeLineEndings(content) {
     return content.replace(/\n/g, "\\n");
 }
@@ -193,7 +195,13 @@ function insertNonBreakingSpace(data) {
         return data.map(insertNonBreakingSpace);
     }
     else if (typeof data === "string") {
-        return data.replace(/(?<=\s)([kvszaiou])\s/gi, "$1\u00A0"); // replace with non-breaking space
+        if (currentVueKey === "cs" || currentVueKey === "sk") {
+            return data.replace(/(?<=\s)([kvszaiou])\s/gi, "$1\u00A0"); // replace with non-breaking space
+        } else if (currentVueKey === "en") {
+            return data.replace(/(?<=\s)(a|an|the)\s/gi, "$1\u00A0"); // replace with non-breaking space
+        } else {
+            return data;
+        }
     }
     else if (typeof data === 'object' && data !== null) {
         const modified = {};
@@ -237,9 +245,8 @@ async function buildI18n(content) {
         const vueKey = SKYAPP_TO_VUE[key] || key;
         let currentTranslation = content[key];
         normalizeTranslations(content, key);
-        if (vueKey === DEFAULT_LANGUAGE) {
-            currentTranslation = insertNonBreakingSpace(currentTranslation);
-        }
+        currentVueKey = vueKey;
+        currentTranslation = insertNonBreakingSpace(currentTranslation);
         vueTranslation[vueKey] = dot.object(currentTranslation);
     }
 
@@ -338,10 +345,6 @@ async function renderFAQToMarkdown(translation) {
         }
 
         value = escapeLineEndings(value);
-
-        if (language === DEFAULT_LANGUAGE) {
-            // value = value.replace(/(?<=\s)([kvszaiou])\s/gi, "$1&nbsp;"); // replace non-breaking space
-        }
 
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
             values.v2_helpMarkdown.defaultValue = { value };
