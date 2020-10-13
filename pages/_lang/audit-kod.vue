@@ -18,6 +18,12 @@
                         </i18n>
                     </div>
                     <div class="section__item">
+                        <h3>{{ $t('web.audit.section1.audits_v2') }}</h3>
+                        <ul>
+                            <li><a href="/downloads/cvut4.pdf" target="_blank">{{ $t('web.audit.section1.review_cvut_4') }}</a></li>
+                        </ul>
+                    </div>
+                    <div class="section__item">
                         <h3>{{ $t('web.audit.section1.audits_v1') }}</h3>
                         <ul>
                             <li><a href="/downloads/cvut.pdf" target="_blank">{{ $t('web.audit.section1.review_cvut_1') }}</a></li>
