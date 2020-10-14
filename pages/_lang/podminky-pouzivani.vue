@@ -121,8 +121,13 @@
 
         methods: {
             insertNbsp(text) {
-                // return this.$i18n.locale != this.$i18n.fallbackLocale ? text : text.replace(/(?<=\s)([kvszaiou])\s/gi, '$1\u00A0');
-                return text;
+                if (this.$i18n.locale === 'cs' || this.$i18n.locale === 'sk') {
+                    return text.replace(/\s([kvszaiou])\s/gi, ' $1\u00A0');
+                } else if (this.$i18n.locale === 'en') {
+                    return text.replace(/\s(a|an|the)\s/gi, ' $1\u00A0');
+                } else {
+                    return text;
+                }
             },
 
             // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
