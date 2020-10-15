@@ -90,8 +90,7 @@
             {"id": "activation_error", "anchor": "chyba-aktivace"},
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
-            {"id": "EN_mistaken", "anchor": "oznameni-systemu"},
-            {"id": "multiple_risk_encounters_without_notification", "anchor": "vice-setkani"}
+            {"id": "EN_mistaken", "anchor": "oznameni-systemu"}
         ]
     }
 ]
