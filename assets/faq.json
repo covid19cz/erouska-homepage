@@ -22,6 +22,7 @@
         "section_anchor": "fungovani",
         "questions": [
             {"id": "how_is_the_data_processed", "anchor": "sber-dat"},
+            {"id": "risk_encounter_parameters", "anchor": "vyhodnoceni-setkani"},
             {"id": "wrong_contact_assessment", "anchor": "mylny-kontakt"},
             {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
             {"id": "sms_delivery_time", "anchor": "kdy-prijde-sms"},
