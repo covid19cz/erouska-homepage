@@ -276,6 +276,9 @@
     "web.faq.questions.one_notification_more_encounters.question": "Zobrazilo se mi upozornění/notifikace na rizikové setkání s nakaženým, ale na obrazovce Rizikové setkání vidím více záznamů s různými daty.",
     "web.faq.questions.one_notification_more_encounters.answer.0": "Aplikace eRouška vyhodnocuje riziková setkání až poté, co uživatel s pozitivním testem na COVID-19 odešle data ze své eRoušky. Pokud se vám zobrazila pouze jedna notifikace na rizikový kontakt, ale v Rizikových setkáních máte více záznamů, znamená to, že jste se s nakaženým setkali v předchozích dnech vícekrát nebo že v jeden den odeslalo data ze svého telefonu více nakažených uživatelů současně.",
 
+    "web.faq.questions.risk_encounter_parameters.question": "Jak eRouška vyhodnocuje rizikové setkání?",
+    "web.faq.questions.risk_encounter_parameters.answer.0": "eRouška vyhodnotí setkání za rizikové pouze v případě, že proběhne ve vzdálenosti kratší než 2 metry a po dobu alespoň 15 minut. Tyto parametry vycházejí z doporučení epidemiologů. Vzdálenost mezi uživateli, respektive jejich telefony se odhaduje na základě útlumu signálu Bluetooth.",
+    
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
     "web.evaluation.title": "Spolehlivost vyhodnocení rizikového kontaktu",
