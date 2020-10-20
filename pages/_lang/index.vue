@@ -42,13 +42,13 @@
                                     target="_blank"
                                     @click.prevent="openPicture($event, '/img/other/rizikove_setkani_ios.png')"
                                 >iOS</a>
-                                <nuxt-link :to="homeUrl + 'caste-dotazy#upozorneni'">{{ $t('web.index.you_have_meet_infected.link_1') }}</nuxt-link>
+                                <a target="_blank" :href="homeUrl + 'caste-dotazy#upozorneni'">{{ $t('web.index.you_have_meet_infected.link_1') }}</a>
                             </i18n>
                         </div>
                         <div class="section__item">
                             <h3>{{ $t('web.index.when_you_become_infected.question') }}</h3>
                             <i18n path="web.index.when_you_become_infected.answer_1" tag="p">
-                                <nuxt-link :to="homeUrl + 'caste-dotazy#vyhodnoceni-setkani'">{{ $t('web.index.when_you_become_infected.link_1') }}</nuxt-link>
+                                <a target="_blank" :href="homeUrl + 'caste-dotazy#vyhodnoceni-setkani'">{{ $t('web.index.when_you_become_infected.link_1') }}</a>
                             </i18n>
                             <p>
                                 <em>{{ $t('web.index.when_you_become_infected.answer_2') }}</em>
