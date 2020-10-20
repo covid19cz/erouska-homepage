@@ -18,6 +18,7 @@ const SKYAPP_SECRET_KEY = process.env.SKYAPP_SECRET_KEY;
 
 const DEFAULT_LANGUAGE = "cs";
 const TRANSLATED_LANGUAGES = ["en", "vi", "ru", "ro", "sk"];
+const TRANSLATED_LANGS_WEB = ["en", "sk"]
 const LANGUAGE_TO_SKYAPP = {
     "en": "en-GB"
 };
@@ -190,27 +191,33 @@ async function sendAppForTranslation(fileName, content, format="HIERARCHICAL_JSO
     }
 }
 
-function insertNonBreakingSpace(data) {
+function processByRegex(data) {
     if (Array.isArray(data)) {
-        return data.map(insertNonBreakingSpace);
+        return data.map(processByRegex);
     }
     else if (typeof data === "string") {
+        // non-breaking space (nbsp)
         if (currentVueKey === "cs" || currentVueKey === "sk") {
-            return data.replace(/(?<=\s)([kvszaiou])\s/gi, "$1\u00A0"); // replace with non-breaking space
+            data = data.replace(/(?<=\s)([kvszaiou])\s/gi, "$1\u00A0");
         } else if (currentVueKey === "en") {
-            return data.replace(/(?<=\s)(a|an|the)\s/gi, "$1\u00A0"); // replace with non-breaking space
-        } else {
-            return data;
+            data = data.replace(/(?<=\s)(a|an|the)\s/gi, "$1\u00A0");
         }
+
+        // localize erouska.cz links
+        if (TRANSLATED_LANGS_WEB.includes(currentVueKey)) {
+            data = data.replace(/(https:\/\/erouska.cz\/)(\w\w\/)?/gi, "$1" + currentVueKey + "/");
+        }
+
+        return data;
     }
     else if (typeof data === 'object' && data !== null) {
         const modified = {};
         for (const key of Object.keys(data)) {
-            modified[key] = insertNonBreakingSpace(data[key]);
+            modified[key] = processByRegex(data[key]);
         }
         return modified;
     }
-    throw Error(`Wrong type supplied to insertNonBreakingSpace: ${typeof data}, ${data}`);
+    throw Error(`Wrong type supplied to processByRegex: ${typeof data}, ${data}`);
 }
 
 function getFallback(language) {
@@ -246,7 +253,7 @@ async function buildI18n(content) {
         let currentTranslation = content[key];
         normalizeTranslations(content, key);
         currentVueKey = vueKey;
-        currentTranslation = insertNonBreakingSpace(currentTranslation);
+        currentTranslation = processByRegex(currentTranslation);
         vueTranslation[vueKey] = dot.object(currentTranslation);
     }
 
