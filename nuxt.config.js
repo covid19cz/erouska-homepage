@@ -10,7 +10,6 @@ for (const locale of locales) {
 }
 
 export default {
-    mode: 'universal',
     env: {
         titleTemplate: ' – eRouška',
         baseUrl: 'https://erouska.cz',
