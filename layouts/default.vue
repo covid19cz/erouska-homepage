@@ -114,10 +114,13 @@
                 </div>
             </div>
         </footer>
+        <div class="arrow-top" :class="{'arrow-top--visible': arrowTopVisible}" @click="scrollTop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg></div>
     </div>
 </template>
 
 <script>
+    import _ from 'lodash'
+
     export default {
         data() {
             return {
@@ -125,7 +128,8 @@
                 locales: process.env.locales,
                 localeCaptions: process.env.localeCaptions,
                 defaultLanguage: process.env.defaultLanguage,
-                lastRoute: this.$route.path
+                lastRoute: this.$route.path,
+                scrolledDown: false
             }
         },
         head() {
@@ -148,6 +152,9 @@
             },
             isHome() {
                 return this.$nuxt.$route.path.replace(/\//g, "") === this.homeUrl.replace(/\//g, "");
+            },
+            arrowTopVisible() {
+                return this.scrolledDown;
             }
         },
         methods: {
@@ -162,10 +169,29 @@
 
             menuClick() {
                 if (this.$route.path == this.lastRoute) {
-                    window.scrollTo(0, 0);
+                    this.scrollTop();
                 }
 
                 this.lastRoute = this.$route.path;
+            },
+
+            scrollTop() {
+                window.scrollTo(0, 0);
+            },
+
+            handleScroll: _.throttle(function() {
+                this.scrolledDown = window.scrollY > 500;
+            }, 100)
+        },
+        beforeMount () {
+            if (process.client) {
+                window.addEventListener("scroll", this.handleScroll);
+                this.handleScroll();
+            }
+        },
+        beforeDestroy () {
+            if (process.client) {
+                window.removeEventListener("scroll", this.handleScroll);
             }
         }
     }
