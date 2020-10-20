@@ -31,11 +31,25 @@
                     <div class="section__content">
                         <div class="section__item">
                             <h3>{{ $t('web.index.you_have_meet_infected.question') }}</h3>
-                            <p>{{ $t('web.index.you_have_meet_infected.answer') }}</p>
+                            <i18n path="web.index.you_have_meet_infected.answer" tag="p">
+                                <a
+                                    href="/img/other/rizikove_setkani_android.png"
+                                    target="_blank"
+                                    @click.prevent="openPicture($event, '/img/other/rizikove_setkani_android.png')"
+                                >Android</a>
+                                <a
+                                    href="/img/other/rizikove_setkani_ios.png"
+                                    target="_blank"
+                                    @click.prevent="openPicture($event, '/img/other/rizikove_setkani_ios.png')"
+                                >iOS</a>
+                                <nuxt-link :to="homeUrl + 'caste-dotazy#upozorneni'">{{ $t('web.index.you_have_meet_infected.link_1') }}</nuxt-link>
+                            </i18n>
                         </div>
                         <div class="section__item">
                             <h3>{{ $t('web.index.when_you_become_infected.question') }}</h3>
-                            <p>{{ $t('web.index.when_you_become_infected.answer_1') }}</p>
+                            <i18n path="web.index.when_you_become_infected.answer_1" tag="p">
+                                <nuxt-link :to="homeUrl + 'caste-dotazy#vyhodnoceni-setkani'">{{ $t('web.index.when_you_become_infected.link_1') }}</nuxt-link>
+                            </i18n>
                             <p>
                                 <em>{{ $t('web.index.when_you_become_infected.answer_2') }}</em>
                                 <strong>{{ $t('web.index.when_you_become_infected.answer_3') }} <a
