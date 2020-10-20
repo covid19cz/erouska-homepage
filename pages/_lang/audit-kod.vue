@@ -21,6 +21,7 @@
                         <h3>{{ $t('web.audit.section1.audits_v2') }}</h3>
                         <ul>
                             <li><a href="/downloads/cvut4.pdf" target="_blank">{{ $t('web.audit.section1.review_cvut_4') }}</a></li>
+                            <li><a href="/downloads/spoou.pdf" target="_blank">{{ $t('web.audit.section1.review_spoou') }}</a></li>
                         </ul>
                     </div>
                     <div class="section__item">
