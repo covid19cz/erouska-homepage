@@ -19,8 +19,9 @@
     border: 3px solid $color_blue;
     display: flex;
     cursor: pointer;
-    transition: background-color .2s, opacity .7s;
+    transition: background-color .2s, visibility .7s, opacity .7s;
     opacity: 0;
+    visibility: hidden;
 
     svg {
         fill: $color_blue;
@@ -39,4 +40,5 @@
 
 .arrow-top--visible {
     opacity: 1;
+    visibility: visible;
 }
