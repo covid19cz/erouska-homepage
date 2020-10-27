@@ -115,15 +115,26 @@
                 if (this.searchString.length === 0) {
                     return true;
                 }
+
                 let text = this.$t('web.faq.questions.' + questionId + '.question') + ' '
                     + this.$t('web.faq.questions.' + questionId + '.answer').join(' ').replace(/<[^>]*>?/gm, ' ');
-                text = text.toLowerCase();
+                text = this.normalize(text);
                 let allHits = 0;
+
                 if (this.searchTerms) {
                     // perform the search for each term
-                    allHits = this.searchTerms.every(term => text.includes(term.toLowerCase()));
+                    allHits = this.searchTerms.every(term => text.includes(this.normalize(term)));
                 }
+
                 return allHits;
+            },
+
+            normalize(string) {
+                if (string.normalize('NFD')) {
+                    return string.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                }
+
+                return string.toLowerCase();
             },
 
             // active navigation from https://css-tricks.com/sticky-smooth-active-nav/
@@ -233,6 +244,19 @@
             }
         },
 
+        watch: {
+            searchString(val) {
+                let path = location.pathname;
+
+                if (this.searchString) {
+                    path += '?hledat=' + val.replace(/\s/g, '_');
+                }
+
+                window.history.replaceState({}, '', path);
+                this.$ga.page(path);
+            }
+        },
+
         // changes height of each collapsed element to zero, it allows users to disable js
         mounted () {
             if (process.client) {
@@ -248,6 +272,15 @@
                         location.hash = hashPresent;
                     } else {
                         window.scrollTo(0, 0);
+                    }
+
+                    const urlParams = new URLSearchParams(window.location.search);
+                    let search = urlParams.get('hledat');
+
+                    if (search) {
+                        search = search.replace(/_/g, ' ');
+                        this.$refs.searchInput.value = search;
+                        this.searchString = search;
                     }
                 });
             }
