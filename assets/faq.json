@@ -69,6 +69,7 @@
         "section_anchor": "zabezpeceni",
         "questions": [
             {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"},
+            {"id": "phone_recovery_or_upgrade", "anchor": "obnova-prenos-dat"},
             {"id": "what_if_i_lose_the_phone", "anchor": "ztratim-tel"},
             {"id": "gdpr_compliance", "anchor": "gdpr"},
             {"id": "how_do_you_protect_users_from_data_misuse", "anchor": "zneuziti-dat"},
@@ -90,6 +91,7 @@
         "questions": [
             {"id": "activation_error", "anchor": "chyba-aktivace"},
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
+            {"id": "EN_error_after_icloud_recovery", "anchor": "obnova-z-icloudu"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
             {"id": "EN_mistaken", "anchor": "oznameni-systemu"}
         ]
