@@ -92,7 +92,8 @@
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
             {"id": "EN_error_after_icloud_recovery", "anchor": "obnova-z-icloudu"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
-            {"id": "EN_mistaken", "anchor": "oznameni-systemu"}
+            {"id": "EN_mistaken", "anchor": "oznameni-systemu"},
+            {"id": "erouska_error_401", "anchor": "chyba-401"}
         ]
     }
 ]
