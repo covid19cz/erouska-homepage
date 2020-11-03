@@ -171,7 +171,7 @@ async function translateFile(file, language = undefined, format = "HTML") {
     }
 }
 
-async function sendAppForTranslation(fileName, content, format="HIERARCHICAL_JSON") {
+async function sendAppForTranslation(fileName, content, format = "HIERARCHICAL_JSON", force = false) {
     console.log(`Sending ${fileName} for translation`);
     const options = {
         secret: SKYAPP_SECRET_KEY,
@@ -181,7 +181,7 @@ async function sendAppForTranslation(fileName, content, format="HIERARCHICAL_JSO
         fileName: fileName,
         format,
         content,
-        keepStrings: true // avoid deleting all translations with an erroneous upload
+        keepStrings: !force // avoid deleting all translations with an erroneous upload
     };
 
     try {
@@ -400,10 +400,19 @@ async function uploadStrings() {
     await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString());
 }
 
+async function forceUploadStrings() {
+    await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString(), true);
+}
+
 exports.buildI18nLocal = buildI18nLocal;
 exports.buildI18n = buildI18nOneSky;
 exports.updateRemoteConfig = updateRemoteConfig;
 exports.uploadStrings = uploadStrings;
+
+exports.up = uploadStrings;
+exports.uploadF = forceUploadStrings;
+exports.down = buildI18nOneSky;
+exports.loc = buildI18nLocal;
 
 exports.dist = series(buildI18nOneSky, createLegacyTeamJson);
 exports.deploy = series(updateRemoteConfig);
