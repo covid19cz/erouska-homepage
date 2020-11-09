@@ -401,7 +401,7 @@ async function uploadStrings() {
 }
 
 async function forceUploadStrings() {
-    await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString(), true);
+    await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString(), undefined, true);
 }
 
 exports.buildI18nLocal = buildI18nLocal;

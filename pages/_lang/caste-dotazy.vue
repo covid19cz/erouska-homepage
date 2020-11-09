@@ -25,33 +25,6 @@
                     <h2 :class="'section__title section__title--' + (s_index % 2 ? 'red' : 'blue')" v-if="s_index != 0">{{ $t('web.faq.sections.' + section.section_id + '.title') }}</h2>
                     <div class="section__content">
                         <div class="faq">
-                            <div class="section__item faq__item section__description" v-if="section.section_id == 'known_errors'">
-                                <i18n path="web.faq.sections.known_errors.long_description.check_os_version.text" tag="p">
-                                    <a href="https://support.google.com/android/answer/7680439" target="_blank"
-                                    >{{ $t('web.faq.sections.known_errors.long_description.check_os_version.android') }}</a>
-                                    <a href="https://support.apple.com/cs-cz/HT204204" target="_blank"
-                                    >{{ $t('web.faq.sections.known_errors.long_description.check_os_version.ios') }}</a>
-                                </i18n>
-                                <i18n path="web.faq.sections.known_errors.long_description.check_app_version.text" tag="p">
-                                    <a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" target="_blank"
-                                    >{{ $t('web.faq.sections.known_errors.long_description.check_app_version.android') }}</a>
-                                    <a href="https://apps.apple.com/cz/app/erouška/id1509210215" target="_blank"
-                                    >{{ $t('web.faq.sections.known_errors.long_description.check_app_version.ios') }}</a>
-                                    <span>{{ versions.android }}</span>
-                                    <span>{{ versions.ios }}</span>
-                                </i18n>
-                                <p>{{ $t('web.faq.sections.known_errors.long_description.auto_updates_paragraph') }}</p>
-                                <ul>
-                                    <li>
-                                        <a href="https://support.google.com/googleplay/answer/113412#autoone" target="_blank">{{ $t('web.faq.sections.known_errors.long_description.auto_updates_android.link') }}</a>
-                                        <span>{{ $t('web.faq.sections.known_errors.long_description.auto_updates_android.text') }}</span>
-                                    </li>
-                                    <li>
-                                        <a href="https://support.apple.com/cs-cz/HT202180#automatic" target="_blank">{{ $t('web.faq.sections.known_errors.long_description.auto_updates_ios.link') }}</a>
-                                        <span>{{ $t('web.faq.sections.known_errors.long_description.auto_updates_ios.text') }}</span>
-                                    </li>
-                                </ul>
-                            </div>
                             <div
                                 v-for="(question, q_index) in section.questions"
                                 :id="question.anchor"

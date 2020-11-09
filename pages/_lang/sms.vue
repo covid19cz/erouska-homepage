@@ -12,6 +12,7 @@
                     <div class="section__content">
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.where.question') }}</h2>
+                            <p v-html="$t('web.sms.questions.where.answer.text_0')"></p>
                             <p>{{ $t('web.sms.questions.where.answer.text_1') }}</p>
                             <ol>
                                 <i18n path="web.sms.questions.where.answer.steps.step_1" tag="li">

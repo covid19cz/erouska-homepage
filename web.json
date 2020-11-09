@@ -97,18 +97,6 @@
     "web.faq.sections.security.description": "osobní údaje a ochrana soukromí",
     "web.faq.sections.known_errors.title": "Nejčastější problémy",
     "web.faq.sections.known_errors.description": "doporučení dočasných oprav",
-    "web.faq.sections.known_errors.long_description.check_os_version.text": "Pokud vám aplikace zobrazuje chybovou hlášku, zkontrolujte prosím nejprve, zda máte nainstalované aktualizace operačního systému ({0}, {1}) a nepoužíváte jejich beta verzi.",
-    "web.faq.sections.known_errors.long_description.check_os_version.android": "postup aktualizace Androidu",
-    "web.faq.sections.known_errors.long_description.check_os_version.ios": "postup aktualizace iOS",
-    "web.faq.sections.known_errors.long_description.check_app_version.text": "Dále prosím zkontrolujte v obchodu {0} nebo {1}, zda není pro eRoušku dostupná nová aktualizace. Nejnovější verze jsou {2} pro Android a {3} pro iOS. Verzi eRoušky ve svém telefonu najdete ťuknutím na Nápověda → O aplikaci – dole na obrazovce.",
-    "web.faq.sections.known_errors.long_description.check_app_version.android": "Google Play (Android)",
-    "web.faq.sections.known_errors.long_description.check_app_version.ios": "App Store (iOS)",
-    "web.faq.sections.known_errors.long_description.auto_updates_paragraph": "Doporučujeme rovněž povolit automatické aktualizace aplikace eRouška:",
-    "web.faq.sections.known_errors.long_description.auto_updates_android.link": "Postup pro Android zde:",
-    "web.faq.sections.known_errors.long_description.auto_updates_android.text": "Spusťte aplikaci Obchod Google Play, klepněte na nabídku Moje aplikace a hry → Vyberte aplikaci, kterou chcete aktualizovat → Klepněte na ikonu možností a klepněte na Aktivovat automatické aktualizace.",
-    "web.faq.sections.known_errors.long_description.auto_updates_ios.link": "Postup pro iOS zde:",
-    "web.faq.sections.known_errors.long_description.auto_updates_ios.text": "Na iPhonu přejděte do Nastavení → [vaše jméno] → iTunes a App Store. Pak zapněte volbu Aktualizace aplikací.",
-
 
     "web.faq.search.placeholder": "Hledat…",
     "web.faq.search.results_info": "Zobrazují se výsledky vyhledávání.",
@@ -128,7 +116,7 @@
     "web.faq.questions.why_is_erouska_needed.answer.2": "<em>* Blíže než 2 metry po dobu delší než 15 min.</em>",
     "web.faq.questions.how_does_healthcare_work.question": "To budu muset pokaždé automaticky do karantény nebo na testy, když aplikace zahlásí, že jsem byl v kontaktu s někým nakaženým?",
     "web.faq.questions.how_does_healthcare_work.answer.0": "Pokud u někoho test potvrdí nákazu, kontaktuje ho hygienická stanice, aby zjistila, s kým byl v posledních dnech v rizikovém kontaktu, a mohla tak omezit další šíření. Když tento člověk používá aplikaci eRouška, může kontaktovat i ty, které nezná, protože s nimi třeba cestoval v autobuse. Zadáním unikátního kódu může poslat upozornění všem ostatním uživatelům aplikace eRouška, se kterým byl v epidemiologicky rizikovém kontaktu.",
-    "web.faq.questions.how_does_healthcare_work.answer.1": "V okamžiku, kdy vás aplikace upozorní, že jste se setkali s osobou, u které bylo prokázané onemocnění COVID-19, byste měli postupovat podle zobrazených doporučení a v případě zdravotních potíží bez prodlení kontaktovat svého praktického lékaře nebo pohotovost.",
+    "web.faq.questions.how_does_healthcare_work.answer.1": "V okamžiku, kdy vás aplikace upozorní, že jste se setkali s osobou, u které bylo prokázané onemocnění COVID-19, byste měli postupovat podle zobrazených doporučení a v případě zdravotních potíží bez prodlení kontaktovat svého praktického lékaře.",
     "web.faq.questions.wrong_contact_assessment.question": "Nemůže se stát, že eRouška mylně vyhodnotí kontakt s jinou osobou, která je například vedle v autě na křižovatce, za dveřmi nebo tenkou zdí?",
     "web.faq.questions.wrong_contact_assessment.answer.0": "Aplikace eRouška funguje na principu měření síly signálu mezi dvěma zařízeními. Technicky proto nelze vyloučit nepřesný odhad vzdálenosti a mylnou detekci rizikového setkání. Technická omezení, rizika používání aplikace a postup vyhodnocování setkání popisujeme na stránce <a href=\"https://erouska.cz/vyhodnoceni-rizika\" target=\"_blank\">Spolehlivost vyhodnocení rizikového kontaktu</a> a v sekci <a href=\"https://erouska.cz/podminky-pouzivani#technicke\" target=\"_blank\">Technické podmínky v Podmínkách zpracování</a>.",
     "web.faq.questions.wrong_contact_assessment.answer.1": "Pro vyhodnocení kontaktu jako rizikového je kromě vzdálenosti (do 2 m) relevantní též délka kontaktu (alespoň 15 minut) – např. zastavení na semaforech na 1–2 minuty je tedy nevýznamné.",
@@ -159,7 +147,7 @@
     "web.faq.questions.about_api.question": "Co je to Apple/Google Exposure Notification API (protokol)?",
     "web.faq.questions.about_api.answer.0": "Společnosti Apple a Google společně vyvíjejí technologie, díky kterým mohou veřejné zdravotní instituce (u nás MZČR) vyvíjet národní aplikace pro trasování rizikových kontaktů s osobami s onemocněním COVID-19.",
     "web.faq.questions.about_api.answer.1": "Konkrétně jde například o rozhraní, které daným aplikacím (u nás eRouška) umožňuje spolehlivě přistupovat k systémovým prostředkům Android a Apple zařízení za účelem zaznamenání setkání – zejména využívat Bluetooth LE pro ověření kontaktu a běžet na pozadí bez potřeby dalších nastavení aplikace nebo operačního systému. Šifrovaný komunikační protokol pak zajišťuje zabezpečený přenos aktuálních seznamů identifikátorů nakažených uživatelů mezi trasovacími aplikacemi za účelem vyhodnocení rizikových setkání a včasného zobrazení notifikace.",
-    "web.faq.questions.about_api.answer.2": "Bližší informace naleznete přímo na webových stránkách společností <a href=\"https://www.apple.com/covid19/contacttracing\" target=\"_blank\">Apple (anglicky)</a> a <a href=\"https://www.google.com/covid19/exposurenotifications/\" target=\"_blank\">Google (česky)</a>.",
+    "web.faq.questions.about_api.answer.2": "Bližší informace naleznete přímo na webových stránkách společností <a href=\"https://www.apple.com/covid19/contacttracing\" target=\"_blank\">Apple</a> (anglicky) a <a href=\"https://www.google.com/covid19/exposurenotifications/\" target=\"_blank\">Google</a> (česky).",
     "web.faq.questions.internal_do_you_plan_translations.question": "Plánujete u webu a aplikace překlad do angličtiny a dalších jazyků?",
     "web.faq.questions.internal_do_you_plan_translations.answer.0": "Prioritně pracujeme na překladu aplikace i webu eRouska.cz do angličtiny a plánujeme i vietnamštinu a případně další jazyky. Zkuste aplikaci aktualizovat na nejnovější verzi.",
 
@@ -254,6 +242,12 @@
     "web.faq.questions.can_i_use_more_contact_tracing_apps.question": "Můžu používat eRoušku spolu s jinou oficiální trasovací aplikací jiného státu?",
     "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.0": "V telefonu můžete mít nainstalováno více trasovacích aplikací typu eRoušky. Pokud však také používají Apple/Google Exposure Notification protokol (platí zejména pro sousední státy ČR), můžete mít v jeden okamžik aktivní pouze jednu z těchto aplikací. Ostatní je potřeba pozastavit. K zaznamenávání setkání v Apple/Google protokolu totiž může mít přístup vždy pouze jedna aplikace.",
     "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.1": "Do budoucna nebude nutné používat více aplikací, ale bude vám stačit pouze eRouška. Evropské státy totiž připravují systém vzájemné kompatibility aplikací. Do té doby můžete v daném státě používat příslušnou místní aplikaci.",
+
+    "web.faq.questions.basic_recommendations.question": "Základní doporučení při řešení problémů s aplikací",
+    "web.faq.questions.basic_recommendations.answer.0": "Pokud vám aplikace zobrazuje chybovou hlášku, zkontrolujte prosím nejprve, zda máte nainstalované aktualizace operačního systému (<a href=\"https://support.google.com/android/answer/7680439\" target=\"_blank\">postup aktualizace Androidu</a>, <a href=\"https://support.apple.com/cs-cz/HT204204\" target=\"_blank\">postup aktualizace iOS</a>) a nepoužíváte jejich beta verzi.",
+    "web.faq.questions.basic_recommendations.answer.1": "Dále prosím zkontrolujte v obchodu <a href=\"https://play.google.com/store/apps/details?id=cz.covid19cz.erouska\" target=\"_blank\">Google Play (Android)</a> nebo <a href=\"https://apps.apple.com/cz/app/erouška/id1509210215\" target=\"_blank\">App Store (iOS)</a>, zda není pro eRoušku dostupná nová aktualizace.",
+    "web.faq.questions.basic_recommendations.answer.2": "Doporučujeme rovněž povolit automatické aktualizace aplikace eRouška:",
+    "web.faq.questions.basic_recommendations.answer.3": "<ul><li><a href=\"https://support.google.com/googleplay/answer/113412#autoone\" target=\"_blank\">Postup pro Android zde:</a> Spusťte aplikaci Obchod Google Play, klepněte na nabídku Moje aplikace a hry → Vyberte aplikaci, kterou chcete aktualizovat → Klepněte na ikonu možností a klepněte na Aktivovat automatické aktualizace.</li><li><a href=\"https://support.apple.com/cs-cz/HT202180#automatic\" target=\"_blank\">Postup pro iOS zde:</a> Na iPhonu přejděte do Nastavení → [vaše jméno] → iTunes a App Store. Pak zapněte volbu Aktualizace aplikací.</li></ul>",
 
     "web.faq.questions.activation_error.question": "Nejde aktivovat eRouška. / Android: Chyba aktivace 17 (Exposure Notification API není k dispozici) / iOS: Kód chyby: 3",
     "web.faq.questions.activation_error.answer.0": "Pro vyřešení chyby na Android zařízení, zkuste prosím postupovat takto:",
@@ -394,7 +388,7 @@
     "web.sms.title": "Ověření pomocí SMS kódu",
     "web.sms.perex": "Odeslání dat z eRoušky pro varování ostatních uživatelů v případě pozitivního testu na COVID-19",
     "web.sms.questions.where.question": "Kam mám zadat ověřovací kód z SMS?",
-    "web.sms.questions.where.answer.text_0": "Používali jste eRoušku ještě předtím, než jste šli na test na COVID 19? Pokud jste ji nainstalovali až nyní, nestihla ještě zaznamenat žádná setkání s jinými uživateli, které by mohla varovat, a proto SMS kód nemá smysl zadávat. Jak eRouška funguje, najdete <a href=\"https://erouska.cz/caste-dotazy#fungovani\">v častých dotazech</a>.",
+    "web.sms.questions.where.answer.text_0": "Používali jste eRoušku ještě předtím, než jste šli na test na COVID 19? Pokud jste ji nainstalovali až nyní, nestihla ještě zaznamenat žádná setkání s jinými uživateli, které by mohla varovat, a proto SMS kód nemá smysl zadávat. Jak eRouška funguje, najdete <a href=\"https://erouska.cz/caste-dotazy#fungovani\" target=\"_blank\">v častých dotazech</a>.",
     "web.sms.questions.where.answer.text_1": "Pokud používáte aplikaci déle, máte pozitivní test na COVID-19 a přišla vám SMS eRoušky s kódem, postupujte prosím takto:",
     "web.sms.questions.where.answer.steps.step_1": "Ověřte prosím v Obchodě Play nebo App Store, že máte aktuální verzi aplikace eRouška ({0} pro Android, {1} pro iOS).",
     "web.sms.questions.where.answer.steps.step_2": "Otevřete aplikaci eRouška, klikněte vpravo nahoře na tři tečky a na <em>Odeslat data</em>.",
@@ -421,3 +415,4 @@
     "web.sms.questions.install.question": "Chci si nainstalovat eRoušku, ale nevím kde.",
     "web.sms.questions.install.answer": "Aplikace eRouška je dostupná <a href=\"https://play.google.com/store/apps/details?id=cz.covid19cz.erouska\" target=\"_blank\">v Obchodě Play pro Android</a> a <a href=\"https://apps.apple.com/cz/app/erou%C5%A1ka/id1509210215\" target=\"_blank\">v App Store pro iPhone</a>."
 }
+
