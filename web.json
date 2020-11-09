@@ -388,7 +388,7 @@
     "web.sms.title": "Ověření pomocí SMS kódu",
     "web.sms.perex": "Odeslání dat z eRoušky pro varování ostatních uživatelů v případě pozitivního testu na COVID-19",
     "web.sms.questions.where.question": "Kam mám zadat ověřovací kód z SMS?",
-    "web.sms.questions.where.answer.text_0": "Používali jste eRoušku ještě předtím, než jste šli na test na COVID 19? Pokud jste ji nainstalovali až nyní, nestihla ještě zaznamenat žádná setkání s jinými uživateli, které by mohla varovat, a proto SMS kód nemá smysl zadávat. Jak eRouška funguje, najdete <a href=\"https://erouska.cz/caste-dotazy#fungovani\" target=\"_blank\">v častých dotazech</a>.",
+    "web.sms.questions.where.answer.text_0": "Používali jste eRoušku ještě předtím, než jste šli na test na COVID-19? Pokud jste ji nainstalovali až nyní, nestihla ještě zaznamenat žádná setkání s jinými uživateli, které by mohla varovat, a proto SMS kód nemá smysl zadávat. Jak eRouška funguje, najdete <a href=\"https://erouska.cz/caste-dotazy#fungovani\" target=\"_blank\">v častých dotazech</a>.",
     "web.sms.questions.where.answer.text_1": "Pokud používáte aplikaci déle, máte pozitivní test na COVID-19 a přišla vám SMS eRoušky s kódem, postupujte prosím takto:",
     "web.sms.questions.where.answer.steps.step_1": "Ověřte prosím v Obchodě Play nebo App Store, že máte aktuální verzi aplikace eRouška ({0} pro Android, {1} pro iOS).",
     "web.sms.questions.where.answer.steps.step_2": "Otevřete aplikaci eRouška, klikněte vpravo nahoře na tři tečky a na <em>Odeslat data</em>.",
