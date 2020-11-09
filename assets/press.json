@@ -1,5 +1,293 @@
 [
     {
+        "date": "2020-10-15",
+        "medium": "CNN Prima NEWS",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikaci eRouška si aktivoval milion lidí, pomohly textové zprávy. Stále je to málo",
+        "url": "https://cnn.iprima.cz/aplikaci-erouska-si-aktivoval-milion-lidi-pomohly-textove-zpravy-stale-je-to-malo-11302"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "CNN Prima NEWS",
+        "type": "video",
+        "lang": "cs",
+        "name": "Dzurilla k eRoušce: Je to hlavně systém, abychom se chovali zodpovědněji",
+        "url": "https://cnn.iprima.cz/dzurilla-k-erousce-je-to-hlavne-system-abychom-se-chovali-zodpovedneji-11297"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "Hospodářské noviny",
+        "type": "text",
+        "lang": "cs",
+        "name": "Každý člověk má v průměru dvacet rizikových kontaktů, říká vedoucí projektu eRouška Jan Jiroušek",
+        "url": "https://domaci.ihned.cz/c1-66830960-kazdy-clovek-ma-v-prumeru-dvacet-rizikovych-kontaktu-denne-rika-vedouci-projektu-erouska-jan-jirousek"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "cnews.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRoušku si aktivoval milion lidí. Raketový růst se nekoná",
+        "url": "https://www.cnews.cz/erouska-milion-aktivaci/"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "Svět Androida",
+        "type": "text",
+        "lang": "cs",
+        "name": "Ministerstvo nabádá SMSkami k instalaci eRoušky. Jaká je vaše reakce?",
+        "url": "https://www.svetandroida.cz/erouska-sms-ministerstvo-vyzva/"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Výzva od operátorů zafungovala. Aplikace eRouška překonala milion aktivací",
+        "url": "https://www.mobilmania.cz/clanky/vyzva-od-operatoru-zafungovala-aplikace-erouska-prekonala-milion-aktivaci/sc-3-a-1349594/default.aspx"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikaci eRouška používá milion lidí. Je to ale pořád málo",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/aplikaci-erouska-pouziva-milion-lidi-je-to-ale-porad-malo-40339367"
+    },
+    {
+        "date": "2020-10-15",
+        "medium": "ČRo Pardubice",
+        "type": "video",
+        "lang": "cs",
+        "name": "Aplikace eRouška osobní údaje nekrade. Úplně vychytaná ale není, tvrdí právník",
+        "url": "https://pardubice.rozhlas.cz/aplikace-erouska-osobni-udaje-nekrade-uplne-vychytana-ale-neni-tvrdi-pravnik-8340363"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "Deník N",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška po líném startu ožila. Získali jsme neveřejná data, jak jí pomohly SMS od operátorů",
+        "url": "https://denikn.cz/468778/erouska-po-linem-startu-ozila-ziskali-jsme-neverejna-data-jak-ji-pomohly-sms-od-operatoru/"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Apely operátorů zabraly. Aplikaci eRouška přibylo skokově 180 000 uživatelů",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/apely-operatoru-zabraly-aplikaci-erouska-pribylo-skokove-180-000-uzivatelu-40339256"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "E15.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška se blíží milionu stažení. Pomohla kampaň. Lidl v žebříčcích aplikací klesá",
+        "url": "https://www.e15.cz/koronahelpdesk-e15/erouska-se-blizi-milionu-stazeni-pomohla-kampan-lidl-v-zebriccich-aplikaci-klesa-1374144"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "iROZHLAS",
+        "type": "text",
+        "lang": "cs",
+        "name": "SMS od operátorů pomohly, eRoušku si za úterý stáhlo 178 tisíc lidí ",
+        "url": "https://www.irozhlas.cz/zpravy-domov/erousku-stahlo-za-den-temer-dve-ste-tisic-lidi-chytra-karantena_2010141214_kar"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "Lidovky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikaci eRouška si zatím aktivoval milion lidí. Nové uživatele ‚nalákala‘ SMS výzva",
+        "url": "https://www.lidovky.cz/domov/aplikaci-erouska-si-zatim-aktivovalo-861-tisic-lidi-nove-uzivatele-nalakala-sms-vyzva.A201014_142758_ln_domov_sei"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Výzva Rážové přes SMS zabrala. Aplikaci eRouška má už přes milion lidí",
+        "url": "https://www.idnes.cz/zpravy/domaci/koronavirus-erouska-aplikace-pocet-stazeni-mobilni-operatori-ministerstvo-zdravotnictvi.A201014_094618_domaci_brzy"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "Seznam zprávy",
+        "type": "text",
+        "lang": "cs",
+        "name": "Používejte Mapy.cz i eRoušku, doporučuje v boji s covidem šéf Seznamu",
+        "url": "https://www.seznamzpravy.cz/clanek/pouzivejte-mapy-cz-i-erousku-doporucuje-v-boji-s-covidem-sef-seznamu-124342"
+    },
+    {
+        "date": "2020-10-14",
+        "medium": "DSL.CZ",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška spustila automatické odesílání ověřovacích SMS kódů",
+        "url": "https://www.dsl.cz/clanky/erouska-spustila-automaticke-odesilani-overovacich-sms-kodu"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "Letem světem Applem",
+        "type": "text",
+        "lang": "cs",
+        "name": "Český T-Mobile vyráží opět do boje proti koronaviru. Své klienty vyzve skrze SMS k instalaci eRoušky",
+        "url": "https://www.letemsvetemapplem.eu/2020/10/13/cesky-t-mobile-vyrazi-opet-do-boje-proti-koronaviru-sve-klienty-vyzve-skrze-sms-k-instalaci-erousky/"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "cnews.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Operátoři na žádost vlády skrze SMS vyzývají k instalaci eRoušky",
+        "url": "https://www.cnews.cz/operatori-sms-vyzva-erouska/"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "CNN Prima NEWS",
+        "type": "text",
+        "lang": "cs",
+        "name": "Operátoři začali rozesílat SMS na propagaci eRoušky. Vyslyšeli výzvu vlády",
+        "url": "https://cnn.iprima.cz/operatori-zacali-rozesilat-vyzvu-k-instalaci-aplikace-erouska-11183"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "Lupa.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Operátoři rozesílají SMS s žádostí hlavní hygieničky o instalaci aplikace eRouška",
+        "url": "https://www.lupa.cz/aktuality/operatori-rozesilaji-sms-s-zadosti-hlavni-hygienicky-o-instalaci-aplikace-erouska/"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Operátoři podpoří eRoušku. Zákazníkům rozešlou SMS s výzvou k instalaci aplikace",
+        "url": "https://www.mobilmania.cz/clanky/operatori-podpori-erousku-zakaznikum-rozeslou-sms-s-vyzvou-k-instalaci-aplikace/sc-3-a-1349570/default.aspx"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "mobilenet.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "T-Mobile, Vodafone i O2 zákazníkům rozešlou SMS s prosbou o stažení eRoušky",
+        "url": "https://mobilenet.cz/clanky/t-mobile-i-vodafone-zakaznikum-rozposlou-sms-s-prosbou-o-stazeni-aplikace-erouska-41925"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Nainstalujte si eRoušku, apelují operátoři na uživatele",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/nainstalujte-si-erousku-apeluji-operatori-na-uzivatele-40339140"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "Blesk.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Rizikový kontakt i přes zeď? eRouška se někdy plete, přiznává Prymulův resort. Data chybí",
+        "url": "https://www.blesk.cz/clanek/zpravy-koronavirus/658105/rizikovy-kontakt-i-pres-zed-erouska-se-nekdy-plete-priznava-prymuluv-resort-data-chybi.html"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Nainstalujte si aplikaci eRouška, vyzývají v SMS operátoři své zákazníky",
+        "url": "https://www.idnes.cz/mobil/mobilni-operatori/aplikace-erouska-vyzva-instalace-mobilni-operator.A201013_143734_mobilni-operatori_LHR"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "Živě.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Má to smysl, pípla nám eRouška. Moc informací ale z upozornění nevyčtete",
+        "url": "https://www.zive.cz/clanky/ma-to-smysl-pipla-nam-erouska-moc-informaci-ale-z-upozorneni-nevyctete/sc-3-a-206406/default.aspx"
+    },
+    {
+        "date": "2020-10-13",
+        "medium": "iROZHLAS",
+        "type": "text",
+        "lang": "cs",
+        "name": "Šéf projektu eRouška: Automatické odesílání kódů se vyplatilo, aplikace má ale stále mouchy",
+        "url": "https://www.irozhlas.cz/zpravy-domov/erouska-koronavirus-covid-aplikace-chytra-karantena_2010130600_sto"
+    },
+    {
+        "date": "2020-10-12",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Uživatelů eRoušky přibývá, ale stále je jich málo. Jeden nakažený varuje 19 lidí",
+        "url": "https://www.mobilmania.cz/clanky/uzivatelu-erousky-pribyva-ale-stale-je-jich-malo-jeden-nakazeny-varuje-19-lidi/sc-3-a-1349564/default.aspx"
+    },
+    {
+        "date": "2020-10-12",
+        "medium": "mobilenet.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Jeden kód v eRoušce průměrně varuje 19 osob, aplikaci stáhlo už 670 tisíc lidí",
+        "url": "https://mobilenet.cz/clanky/jeden-kod-v-erousce-prumerne-varuje-19-osob-erousku-stahlo-uz-670-tisic-lidi-41914"
+    },
+    {
+        "date": "2020-10-12",
+        "medium": "BusinessInfo",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška může ochránit váš byznys",
+        "url": "https://www.businessinfo.cz/clanky/erouska-ochrani-vas-byznys/"
+    },
+    {
+        "date": "2020-10-09",
+        "medium": "Forbes.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikace eRouška přestala spoléhat na hygieniky. Má být chytřejší, ale bude to stačit?",
+        "url": "https://forbes.cz/aplikace-erouska-prestala-spolehat-na-hygieniky-ma-byt-chytrejsi-ale-bude-to-stacit/"
+    },
+    {
+        "date": "2020-10-09",
+        "medium": "Svět Androida",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška se dočkala zásadního vylepšení, které urychlí informovanost",
+        "url": "https://www.svetandroida.cz/erouska-automaticke-odesilani-overovacich-sms/"
+    },
+    {
+        "date": "2020-10-09",
+        "medium": "ČRo Dvojka",
+        "type": "video",
+        "lang": "cs",
+        "name": "Aplikace eRouška. Host: publicista Daniel Dočekal.",
+        "url": "https://dvojka.rozhlas.cz/aplikace-erouska-8334810"
+    },
+    {
+        "date": "2020-10-08",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška razantně zrychlí, ověřovací kód dostanete automaticky",
+        "url": "https://www.idnes.cz/technet/software/erouska-automatizuje-overovaci-kody.A201008_121240_software_nyv"
+    },
+    {
+        "date": "2020-10-08",
+        "medium": "MobilMania.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Konec čekání na hygienu: eRouška automatizuje odesílání kódů pozitivně testovaných",
+        "url": "https://www.mobilmania.cz/clanky/konec-volani-na-hygienu-erouska-automatizuje-odesilani-kodu-pozitivne-testovanych/sc-3-a-1349529/default.aspx"
+    },
+    {
+        "date": "2020-10-08",
+        "medium": "Lupa.CZ",
+        "type": "text",
+        "lang": "cs",
+        "name": "SMS kódy do aplikace eRouška začínají pozitivně testovaným chodit automaticky",
+        "url": "https://www.lupa.cz/aktuality/sms-kody-zacinaji-pozitivne-testovanym-do-aplikace-erouska-chodit-automaticky/"
+    },
+    {
         "date": "2020-09-30",
         "medium": "Lupa.cz",
         "type": "text",
