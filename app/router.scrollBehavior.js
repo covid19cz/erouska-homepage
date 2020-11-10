@@ -9,6 +9,6 @@ export default function (to, from, savedPosition) {
             } else {
                 resolve({ x: 0, y: 0 }); //otherwise go top
             }
-        }, 100);
+        }, 150);
     })
 }

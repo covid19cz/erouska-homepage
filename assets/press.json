@@ -1,5 +1,85 @@
 [
     {
+        "date": "2020-11-09",
+        "medium": "Aktuálně.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Taťána le Moigne: Česko v digitálu zpomaluje. Korona nám snad pomůže poskočit vpřed",
+        "url": "https://zpravy.aktualne.cz/domaci/tatana-le-moigne-cesko-v-digitalu-zpomaluje-korona-nam-snad/r~d56a23b6228b11eba25cac1f6b220ee8/"
+    },
+    {
+        "date": "2020-11-06",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Nejčastější lži kolem viru: čipy od Billa Gatese či sledování přes eRoušku",
+        "url": "https://www.idnes.cz/zpravy/domaci/covid-dezinformace-nakazeni.A201105_175300_domaci_kzem"
+    },
+    {
+        "date": "2020-11-01",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Některé firmy zakazují zaměstnancům trasování a eRoušku, uvedl Středula",
+        "url": "https://www.idnes.cz/ekonomika/domaci/stredula-odbory-firmy-zakazuji-zamestnancum-trasovani.A201101_140458_domaci_vlc"
+    },
+    {
+        "date": "2020-10-27",
+        "medium": "iDNES.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Počet hlášení klesá, eRouška přesto rozesílá tisíce varování denně",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/pocet-hlaseni-klesa-erouska-presto-rozesila-tisice-varovani-denne-40340494"
+    },
+    {
+        "date": "2020-10-25",
+        "medium": "Radiožurnál",
+        "type": "video",
+        "lang": "cs",
+        "name": "Aplikaci eRouška si nainstalovalo 1,3 milionu lidí. „Číslo vypadá slibně,“ říká vládní zmocněnec ",
+        "url": "https://radiozurnal.rozhlas.cz/aplikaci-erouska-si-nainstalovalo-13-milionu-lidi-cislo-vypada-slibne-rika-8347229"
+    },
+    {
+        "date": "2020-10-20",
+        "medium": "Zdravotnický deník",
+        "type": "text",
+        "lang": "cs",
+        "name": "eRouška začne brzy fungovat i za hranicemi. Evropské státy propojují trasovací aplikace",
+        "url": "https://www.zdravotnickydenik.cz/2020/10/erouska-zacne-brzy-fungovat-i-za-hranicemi-evropske-staty-propojuji-trasovaci-aplikace/"
+    },
+    {
+        "date": "2020-10-19",
+        "medium": "Zdroják.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "API proti epidemii – eRouška a další",
+        "url": "https://www.zdrojak.cz/clanky/api-proti-epidemii-erouska-a-dalsi/"
+    },
+    {
+        "date": "2020-10-18",
+        "medium": "iROZHLAS",
+        "type": "text",
+        "lang": "cs",
+        "name": "Fantastický výsledek kampaně, říká Dzurilla. Aplikaci eRouška si stáhlo již 1,23 milionu uživatelů",
+        "url": "https://www.irozhlas.cz/zpravy-domov/rozhovor-dzurilla-erouska-koronavirus-chytra-karantena_2010181816_zuj"
+    },
+    {
+        "date": "2020-10-17",
+        "medium": "Radiožurnál",
+        "type": "text",
+        "lang": "cs",
+        "name": "Anonymní ochrana před šířením nákazy. Jak funguje aplikace eRouška?",
+        "url": "https://radiozurnal.rozhlas.cz/anonymni-ochrana-pred-sirenim-nakazy-jak-funguje-aplikace-erouska-8341566"
+    },
+    {
+        "date": "2020-10-16",
+        "medium": "Novinky.cz",
+        "type": "text",
+        "lang": "cs",
+        "name": "Aplikace eRouška rozešle denně tisíce varování před koronavirem",
+        "url": "https://www.novinky.cz/internet-a-pc/software/clanek/aplikace-erouska-rozesle-denne-tisice-varovani-pred-koronavirem-40339512"
+    },
+    {
         "date": "2020-10-15",
         "medium": "CNN Prima NEWS",
         "type": "text",

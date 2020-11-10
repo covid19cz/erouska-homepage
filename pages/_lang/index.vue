@@ -33,14 +33,14 @@
                             <h3>{{ $t('web.index.you_have_meet_infected.question') }}</h3>
                             <i18n path="web.index.you_have_meet_infected.answer" tag="p">
                                 <a
-                                    href="/img/other/rizikove_setkani_android.png"
+                                    href="/img/other/rizikove_setkani_android_2.png"
                                     target="_blank"
-                                    @click.prevent="openPicture($event, '/img/other/rizikove_setkani_android.png')"
+                                    @click.prevent="openPicture($event, '/img/other/rizikove_setkani_android_2.png')"
                                 >Android</a>
                                 <a
-                                    href="/img/other/rizikove_setkani_ios.png"
+                                    href="/img/other/rizikove_setkani_ios_2.png"
                                     target="_blank"
-                                    @click.prevent="openPicture($event, '/img/other/rizikove_setkani_ios.png')"
+                                    @click.prevent="openPicture($event, '/img/other/rizikove_setkani_ios_2.png')"
                                 >iOS</a>
                                 <a target="_blank" :href="homeUrl + 'caste-dotazy#upozorneni'">{{ $t('web.index.you_have_meet_infected.link_1') }}</a>
                             </i18n>
