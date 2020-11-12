@@ -239,8 +239,8 @@
     "web.faq.questions.matched_key_count.question": "Proč v Kontrole kontaktů v Nastavení telefonu vidím „Nalezené klíče: 0“?",
     "web.faq.questions.matched_key_count.answer.0": "Znamená to, že eRouška ve vašem telefonu ještě nevyhodnotila žádné setkání jako rizikové. Jinak řečeno stažené klíče nakažených uživatelů se neshodují se zaznamenanými klíči ve vašem zařízení.",
 
-    "web.faq.questions.can_i_use_more_contact_tracing_apps.question": "Můžu používat eRoušku spolu s jinou oficiální trasovací aplikací jiného státu?",
-    "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.0": "V telefonu můžete mít nainstalováno více trasovacích aplikací typu eRoušky. Pokud však také používají Apple/Google Exposure Notification protokol (platí zejména pro sousední státy ČR), můžete mít v jeden okamžik aktivní pouze jednu z těchto aplikací. Ostatní je potřeba pozastavit. K zaznamenávání setkání v Apple/Google protokolu totiž může mít přístup vždy pouze jedna aplikace.",
+    "web.faq.questions.can_i_use_more_contact_tracing_apps.question": "Můžu používat eRoušku spolu s jinou oficiální trasovací aplikací jiného státu (např. Corona-Warn-App)?",
+    "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.0": "V telefonu můžete mít nainstalováno více trasovacích aplikací typu eRoušky, jako jsou Corona-Warn-App, Stopp Corona App, Imunni, Stop Covid ProteGO Safe a další. Pokud však také používají Apple/Google Exposure Notification protokol (platí zejména pro sousední státy ČR), můžete mít v jeden okamžik aktivní pouze jednu z těchto aplikací. Ostatní je potřeba pozastavit. K zaznamenávání setkání v Apple/Google protokolu totiž může mít přístup vždy pouze jedna aplikace.",
     "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.1": "Do budoucna nebude nutné používat více aplikací, ale bude vám stačit pouze eRouška. Evropské státy totiž připravují systém vzájemné kompatibility aplikací. Do té doby můžete v daném státě používat příslušnou místní aplikaci.",
 
     "web.faq.questions.basic_recommendations.question": "Základní doporučení při řešení problémů s aplikací",
