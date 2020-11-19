@@ -57,6 +57,8 @@
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.faq.questions.sms_delivery_time.question') }}</h2>
                             <p>{{ $t('web.faq.questions.sms_delivery_time.answer.0') }}</p>
+                            <p>{{ $t('web.faq.questions.sms_delivery_time.answer.1') }}</p>
+                            <div>{{ $t('web.faq.questions.sms_delivery_time.answer.2') }}</div>
                         </div>
                         <div class="section__item">
                             <h2 class="h3">{{ $t('web.sms.questions.expiration.question') }}</h2>
