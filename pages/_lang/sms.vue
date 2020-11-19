@@ -25,20 +25,6 @@
                             <p>{{ $t('web.sms.questions.where.answer.text_2') }}</p>
                         </div>
                         <div class="section__item" v-for="(platform, key) in ['android', 'ios']" :key="key">
-                            <h3>{{ $t('web.sms.questions.where.answer.photos.title.' + key) }} – {{ platform === 'android' ? 'ver. ≤ 2.1.613' : 'ver. ≤ 2.1.4' }}</h3>
-                            <p class="d-flex">
-                                <a
-                                    v-for="(number, key2) in [1, 2, 3, 4, 5]"
-                                    :key="key2"
-                                    :href="'/img/sms/' + platform + '/' + number + '.png'"
-                                    target="_blank"
-                                    @click.prevent="openGallery($event, ((number - 1) + (9 * key)))"
-                                    class="bpgallery"
-                                    :data-bp="'/img/sms/' + platform + '/' + number + '.png'"
-                                >
-                                    <img :src="'/img/sms/' + platform + '/' + number + '.png'">
-                                </a>
-                            </p>
                             <h3>{{ $t('web.sms.questions.where.answer.photos.title.' + key) }} – {{ platform === 'android' ? 'ver. > 2.1.613' : 'ver. > 2.1.4' }}</h3>
                             <p class="d-flex">
                                 <a
@@ -51,6 +37,20 @@
                                     :data-bp="'/img/sms/' + platform + '2/' + number + '.png'"
                                 >
                                     <img :src="'/img/sms/' + platform + '2/' + number + '.png'">
+                                </a>
+                            </p>
+                            <h3>{{ $t('web.sms.questions.where.answer.photos.title.' + key) }} – {{ platform === 'android' ? 'ver. ≤ 2.1.613' : 'ver. ≤ 2.1.4' }}</h3>
+                            <p class="d-flex">
+                                <a
+                                    v-for="(number, key2) in [1, 2, 3, 4, 5]"
+                                    :key="key2"
+                                    :href="'/img/sms/' + platform + '/' + number + '.png'"
+                                    target="_blank"
+                                    @click.prevent="openGallery($event, ((number - 1) + (9 * key)))"
+                                    class="bpgallery"
+                                    :data-bp="'/img/sms/' + platform + '/' + number + '.png'"
+                                >
+                                    <img :src="'/img/sms/' + platform + '/' + number + '.png'">
                                 </a>
                             </p>
                         </div>
