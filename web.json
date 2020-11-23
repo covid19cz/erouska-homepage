@@ -391,7 +391,7 @@
     "web.sms.questions.where.answer.text_0": "Používali jste eRoušku ještě předtím, než jste šli na test na COVID-19? Pokud jste ji nainstalovali až nyní, nestihla ještě zaznamenat žádná setkání s jinými uživateli, které by mohla varovat, a proto SMS kód nemá smysl zadávat. Jak eRouška funguje, najdete <a href=\"https://erouska.cz/caste-dotazy#fungovani\" target=\"_blank\">v častých dotazech</a>.",
     "web.sms.questions.where.answer.text_1": "Pokud používáte aplikaci déle, máte pozitivní test na COVID-19 a přišla vám SMS eRoušky s kódem, postupujte prosím takto:",
     "web.sms.questions.where.answer.steps.step_1": "Ověřte prosím v Obchodě Play nebo App Store, že máte aktuální verzi aplikace eRouška ({0} pro Android, {1} pro iOS).",
-    "web.sms.questions.where.answer.steps.step_2": "Otevřete aplikaci eRouška, klikněte vpravo nahoře na tři tečky a na <em>Odeslat data</em> nebo na tlačítko <em>Anonymně upozornit ostatní</em>.",
+    "web.sms.questions.where.answer.steps.step_2": "Otevřete aplikaci eRouška, klikněte na tlačítko <em>Anonymně upozornit ostatní</em>.",
     "web.sms.questions.where.answer.steps.step_3": "Do pole <em>Ověřovací kód (povinné)</em> vložte kód z SMS a klikněte na tlačítko <em>Ověřit a odeslat data</em>.",
     "web.sms.questions.where.answer.text_2": "Tímto se z vaší eRoušky odešlou klíče (identifikátory) do eRoušek všech ostatních uživatelů. V jejich eRouškách se vyhodnotí, jestli s vámi byli v rizikovém kontaktu, a případně se jim zobrazí anonymní varování s doporučením dalšího postupu.",
     "web.sms.questions.where.answer.photos.title.0": "Zadání ověřovacího kódu na telefonech Android",
