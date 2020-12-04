@@ -31,12 +31,12 @@
                                 class="section__item faq__item"
                                 v-show="isSearchResult(question.id)"
                             >
-                                <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);">{{ $t('web.faq.questions.' + question.id + '.question') }}</h3>
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);" v-html="highlightMatch($t('web.faq.questions.' + question.id + '.question'))"></h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
-                                    v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></div>
-                                    <p v-else v-html="$t('web.faq.questions.' + question.id + '.answer[' + index + ']')"></p>
+                                    v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']'))"></div>
+                                    <p v-else v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']'))"></p>
                                     </template>
                                 </div>
                             </div>
@@ -109,6 +109,16 @@
             debounceInput: _.debounce(function(e) {
                 this.searchString = e.target.value;
             }, 250),
+
+            highlightMatch(html) {
+                if (this.searchTerms) {
+                    this.searchTerms.forEach(term => {
+                        html = html.split(term).join(`<mark>${term}</mark>`);
+                    });
+                }
+
+                return html;
+            },
 
             isSearchResult(questionId) {
                 if (this.searchString.length === 0) {
