@@ -89,7 +89,7 @@
         "questions": [
             {"id": "basic_recommendations", "anchor": "doporuceni"},
             {"id": "activation_error", "anchor": "chyba-aktivace"},
-            {"id": "update_date_stucked", "anchor": "stare-datum-aktualizace"},
+            {"id": "update_date_stuck", "anchor": "stare-datum-aktualizace"},
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
             {"id": "EN_error_after_icloud_recovery", "anchor": "obnova-z-icloudu"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
