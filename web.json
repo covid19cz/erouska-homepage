@@ -297,7 +297,7 @@
     "web.faq.questions.erouska_error_401.answer.0": "Zkuste prosím eRoušku smazat a znovu nainstalovat z App Store. Na iOS nepřijdete o zaznamenaná data, protože zůstávají uložená na úrovni systému. Pokud by mezitím platnost ověřovacího SMS kódu vypršela, napište nám prosím na <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>, uveďte číslo chyby, celé jméno a tel. číslo. Zašleme vám nový kód.",
 
     "web.faq.questions.update_date_stuck.question": "Na iPhone zobrazuje eRouška na domovské obrazovce datum poslední aktualizace starší než 24 hodin.",
-    "web.faq.questions.update_date_stuck.answer.0": "Jde pouze o vizuální chybu. Stačí aplikaci eRouška ručně ukončit (<a href=\"https://support.apple.com/cs-cz/HT201330">postup zde</a>) a znovu spustit. Pokud by se datum přesto neaktualizovalo, pošlete nám prosím z Kontaktů v eRoušce e-mail s diagnostickými daty na <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>.",
+    "web.faq.questions.update_date_stuck.answer.0": "Jde pouze o vizuální chybu. Stačí aplikaci eRouška ručně ukončit (<a href=\"https://support.apple.com/cs-cz/HT201330\" target=\"_blank\">postup zde</a>) a znovu spustit. Pokud by se datum přesto neaktualizovalo, pošlete nám prosím z Kontaktů v eRoušce e-mail s diagnostickými daty na <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>.",
 
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
