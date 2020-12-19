@@ -1,0 +1,39 @@
+.code-alert {
+    background-color: #d82f4e;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    line-height: 1.5;
+
+    img {
+        margin-right: 10px;
+        height: 24px;
+        width: 24px;
+        display: none;
+
+        @include respond-to('small') {
+            display: inline-block;
+        }
+    }
+
+    a {
+        color: white;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            content: '';
+        }
+
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+}

@@ -43,6 +43,7 @@
     "web.default.back_to_main_page": "Zpět na Hlavní stránku",
     "web.default.before_you_go_out": "Než vyjdete ven,",
     "web.default.use_erouska_too": "nasaďte si také eRoušku.",
+    "web.default.code_alert.text": "Máte pozitivní test na COVID-19 a nepřišla vám SMS pro eRoušku? Napište nám na {0} a my vám pošleme náhradní kód.",
 
     "web.team.page_title": "Tvůrci mobilní aplikace proti koronaviru",
     "web.team.description": "Aplikace eRouška pomáhá zastavit šíření koronaviru v ČR. Spravuje ji Ministerstvo zdravotnictví ve spolupráci s NAKIT za podpory dobrovolníků.",

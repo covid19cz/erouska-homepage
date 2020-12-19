@@ -1,5 +1,6 @@
 <template>
     <div class="container-global">
+        <code-alert/>
         <div class="container">
             <header class="header" role="banner">
                 <div class="header__logo-wrapper">
@@ -120,8 +121,12 @@
 
 <script>
     import _ from 'lodash'
+    import CodeAlert from '~/components/CodeAlert.vue'
 
     export default {
+        components: {
+            CodeAlert
+        },
         data() {
             return {
                 baseUrl: process.env.baseUrl,
