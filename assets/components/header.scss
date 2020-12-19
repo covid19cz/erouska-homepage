@@ -160,7 +160,8 @@ li.header__nav__lang-switch {
         }
     }
 
-    &:hover {
+    &:hover,
+    &:focus-within {
         .lang-switch--inner div {
             padding-bottom: 6px;
         }

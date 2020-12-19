@@ -22,7 +22,7 @@
                             </nuxt-link>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="22" viewBox="0 0 11.90625 5.8208335" style="opacity:0.2"><g transform="translate(0,-291.17914)"><circle style="fill:#228ed5" cx="5.953125" cy="294.08957" r="0.66145831"/></g></svg>
                         </li>
-                        <li class="header__nav__lang-switch">
+                        <li class="header__nav__lang-switch" tabindex="0">
                             <div class="lang-switch--inner d-inline-flex">
                                 <div class="d-sm-none d-block">
                                     <span class="d-none d-sm-inline">{{ localeCaptions[$i18n.locale] }}</span>
