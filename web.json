@@ -300,6 +300,10 @@
     "web.faq.questions.update_date_stuck.question": "Na iPhonu zobrazuje eRouška na domovské obrazovce datum poslední aktualizace starší než 24 hodin.",
     "web.faq.questions.update_date_stuck.answer.0": "Jde pouze o vizuální chybu. Stačí aplikaci eRouška ručně ukončit (<a href=\"https://support.apple.com/cs-cz/HT201330\" target=\"_blank\">postup zde</a>) a znovu spustit. Pokud by se datum přesto neaktualizovalo, pošlete nám prosím z Kontaktů v eRoušce e-mail s diagnostickými daty na <a href=\"mailto:info@erouska.cz\">info@erouska.cz</a>.",
 
+    "web.faq.questions.antigen_test.question": "Přijde mi SMS s kódem do eRoušky, když mám pozitivní antigenní test na COVID-19?",
+    "web.faq.questions.antigen_test.answer.0": "Pokud máte <a href=\"https://drive.google.com/file/d/1HPwtltNRuzmowjZgE_c1u-a8m3W89T-p/view\" target=\"_blank\">pozitivní výsledek antigenního testu a máte příznaky COVID-19</a> (uvádíte v žádance), přijde vám SMS s kódem do eRoušky stejně jako v případě pozitivního PCR testu.",
+    "web.faq.questions.antigen_test.answer.1": "V případě, že máte <a href=\"https://covid.gov.cz/situace/antigenni-testovani/interpretace-vysledku-antigenniho-testu-jak-se-zachovat-po-obdrzeni\" target=\"_blank\">pozitivní výsledek antigenního testu, ale nepociťujete příznaky</a>, půjdete na PCR test. Na základě pozitivního výsledku PCR testu by vám přišla SMS s kódem do eRoušky. V případě negativního PCR testu neodesíláte data z eRoušky.",
+    
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
     "web.evaluation.title": "Spolehlivost vyhodnocení rizikového kontaktu",
