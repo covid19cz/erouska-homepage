@@ -35,7 +35,7 @@
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>', '<pre'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
-                                    v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']'))"></div>
+                                    v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']').replace(/\\n/g, '\n'))"></div>
                                     <p v-else v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']'))"></p>
                                     </template>
                                 </div>
