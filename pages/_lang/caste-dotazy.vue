@@ -114,6 +114,8 @@
                 if (this.searchTerms) {
                     this.searchTerms.forEach(term => {
                         html = html.split(term).join(`<mark>${term}</mark>`);
+                        html = html.replace(/(<[^>]*)<\/?mark>([^<>]*)(<\/?mark>)?([^>]*>)/g, '$1$2$4');
+                        // try https://markjs.io/
                     });
                 }
 
