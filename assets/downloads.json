@@ -1,6 +1,6 @@
 {
     "ready": [
-        { "text": "Grafické materiály", "type": "heading" },
+        { "text": "Grafické materiály", "type": "heading", "id": "materialy" },
         {
             "text": "Leták s výzvou ke stažení aplikace eRouška (RGB)",
             "src": "eRouska-letak-rgb",
@@ -49,7 +49,13 @@
             "type": "zip",
             "size": "164"
         },
-        { "text": "Logo", "type": "heading" },
+        { "text": "Logo", "type": "heading", "id": "logo" },
+        {
+            "text": "Logomanuál eRouška",
+            "src": "eRouska-logomanual",
+            "type": "pdf",
+            "size": 1353
+        },
         {
             "text": "Ikona eRoušky",
             "src": "eRouska-icon",
@@ -68,7 +74,7 @@
             "type": "svg",
             "size": 5
         },
-        { "text": "Video", "type": "heading" },
+        { "text": "Video", "type": "heading", "id": "video" },
         {
             "text": "Jak funguje eRouška",
             "src": "https://youtu.be/lr1Wmx0hJls",

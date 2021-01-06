@@ -12,7 +12,7 @@
                         </div>
                         <div class="section__item">
                             <template v-for="link in downloads.ready">
-                                <h2 class="h3 h3--margin-top" v-if="link.type == 'heading'">{{ link.text }}</h2>
+                                <h2 class="h3 h3--margin-top" v-if="link.type == 'heading'" :id="link.id">{{ link.text }}</h2>
                                 <a class="link" v-else :href="[link.type == 'youtube' ? link.src : '/downloads/' + link.src + '.' + link.type]" target="_blank">
                                     <div class="link__icon-container">
                                         <div>
