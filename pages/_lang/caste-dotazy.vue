@@ -31,12 +31,12 @@
                                 class="section__item faq__item"
                                 v-show="isSearchResult(question.id)"
                             >
-                                <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);" v-html="highlightMatch($t('web.faq.questions.' + question.id + '.question'))"></h3>
+                                <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);" v-html="highlightMatchAndProcess($t('web.faq.questions.' + question.id + '.question'))"></h3>
                                 <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>', '<pre'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
-                                    v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']').replace(/\\n/g, '\n'))"></div>
-                                    <p v-else v-html="highlightMatch($t('web.faq.questions.' + question.id + '.answer[' + index + ']'))"></p>
+                                    v-html="highlightMatchAndProcess($t('web.faq.questions.' + question.id + '.answer[' + index + ']').replace(/\\n/g, '\n'))"></div>
+                                    <p v-else v-html="highlightMatchAndProcess($t('web.faq.questions.' + question.id + '.answer[' + index + ']'))"></p>
                                     </template>
                                 </div>
                             </div>
@@ -69,6 +69,7 @@
     import _ from 'lodash'
     import sectionsJson from '~/assets/faq.json'
     import versionsJson from '~/assets/versions.json'
+    import { getMailtoSuffix } from '~/components/CodeAlert.vue'
 
     export default {
         data() {
@@ -106,11 +107,16 @@
             }
         },
         methods: {
+            getMailtoSuffix: getMailtoSuffix,
+
             debounceInput: _.debounce(function(e) {
                 this.searchString = e.target.value;
             }, 250),
 
-            highlightMatch(html) {
+            highlightMatchAndProcess(html) {
+                // html = html.replace(/\?subject="/g, '?subject=Nep%C5%99i%C5%A1la%20mi%20SMS%20s%20ov%C4%9B%C5%99ovac%C3%ADm%20k%C3%B3dem&body=Mil%C3%BD%20t%C3%BDme%20eRou%C5%A1ky%2C%0Am%C3%A1m%20pozitivn%C3%AD%20test%20na%20COVID-19%20a%20nep%C5%99i%C5%A1la%20mi%20SMS%20s%20ov%C4%9B%C5%99ovac%C3%ADm%20k%C3%B3dem%20pro%20eRou%C5%A1ku.%0A%0ACel%C3%A9%20jm%C3%A9no%20uveden%C3%A9%20na%20%C5%BE%C3%A1dance%20o%20test%3A%20%0ATelefonn%C3%AD%20%C4%8D%C3%ADslo%20uveden%C3%A9%20na%20%C5%BE%C3%A1dance%20o%20test%3A%20%0ADatum%20v%C3%BDsledku%20test%C5%AF%3A%20%0AOdb%C4%9Brov%C3%A9%20m%C3%ADsto%20%2F%20laborato%C5%99%2C%20ze%20kter%C3%A9%20mi%20p%C5%99i%C5%A1ly%20v%C3%BDsledky%20testu%3A%20%0ATyp%20testu%20%28PCR%2Fantigen%29%3A%20%0A%0A%0A"');
+                html = html.replace(/\?subject="/g, getMailtoSuffix(this.$t('web.default.code_alert.mailto.subject'), this.$t('web.default.code_alert.mailto.body')) + '"');
+
                 if (this.searchTerms) {
                     this.searchTerms.forEach(term => {
                         html = html.split(term).join(`<mark>${term}</mark>`);
