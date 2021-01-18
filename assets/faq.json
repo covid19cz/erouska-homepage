@@ -2,6 +2,7 @@
     {
         "section_id": "general",
         "section_anchor": "obecne",
+        "icon": "https://erouska.cz/img/symptoms/ic_temperature.png",
         "questions": [
             {"id": "what_to_do_on_alert", "anchor": "upozorneni"},
             {"id": "what_to_do_on_sms", "anchor": "sms"},
@@ -19,6 +20,7 @@
     {
         "section_id": "functioning",
         "section_anchor": "fungovani",
+        "icon": "https://erouska.cz/img/symptoms/ic_temperature.png",
         "questions": [
             {"id": "how_is_the_data_processed", "anchor": "sber-dat"},
             {"id": "risk_encounter_parameters", "anchor": "vyhodnoceni-setkani"},
@@ -42,6 +44,7 @@
     {
         "section_id": "settings",
         "section_anchor": "nastaveni",
+        "icon": "https://erouska.cz/img/symptoms/ic_temperature.png",
         "questions": [
             {"id": "on_which_phones_does_erouska_work", "anchor": "kde-funguje"},
             {"id": "instalation_of_eRouska", "anchor": "instalace-erousky"},
@@ -53,6 +56,7 @@
     {
         "section_id": "connection",
         "section_anchor": "pripojeni",
+        "icon": "https://erouska.cz/img/symptoms/ic_temperature.png",
         "questions": [
             {"id": "does_bluetooth_be_always_enabled", "anchor": "neustale-bt"},
             {"id": "does_erouska_need_internet", "anchor": "potrebuje-internet"},
@@ -68,6 +72,7 @@
     {
         "section_id": "security",
         "section_anchor": "zabezpeceni",
+        "icon": "https://erouska.cz/img/symptoms/ic_temperature.png",
         "questions": [
             {"id": "how_can_i_find_all_saved_and_sent_data", "anchor": "vsechna-data"},
             {"id": "phone_recovery_or_upgrade", "anchor": "obnova-prenos-dat"},
@@ -88,6 +93,7 @@
     {
         "section_id": "known_errors",
         "section_anchor": "zname-chyby",
+        "icon": "https://erouska.cz/img/symptoms/ic_temperature.png",
         "questions": [
             {"id": "basic_recommendations", "anchor": "doporuceni"},
             {"id": "activation_error", "anchor": "chyba-aktivace"},

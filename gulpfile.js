@@ -45,6 +45,8 @@ const FAQ_STRUCTURE_FILE = "./assets/faq.json";
 const TEAM_FILE = "./assets/people.json";
 const LEGACY_TEAM_PATH = "static/peoples.json";
 
+const mobileFaqSectionOrder = [5, 3, 0, 1, 4, 2];
+
 var currentVueKey = "";
 
 function escapeLineEndings(content) {
@@ -322,41 +324,66 @@ async function renderFAQToMarkdown(translation) {
         v2_helpMarkdown: {
             defaultValue: {},
             conditionalValues: {}
+        },
+        v2_helpJson: {
+            defaultValue: {},
+            conditionalValues: {}
         }
     };
     const referenceStructure = translation[DEFAULT_LANGUAGE];
 
     for (const language of Object.keys(translation)) {
-        let value = "";
+        let helpMarkdown = '';
+        let sectionArray = [];
 
-        for (const section of faq) {
-            const sectionId = section["section_id"];
+        for (const sectionIndex of mobileFaqSectionOrder) {
+            const sectionId = faq[sectionIndex]["section_id"];
             const sectionName = translate(translation, language, `web.faq.sections.${sectionId}.title`);
-            value += `# ${sectionName}\n`;
+            const sectionDescription = translate(translation, language, `web.faq.sections.${sectionId}.description`);
+            helpMarkdown += `# ${sectionName}\n`;
+            let questionArray = [];
 
-            for (const question of section["questions"]) {
+            for (const question of faq[sectionIndex]["questions"]) {
                 const questionId = question["id"];
-                const questionText = convertToMarkdown(translate(translation, language, `web.faq.questions.${questionId}.question`));
-                value += `## ${questionText}\n`;
-
+                const questionText = translate(translation, language, `web.faq.questions.${questionId}.question`);
+                helpMarkdown += `## ${questionText}\n`;
                 const answers = dot.pick(`web.faq.questions.${questionId}.answer`, referenceStructure) || [];
+                let answerMarkdown = '';
+
                 if (answers.length === 0) {
                     console.warn(`Missing answers for question ${questionId}`);
                 }
+
                 for (let index = 0; index < answers.length; index++) {
                     const key = `web.faq.questions.${questionId}.answer.${index}`;
                     const answer = convertToMarkdown(translate(translation, language, key));
-                    value += `${answer}\n\n`;
+                    helpMarkdown += `${answer}\n\n`;
+                    answerMarkdown += (index ? '\n\n' : '') + answer;
                 }
+
+                questionArray.push({
+                    question: questionText,
+                    answer: answerMarkdown
+                });
             }
+
+            sectionArray.push({
+                title: sectionName,
+                subtitle: sectionDescription,
+                icon: faq[sectionIndex]['icon'],
+                questions: questionArray
+            });
         }
 
-        value = escapeLineEndings(value);
+        helpMarkdown = escapeLineEndings(helpMarkdown);
+        let helpJson = JSON.stringify(sectionArray);
 
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
-            values.v2_helpMarkdown.defaultValue = { value };
+            values.v2_helpMarkdown.defaultValue = { helpMarkdown };
+            values.v2_helpJson.defaultValue = { helpJson };
         } else if (LANGUAGE_TO_RC[language]) {
-            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { value };
+            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { helpMarkdown };
+            values.v2_helpJson.conditionalValues[LANGUAGE_TO_RC[language]] = { helpJson };
         }
     }
     return values;
