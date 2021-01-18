@@ -379,11 +379,11 @@ async function renderFAQToMarkdown(translation) {
         let helpJson = JSON.stringify(sectionArray);
 
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
-            values.v2_helpMarkdown.defaultValue = { helpMarkdown };
-            values.v2_helpJson.defaultValue = { helpJson };
+            values.v2_helpMarkdown.defaultValue = { value: helpMarkdown };
+            values.v2_helpJson.defaultValue = { value: helpJson };
         } else if (LANGUAGE_TO_RC[language]) {
-            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { helpMarkdown };
-            values.v2_helpJson.conditionalValues[LANGUAGE_TO_RC[language]] = { helpJson };
+            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { value: helpMarkdown };
+            values.v2_helpJson.conditionalValues[LANGUAGE_TO_RC[language]] = { value: helpJson };
         }
     }
     return values;
