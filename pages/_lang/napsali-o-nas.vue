@@ -19,7 +19,7 @@
                                         <div></div>
                                     </div>
                                     <div class="link__text">
-                                        <span class="link__title">{{ link.name.replace(/\s([kvszaiou])\s/gi, ' $1\u00A0') }}</span>
+                                        <span class="link__title">{{ link.name.replace(/\b([kvszaiou])\s/gi, '$1\u00A0') }}</span>
                                         <span class="link__description">{{ link.medium }}, {{ $d(new Date(link.date)) }}</span>
                                     </div>
                                 </a>

@@ -33,7 +33,7 @@
                             <p>{{ $t('web.evaluation.content.basket.1') }}</p>
                             <p>{{ $t('web.evaluation.content.basket.2') }}</p>
                             <ul v-html="$t('web.evaluation.content.basket.3')"></ul>
-                            <p><img src="/img/baskets.png" :alt="$t('web.evaluation.content.basket.4')"></p>
+                            <p><img src="/img/baskets2.png" :alt="$t('web.evaluation.content.basket.4')"></p>
                             <p>{{ $t('web.evaluation.content.basket.5') }}</p>
                             <p>{{ $t('web.evaluation.content.basket.6') }}</p>
                             <p>{{ $t('web.evaluation.content.basket.7') }}</p>
