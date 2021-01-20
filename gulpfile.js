@@ -319,7 +319,7 @@ function translate(translation, language, key, returnEmpty) {
         }
         const fallback = getFallback(language);
         console.warn(`${key} not found for ${language}, using ${fallback}`);
-        return translate(translation, fallback, key);
+        return translate(translation, fallback, key, returnEmpty);
     }
     return result;
 }
