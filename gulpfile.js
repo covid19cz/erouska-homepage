@@ -301,7 +301,7 @@ async function buildI18nLocal() {
     await buildI18n(content);
 }
 
-function translate(translation, language, key) {
+function translate(translation, language, key, returnEmpty) {
     const strings = translation[language] || {};
     let result;
     if (strings.hasOwnProperty(key)) {
@@ -311,6 +311,10 @@ function translate(translation, language, key) {
 
     if (result === undefined) {
         if (language === DEFAULT_LANGUAGE) {
+            if (returnEmpty) {
+                return '';
+            }
+
             throw Error(`${key} not found for default language`);
         }
         const fallback = getFallback(language);
@@ -318,6 +322,31 @@ function translate(translation, language, key) {
         return translate(translation, fallback, key);
     }
     return result;
+}
+
+function getSectionInfo(translation, language, sectionId) {
+    const sectionName = (
+        translate(translation, language, `web.faq.sections.${sectionId}.title_app`, true)
+        || translate(translation, language, `web.faq.sections.${sectionId}.title`)
+    );
+    const sectionDescription = (
+        translate(translation, language, `web.faq.sections.${sectionId}.description_app`, true)
+        || translate(translation, language, `web.faq.sections.${sectionId}.description`)
+    );
+    return { sectionName, sectionDescription };
+}
+
+async function previewMobileFAQ() {
+    const faq = require(FAQ_STRUCTURE_FILE);
+    const translation = require(TRANSLATION_BUILD_FILE);
+    let result = '';
+
+    for (const sectionIndex of mobileFaqSectionOrder) {
+        const { sectionName, sectionDescription } = getSectionInfo(translation, DEFAULT_LANGUAGE, faq[sectionIndex]['section_id']);
+        result += `\n${sectionName}\n${sectionDescription}\n`;
+    }
+
+    console.log(result);
 }
 
 async function renderFAQToMarkdown(translation) {
@@ -339,9 +368,7 @@ async function renderFAQToMarkdown(translation) {
         let sectionArray = [];
 
         for (const sectionIndex of mobileFaqSectionOrder) {
-            const sectionId = faq[sectionIndex]["section_id"];
-            const sectionName = translate(translation, language, `web.faq.sections.${sectionId}.title`);
-            const sectionDescription = translate(translation, language, `web.faq.sections.${sectionId}.description`);
+            const { sectionName, sectionDescription } = getSectionInfo(translation, language, faq[sectionIndex]['section_id']);
             helpMarkdown += `# ${sectionName}\n`;
             let questionArray = [];
 
@@ -442,6 +469,7 @@ exports.up = uploadStrings;
 exports.uploadF = forceUploadStrings;
 exports.down = buildI18nOneSky;
 exports.loc = buildI18nLocal;
+exports.faqapp = previewMobileFAQ;
 
 exports.dist = series(buildI18nOneSky, createLegacyTeamJson);
 exports.deploy = series(updateRemoteConfig);

@@ -88,9 +88,10 @@
     "web.faq.link": "Časté dotazy",
     "web.faq.sections.table_of_contents": "Obsah",
 
-    "web.faq.sections.general.title": "Obecné",
+    "web.faq.sections.general.title": "Obecné informace",
     "web.faq.sections.general.description": "eRouška, karanténa a postupy hygieny",
     "web.faq.sections.functioning.title": "Fungování eRoušky",
+    "web.faq.sections.functioning.title_app": "Pokročilé informace o eRoušce",
     "web.faq.sections.functioning.description": "sběr a vyhodnocení dat, význam upozornění",
     "web.faq.sections.settings.title": "Instalace a kompatibilita",
     "web.faq.sections.settings.description": "podporované mobily a možnosti instalace",
@@ -251,7 +252,7 @@
     "web.faq.questions.basic_recommendations.answer.2": "Doporučujeme rovněž povolit automatické aktualizace aplikace eRouška:",
     "web.faq.questions.basic_recommendations.answer.3": "<ul><li><a href=\"https://support.google.com/googleplay/answer/113412#autoone\" target=\"_blank\">Postup pro Android zde:</a> Spusťte aplikaci Obchod Google Play, klepněte na nabídku Moje aplikace a hry → Vyberte aplikaci, kterou chcete aktualizovat → Klepněte na ikonu možností a klepněte na Aktivovat automatické aktualizace.</li><li><a href=\"https://support.apple.com/cs-cz/HT202180#automatic\" target=\"_blank\">Postup pro iOS zde:</a> Na iPhonu přejděte do Nastavení → [vaše jméno] → iTunes a App Store. Pak zapněte volbu Aktualizace aplikací.</li></ul>",
 
-    "web.faq.questions.activation_error.question": "Nejde aktivovat eRouška. / Android: Chyba aktivace 17 (Exposure Notification API není k dispozici) / iOS: Kód chyby: 3",
+    "web.faq.questions.activation_error.question": "Nejde aktivovat eRouška. Android: Chyba aktivace 17 (Exposure Notification API není k dispozici), iOS: Kód chyby: 3",
     "web.faq.questions.activation_error.answer.0": "Pro vyřešení chyby na Android zařízení, zkuste prosím postupovat takto:",
     "web.faq.questions.activation_error.answer.1": "<ol><li>Zkontrolujte, zda jste <em>hlavní uživatel</em> zařízení, zda máte v telefonu služby Play a zda je k dispozici <em>Nastavení → Google → Oznámení o možném kontaktu (COVID-19 Exposure Notifications)</em>.</li><li>Odinstalujte eRoušku.</li><li>Smažte mezipaměť a data u Google Play Services a Obchodu Play (<a href=\"https://support.google.com/googleplay/answer/9037938\" target=\"_blank\">postup zde, viz kroky 2 a 3</a>).</li><li>Nainstalujte eRoušku a zapněte opět <em>Oznámení o možném kontaktu COVID-19</em>.</li></ol>",
     "web.faq.questions.activation_error.answer.2": "Pro vyřešení chyby na iPhonu, zkuste prosím postupovat takto:",
@@ -295,7 +296,7 @@
 
     "web.faq.questions.phone_recovery_or_upgrade.question": "Přenesou se data z eRoušky po obnově telefonu ze zálohy nebo při přechodu na nový telefon?",
     "web.faq.questions.phone_recovery_or_upgrade.answer.0": "Z důvodů ochrany soukromí uživatelů operační systémy Android ani iOS nezálohují data z Exposure Notifications. Při reinstalaci telefonu nebo přechodu na jiné zařízení tedy nelze přenést ani obnovit zaznamenané a vygenerované identifikátory.",
-    "web.faq.questions.EN_error_after_icloud_recovery.question": "Co dělat, když po obnově iPhonu ze zálohy iCloudu / přechodu na nový iPhone eRouška přestala fungovat?",
+    "web.faq.questions.EN_error_after_icloud_recovery.question": "Co dělat, když po obnově iPhonu ze zálohy iCloudu nebo přechodu na nový iPhone eRouška přestala fungovat?",
     "web.faq.questions.EN_error_after_icloud_recovery.answer.0": "Na iOS 14.0 a 14.1 existuje v současnosti chyba, která při obnově dat ze zálohy vypne v Nastavení telefonu Oznámení o kontaktech s nákazou (Exposure Notifications), která eRouška potřebuje pro své fungování.",
     "web.faq.questions.EN_error_after_icloud_recovery.answer.1": "Pro opravu prosím zkuste některý z těchto postupů:",
     "web.faq.questions.EN_error_after_icloud_recovery.answer.2": "<ol><li>V Nastavení telefonu → Kontakty s nákazou → Vypnout oznámení kontaktů s nákazou. Otevřít eRoušku a znovu potvrdit vyžádaná povolení.</li><li>Smazat eRoušku, znovu ji nainstalovat a aktivovat.</li><li>Znovu nastavit náš region jako aktivní: V Nastavení → Kontakty s nákazou → Žádná aktivní oblast → Zvolit náš region v sekci autorizovaných regionů → ťuknout na <em>Nastavit jako aktivní oblast</em>. Spustit znovu eRoušku.</li></ol>",
