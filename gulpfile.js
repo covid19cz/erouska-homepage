@@ -200,9 +200,9 @@ function processByRegex(data) {
     else if (typeof data === "string") {
         // non-breaking space (nbsp)
         if (currentVueKey === "cs" || currentVueKey === "sk") {
-            data = data.replace(/\b([kvszaiou])\s/gi, "$1\u00A0");
+            data = data.replace(/(?<=[\s(])([kvszaiou])\s/gi, "$1\u00A0");
         } else if (currentVueKey === "en") {
-            data = data.replace(/\b(a|an|the)\s/gi, "$1\u00A0");
+            data = data.replace(/(?<=[\s(])(a|an|the)\s/gi, "$1\u00A0");
         }
 
         data = data.replace(/\s%/gi, "\u00A0%");

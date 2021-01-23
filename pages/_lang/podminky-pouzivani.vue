@@ -122,9 +122,9 @@
         methods: {
             insertNbsp(text) {
                 if (this.$i18n.locale === 'cs' || this.$i18n.locale === 'sk') {
-                    return text.replace(/\b([kvszaiou])\s/gi, '$1\u00A0');
+                    return text.replace(/(?<=[\s(])([kvszaiou])\s/gi, '$1\u00A0');
                 } else if (this.$i18n.locale === 'en') {
-                    return text.replace(/\b(a|an|the)\s/gi, '$1\u00A0');
+                    return text.replace(/(?<=[\s(])(a|an|the)\s/gi, '$1\u00A0');
                 } else {
                     return text;
                 }
