@@ -304,10 +304,12 @@ async function buildI18nLocal() {
 function translate(translation, language, key, returnEmpty) {
     const strings = translation[language] || {};
     let result;
+
     if (strings.hasOwnProperty(key)) {
         result = strings[key];
+    } else {
+        result = dot.pick(key, strings);
     }
-    else result = dot.pick(key, strings);
 
     if (result === undefined) {
         if (language === DEFAULT_LANGUAGE) {
@@ -317,10 +319,16 @@ function translate(translation, language, key, returnEmpty) {
 
             throw Error(`${key} not found for default language`);
         }
+
         const fallback = getFallback(language);
-        console.warn(`${key} not found for ${language}, using ${fallback}`);
+
+        if (!returnEmpty) {
+            console.warn(`${key} not found for ${language}, using ${fallback}`);
+        }
+
         return translate(translation, fallback, key, returnEmpty);
     }
+
     return result;
 }
 
