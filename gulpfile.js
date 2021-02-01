@@ -400,7 +400,8 @@ async function renderFAQToMarkdown(translation) {
 
                 questionArray.push({
                     question: questionText,
-                    answer: answerMarkdown
+                    answer: answerMarkdown,
+                    iosHide: answerMarkdown.includes('Android')
                 });
             }
 
