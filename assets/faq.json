@@ -8,12 +8,12 @@
             {"id": "what_to_do_on_sms", "anchor": "sms"},
             {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},
             {"id": "will_erouska_know_i_violate_quarantine", "anchor": "poruseni-karanteny"},
+            {"id": "sick_note_prescription", "anchor": "neschopenka"},
             {"id": "why_is_erouska_needed", "anchor": "proc-erouska"},
             {"id": "what_if_somebody_does_not_admit", "anchor": "neprizna-se"},
             {"id": "does_it_make_sense_to_install_erouska", "anchor": "proc-instalovat"},
             {"id": "how_does_erouska_differ", "anchor": "jak-se-lisi"},
-            {"id": "what_is_the_role_of_erouska_in_smart_quarantine", "anchor": "role-erousky"},
-            {"id": "internal_do_you_plan_translations", "anchor": "preklady"}
+            {"id": "what_is_the_role_of_erouska_in_smart_quarantine", "anchor": "role-erousky"}
         ]
     },
 
@@ -24,6 +24,7 @@
         "questions": [
             {"id": "how_is_the_data_processed", "anchor": "sber-dat"},
             {"id": "risk_encounter_parameters", "anchor": "vyhodnoceni-setkani"},
+            {"id": "how_erouska_reacts_to_new_mutations", "anchor": "reakce-na-mutace"},
             {"id": "wrong_contact_assessment", "anchor": "mylny-kontakt"},
             {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
             {"id": "sms_delivery_time", "anchor": "kdy-prijde-sms"},
@@ -31,6 +32,7 @@
             {"id": "does_erouska_use_apple_google_api", "anchor": "apple-google-api"},
             {"id": "about_api", "anchor": "o-api"},
             {"id": "where_can_i_find_data_collected", "anchor": "zaznamenana-data"},
+            {"id": "en_protocol_records_meaning", "anchor": "zaznamy-v-protokolu"},
             {"id": "how_can_i_check_if_app_works", "anchor": "beh-na-pozadi"},
             {"id": "why_does_data_update_time_differ", "anchor": "rozdily-aktualizace"},
             {"id": "why_I_cant_see_time_of_encounters", "anchor": "cas-setkani"},
@@ -65,6 +67,7 @@
             {"id": "why_gps_needs_to_be_enabled", "anchor": "proc-gps"},
             {"id": "how_much_battery_it_consumes", "anchor": "spotreba"},
             {"id": "does_erouska_slow_traffic", "anchor": "zpomaluje-data"},
+            {"id": "does_erouska_interfere", "anchor": "bt-problemy"},
             {"id": "why_bluetooth", "anchor": "proc-bt"},
             {"id": "is_bt_secure", "anchor": "bt-bezpeci"}
         ]
@@ -97,7 +100,6 @@
         "questions": [
             {"id": "basic_recommendations", "anchor": "doporuceni"},
             {"id": "activation_error", "anchor": "chyba-aktivace"},
-            {"id": "update_date_stuck", "anchor": "stare-datum-aktualizace"},
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
             {"id": "EN_error_after_icloud_recovery", "anchor": "obnova-z-icloudu"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
