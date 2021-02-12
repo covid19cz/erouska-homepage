@@ -469,6 +469,24 @@ async function forceUploadStrings() {
     await sendAppForTranslation(TRANSLATION_SOURCE_FILE, fs.readFileSync(TRANSLATION_SOURCE_FILE).toString(), undefined, true);
 }
 
+async function getUnusedFaqKeys() {
+    const faq = require(FAQ_STRUCTURE_FILE);
+    const locales = require(TRANSLATION_BUILD_FILE);
+    let ids = [];
+
+    faq.forEach(section => {
+        section.questions.forEach(question => {
+            ids.push(question.id);
+        });
+    });
+
+    for (const key in locales.cs.web.faq.questions) {
+        if (!ids.includes(key)) {
+            console.log(key);
+        }
+    }
+}
+
 exports.buildI18nLocal = buildI18nLocal;
 exports.buildI18n = buildI18nOneSky;
 exports.updateRemoteConfig = updateRemoteConfig;
@@ -479,6 +497,7 @@ exports.uploadF = forceUploadStrings;
 exports.down = buildI18nOneSky;
 exports.loc = buildI18nLocal;
 exports.faqapp = previewMobileFAQ;
+exports.unused = getUnusedFaqKeys;
 
 exports.dist = series(buildI18nOneSky, createLegacyTeamJson);
 exports.deploy = series(updateRemoteConfig);
