@@ -26,6 +26,7 @@
             {"id": "risk_encounter_parameters", "anchor": "vyhodnoceni-setkani"},
             {"id": "how_erouska_reacts_to_new_mutations", "anchor": "reakce-na-mutace"},
             {"id": "wrong_contact_assessment", "anchor": "mylny-kontakt"},
+            {"id": "EN_mistaken", "anchor": "oznameni-systemu"},
             {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
             {"id": "sms_delivery_time", "anchor": "kdy-prijde-sms"},
             {"id": "antigen_test", "anchor": "antigen-test"},
@@ -98,12 +99,13 @@
         "section_anchor": "zname-chyby",
         "icon": "https://erouska.cz/img/faq/tool.png",
         "questions": [
-            {"id": "basic_recommendations", "anchor": "doporuceni"},
-            {"id": "activation_error", "anchor": "chyba-aktivace"},
+            {"id": "basic_recommendations_android", "anchor": "doporuceni-android"},
+            {"id": "basic_recommendations_ios", "anchor": "doporuceni-ios"},
+            {"id": "activation_error_android", "anchor": "chyba-aktivace-android"},
+            {"id": "activation_error_ios", "anchor": "chyba-aktivace-ios"},
             {"id": "iOS_eRouska_paused_error", "anchor": "nejde-znovu-spustit"},
             {"id": "EN_error_after_icloud_recovery", "anchor": "obnova-z-icloudu"},
             {"id": "iOS_EN_location_changed_error", "anchor": "zmena-lokality"},
-            {"id": "EN_mistaken", "anchor": "oznameni-systemu"},
             {"id": "erouska_error_401", "anchor": "chyba-401"}
         ]
     }
