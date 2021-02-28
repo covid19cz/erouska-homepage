@@ -189,7 +189,7 @@
     "web.faq.questions.does_erouska_interfere.answer.1": "Zkuste prosím následný postup:",
     "web.faq.questions.does_erouska_interfere.answer.2": "<ol><li>Restartujte telefon.</li><li>Zrušte spárování s Bluetooth zařízením a znovu jej připojte.</li></ol>",
     "web.faq.questions.does_erouska_interfere.answer.3": "Pokud kroky výše nepomohou, kontaktujte prosím výrobce zařízení:",
-    "web.faq.questions.does_erouska_interfere.answer.4": "<ul><li>iOS: <a href=\"https://support.apple.com/cs-cz\" target=\"_blank\">Podpora společnosti Apple</a></li><li>Android: <a href=\"https://support.google.com/android/answer/3094742?hl=cs&ref_topic=7313011\" target=\"_blank\">Podpora výrobců zařízení.</a></li></ul>",
+    "web.faq.questions.does_erouska_interfere.answer.4": "<ul><li>iOS: <a href=\"https://support.apple.com/cs-cz\" target=\"_blank\">Podpora společnosti Apple</a></li><li>Android: <a href=\"https://support.google.com/android/answer/3094742?hl=cs&ref_topic=7313011\" target=\"_blank\">Podpora výrobců zařízení</a></li></ul>",
 
     "web.faq.questions.how_can_i_find_all_saved_and_sent_data.question": "Jak zjistím, která všechna data přesně aplikace ukládá a odesílá?",
     "web.faq.questions.how_can_i_find_all_saved_and_sent_data.answer.0": "Aplikace eRouška používá od verze 2.0 tzv. Apple/Google Exposure Notification API, které zprostředkovává sběr dat a předávání identifikátorů mezi uživateli. Aplikace kvůli tomu už nemá přímý přístup k naměřeným údajům, které by mohla uživatelům zobrazit, jako tomu bylo u verze 1.0.",
@@ -269,7 +269,7 @@
     "web.faq.questions.basic_recommendations_ios.answer.0": "Pokud vám aplikace zobrazuje chybovou hlášku, zkontrolujte prosím nejprve, zda máte nainstalované aktualizace operačního systému (<a href=\"https://support.apple.com/cs-cz/HT204204\" target=\"_blank\">postup aktualizace iOS</a>) a nepoužíváte jejich beta verzi.",
     "web.faq.questions.basic_recommendations_ios.answer.1": "Dále prosím zkontrolujte v obchodu <a href=\"https://apps.apple.com/cz/app/erouška/id1509210215\" target=\"_blank\">Apple App Store</a>, zda není pro eRoušku dostupná nová aktualizace.",
     "web.faq.questions.basic_recommendations_ios.answer.2": "Doporučujeme rovněž povolit automatické aktualizace aplikace eRouška. <a href=\"https://support.apple.com/cs-cz/HT202180#automatic\" target=\"_blank\">Postup pro iOS zde:</a> Na iPhonu přejděte do Nastavení → [vaše jméno] → iTunes a App Store. Pak zapněte volbu Aktualizace aplikací.</li></ul>",
-    
+
     "web.faq.questions.activation_error_android.question": "Android: Nejde aktivovat eRouška. Chyba aktivace 17 (Exposure Notification API není k dispozici).",
     "web.faq.questions.activation_error_android.answer.0": "Pro vyřešení chyby na Android zařízení, zkuste prosím postupovat takto:",
     "web.faq.questions.activation_error_android.answer.1": "<ol><li>Zkontrolujte, zda jste <em>hlavní uživatel</em> zařízení, zda máte v telefonu služby Play a zda je k dispozici <em>Nastavení → Google → Oznámení o možném kontaktu (COVID-19 Exposure Notifications)</em>.</li><li>Odinstalujte eRoušku.</li><li>Smažte mezipaměť a data u Google Play Services a Obchodu Play (<a href=\"https://support.google.com/googleplay/answer/9037938\" target=\"_blank\">postup zde, viz kroky 2 a 3</a>).</li><li>Nainstalujte eRoušku a zapněte opět <em>Oznámení o možném kontaktu COVID-19</em>.</li></ol>",
@@ -278,12 +278,12 @@
     "web.faq.questions.activation_error_ios.question": "iOS: Nejde aktivovat eRouška (Kód chyby: 3).",
     "web.faq.questions.activation_error_ios.answer.0": "Pro vyřešení chyby na iPhonu, zkuste prosím postupovat takto:",
     "web.faq.questions.activation_error_ios.answer.1": "<ol><li>Zkontrolujte, zda není k dispozici aktualizace iOS a zda nejste zapojení do beta testování iOS.</li><li>Odinstalujte eRoušku.</li><li>Pokud je <em>Nastavení → Kontakty s nákazou (příp. Oznámení o kontaktech s nákazou s COVID-19)</em> vypnuté, zapněte jej prosím přepínačem.</li><li>Nainstalujte eRoušku a opět zapněte <em>Oznámení o kontaktech s nákazou</em>.</li></ol>",
-      
+
     "web.faq.questions.iOS_eRouska_paused_error.question": "iOS: Na iPhonu se eRouška pozastavila a nejde znovu spustit.",
     "web.faq.questions.iOS_eRouska_paused_error.answer.0": "Tento problém postihuje některé uživatele iPhonů po updatu iOS. Zkuste prosím eRoušku odinstalovat a znovu nainstalovat. Na iOS nepřijdete o zaznamenaná data, zůstávají uložená na úrovni systému.",
     "web.faq.questions.iOS_EN_location_changed_error.question": "iOS: Na iPhonu se zobrazuje upozornění: Změnila se oblast oznámení o kontaktech s nákazou.",
     "web.faq.questions.iOS_EN_location_changed_error.answer.0": "Zkuste prosím vypnout přepínač v Nastavení → Kontakty s nákazou → Upozornění na dostupnost.",
-    
+
     "web.faq.questions.EN_mistaken.question": "Zobrazilo se mi upozornění na možné setkání s nakaženým, ale eRouška po otevření ukazuje, že nezaznamenala nikoho nakaženého v mém okolí.",
     "web.faq.questions.EN_mistaken.answer.0": "Pokud vás překvapilo oznámení s červenou ikonkou viru a textem Oznámení o možném kontaktu (Android) nebo Zaznamenání kontaktů (iOS), nemusíte se obávat. Jde pouze o systémové oznámení Androidu a iOS, na které nemá eRouška vliv. Jak vypadá skutečné oznámení eRoušky najdete <a href=\"https://www.facebook.com/eRouska/posts/180938253548928\" target=\"_blank\">na tomto obrázku</a>.",
     "web.faq.questions.EN_mistaken.answer.1": "Pokud byste měli rizikový kontakt s nakaženou osobou, zjistíte to přímo na hlavní obrazovce eRoušky.",
@@ -292,7 +292,7 @@
     "web.faq.questions.instalation_of_eRouska.question": "Odkud si můžu eRoušku bezpečně stáhnout a nainstalovat?",
     "web.faq.questions.instalation_of_eRouska.answer.0": "Aplikace eRouška je dostupná pouze pro:",
     "web.faq.questions.instalation_of_eRouska.answer.1": "<ul><li>Android: <a href=\"https://play.google.com/store/apps/details?id=cz.covid19cz.erouska\" target=\"_blank\">v Obchodě Google Play</a>.</li><li>iOS: <a href=\"https://apps.apple.com/cz/app/erou%C5%A1ka/id1509210215\" target=\"_blank\">v Apple App Store</a>.",
-    
+
     "web.faq.questions.keys_found_in_settings_and_erouska_difference.question": "Proč v Nastavení telefonu v sekci Kontrola kontaktu vidím u konkrétního data nalezené klíče, ale eRouška mi nezobrazuje žádná riziková setkání?",
     "web.faq.questions.keys_found_in_settings_and_erouska_difference.answer.0": "Počet nalezených klíčů představuje počet zaznamenaných setkání s nakaženými uživateli. Neznamená to však nutně, že tato setkání byla riziková. Pokud setkání s nakaženým uživatelem nebylo rizikové (delší než 15 minut ve vzdálenosti kratší než 2 metry), tak na něj eRouška neupozorňuje. Proto v aplikaci není vidět.",
     "web.faq.questions.sms_delivery_time.question": "Byl jsem na testech na COVID-19, ale stále mi nepřišla SMS s ověřovacím kódem do eRoušky. Za jak dlouho ji mám čekat?",
