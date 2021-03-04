@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 const admin = require("firebase-admin");
 const onesky = require("@brainly/onesky-utils");
 const dot = require('dot-object');
-const {series} = require('gulp');
+const { series } = require('gulp');
 const TurndownService = require("turndown");
 
 const CREDENTIALS_FILE = process.env.GOOGLE_APPLICATION_CREDENTIALS;
@@ -280,8 +280,7 @@ async function buildI18nOneSky() {
     for (const language of allLanguages) {
         const key = LANGUAGE_TO_SKYAPP[language] || language;
         let data = {};
-        if (content.hasOwnProperty(key))
-        {
+        if (content.hasOwnProperty(key)) {
             data = content[key]["translation"];
         }
         else console.warn(`Language ${language} not found in OneSky`);
@@ -372,18 +371,20 @@ async function renderFAQToMarkdown(translation) {
     const referenceStructure = translation[DEFAULT_LANGUAGE];
 
     for (const language of Object.keys(translation)) {
-        let helpMarkdown = '';
-        let sectionArray = [];
+        let helpMarkdown = { android: '', ios: '' };
+        let sectionArray = { android: [], ios: [] };
 
         for (const sectionIndex of mobileFaqSectionOrder) {
             const { sectionName, sectionDescription } = getSectionInfo(translation, language, faq[sectionIndex]['section_id']);
-            helpMarkdown += `# ${sectionName}\n`;
-            let questionArray = [];
+            helpMarkdown.android += `# ${sectionName}\n`;
+            helpMarkdown.ios += `# ${sectionName}\n`;
+            let questionArray = { android: [], ios: [] };
 
             for (const question of faq[sectionIndex]["questions"]) {
                 const questionId = question["id"];
                 const questionText = translate(translation, language, `web.faq.questions.${questionId}.question`);
-                helpMarkdown += `## ${questionText}\n`;
+                let showOn = { android: !questionText.startsWith("iOS:"), ios: !questionText.startsWith("Android:") };
+
                 const answers = dot.pick(`web.faq.questions.${questionId}.answer`, referenceStructure) || [];
                 let answerMarkdown = '';
 
@@ -394,36 +395,71 @@ async function renderFAQToMarkdown(translation) {
                 for (let index = 0; index < answers.length; index++) {
                     const key = `web.faq.questions.${questionId}.answer.${index}`;
                     const answer = convertToMarkdown(translate(translation, language, key));
-                    helpMarkdown += `${answer}\n\n`;
                     answerMarkdown += (index ? '\n\n' : '') + answer;
                 }
 
-                questionArray.push({
-                    question: questionText,
-                    answer: answerMarkdown,
-                    iosHide: answerMarkdown.includes('Android')
-                });
+                function replacer(match, p1, p2, p3, offset, string) {
+                    if (!p1 || !p3) {
+                        // at least one is empty so replace empty
+                        return '';
+                    } else if (p1.length > p3.length) {
+                        return p1;
+                    }
+
+                    return p3;
+                }
+
+                if (showOn.android) {
+                    let replacedMd = answerMarkdown.replace(/(^|\n+)([*\s]*iOS:.*?($|\n+))+/g, replacer);
+                    helpMarkdown.android += `## ${questionText}\n${replacedMd}\n\n`;
+                    questionArray.android.push({
+                        question: questionText,
+                        answer: replacedMd
+                    });
+                }
+
+                if (showOn.ios) {
+                    let replacedMd = answerMarkdown.replace(/(^|\n+)([*\s]*Android:.*?($|\n+))+/g, replacer);
+                    helpMarkdown.ios += `## ${questionText}\n${replacedMd}\n\n`;
+                    questionArray.ios.push({
+                        question: questionText,
+                        answer: replacedMd
+                    });
+                }
             }
 
-            sectionArray.push({
+            sectionArray.android.push({
                 title: sectionName,
                 subtitle: sectionDescription,
                 icon: faq[sectionIndex]['icon'],
-                questions: questionArray
+                questions: questionArray.android
+            });
+
+            sectionArray.ios.push({
+                title: sectionName,
+                subtitle: sectionDescription,
+                icon: faq[sectionIndex]['icon'],
+                questions: questionArray.ios
             });
         }
 
-        helpMarkdown = escapeLineEndings(helpMarkdown);
-        let helpJson = JSON.stringify(sectionArray);
+        helpMarkdown.android = escapeLineEndings(helpMarkdown.android);
+        helpMarkdown.ios = escapeLineEndings(helpMarkdown.ios);
+        let helpJson = { android: JSON.stringify(sectionArray.android), ios: JSON.stringify(sectionArray.ios) };
 
         if (LANGUAGE_TO_RC[language] === DEFAULT_RC_LANGUAGE_VALUE) {
-            values.v2_helpMarkdown.defaultValue = { value: helpMarkdown };
-            values.v2_helpJson.defaultValue = { value: helpJson };
+            values.v2_helpMarkdown.defaultValue = { value: helpMarkdown.android };
+            values.v2_helpMarkdown.conditionalValues['iOS'] = { value: helpMarkdown.ios };
+            values.v2_helpJson.defaultValue = { value: helpJson.android };
+            values.v2_helpJson.conditionalValues['iOS'] = { value: helpJson.ios };
         } else if (LANGUAGE_TO_RC[language]) {
-            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { value: helpMarkdown };
-            values.v2_helpJson.conditionalValues[LANGUAGE_TO_RC[language]] = { value: helpJson };
+            values.v2_helpMarkdown.conditionalValues[LANGUAGE_TO_RC[language]] = { value: helpMarkdown.android };
+            values.v2_helpMarkdown.conditionalValues['iOS ' + LANGUAGE_TO_RC[language]] = { value: helpMarkdown.ios };
+            values.v2_helpJson.conditionalValues[LANGUAGE_TO_RC[language]] = { value: helpJson.android };
+            values.v2_helpJson.conditionalValues['iOS ' + LANGUAGE_TO_RC[language]] = { value: helpJson.ios };
         }
     }
+
     return values;
 }
 
