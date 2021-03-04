@@ -410,7 +410,7 @@ async function renderFAQToMarkdown(translation) {
                 }
 
                 if (showOn.android) {
-                    let replacedMd = answerMarkdown.replace(/(^|\n+)([*\s]*iOS:.*?($|\n+))+/g, replacer);
+                    let replacedMd = answerMarkdown.replace(/(^|\n+)([*\s]*i(?:OS|Phone):.*?($|\n+))+/g, replacer);
                     helpMarkdown.android += `## ${questionText}\n${replacedMd}\n\n`;
                     questionArray.android.push({
                         question: questionText,
