@@ -30,6 +30,7 @@
             {"id": "will_others_know_i_have_covid", "anchor": "budou-vedet"},
             {"id": "sms_delivery_time", "anchor": "kdy-prijde-sms"},
             {"id": "antigen_test", "anchor": "antigen-test"},
+            {"id": "efgs", "anchor": "efgs"},
             {"id": "does_erouska_use_apple_google_api", "anchor": "apple-google-api"},
             {"id": "about_api", "anchor": "o-api"},
             {"id": "where_can_i_find_data_collected", "anchor": "zaznamenana-data"},
