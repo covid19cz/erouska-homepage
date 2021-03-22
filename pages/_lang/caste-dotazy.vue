@@ -119,9 +119,19 @@
 
                 if (this.searchTerms) {
                     this.searchTerms.forEach(term => {
-                        html = html.split(term).join(`<mark>${term}</mark>`);
-                        html = html.replace(/(<[^>]*)<\/?mark>([^<>]*)(<\/?mark>)?([^>]*>)/g, '$1$2$4');
-                        // try https://markjs.io/
+                        if (!(new RegExp(term).test('<mark>') || new RegExp(term).test('</mark>'))) {
+                            html = html.split(term).join(`<mark>${term}</mark>`);
+
+                            for (let i = 0; i < 50; i++) {
+                                let htmlOld = html;
+                                html = html.replace(/(<[^>]*)<\/?mark>([^<>]*)(<\/?mark>)?([^>]*>)/g, '$1$2$4');
+
+                                if (html === htmlOld) {
+                                    break;
+                                }
+                            }
+                            // try https://markjs.io/
+                        }
                     });
                 }
 

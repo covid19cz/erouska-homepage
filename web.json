@@ -249,8 +249,8 @@
     "web.faq.questions.how_much_data_erouska_consumes.question": "Jak velký objem mobilních dat eRouška denně spotřebuje?",
     "web.faq.questions.how_much_data_erouska_consumes.answer.0": "V případě zapnutého <em>Upozornění na zahraniční riziková setkání</em> eRouška stahuje také klíče všech nakažených uživatelů z ostatních států EU. Objem stažených dat se v takovém případě může pohybovat až kolem 2 MB denně.",
     "web.faq.questions.how_much_data_erouska_consumes.answer.1": "I v případě vypnutého <em>Upozornění na zahraniční riziková setkání</em> eRouška stahuje přibližně 1 MB denně. Nová verze aplikace stahuje nejen klíče nakažených uživatelů eRoušky, ale i klíče nakažených uživatelů z ostatních států EU, kteří ve svých aplikacích uvedli, že cestují do zahraničí, takže je uživatel eRoušky potenciálně mohl potkat i v České republice",
-    "web.faq.questions.how_much_data_erouska_consumes.answer.2": "Soubory klíčů nakažených uživatelů se stahují postupně, 2–3× denně. Pro porovnání, načtení průměrné stránky zpravodajství vyžaduje 1–5 MB dat. <b>Aplikace nepotřebuje nutně mobilní datové připojení</b>. Data si stáhne sama i na Wi-Fi.",
-    
+    "web.faq.questions.how_much_data_erouska_consumes.answer.2": "Soubory klíčů nakažených uživatelů se stahují postupně, 2–3× denně. Pro porovnání, načtení průměrné stránky zpravodajství vyžaduje 1–5 MB dat. <b>Aplikace nepotřebuje nutně mobilní datové připojení.</b> Data si stáhne sama i na Wi-Fi.",
+
     "web.faq.questions.why_does_data_update_time_differ.question": "Proč se liší datum a čas „Poslední aktualizace dat“ na hlavní obrazovce eRoušky a data a časy „Kontroly kontaktů“, které vidím v Nastavení telefonu?",
     "web.faq.questions.why_does_data_update_time_differ.answer.0": "Aplikace eRouška ukazuje na hlavní obrazovce datum a čas posledního úspěšného pokusu o kontrolu nových klíčů (identifikátorů) nakažených uživatelů na serveru. V Nastavení telefonu se zobrazují pouze data a časy, kdy byly naposledy nové klíče nalezeny a vyhodnoceny v telefonu.",
     "web.faq.questions.why_does_data_update_time_differ.answer.1": "Klíče nakažených uživatelů se do telefonu stahují 1–2× denně.",
@@ -259,7 +259,7 @@
     "web.faq.questions.matched_key_count.answer.0": "Znamená to, že Apple/Google API ve vašem telefonu nevyhodnotilo v daném datu žádné setkání s nakaženým uživatelem. Jinak řečeno stažené klíče nakažených uživatelů se v daném dni neshodují s žádným ze zaznamenaných klíčů ve vašem zařízení.",
 
     "web.faq.questions.can_i_use_more_contact_tracing_apps.question": "Můžu používat eRoušku spolu s jinou oficiální trasovací aplikací jiného státu (např. Corona-Warn-App)?",
-    "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.0": "Pokud pobýváte primárně na území ČR, doporučujeme používat eRoušku i pro cesty do zahraničí. <a href=\"www.erouska.cz/caste-dotazy#efgs\">Aplikace nyní spolupracuje i s dalšími státy EU</a>.",
+    "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.0": "Pokud pobýváte primárně na území ČR, doporučujeme používat eRoušku i pro cesty do zahraničí. <a href=\"https://erouska.cz/caste-dotazy#efgs\">Aplikace nyní spolupracuje i s dalšími státy EU</a>.",
     "web.faq.questions.can_i_use_more_contact_tracing_apps.answer.1": "V ostatních případech můžete mít v telefonu nainstalováno více trasovacích aplikací typu eRoušky, jako jsou Corona-Warn-App, Stopp Corona App, Imunni, Stop Covid ProteGO Safe a další. Pokud však také používají Apple/Google Exposure Notification protokol (platí zejména pro sousední státy ČR), můžete mít v jeden okamžik aktivní pouze jednu z těchto aplikací. Ostatní je potřeba pozastavit. K zaznamenávání setkání v Apple/Google protokolu totiž může mít přístup vždy pouze jedna aplikace.",
 
     "web.faq.questions.basic_recommendations_android.question": "Android: Základní doporučení při řešení problémů s aplikací",
@@ -367,7 +367,7 @@
     "web.faq.questions.efgs.question": "Ve kterých státech EU můžu eRoušku používat? Jak funguje spolupráce se zahraničními aplikacemi?",
     "web.faq.questions.efgs.answer.0": "Evropská komise vyvinula centrální bránu EFGS pro bezpečnou výměnu informací („brána pro zajištění interoperability“). Tato brána umožňuje aplikaci eRouška přijímat a předávat si varování se zapojenými trasovacími aplikacemi používanými v jednotlivých státech EU. Podrobné informace o bráně jsou k dispozici na webu Evropské komise v dokumentu <a href=\"https://ec.europa.eu/commission/presscorner/detail/cs/qanda_20_1905#gateway\" target=\"_blank\">Koronavirus: brána EU k zajištění interoperability aplikací pro vysledování kontaktů a varování – otázky a odpovědi</a>.",
     "web.faq.questions.efgs.answer.1": "Chcete-li zobrazit další informace o zapojených státech a nastavení, klepněte na hlavní obrazovce aplikace na Cesty do zahraničí, kde můžete funkci zapnout/vypnout a níže vidět seznam zapojených států. Oficiální aktuální seznam zapojených států EU najdete <a href=\"https://ec.europa.eu/health/sites/health/files/ehealth/docs/gateway_jointcontrollers_en.pdf\" target=\"_blank\">na webu Evropské komise.</a>",
-    
+
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
     "web.evaluation.title": "Spolehlivost vyhodnocení rizikového kontaktu",
