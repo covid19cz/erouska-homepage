@@ -42,6 +42,7 @@
             {"id": "keys_found_in_settings_and_erouska_difference", "anchor": "nalezene-klice-vs-erouska"},
             {"id": "why_notification_after_few_days", "anchor": "zpozdena-notifikace"},
             {"id": "one_notification_more_encounters", "anchor": "vice-setkani"},
+            {"id": "dgc", "anchor": "digitalni-zeleny-certifikat"},
             {"id": "erouska_statistics", "anchor": "statistiky"}
         ]
     },
@@ -54,6 +55,7 @@
             {"id": "instalation_of_eRouska", "anchor": "instalace-erousky"},
             {"id": "internal_alternative_store", "anchor": "alternativni-store"},
             {"id": "can_i_use_more_contact_tracing_apps", "anchor": "vice-aplikaci"},
+            {"id": "how_battery_saver_affects_erouska", "anchor": "rezim-nizke-spotreby"},
             {"id": "internal_smartwatch", "anchor": "smartwatch"}
         ]
     },
