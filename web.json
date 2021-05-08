@@ -371,9 +371,9 @@
     "web.faq.questions.dgc.question": "Bude eRouška fungovat jako „covid pas“ pro zobrazování výsledků testů a prokázání očkování?",
     "web.faq.questions.dgc.answer.0": "Anonymní charakter aplikace eRouška ji neumožňuje kombinovat s tzv. digitálním zeleným certifikátem (Digital Green Certificate), který pracuje s ověřenou identitou a osobními údaji uživatele – výsledky testů nebo provedeným očkováním proti COVID-19.",
     "web.faq.questions.how_battery_saver_affects_erouska.question": "Funguje eRouška, když mám na mobilu úsporný režim / režim nízké spotřeby / spořič baterie?",
-    "web.faq.questions.how_battery_saver_affects_erouska.answer.0": "iOS: V režimu nízké spotřeby jsou omezené funkce aktualizace aplikací na pozadí a automatické stahování. V tomto režimu eRouška skenuje zařízení ve svém okolí a zaznamenává možné kontakty, avšak nevyhodnocuje riziková setkání.",
-    "web.faq.questions.how_battery_saver_affects_erouska.answer.0": "Android: Spořiče/šetřiče baterie na zařízeních s OS Android mohou do značné míry omezovat běh aplikací na pozadí. Ačkoliv systém oznámení o možném kontaktu s onemocněním COVID-19 nadále funguje, nemusí docházet k vyhodnocování rizikových kontaktů, a tudíž k případnému zobrazení notifikací.",
-        
+    "web.faq.questions.how_battery_saver_affects_erouska.answer.0": "<b>iOS:</b> V režimu nízké spotřeby jsou omezené funkce aktualizace aplikací na pozadí a automatické stahování. V tomto režimu eRouška skenuje zařízení ve svém okolí a zaznamenává možné kontakty, avšak nevyhodnocuje riziková setkání.",
+    "web.faq.questions.how_battery_saver_affects_erouska.answer.1": "<b>Android:</b> Spořiče/šetřiče baterie na zařízeních s OS Android mohou do značné míry omezovat běh aplikací na pozadí. Ačkoliv systém oznámení o možném kontaktu s onemocněním COVID-19 nadále funguje, nemusí docházet k vyhodnocování rizikových kontaktů, a tudíž k případnému zobrazení notifikací.",
+
     "web.evaluation.page_title": "Spolehlivost vyhodnocení rizikového kontaktu",
     "web.evaluation.description": "Informace o zpracování osobních údajů a další podmínky používání aplikace eRouška 2.0 při boji proti koronaviru v Česku.",
     "web.evaluation.title": "Spolehlivost vyhodnocení rizikového kontaktu",
