@@ -48,12 +48,12 @@
         <div class="claim">
             <div class="container">
                 <h2 class="claim__title">{{ $t('web.default.before_you_go_out') }}<br>{{ $t('web.default.use_erouska_too') }}</h2>
-                <ul class="claim__actions">
+                <!-- <ul class="claim__actions">
                     <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" @click="$ga.event('Download', 'Android', 'claim')"
                            target="_blank" class="button button--blue">{{ $t('web.index.download.android') }}</a></li>
                     <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215" @click="$ga.event('Download', 'iOS', 'claim')"
                            target="_blank" class="button button--blue">{{ $t('web.index.download.ios') }}</a></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <footer class="footer">

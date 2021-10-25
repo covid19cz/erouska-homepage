@@ -32,7 +32,7 @@
                                 v-show="isSearchResult(question.id)"
                             >
                                 <h3 class="faq__q" @click="toggleQuestion(question.anchor); copyTextToClipboard(baseUrl + $nuxt.$route.path + '#' + question.anchor, $event);" v-html="highlightMatchAndProcess($t('web.faq.questions.' + question.id + '.question'))"></h3>
-                                <div class="faq__a" :data-collapsed="[((s_index + q_index == 0)) ? 'false' : 'true']" :data-question-anchor="question.anchor">
+                                <div class="faq__a" :data-collapsed="[(s_index == 0 && q_index < 2) ? 'false' : 'true']" :data-question-anchor="question.anchor">
                                     <template v-for="(item, index) in Object.keys($i18n.messages[$i18n.fallbackLocale].web.faq.questions[question.id].answer).length">
                                     <div v-if="['<ul>', '<ol>', '<h4>', '<pre'].some(v => $t('web.faq.questions.' + question.id + '.answer[' + index + ']').substring(0, 4).includes(v))"
                                     v-html="highlightMatchAndProcess($t('web.faq.questions.' + question.id + '.answer[' + index + ']').replace(/\\n/g, '\n'))"></div>

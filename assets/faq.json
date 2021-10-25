@@ -4,6 +4,8 @@
         "section_anchor": "obecne",
         "icon": "https://erouska.cz/img/faq/general.png",
         "questions": [
+            {"id": "deactivation_past", "anchor": "deaktivace"},
+            {"id": "deactivation_future", "anchor": "budoucnost"},
             {"id": "what_to_do_on_alert", "anchor": "upozorneni"},
             {"id": "what_to_do_on_sms", "anchor": "sms"},
             {"id": "how_does_healthcare_work", "anchor": "postup-hygieny"},

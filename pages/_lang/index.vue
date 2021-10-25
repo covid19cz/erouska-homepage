@@ -8,12 +8,12 @@
                     <p v-html="$t('web.index.intro.part_1_extended')"></p>
                     <p v-html="$t('web.index.intro.part_2')"></p>
                 </div>
-                <ul class="hero__actions">
+                <!-- <ul class="hero__actions">
                     <li><a href="https://play.google.com/store/apps/details?id=cz.covid19cz.erouska" @click="$ga.event('Download', 'Android', 'hero')"
                            target="_blank" class="button button--blue">{{ $t('web.index.download.android') }}</a></li>
                     <li><a href="https://apps.apple.com/cz/app/erouška/id1509210215" @click="$ga.event('Download', 'iOS', 'hero')"
                            target="_blank" class="button button--blue">{{ $t('web.index.download.ios') }}</a></li>
-                </ul>
+                </ul> -->
             </div>
             <div class="hero__example d-none d-md-block">
                 <div class="hero__example__phone">

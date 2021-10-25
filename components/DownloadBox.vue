@@ -1,5 +1,5 @@
 <template>
-    <div class="aside d-none d-xl-block">
+    <div class="aside d-none">
         <img src="/img/icon.svg"/>
         <h3 class="aside__title">eRouška</h3>
         <ul class="aside__actions">
